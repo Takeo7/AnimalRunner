@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b68b5eacf341b44a0a92a6f67457c5, type: 3}
   m_Name: 02
   m_EditorClassIdentifier: 
-  Prefabs:
-  - {fileID: 1665789271856866, guid: e2763cb499b88734e8fa55686200622a, type: 2}
+  floorPrefabs:
   - {fileID: 1161002178663650, guid: 86e264decccee3d43974d2a337cd842d, type: 2}
+  floatingPrefabs: []
+  specialPrefabs: []

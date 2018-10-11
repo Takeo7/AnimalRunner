@@ -6,7 +6,9 @@ using UnityEngine;
 [CreateAssetMenu]
 public class EnvironmentSet : ScriptableObject {
 
-	public GameObject[] Prefabs;
+	public GameObject[] floorPrefabs;
+	public GameObject[] floatingPrefabs;
+	public GameObject[] specialPrefabs;
 
-
+	
 }

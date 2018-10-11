@@ -61,9 +61,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\EnvironmentController.cs" />
-    <Compile Include="Assets\Scripts\EnvironmentSet.cs" />
-    <Compile Include="Assets\Scripts\LevelLoader.cs" />
+    <Compile Include="Assets\Scripts\Camera and Character\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\EnvironmentController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\EnvironmentPrefabController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\FinisherController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\UIController.cs" />
+    <Compile Include="Assets\Scripts\SceneManagement\LevelLoader.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjejct\EnvironmentSet.cs" />
+    <Compile Include="Assets\Scripts\TestScripts\TestMovement.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>F:/UnityProjects/InfiniteRunnerAnimals/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
