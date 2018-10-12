@@ -12,7 +12,10 @@ public class TestMovement : MonoBehaviour {
 	}
 	private void Update()
 	{
-		transform.Translate(Vector3.right *EC.characterSpeed * Time.deltaTime);
+		if (EC.inGame)
+		{
+			transform.Translate(Vector3.right * EC.characterSpeed * Time.deltaTime);
+		}
 	}
 	private void OnTriggerEnter2D(Collider2D col)
 	{

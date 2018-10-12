@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Animators\MainMenuAnimator.cs" />
     <Compile Include="Assets\Scripts\Camera and Character\CameraController.cs" />
     <Compile Include="Assets\Scripts\Controllers\EnvironmentController.cs" />
     <Compile Include="Assets\Scripts\Controllers\EnvironmentPrefabController.cs" />
