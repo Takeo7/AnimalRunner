@@ -8,6 +8,8 @@ public class TestMovement : MonoBehaviour {
     public Rigidbody2D rb;
     public float jumpForce = 10;
 
+    public bool dead = false;
+
 
     private void Start()
 	{

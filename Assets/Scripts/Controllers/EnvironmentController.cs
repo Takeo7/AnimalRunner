@@ -20,7 +20,6 @@ public class EnvironmentController : MonoBehaviour {
 	#endregion
 	public List<EnvironmentPrefabController> prefabsInstantiated;
 	public EnvironmentSet set;
-	public CameraController CC;
 	GameObject prefabTemp;
 
 	byte floatingPrefabsLength;
@@ -52,7 +51,6 @@ public class EnvironmentController : MonoBehaviour {
 	}
 	public void StartGame()
 	{
-		StartCoroutine("CamController", 0.5f);
 		inGame = true;
 		canDestroy = true;
 		for (int i = 0; i < 3; i++)
@@ -101,11 +99,6 @@ public class EnvironmentController : MonoBehaviour {
 			Destroy(temp.gameObject);
 		}
 		InstantiatePrefab();
-	}
-	IEnumerator CamController(float time)
-	{
-		yield return new WaitForSeconds(time);
-		CC.enabled = true;
 	}
 	IEnumerator RunSpeed()
 	{
