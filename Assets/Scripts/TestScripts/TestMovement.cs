@@ -5,8 +5,11 @@ using UnityEngine;
 public class TestMovement : MonoBehaviour {
 
 	EnvironmentController EC;
+    public Rigidbody2D rb;
+    public float jumpForce = 10;
 
-	private void Start()
+
+    private void Start()
 	{
 		EC = EnvironmentController.instance;
 	}
@@ -14,7 +17,11 @@ public class TestMovement : MonoBehaviour {
 	{
 		if (EC.inGame)
 		{
-			transform.Translate(Vector3.right * EC.characterSpeed * Time.deltaTime);
+			transform.position += Vector3.right * EC.characterSpeed * Time.deltaTime;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            }
 		}
 	}
 	private void OnTriggerEnter2D(Collider2D col)
