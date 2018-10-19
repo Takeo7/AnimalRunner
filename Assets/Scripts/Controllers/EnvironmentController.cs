@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class EnvironmentController : MonoBehaviour {
 
@@ -20,6 +21,9 @@ public class EnvironmentController : MonoBehaviour {
 	#endregion
 	public List<EnvironmentPrefabController> prefabsInstantiated;
 	public EnvironmentSet set;
+	public GameObject cavePrefab;
+	public int[] caveMeters;
+	public bool caveBool = true;
 	GameObject prefabTemp;
 
 	byte floatingPrefabsLength;
@@ -29,11 +33,20 @@ public class EnvironmentController : MonoBehaviour {
 	public bool canDestroy;
 	public float characterSpeed;
 
+
+	public UIController UIC;
+
 	private void Start()
 	{
 		SetEnvironment();		
 	}
-
+	private void Update()
+	{
+		if (caveMeters.Contains<int>(Mathf.RoundToInt(UIC.target.transform.position.x)))
+		{
+			caveBool = true;
+		}
+	}
 	void SetEnvironment()
 	{
 		EnvironmentSet[] temp = Resources.LoadAll<EnvironmentSet>("Sets");
@@ -70,16 +83,24 @@ public class EnvironmentController : MonoBehaviour {
 
 	void InstantiatePrefab()
 	{
-		int rand = Random.Range(0, 3);
-		if(rand == 1)
+		if (caveBool)
 		{
-			Debug.Log("InstantiatedFloating");
-			prefabTemp = Instantiate(set.floatingPrefabs[Random.Range(0, set.floatingPrefabs.Length)]);
+			caveBool = false;
+			prefabTemp = Instantiate(cavePrefab);
 		}
 		else
 		{
-			Debug.Log("InstantiatedFloor");
-			prefabTemp = Instantiate(set.floorPrefabs[Random.Range(0, set.floorPrefabs.Length)]);
+			int rand = Random.Range(0, 3);
+			if (rand == 1)
+			{
+				Debug.Log("InstantiatedFloating");
+				prefabTemp = Instantiate(set.floatingPrefabs[Random.Range(0, set.floatingPrefabs.Length)]);
+			}
+			else
+			{
+				Debug.Log("InstantiatedFloor");
+				prefabTemp = Instantiate(set.floorPrefabs[Random.Range(0, set.floorPrefabs.Length)]);
+			}
 		}
 		EnvironmentPrefabController epcTemp = prefabTemp.GetComponent<EnvironmentPrefabController>();
 		epcTemp.transform.position = prefabsInstantiated[prefabsInstantiated.Count - 1].transform.position;
