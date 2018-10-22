@@ -375,6 +375,7 @@ GameObject:
   - component: {fileID: 472959685}
   - component: {fileID: 472959684}
   - component: {fileID: 472959686}
+  - component: {fileID: 472959687}
   m_Layer: 0
   m_Name: Controllers
   m_TagString: Untagged
@@ -428,6 +429,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1185793732}
   meters: {fileID: 1932914914}
+--- !u!114 &472959687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 472959683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ba978dc088666840ba8b4a4625408a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &561673130
 GameObject:
   m_ObjectHideFlags: 0
