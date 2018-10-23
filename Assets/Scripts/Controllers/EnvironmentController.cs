@@ -56,7 +56,14 @@ public class EnvironmentController : MonoBehaviour {
 		GameObject spawn = Instantiate(set.specialPrefabs[0]);
 		prefabsInstantiated.Add(spawn.GetComponent<EnvironmentPrefabController>());
 	}
-	public void SetEnvironment(EnvironmentSet newSet)
+    void SetNewEnvironment()
+    {
+        EnvironmentSet[] temp = Resources.LoadAll<EnvironmentSet>("Sets");
+        set = temp[Random.Range(0, temp.Length)];
+        floatingPrefabsLength = (byte)set.floatingPrefabs.Length;
+        floorPrefabsLength = (byte)set.floorPrefabs.Length;
+    }
+    public void SetEnvironment(EnvironmentSet newSet)
 	{
 		set = newSet;
 		floatingPrefabsLength = (byte)set.floatingPrefabs.Length;
@@ -87,6 +94,7 @@ public class EnvironmentController : MonoBehaviour {
 		{
 			caveBool = false;
 			prefabTemp = Instantiate(cavePrefab);
+            SetNewEnvironment();
 		}
 		else
 		{

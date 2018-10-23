@@ -9,12 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9b68b5eacf341b44a0a92a6f67457c5, type: 3}
-  m_Name: 01
+  m_Name: Desierto
   m_EditorClassIdentifier: 
   floorPrefabs:
-  - {fileID: 1665789271856866, guid: e2763cb499b88734e8fa55686200622a, type: 2}
-  - {fileID: 1161002178663650, guid: 86e264decccee3d43974d2a337cd842d, type: 2}
+  - {fileID: 1665789271856866, guid: 9ad9e65709066064eb22f1d50b1c0609, type: 2}
+  - {fileID: 1161002178663650, guid: 1a412536e1d474a469306579c1a9a637, type: 2}
   floatingPrefabs:
-  - {fileID: 1238088856296656, guid: d4d67eee872e0824cbaa5b360757beb0, type: 2}
+  - {fileID: 1238088856296656, guid: af030f9d6b73fb54aac7fc3744ee7e75, type: 2}
   specialPrefabs:
-  - {fileID: 1271993625645456, guid: 2d1518e20e77b78458008195f6f89ea4, type: 2}
+  - {fileID: 1271993625645456, guid: d8d5f1ec64f343b4db9331757e60820a, type: 2}
