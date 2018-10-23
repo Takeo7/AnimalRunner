@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Destroyer
   - Finisher
+  - FallCheck
   layers:
   - Default
   - TransparentFX
