@@ -33,12 +33,16 @@ public class EnvironmentController : MonoBehaviour {
 	public bool canDestroy;
 	public float characterSpeed;
 
+    public delegate void GameOverDelegate();
+    public GameOverDelegate gameOverDelegate;
+
 
 	public UIController UIC;
 
 	private void Start()
 	{
-		SetEnvironment();		
+		SetEnvironment();
+        gameOverDelegate += EndGame;
 	}
 	private void Update()
 	{
@@ -87,6 +91,10 @@ public class EnvironmentController : MonoBehaviour {
 		StopCoroutine("RunSpeed");
 		characterSpeed = 0;
 	}
+    public void TriggerEndGame()
+    {
+        gameOverDelegate();
+    }
 
 	void InstantiatePrefab()
 	{

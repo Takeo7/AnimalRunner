@@ -6,6 +6,7 @@ public class FinisherController : MonoBehaviour {
 
 	public Transform player;
     public TestMovement playerScript;
+    public EnvironmentController enviroment;
 	EnvironmentController EC;
 
 	private void Start()
@@ -26,5 +27,6 @@ public class FinisherController : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         playerScript.dead = true;
+        enviroment.TriggerEndGame();
     }
 }
