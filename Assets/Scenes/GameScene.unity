@@ -588,6 +588,7 @@ GameObject:
   - component: {fileID: 1185793734}
   - component: {fileID: 1185793733}
   - component: {fileID: 1185793735}
+  - component: {fileID: 1185793736}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -702,7 +703,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1185793734}
   jumpForce: 12
+  jumps: 2
+  ps: {fileID: 0}
   dead: 0
+--- !u!114 &1185793736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1185793730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed36610f2857ae1428347b4f6becd81d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 3
 --- !u!1 &1608676538
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,7 +933,7 @@ MonoBehaviour:
   target: {fileID: 1185793732}
   dampTime: 0.15
   xOffset: 0.229
-  yOffset: 0.22
+  yOffset: 1
   cam: {fileID: 1631582258}
   follow: 1
 --- !u!1 &1812961813

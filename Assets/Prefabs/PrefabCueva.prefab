@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 61583650058082596}
   m_Layer: 0
   m_Name: Floor01
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,6 +164,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floorRenderer: {fileID: 212528763549472774}
   collider: {fileID: 61635047756224348}
+  SpawnPoints: []
+  enemy: {fileID: 0}
+  isSpawneable: 0
 --- !u!212 &212528763549472774
 SpriteRenderer:
   m_ObjectHideFlags: 1

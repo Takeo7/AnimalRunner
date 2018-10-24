@@ -7,6 +7,9 @@ public class TestMovement : MonoBehaviour {
 	EnvironmentController EC;
     public Rigidbody2D rb;
     public float jumpForce = 10;
+    public byte jumps = 2;
+    byte jumpCount = 0;
+    public PlayerStats ps;
 
     public bool dead = false;
 
@@ -20,12 +23,18 @@ public class TestMovement : MonoBehaviour {
 		if (EC.inGame)
 		{
 			transform.position += Vector3.right * EC.characterSpeed * Time.deltaTime;
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && jumpCount<jumps)
             {
+                rb.velocity = Vector3.zero;
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                jumpCount++;
             }
 		}
 	}
+    void ResetJumps()
+    {
+        jumpCount = 0;
+    }
 	private void OnTriggerEnter2D(Collider2D col)
 	{
 
@@ -33,6 +42,13 @@ public class TestMovement : MonoBehaviour {
 		{
 			Debug.Log("TriggerEnter");
 			EC.ChangeEnviron();
-		}
+        }
 	}
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "Floor")
+        {
+            ResetJumps();
+        }
+    }
 }
