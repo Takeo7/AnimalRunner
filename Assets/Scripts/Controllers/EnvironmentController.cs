@@ -26,53 +26,53 @@ public class EnvironmentController : MonoBehaviour {
 	public bool caveBool = true;
 	GameObject prefabTemp;
 
-	byte floatingPrefabsLength;
-	byte floorPrefabsLength;
-
 	public bool inGame;
 	public bool canDestroy;
 	public float characterSpeed;
+	public float floorPercentage = 0.7f;
+	public float floatingPercentage = 0.3f;
 
     public delegate void GameOverDelegate();
     public GameOverDelegate gameOverDelegate;
 
 
 	public UIController UIC;
+	EnvironmentSet[] sets;
 
 	private void Start()
 	{
-		SetEnvironment();
+		GetEnvironments();//Take Scriptables EnvironmentSet from Resources on runtime
+		SetEnvironment();//Set the first environment
         gameOverDelegate += EndGame;
 	}
 	private void Update()
 	{
-		if (caveMeters.Contains<int>(Mathf.RoundToInt(UIC.target.transform.position.x)))
+		if (caveMeters.Contains<int>(Mathf.RoundToInt(UIC.target.transform.position.x)))//If the character reached meters for a cave
 		{
-			caveBool = true;
+			caveBool = true;//caveBool = true to let the generator know that the next prefab will be the cave
 		}
+	}
+	void GetEnvironments()
+	{
+		sets = Resources.LoadAll<EnvironmentSet>("Sets");//Take scriptables EnvironmentSet from Resources on runtime
 	}
 	void SetEnvironment()
 	{
-		EnvironmentSet[] temp = Resources.LoadAll<EnvironmentSet>("Sets");
-		set = temp[Random.Range(0, temp.Length)];
-		floatingPrefabsLength = (byte)set.floatingPrefabs.Length;
-		floorPrefabsLength = (byte)set.floorPrefabs.Length;
-		GameObject spawn = Instantiate(set.specialPrefabs[0]);
-		prefabsInstantiated.Add(spawn.GetComponent<EnvironmentPrefabController>());
+		set = sets[Random.Range(0, sets.Length)];//Set the first environment
+		GameObject spawn = Instantiate(set.specialPrefabs[0]);//Instantiate the Spawn
+		prefabsInstantiated.Add(spawn.GetComponent<EnvironmentPrefabController>());//Add the spawn to the list of instantiated prefabs
 	}
     void SetNewEnvironment()
     {
-        EnvironmentSet[] temp = Resources.LoadAll<EnvironmentSet>("Sets");
-        set = temp[Random.Range(0, temp.Length)];
-        floatingPrefabsLength = (byte)set.floatingPrefabs.Length;
-        floorPrefabsLength = (byte)set.floorPrefabs.Length;
+		EnvironmentSet temp = sets[Random.Range(0, sets.Length)];//Set the first environment
+		//Debug.Log(set.name + "  " + temp.name);
+		while (set == temp)//Redo the random until we get an environment different to the actual
+		{
+			temp = sets[Random.Range(0, sets.Length)];
+			//Debug.Log("IN "+set.name + "  " + temp.name);
+		}
+		set = temp;//Set the environment
     }
-    public void SetEnvironment(EnvironmentSet newSet)
-	{
-		set = newSet;
-		floatingPrefabsLength = (byte)set.floatingPrefabs.Length;
-		floorPrefabsLength = (byte)set.floorPrefabs.Length;
-	}
 	public void StartGame()
 	{
 		inGame = true;
@@ -98,24 +98,23 @@ public class EnvironmentController : MonoBehaviour {
 
 	void InstantiatePrefab()
 	{
-		if (caveBool)
+		if (caveBool)//if the next prefab must be a cave
 		{
 			caveBool = false;
-			prefabTemp = Instantiate(cavePrefab);
-            SetNewEnvironment();
+			prefabTemp = Instantiate(cavePrefab);//instantiate the prefab
+            SetNewEnvironment();//Change environment
 		}
-		else
+		else//if the next prefab wont be a cave
 		{
-			int rand = Random.Range(0, 3);
-			if (rand == 1)
-			{
-				Debug.Log("InstantiatedFloating");
-				prefabTemp = Instantiate(set.floatingPrefabs[Random.Range(0, set.floatingPrefabs.Length)]);
-			}
-			else
+			if (Random.value <= floorPercentage)
 			{
 				Debug.Log("InstantiatedFloor");
 				prefabTemp = Instantiate(set.floorPrefabs[Random.Range(0, set.floorPrefabs.Length)]);
+			}
+			else
+			{
+				Debug.Log("InstantiatedFloating");
+				prefabTemp = Instantiate(set.floatingPrefabs[Random.Range(0, set.floatingPrefabs.Length)]);
 			}
 		}
 		EnvironmentPrefabController epcTemp = prefabTemp.GetComponent<EnvironmentPrefabController>();

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b68b5eacf341b44a0a92a6f67457c5, type: 3}
+  m_Name: Bosque2
+  m_EditorClassIdentifier: 
+  floorPrefabs:
+  - {fileID: 1665789271856866, guid: e2763cb499b88734e8fa55686200622a, type: 2}
+  - {fileID: 1161002178663650, guid: 86e264decccee3d43974d2a337cd842d, type: 2}
+  floatingPrefabs:
+  - {fileID: 1238088856296656, guid: d4d67eee872e0824cbaa5b360757beb0, type: 2}
+  - {fileID: 1763461469336902, guid: 4f42e8104cec84444bc21be3453c11c1, type: 2}
+  specialPrefabs:
+  - {fileID: 1271993625645456, guid: 2d1518e20e77b78458008195f6f89ea4, type: 2}

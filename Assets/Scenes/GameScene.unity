@@ -403,6 +403,8 @@ MonoBehaviour:
   inGame: 0
   canDestroy: 0
   characterSpeed: 10
+  floorPercentage: 0.7
+  floatingPercentage: 0.3
   UIC: {fileID: 472959686}
 --- !u!4 &472959685
 Transform:

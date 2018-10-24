@@ -47,7 +47,8 @@ public class EnemyMovement : MonoBehaviour {
         if (collision.collider.tag == "Enemy")
         {
             ChangeDirection();
-        }else if(collision.collider.tag == "Player")
+        }
+		else if(collision.collider.tag == "Player")
         {
             collision.gameObject.GetComponent<PlayerStats>().UpdateHealth(damage);
             Destroy(gameObject);
