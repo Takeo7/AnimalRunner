@@ -23,7 +23,7 @@ public class TestMovement : MonoBehaviour {
 		if (EC.inGame)
 		{
 			transform.position += Vector3.right * EC.characterSpeed * Time.deltaTime;
-            if (Input.GetKeyDown(KeyCode.Space) && jumpCount<jumps)
+            if (Input.GetMouseButtonDown(0) && jumpCount<jumps)
             {
                 rb.velocity = Vector3.zero;
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
