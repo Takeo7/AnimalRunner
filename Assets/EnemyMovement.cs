@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour {
 
     public float velocity = 1;
-    public byte health = 100;
+    public int health = 100;
     public int direction;
     public int damage;
 
@@ -53,6 +53,15 @@ public class EnemyMovement : MonoBehaviour {
             collision.gameObject.GetComponent<PlayerStats>().UpdateHealth(damage);
             Destroy(gameObject);
         }
+    }
+    public void TakeDamage(int i)
+    {
+        health -= i;
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+
     }
 
 }

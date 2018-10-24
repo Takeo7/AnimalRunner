@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 3
-  health: 100
+  health: 1
   direction: 0
   damage: -1
 --- !u!212 &212632755882459758
