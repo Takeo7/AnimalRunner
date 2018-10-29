@@ -503,7 +503,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 183c62a1a693f5342964f8253a0e875a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ta: {fileID: 1185793737}
 --- !u!58 &339502748
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1073,7 +1072,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 601, y: -339}
+  m_AnchoredPosition: {x: -708, y: -209}
   m_SizeDelta: {x: 425.59998, y: 166.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1608676540

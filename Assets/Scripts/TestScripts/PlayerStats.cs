@@ -18,6 +18,15 @@ public class PlayerStats : MonoBehaviour {
             gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
         }
     }
+    public void takeDammage(int i)
+    {
+        Health -= i;
+        if (Health <= 0)
+        {
+            EnvironmentController.instance.gameOverDelegate();
+            gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
+        }
+    }
 
     public enum AttackType
     {

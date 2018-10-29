@@ -316,6 +316,7 @@ MonoBehaviour:
   - {fileID: 4839911286084990}
   - {fileID: 4225077963121154}
   enemy: {fileID: 1375003835107346, guid: 45711b8b0c65c78479494be2565dd11e, type: 2}
+  trap: {fileID: 1725288858820888, guid: 7652fd924e3b57749a21538322818c76, type: 2}
   isSpawneable: 1
 --- !u!212 &212528763549472774
 SpriteRenderer:
