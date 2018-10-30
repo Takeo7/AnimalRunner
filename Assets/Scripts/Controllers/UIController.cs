@@ -8,9 +8,11 @@ public class UIController : MonoBehaviour {
 	public Transform target;
 
 	public Text meters;
+	public int currentMeters;
 
 	private void Update()
 	{
+		currentMeters = Mathf.RoundToInt(target.transform.position.x);
 		meters.text = Mathf.RoundToInt(target.transform.position.x) + " m";
 	}
 

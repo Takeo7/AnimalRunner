@@ -12,6 +12,7 @@ public class TestMovement : MonoBehaviour {
     public PlayerStats ps;
 
     public bool dead = false;
+	public bool isGrounded = true;
 
 
     private void Start()

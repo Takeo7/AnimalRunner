@@ -658,6 +658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1185793732}
   meters: {fileID: 1932914914}
+  currentMeters: 0
 --- !u!114 &472959687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -673,6 +674,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  metersRunGrounded: 0
+  UIC: {fileID: 472959686}
+  CC: {fileID: 1185793735}
+  EC: {fileID: 472959684}
 --- !u!1 &561673130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,8 +1014,9 @@ MonoBehaviour:
   rb: {fileID: 1185793734}
   jumpForce: 15
   jumps: 2
-  ps: {fileID: 0}
+  ps: {fileID: 1185793736}
   dead: 0
+  isGrounded: 1
 --- !u!114 &1185793736
 MonoBehaviour:
   m_ObjectHideFlags: 0
