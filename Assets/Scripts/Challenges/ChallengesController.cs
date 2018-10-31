@@ -13,6 +13,7 @@ public class ChallengesController : MonoBehaviour {
 	float metersRunGrounded = 0;
 	float metersRunTotal = 0;
 
+	Queue<IEnumerator> queue = new Queue<IEnumerator>();
 
 	public UIController UIC;
 	public TestMovement CC;
@@ -70,7 +71,7 @@ public class ChallengesController : MonoBehaviour {
 		{
 			if(currentChallenges[0].metersToRun == UIC.currentMeters)
 			{
-				//ChallengeCompleted(0);
+				ChallengeCompleted(0);
 			}
 		}
 		else if (currentChallenges[0].mustBeGrounded && !currentChallenges[0].mustBeOnce)
@@ -80,7 +81,7 @@ public class ChallengesController : MonoBehaviour {
 				metersRunGrounded += EC.characterSpeed * Time.deltaTime;
 				if((metersRunGrounded + currentChallengesProgress[0]) >= currentChallenges[0].metersToRun)
 				{
-					//ChallengeCompleted(0);
+					ChallengeCompleted(0);
 				}
 			}
 		}
@@ -91,7 +92,7 @@ public class ChallengesController : MonoBehaviour {
 				metersRunGrounded += EC.characterSpeed * Time.deltaTime;
 				if (metersRunGrounded >= currentChallenges[0].metersToRun)
 				{
-					//ChallengeCompleted(0);
+					ChallengeCompleted(0);
 				}
 			}
 		}
@@ -99,8 +100,29 @@ public class ChallengesController : MonoBehaviour {
 		{
 			if (currentChallenges[0].metersToRun <= (UIC.currentMeters+currentChallengesProgress[0]))
 			{
-				//ChallengeCompleted(0);
+				ChallengeCompleted(0);
 			}
+		}
+	}
+	void ChallengeCompleted(byte pos)
+	{
+		//give XP
+		currentChallenges[0] = null;
+		queue.Enqueue(showThis());
+		ShowChallengeCompletedUI();
+	}
+	void ShowChallengeCompletedUI()
+	{
+		StartCoroutine(queue.Dequeue());
+	}
+	IEnumerator showThis()
+	{
+		yield return new WaitForSeconds(1f);
+		Debug.Log("showThis");
+		yield return new WaitForSeconds(1f);
+		if(queue.Count > 0)
+		{
+			ShowChallengeCompletedUI();
 		}
 	}
 
