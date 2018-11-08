@@ -12,8 +12,7 @@ public class ChallengesController : MonoBehaviour {
 
 	float metersRunGrounded = 0;
 	float metersRunTotal = 0;
-
-	Queue<IEnumerator> queue = new Queue<IEnumerator>();
+	bool showingCompleted = false;
 
 	public UIController UIC;
 	public TestMovement CC;
@@ -107,23 +106,28 @@ public class ChallengesController : MonoBehaviour {
 	void ChallengeCompleted(byte pos)
 	{
 		//give XP
-		currentChallenges[0] = null;
-		queue.Enqueue(showThis());
-		ShowChallengeCompletedUI();
+		while (showingCompleted == true)
+		{
+
+		}
+		currentChallenges[pos] = null;
+		StartCoroutine(ChallengeCompletedCO(pos));
 	}
-	void ShowChallengeCompletedUI()
+	IEnumerator ChallengeCompletedCO(byte pos)
 	{
-		StartCoroutine(queue.Dequeue());
-	}
-	IEnumerator showThis()
-	{
+		showingCompleted = true;
+
 		yield return new WaitForSeconds(1f);
 		Debug.Log("showThis");
+		ShowChallengeCompletedUI(pos);
 		yield return new WaitForSeconds(1f);
-		if(queue.Count > 0)
-		{
-			ShowChallengeCompletedUI();
-		}
+		showingCompleted = false;
+
+	}
+	void ShowChallengeCompletedUI(byte pos)
+	{
+		//Fill Challenge Completed OBJ
+		//Activate ChallengeCompleted OBJ
 	}
 
 }

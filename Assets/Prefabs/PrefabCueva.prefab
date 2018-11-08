@@ -67,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1422885385223712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.22, z: 0}
+  m_LocalPosition: {x: 0, y: -4.22, z: -0.76}
   m_LocalScale: {x: 88.8, y: 7.9999995, z: 1}
   m_Children: []
   m_Father: {fileID: 4451633943110678}
@@ -166,6 +166,7 @@ MonoBehaviour:
   collider: {fileID: 61635047756224348}
   SpawnPoints: []
   enemy: {fileID: 0}
+  trap: {fileID: 0}
   isSpawneable: 0
 --- !u!212 &212528763549472774
 SpriteRenderer:

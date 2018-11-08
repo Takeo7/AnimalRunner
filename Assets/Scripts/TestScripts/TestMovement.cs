@@ -10,6 +10,7 @@ public class TestMovement : MonoBehaviour {
     public byte jumps = 2;
     byte jumpCount = 0;
     public PlayerStats ps;
+	public Animator animator;
 
     public bool dead = false;
 	public bool isGrounded = true;
@@ -26,6 +27,15 @@ public class TestMovement : MonoBehaviour {
 			transform.position += Vector3.right * EC.characterSpeed * Time.deltaTime;
             if (Input.GetMouseButtonDown(0) && jumpCount<jumps)
             {
+				animator.SetBool("isGrounded", false);
+				if(jumpCount == 0)
+				{
+					animator.SetTrigger("Jump");
+				}
+				else if(jumpCount == 1)
+				{
+					animator.SetTrigger("SecondJump");
+				}
                 rb.velocity = Vector3.zero;
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 jumpCount++;
@@ -50,6 +60,7 @@ public class TestMovement : MonoBehaviour {
         if (collision.collider.tag == "Floor")
         {
             ResetJumps();
+			animator.SetBool("isGrounded", true);
         }
     }
 }
