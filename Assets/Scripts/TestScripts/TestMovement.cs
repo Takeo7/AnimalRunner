@@ -51,7 +51,6 @@ public class TestMovement : MonoBehaviour {
 
 		if (col.CompareTag("Destroyer"))
 		{
-			Debug.Log("TriggerEnter");
 			EC.ChangeEnviron();
         }
 	}
