@@ -45,7 +45,7 @@ public class ParallaxController : MonoBehaviour {
 	}
 	void ScrollRight()
 	{
-		Debug.Log("scrolledRight");
+		//Debug.Log("scrolledRight");
 		int lastLeft = leftIndex;
 		layers[leftIndex].position = Vector3.right * (layers[rightIndex].position.x + backgroundSize) + new Vector3(0, yOffset,zOffset);
 		rightIndex = leftIndex;

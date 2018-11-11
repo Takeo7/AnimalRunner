@@ -9,13 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 352fb850bbd5f5d43b46d752d4644cab, type: 3}
-  m_Name: New Challenges Scriptable
+  m_Name: 300meterGroundTotal
   m_EditorClassIdentifier: 
-  index: 0
-  name: Run 300 meters in a row
+  index: 2
+  name: Run 300 meters while in the ground
   type: 0
-  mustBeOnce: 1
-  mustBeGrounded: 0
+  mustBeOnce: 0
+  mustBeGrounded: 1
   metersToRun: 300
   mustBeRanged: 0
   unitsToKill: 0

@@ -9,13 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 352fb850bbd5f5d43b46d752d4644cab, type: 3}
-  m_Name: New Challenges Scriptable 2
+  m_Name: Kill5Total
   m_EditorClassIdentifier: 
-  index: 2
-  name: Run 300 meters while in the ground
-  type: 0
+  index: 3
+  name: Kill 5 enemies
+  type: 1
   mustBeOnce: 0
-  mustBeGrounded: 1
-  metersToRun: 300
+  mustBeGrounded: 0
+  metersToRun: 0
   mustBeRanged: 0
-  unitsToKill: 0
+  unitsToKill: 5

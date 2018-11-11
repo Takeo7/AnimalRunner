@@ -142,6 +142,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundSize: 28.33
+  parallaxSpeed: 0
+  yOffset: 0
+  zOffset: 0
+  isParallax: 0
 --- !u!212 &212530406104255882
 SpriteRenderer:
   m_ObjectHideFlags: 1
