@@ -466,7 +466,9 @@ MonoBehaviour:
   collider: {fileID: 61729523292959520}
   SpawnPoints: []
   enemy: {fileID: 0}
-  trap: {fileID: 1725288858820888, guid: 7652fd924e3b57749a21538322818c76, type: 2}
+  traps:
+  - {fileID: 1787306735302194, guid: 5947f0b913abb914393443c63ba3707e, type: 2}
+  - {fileID: 1725288858820888, guid: 7652fd924e3b57749a21538322818c76, type: 2}
   isSpawneable: 0
 --- !u!212 &212011000525459338
 SpriteRenderer:

@@ -9,7 +9,7 @@ public class EnvironmentPrefabController : MonoBehaviour {
 	public BoxCollider2D collider;
     public Transform[] SpawnPoints;
     public GameObject enemy;
-    public GameObject trap;
+    public GameObject[] traps;
     public bool isSpawneable;
 
 	private void Start()
@@ -24,8 +24,21 @@ public class EnvironmentPrefabController : MonoBehaviour {
         }
         if (isSpawneable)
         {
-            GameObject g = Instantiate(enemy, SpawnPoints[rand].position,Quaternion.identity);
-            GameObject j = Instantiate(trap, SpawnPoints[rand2].position, Quaternion.identity);
+            int randTrap = Random.Range(0, traps.Length-1);
+
+            float isEnemy = Random.Range(0, 4);
+            float isTrap = Random.Range(0, 4);
+            if (isEnemy <= 1)
+            {
+                GameObject g = Instantiate(enemy, SpawnPoints[rand].position, Quaternion.identity);
+            }
+            if (isTrap <= 1)
+            {
+                GameObject j = Instantiate(traps[randTrap], SpawnPoints[rand2].position, Quaternion.identity);
+            }
+
+
+            
         }
 
 	}
