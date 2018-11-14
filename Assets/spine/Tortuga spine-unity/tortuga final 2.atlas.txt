@@ -1,0 +1,97 @@
+
+tortuga final 2.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+boca alegre
+  rotate: true
+  xy: 474, 2
+  size: 62, 54
+  orig: 62, 54
+  offset: 0, 0
+  index: -1
+boca ataque
+  rotate: false
+  xy: 762, 82
+  size: 63, 44
+  orig: 63, 44
+  offset: 0, 0
+  index: -1
+boca normal
+  rotate: false
+  xy: 474, 66
+  size: 64, 60
+  orig: 64, 60
+  offset: 0, 0
+  index: -1
+brazo DER
+  rotate: false
+  xy: 412, 47
+  size: 60, 79
+  orig: 60, 79
+  offset: 0, 0
+  index: -1
+brazo IZQ
+  rotate: true
+  xy: 540, 80
+  size: 46, 73
+  orig: 46, 73
+  offset: 0, 0
+  index: -1
+cabeza
+  rotate: true
+  xy: 2, 11
+  size: 115, 168
+  orig: 115, 168
+  offset: 0, 0
+  index: -1
+caparazon
+  rotate: false
+  xy: 293, 24
+  size: 117, 102
+  orig: 117, 102
+  offset: 0, 0
+  index: -1
+ojo abierto
+  rotate: false
+  xy: 827, 68
+  size: 61, 58
+  orig: 61, 58
+  offset: 0, 0
+  index: -1
+ojo cerrado
+  rotate: false
+  xy: 952, 70
+  size: 56, 56
+  orig: 56, 56
+  offset: 0, 0
+  index: -1
+ojo chungo
+  rotate: true
+  xy: 890, 68
+  size: 58, 60
+  orig: 58, 60
+  offset: 0, 0
+  index: -1
+pierna DER
+  rotate: true
+  xy: 693, 85
+  size: 41, 67
+  orig: 41, 67
+  offset: 0, 0
+  index: -1
+pierna IZQ
+  rotate: true
+  xy: 615, 90
+  size: 36, 76
+  orig: 36, 76
+  offset: 0, 0
+  index: -1
+torso
+  rotate: true
+  xy: 172, 13
+  size: 113, 119
+  orig: 113, 119
+  offset: 0, 0
+  index: -1
