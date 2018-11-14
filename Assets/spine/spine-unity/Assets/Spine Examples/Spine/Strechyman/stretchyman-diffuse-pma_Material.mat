@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: stretchyman-diffuse-pma_Material
   m_Shader: {fileID: 4800000, guid: 2ce511398fb980f41b7d316c51534590, type: 3}
@@ -12,6 +12,7 @@ Material:
     _NORMALMAP
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3000
   stringTagMap:
     AlphaDepth: true

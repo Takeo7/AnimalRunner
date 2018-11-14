@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalRunner", "Assembly-CSharp.csproj", "{07A77204-6B73-651B-2892-C86AD9409B29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalRunner", "Assembly-CSharp-Editor.csproj", "{0602E9FC-9FD4-046A-5777-0ADE4D79890C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{07A77204-6B73-651B-2892-C86AD9409B29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07A77204-6B73-651B-2892-C86AD9409B29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07A77204-6B73-651B-2892-C86AD9409B29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0602E9FC-9FD4-046A-5777-0ADE4D79890C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0602E9FC-9FD4-046A-5777-0ADE4D79890C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0602E9FC-9FD4-046A-5777-0ADE4D79890C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0602E9FC-9FD4-046A-5777-0ADE4D79890C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
