@@ -505,6 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 856436780}
+  isAnimatingSpine: 1
 --- !u!1 &436882732
 GameObject:
   m_ObjectHideFlags: 0

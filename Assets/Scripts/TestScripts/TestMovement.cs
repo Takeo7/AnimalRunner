@@ -32,7 +32,7 @@ public class TestMovement : MonoBehaviour {
 				if(jumpCount == 0)
 				{
 					animator.SetTrigger("Jump");
-					AC.ChangeAnim("jump",false);
+					AC.ChangeAnim(0,"jump",false);
 				}
 				else if(jumpCount == 1)
 				{
@@ -63,7 +63,7 @@ public class TestMovement : MonoBehaviour {
         {
             ResetJumps();
 			animator.SetBool("isGrounded", true);
-			AC.ChangeAnim("run",true);
+			AC.ChangeAnim(0,"run",true);
 		}
     }
 }
