@@ -11,6 +11,7 @@ public class TestMovement : MonoBehaviour {
     byte jumpCount = 0;
     public PlayerStats ps;
 	public Animator animator;
+	public AnimatorController AC;
 
     public bool dead = false;
 	public bool isGrounded = true;
@@ -31,10 +32,12 @@ public class TestMovement : MonoBehaviour {
 				if(jumpCount == 0)
 				{
 					animator.SetTrigger("Jump");
+					AC.ChangeAnim("jump",false);
 				}
 				else if(jumpCount == 1)
 				{
 					animator.SetTrigger("SecondJump");
+					//AC.ChangeAnim("jump");
 				}
                 rb.velocity = Vector3.zero;
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
@@ -60,6 +63,7 @@ public class TestMovement : MonoBehaviour {
         {
             ResetJumps();
 			animator.SetBool("isGrounded", true);
-        }
+			AC.ChangeAnim("run",true);
+		}
     }
 }

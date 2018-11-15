@@ -98,40 +98,43 @@ public class ChallengesController : MonoBehaviour {
 	}
 	void CheckMeters()
 	{
-		if (currentChallenges[0].mustBeOnce && !currentChallenges[0].mustBeGrounded)
+		if (currentChallenges[0] != null)
 		{
-			if(currentChallenges[0].metersToRun == UIC.currentMeters)
+			if (currentChallenges[0].mustBeOnce && !currentChallenges[0].mustBeGrounded)
 			{
-				ChallengeCompleted(0);
-			}
-		}
-		else if (currentChallenges[0].mustBeGrounded && !currentChallenges[0].mustBeOnce)
-		{
-			if (CC.isGrounded)
-			{
-				metersRunGrounded += EC.characterSpeed * Time.deltaTime;
-				if((metersRunGrounded + currentChallengesProgress[0]) >= currentChallenges[0].metersToRun)
+				if (currentChallenges[0].metersToRun == UIC.currentMeters)
 				{
 					ChallengeCompleted(0);
 				}
 			}
-		}
-		else if(currentChallenges[0].mustBeGrounded && currentChallenges[0].mustBeOnce)
-		{
-			if (CC.isGrounded)
+			else if (currentChallenges[0].mustBeGrounded && !currentChallenges[0].mustBeOnce)
 			{
-				metersRunGrounded += EC.characterSpeed * Time.deltaTime;
-				if (metersRunGrounded >= currentChallenges[0].metersToRun)
+				if (CC.isGrounded)
+				{
+					metersRunGrounded += EC.characterSpeed * Time.deltaTime;
+					if ((metersRunGrounded + currentChallengesProgress[0]) >= currentChallenges[0].metersToRun)
+					{
+						ChallengeCompleted(0);
+					}
+				}
+			}
+			else if (currentChallenges[0].mustBeGrounded && currentChallenges[0].mustBeOnce)
+			{
+				if (CC.isGrounded)
+				{
+					metersRunGrounded += EC.characterSpeed * Time.deltaTime;
+					if (metersRunGrounded >= currentChallenges[0].metersToRun)
+					{
+						ChallengeCompleted(0);
+					}
+				}
+			}
+			else if (!currentChallenges[0].mustBeGrounded && !currentChallenges[0].mustBeOnce)
+			{
+				if (currentChallenges[0].metersToRun <= (UIC.currentMeters + currentChallengesProgress[0]))
 				{
 					ChallengeCompleted(0);
 				}
-			}
-		}
-		else if(!currentChallenges[0].mustBeGrounded && !currentChallenges[0].mustBeOnce)
-		{
-			if (currentChallenges[0].metersToRun <= (UIC.currentMeters+currentChallengesProgress[0]))
-			{
-				ChallengeCompleted(0);
 			}
 		}
 	}

@@ -488,6 +488,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 312277933}
+--- !u!1 &318462073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1355157842876838, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1553009289}
+--- !u!114 &318462074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318462073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 294a16452852aa546a95447b3b0ef16c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 856436780}
 --- !u!1 &436882732
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,7 +1005,6 @@ GameObject:
   - component: {fileID: 856436782}
   - component: {fileID: 856436781}
   - component: {fileID: 856436780}
-  - component: {fileID: 856436784}
   m_Layer: 0
   m_Name: New SkeletonAnimation
   m_TagString: Untagged
@@ -1023,8 +1039,8 @@ MonoBehaviour:
   calculateTangents: 0
   logErrors: 0
   disableRenderingOnOverride: 1
-  _animationName: 
-  loop: 0
+  _animationName: idle
+  loop: 1
   timeScale: 1
 --- !u!23 &856436781
 MeshRenderer:
@@ -1074,31 +1090,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 856436779}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.01, y: -2.77, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.5900002, y: -5.4700003, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1631582259}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &856436784
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 856436779}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c8f4f60459b1c034f857e42675483a81, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1029232126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1426,6 +1424,11 @@ Prefab:
       propertyPath: m_GravityScale
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114826031726734700, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
+        type: 2}
+      propertyPath: AC
+      value: 
+      objectReference: {fileID: 318462074}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
   m_IsPrefabAsset: 0
@@ -1628,6 +1631,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1029232127}
+  - {fileID: 856436783}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
