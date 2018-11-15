@@ -837,6 +837,7 @@ MonoBehaviour:
   - {fileID: 4918577980074118}
   enemys:
   - {fileID: 1375003835107346, guid: 45711b8b0c65c78479494be2565dd11e, type: 2}
+  - {fileID: 1375003835107346, guid: d536587667094934babbc9ba0f9b8bb2, type: 2}
   traps:
   - {fileID: 1787306735302194, guid: 5947f0b913abb914393443c63ba3707e, type: 2}
   - {fileID: 1725288858820888, guid: 7652fd924e3b57749a21538322818c76, type: 2}
