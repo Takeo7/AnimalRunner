@@ -1421,6 +1421,11 @@ Prefab:
       propertyPath: healthScript
       value: 
       objectReference: {fileID: 805089372}
+    - target: {fileID: 50484122275437958, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
   m_IsPrefabAsset: 0

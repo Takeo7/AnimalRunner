@@ -26,7 +26,11 @@ public class FinisherController : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        playerScript.dead = true;
-        enviroment.TriggerEndGame();
+        if (collision.CompareTag("Player"))
+        {
+            playerScript.dead = true;
+            enviroment.TriggerEndGame();
+        }
+
     }
 }

@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class FloatingFloor : MonoBehaviour {
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public Collider2D upChecker;
+    public Collider2D floorCol;
+
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("FloorCheck"))
+        if (collision.CompareTag("Player"))
         {
-            ///GetComponent<Collider2D>().isTrigger = false;
+            Debug.Log("MakeNotTrigger");
+            floorCol.isTrigger = false;
         }
     }
 }
