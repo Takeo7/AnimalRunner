@@ -37,7 +37,7 @@ public class TestMovement : MonoBehaviour {
 				else if(jumpCount == 1)
 				{
 					animator.SetTrigger("SecondJump");
-					//AC.JumpTwoAnim();
+					AC.JumpTwoAnim();
 				}
 				rb.velocity = Vector3.zero;
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
@@ -63,8 +63,10 @@ public class TestMovement : MonoBehaviour {
 	}
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.tag == "Floor")
+		Debug.Log(collision.collider.name);
+        if (collision.collider.CompareTag("Floor"))
         {
+			//Debug.Log("FloorEntered");
             ResetJumps();
 			animator.SetBool("isGrounded", true);
 			AC.RunAnim();

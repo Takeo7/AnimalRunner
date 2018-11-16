@@ -108,12 +108,12 @@ public class EnvironmentController : MonoBehaviour {
 		{
 			if (Random.value <= floorPercentage)
 			{
-				Debug.Log("InstantiatedFloor");
+				//Debug.Log("InstantiatedFloor");
 				prefabTemp = Instantiate(set.floorPrefabs[Random.Range(0, set.floorPrefabs.Length)]);
 			}
 			else
 			{
-				Debug.Log("InstantiatedFloating");
+				//Debug.Log("InstantiatedFloating");
 				prefabTemp = Instantiate(set.floatingPrefabs[Random.Range(0, set.floatingPrefabs.Length)]);
 			}
 		}

@@ -14,6 +14,7 @@ public class AnimatorController : MonoBehaviour {
 	string run = "run";
 	string jump = "jump";
 	string attack = "attack";
+	string secondJump = "jump2";
 
 	private void Start()
 	{
@@ -22,6 +23,7 @@ public class AnimatorController : MonoBehaviour {
 	}
 	public void RunAnim()
 	{
+		anim.timeScale = 1;
 		ChangeAnim(movementTrack, run, true);
 	}
 	public void JumpOneAnim()
@@ -30,7 +32,8 @@ public class AnimatorController : MonoBehaviour {
 	}
 	public void JumpTwoAnim()
 	{
-		ChangeAnim(0, jump, false);
+		anim.timeScale = 1.5f;
+		ChangeAnim(0, secondJump, false);
 	}
 	public void ChangeAnim(byte track,string name,bool isLoop)
 	{

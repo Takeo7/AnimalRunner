@@ -11,7 +11,7 @@ public class FloatingFloor : MonoBehaviour {
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("MakeNotTrigger");
+            //Debug.Log("MakeNotTrigger");
             floorCol.isTrigger = false;
         }
     }

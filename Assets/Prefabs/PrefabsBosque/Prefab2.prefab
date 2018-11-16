@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 114768903389589324}
   - component: {fileID: 61881067439638420}
   m_Layer: 0
-  m_Name: Floor03
+  m_Name: Floor03Floating
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -814,7 +814,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.37825108, y: 7.8755302}
+  m_Size: {x: 0.29, y: 8.63}
   m_EdgeRadius: 0
 --- !u!114 &114539065070022100
 MonoBehaviour:

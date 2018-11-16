@@ -19,11 +19,14 @@ MonoBehaviour:
   - 
   - attack
   - attack
+  - jump
   toAnimation:
   - attack
   - run
   - idle
+  - jump2
   duration:
+  - 0.5
   - 0.5
   - 0.5
   - 0.5

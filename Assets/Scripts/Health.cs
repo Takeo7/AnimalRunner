@@ -43,7 +43,7 @@ public class Health : MonoBehaviour {
             for (int i = 0; i < h; i++)
             {
                 hearts[i].sprite = FullHeart;
-                Debug.Log("FullHeart");
+                //Debug.Log("FullHeart");
             }
         }
     }
