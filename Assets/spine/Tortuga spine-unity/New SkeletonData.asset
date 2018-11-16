@@ -12,29 +12,20 @@ MonoBehaviour:
   m_Name: New SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: a7bf512b44d00a14190021e2d018a35f, type: 2}
+  - {fileID: 11400000, guid: 57fa2f80bb64a2442b545566df61509d, type: 2}
   scale: 0.01
-  skeletonJSON: {fileID: 4900000, guid: f4dff1527b2eede4eb1685b6f19d8019, type: 3}
+  skeletonJSON: {fileID: 4900000, guid: 7dc76590900b9d2408992b6ae59476cf, type: 3}
   fromAnimation:
+  - 
   - attack
-  - death
-  - hurt
-  - idle
-  - jump
-  - run
+  - attack
   toAnimation:
   - attack
-  - death
-  - hurt
-  - idle
-  - jump
   - run
+  - idle
   duration:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 0.5
+  - 0.5
+  - 0.5
   defaultMix: 0.15
   controller: {fileID: 9100000, guid: c8f4f60459b1c034f857e42675483a81, type: 2}

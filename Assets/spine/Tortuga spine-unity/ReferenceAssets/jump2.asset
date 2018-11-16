@@ -8,9 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
-  m_Name: New Atlas
+  m_Script: {fileID: 11500000, guid: 6e3e95a05e4c9774397eeeb7bdee8ccb, type: 3}
+  m_Name: jump2
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: 19525a0f00b43e041943a6c4a6d434b6, type: 3}
-  materials:
-  - {fileID: 2100000, guid: ae1b16fb3e4f74049bd993e28efe6a58, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 89ceb50d2f7818040ab82c256ff34b6a, type: 2}
+  animationName: jump2

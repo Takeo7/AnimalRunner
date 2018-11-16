@@ -505,7 +505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 856436780}
-  isAnimatingSpine: 1
+  isAnimatingSpine: 0
 --- !u!1 &436882732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,7 +1058,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ae1b16fb3e4f74049bd993e28efe6a58, type: 2}
+  - {fileID: 2100000, guid: 5d1458cc4cda3bb4da9fda751eb66a34, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1438,6 +1438,11 @@ Prefab:
     - target: {fileID: 70307726821127648, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
         type: 2}
       propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50484122275437958, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
+        type: 2}
+      propertyPath: m_Simulated
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

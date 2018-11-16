@@ -32,17 +32,21 @@ public class TestMovement : MonoBehaviour {
 				if(jumpCount == 0)
 				{
 					animator.SetTrigger("Jump");
-					AC.ChangeAnim(0,"jump",false);
+					AC.JumpOneAnim();
 				}
 				else if(jumpCount == 1)
 				{
 					animator.SetTrigger("SecondJump");
-					//AC.ChangeAnim("jump");
+					//AC.JumpTwoAnim();
 				}
-                rb.velocity = Vector3.zero;
+				rb.velocity = Vector3.zero;
                 rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
                 jumpCount++;
             }
+		}
+		if (Input.GetMouseButtonDown(1))
+		{
+			AC.AttackAnim();
 		}
 	}
     void ResetJumps()
@@ -63,7 +67,7 @@ public class TestMovement : MonoBehaviour {
         {
             ResetJumps();
 			animator.SetBool("isGrounded", true);
-			AC.ChangeAnim(0,"run",true);
+			AC.RunAnim();
 		}
     }
 }
