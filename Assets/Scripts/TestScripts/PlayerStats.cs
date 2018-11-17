@@ -7,6 +7,7 @@ public class PlayerStats : MonoBehaviour {
     public int Health = 3;
     public Health healthScript;
     public int attackDamage = 1;
+    public AnimatorController ac;
 
     public AttackType attackType;
 
@@ -22,6 +23,7 @@ public class PlayerStats : MonoBehaviour {
     }
     public void takeDammage(int i)
     {
+        ac.DamageAnim();
         Health -= i;
         healthScript.UpdateHearts(Health);
         if (Health <= 0)

@@ -21,7 +21,7 @@ public class AnimatorController : MonoBehaviour {
 		anim.state.Data.SetMix(run, jump, 0.15f);
 		anim.state.Data.SetMix(jump, run, 0.15f);
 	}
-	public void RunAnim()
+    public void RunAnim()
 	{
 		anim.timeScale = 1;
 		ChangeAnim(movementTrack, run, true);
@@ -42,18 +42,18 @@ public class AnimatorController : MonoBehaviour {
 			anim.state.SetAnimation(track, name, isLoop);
 		}
 	}
-	void ClearAttackAnim()
+	void ClearDamageAnim()
 	{
 		anim.state.ClearTrack(actionTrack);
 	}
-	public void AttackAnim()
+	public void DamageAnim()
 	{
-		StartCoroutine("AttackAnimCO");
+		StartCoroutine("DamageAnimCO");
 	}
-	IEnumerator AttackAnimCO()
+	IEnumerator DamageAnimCO()
 	{
 		ChangeAnim(actionTrack, attack, false);
 		yield return new WaitForSeconds(0.5f);
-		ClearAttackAnim();
+		ClearDamageAnim();
 	}
 }
