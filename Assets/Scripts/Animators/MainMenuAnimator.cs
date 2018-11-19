@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuAnimator : MonoBehaviour {
 
@@ -10,14 +11,19 @@ public class MainMenuAnimator : MonoBehaviour {
     public GameObject settingsWindow;
     public GameObject shopWindow;
     public GameObject IntroWindow;
+    public GameObject deadWindow;
 
 
     private void Start()
     {
         ToogleIntro();
+        EnvironmentController.instance.gameOverDelegate += ToogleDeadWindow;
     }
 
-
+    public void ToogleDeadWindow()
+    {
+        deadWindow.SetActive(true);
+    }
     public void ToogleSettingsWindow()
     {
         settingsWindow.SetActive(!settingsWindow.active);
@@ -52,7 +58,10 @@ public class MainMenuAnimator : MonoBehaviour {
         }     
 		EnvironmentController.instance.StartGame();
 	}
-
+    public void ResetScene()
+    {
+        SceneManager.LoadScene(0);
+    }
     IEnumerator IntroCoroutine()
     {
         yield return new WaitForSeconds(1f);

@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 4405212653140130}
   - component: {fileID: 114539065070022100}
   m_Layer: 0
-  m_Name: Prefab2
+  m_Name: Prefab_Ground_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -457,7 +457,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1771702789747872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -16.12, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4037722204670274}
@@ -513,7 +513,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1459657873999582}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.42, z: 2.63}
+  m_LocalPosition: {x: 0, y: -3.71, z: 2.63}
   m_LocalScale: {x: 1.0851957, y: 1.0732044, z: 3.885}
   m_Children:
   - {fileID: 4716607304572340}
@@ -1212,7 +1212,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 25afa0d8fc538a3478808331b0839219, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1052332cad6f34446bd4afdf6d5654da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
