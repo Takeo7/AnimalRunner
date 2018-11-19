@@ -15,29 +15,26 @@ public class PlayerStats : MonoBehaviour {
     {
         Health += i;
         healthScript.UpdateHearts(Health);
-        if (Health <= 0)
-        {
-            EnvironmentController.instance.gameOverDelegate();
-            gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
-        }
+		CheckHealth();
     }
     public void takeDammage(int i)
     {
         //AC.AttackAnim();//¿PK Has puesto aquí attack anim?
         Health -= i;
         healthScript.UpdateHearts(Health);
-        if (Health <= 0)
-        {
-            EnvironmentController.instance.gameOverDelegate();
-<<<<<<< HEAD
-            //gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
+		CheckHealth();
+    }
 
-=======
+	void CheckHealth()
+	{
+		if (Health <= 0)
+		{
+			EnvironmentController.instance.gameOverDelegate();
+			//gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
 			//gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
 			AC.DeathAnim();
->>>>>>> ea976d62d3038b55cc54531a845e56ce7d136c66
-        }
-    }
+		}
+	}
 
     public enum AttackType
     {
