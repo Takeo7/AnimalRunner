@@ -11,10 +11,12 @@ public class AnimatorController : MonoBehaviour {
 	const byte movementTrack = 0;
 	const byte actionTrack = 1;
 
-	string run = "run";
-	string jump = "jump";
-	string attack = "attack";
-	string secondJump = "jump2";
+	public string run = "run";
+	public string jump = "jump";
+	public string attack = "attack";
+	public string secondJump = "jump2";
+	public string death = "death";
+	public string idle = "idle";
 
 	private void Start()
 	{
@@ -34,6 +36,10 @@ public class AnimatorController : MonoBehaviour {
 	{
 		anim.timeScale = 1.5f;
 		ChangeAnim(0, secondJump, false);
+	}
+	public void DeathAnim()
+	{
+		ChangeAnim(0, death, false);
 	}
 	public void ChangeAnim(byte track,string name,bool isLoop)
 	{
@@ -55,5 +61,9 @@ public class AnimatorController : MonoBehaviour {
 		ChangeAnim(actionTrack, attack, false);
 		yield return new WaitForSeconds(0.5f);
 		ClearDamageAnim();
+	}
+	public void IdleAnim()
+	{
+		ChangeAnim(0, idle, true);
 	}
 }

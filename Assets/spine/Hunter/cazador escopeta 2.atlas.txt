@@ -1,0 +1,83 @@
+
+cazador escopeta 2.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+boca danio
+  rotate: false
+  xy: 263, 181
+  size: 177, 52
+  orig: 177, 52
+  offset: 0, 0
+  index: -1
+boca normal
+  rotate: false
+  xy: 880, 172
+  size: 70, 61
+  orig: 70, 61
+  offset: 0, 0
+  index: -1
+bota derecho
+  rotate: false
+  xy: 952, 156
+  size: 43, 77
+  orig: 43, 77
+  offset: 0, 0
+  index: -1
+bota izquierdo
+  rotate: false
+  xy: 822, 155
+  size: 56, 78
+  orig: 56, 78
+  offset: 0, 0
+  index: -1
+brazo derecha
+  rotate: false
+  xy: 127, 17
+  size: 133, 151
+  orig: 133, 151
+  offset: 0, 0
+  index: -1
+brazo izquierda
+  rotate: true
+  xy: 442, 132
+  size: 101, 138
+  orig: 101, 138
+  offset: 0, 0
+  index: -1
+cabeza
+  rotate: false
+  xy: 714, 149
+  size: 106, 84
+  orig: 106, 84
+  offset: 0, 0
+  index: -1
+escopeta
+  rotate: false
+  xy: 2, 170
+  size: 259, 63
+  orig: 259, 63
+  offset: 0, 0
+  index: -1
+mano izquierdo
+  rotate: false
+  xy: 582, 105
+  size: 71, 38
+  orig: 71, 38
+  offset: 0, 0
+  index: -1
+piernas
+  rotate: false
+  xy: 582, 145
+  size: 130, 88
+  orig: 130, 88
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 2, 2
+  size: 123, 166
+  orig: 123, 166
+  offset: 0, 0
+  index: -1
