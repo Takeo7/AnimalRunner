@@ -29,8 +29,13 @@ public class PlayerStats : MonoBehaviour {
         if (Health <= 0)
         {
             EnvironmentController.instance.gameOverDelegate();
+<<<<<<< HEAD
+            //gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
+
+=======
 			//gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
 			AC.DeathAnim();
+>>>>>>> ea976d62d3038b55cc54531a845e56ce7d136c66
         }
     }
 
