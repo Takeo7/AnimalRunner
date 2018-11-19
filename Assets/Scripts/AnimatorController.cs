@@ -10,19 +10,19 @@ public class AnimatorController : MonoBehaviour {
 
 	const byte movementTrack = 0;
 	const byte actionTrack = 1;
+	[SerializeField]
+	string run = "run";
+	[SerializeField]
+	string jump = "jump";
+	[SerializeField]
+	string attack = "attack";
+	[SerializeField]
+	string secondJump = "jump2";
+	[SerializeField]
+	string death = "death";
+	[SerializeField]
+	string idle = "idle";
 
-	public string run = "run";
-	public string jump = "jump";
-	public string attack = "attack";
-	public string secondJump = "jump2";
-	public string death = "death";
-	public string idle = "idle";
-
-	private void Start()
-	{
-		anim.state.Data.SetMix(run, jump, 0.15f);
-		anim.state.Data.SetMix(jump, run, 0.15f);
-	}
     public void RunAnim()
 	{
 		anim.timeScale = 1;
@@ -48,22 +48,27 @@ public class AnimatorController : MonoBehaviour {
 			anim.state.SetAnimation(track, name, isLoop);
 		}
 	}
-	void ClearDamageAnim()
+	void ClearAttackAnim()
 	{
 		anim.state.ClearTrack(actionTrack);
 	}
-	public void DamageAnim()
+	public void AttackAnim()
 	{
-		StartCoroutine("DamageAnimCO");
+		StartCoroutine("AttackAnimCO");
 	}
-	IEnumerator DamageAnimCO()
+	IEnumerator AttackAnimCO()
 	{
 		ChangeAnim(actionTrack, attack, false);
 		yield return new WaitForSeconds(0.5f);
-		ClearDamageAnim();
+		ClearAttackAnim();
 	}
 	public void IdleAnim()
 	{
 		ChangeAnim(0, idle, true);
+	}
+	public void isFlipX(bool isFlipped)
+	{
+		anim.initialFlipX = isFlipped;
+
 	}
 }

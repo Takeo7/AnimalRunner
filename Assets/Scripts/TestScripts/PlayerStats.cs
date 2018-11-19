@@ -23,7 +23,7 @@ public class PlayerStats : MonoBehaviour {
     }
     public void takeDammage(int i)
     {
-        AC.DamageAnim();
+        //AC.AttackAnim();//¿PK Has puesto aquí attack anim?
         Health -= i;
         healthScript.UpdateHearts(Health);
         if (Health <= 0)

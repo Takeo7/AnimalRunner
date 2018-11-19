@@ -46,7 +46,7 @@ public class TestMovement : MonoBehaviour {
 		}
 		if (Input.GetMouseButtonDown(1))
 		{
-			AC.DamageAnim();
+			AC.AttackAnim();
 		}
 	}
     void ResetJumps()

@@ -9,6 +9,8 @@ public class EnemyMovement : MonoBehaviour {
     public int direction;
     public int damage;
 
+	public AnimatorController AC;//AC.TheAnimationYouWant(); EXAMPLE: AC.AttackAnim();
+
     private void Start()
     {
         direction = Random.Range(-1, 1);
@@ -16,6 +18,7 @@ public class EnemyMovement : MonoBehaviour {
         {
             direction = -1;
         }
+		
     }
 
     private void Update()
@@ -59,9 +62,19 @@ public class EnemyMovement : MonoBehaviour {
         health -= i;
         if (health <= 0)
         {
-            Destroy(gameObject);
+			AC.DeathAnim();
+            //Destroy(gameObject);
         }
 
     }
+	IEnumerator DestroyAfterX(float x)
+	{
+		yield return new WaitForSeconds(x);
+		Destroy(gameObject);
+	}
+	//ANIMS:
+	//On changing direction: 
+	//To make him look at right: isFlipX(true);
+	//To make him look at left: isFLipX(false);
 
 }

@@ -11,7 +11,7 @@ public class ChallengesController : MonoBehaviour {
 
 	int[] currentChallengesIndex = new int[3];//-1 == completed
 	int[] currentChallengesProgress = new int[3];
-
+	bool[] currentChallengesDone = new bool[3];
 	float metersRunGrounded = 0;
 	float metersRunTotal = 0;
 	bool showingCompleted = false;
@@ -98,7 +98,7 @@ public class ChallengesController : MonoBehaviour {
 	}
 	void CheckMeters()
 	{
-		if (currentChallenges[0] != null)
+		if (currentChallengesDone[0] == false)
 		{
 			if (currentChallenges[0].mustBeOnce && !currentChallenges[0].mustBeGrounded)
 			{
@@ -163,6 +163,7 @@ public class ChallengesController : MonoBehaviour {
 	void ChallengeCompleted(byte pos)
 	{
 		//give XP
+		currentChallengesDone[pos] = true;
 		StartCoroutine(ChallengeCompletedCO(pos));
 	}
 	IEnumerator ChallengeCompletedCO(byte pos)

@@ -588,6 +588,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 856436780}
   isAnimatingSpine: 1
+  run: run
+  jump: jump
+  attack: attack
+  secondJump: jump2
+  death: death
+  idle: idle
 --- !u!1 &359219862
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,6 +2493,11 @@ Prefab:
       propertyPath: attackType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114001242601144446, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
+        type: 2}
+      propertyPath: AC
+      value: 
+      objectReference: {fileID: 318462074}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
   m_IsPrefabAsset: 0
