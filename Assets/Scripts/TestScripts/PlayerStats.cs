@@ -7,7 +7,7 @@ public class PlayerStats : MonoBehaviour {
     public int Health = 3;
     public Health healthScript;
     public int attackDamage = 1;
-    public AnimatorController ac;
+    public AnimatorController AC;
 
     public AttackType attackType;
 
@@ -23,14 +23,19 @@ public class PlayerStats : MonoBehaviour {
     }
     public void takeDammage(int i)
     {
-        ac.DamageAnim();
+        AC.DamageAnim();
         Health -= i;
         healthScript.UpdateHearts(Health);
         if (Health <= 0)
         {
             EnvironmentController.instance.gameOverDelegate();
+<<<<<<< HEAD
             //gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
 
+=======
+			//gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
+			AC.DeathAnim();
+>>>>>>> ea976d62d3038b55cc54531a845e56ce7d136c66
         }
     }
 
