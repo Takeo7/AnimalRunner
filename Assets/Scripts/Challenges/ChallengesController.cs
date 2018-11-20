@@ -177,6 +177,7 @@ public class ChallengesController : MonoBehaviour {
 	void ShowChallengeCompletedUI(byte pos)
 	{
 		CCUIC.text.text = currentChallenges[pos].name;
+		CCUIC.SetIcon(pos);
 		CCUIC.gameObject.SetActive(true);
 		currentChallenges[pos] = null;
 	}

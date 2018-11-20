@@ -63,7 +63,7 @@ public class TestMovement : MonoBehaviour {
 	}
     private void OnCollisionEnter2D(Collision2D collision)
     {
-		Debug.Log(collision.collider.name);
+		//Debug.Log(collision.collider.name);
         if (collision.collider.CompareTag("Floor"))
         {
 			//Debug.Log("FloorEntered");

@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\TestScripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\TestScripts\TestAttack.cs" />
     <Compile Include="Assets\Scripts\TestScripts\TestMovement.cs" />
+    <Compile Include="Assets\Scripts\TreeSpawner.cs" />
     <Compile Include="Assets\spine\spine-csharp\Properties\AssemblyInfo.cs" />
     <Compile Include="Assets\spine\spine-csharp\src\Animation.cs" />
     <Compile Include="Assets\spine\spine-csharp\src\AnimationState.cs" />
@@ -224,7 +225,6 @@
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SpineAttributes.cs" />
-    <Compile Include="Assets\TreeSpawner.cs" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Eyes\eyes.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Utility\HiddenPass.shader" />
     <None Include="Assets\spine\Tortuga spine-unity\tortuga final 2.json.txt" />
