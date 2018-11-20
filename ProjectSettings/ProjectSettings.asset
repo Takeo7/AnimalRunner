@@ -40,7 +40,7 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
-  - logo: {fileID: 21300000, guid: da66376f65274204b879c4c0fae76b82, type: 3}
+  - logo: {fileID: 21300012, guid: dc8fec20b08acda4da143dcbb59929ca, type: 3}
     duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
@@ -624,7 +624,8 @@ PlayerSettings:
   psp2InfoBarOnStartup: 0
   psp2InfoBarColor: 0
   psp2ScriptOptimizationLevel: 0
-  splashScreenBackgroundSourceLandscape: {fileID: 0}
+  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: 0fc5cef320e08f34eaa469895c866e12,
+    type: 3}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
   spritePackerPolicy: 
   webGLMemorySize: 256
