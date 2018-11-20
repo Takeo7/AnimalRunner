@@ -14,6 +14,9 @@ MonoBehaviour:
   floorPrefabs:
   - {fileID: 1665789271856866, guid: e2763cb499b88734e8fa55686200622a, type: 2}
   - {fileID: 1771702789747872, guid: 86e264decccee3d43974d2a337cd842d, type: 2}
+  - {fileID: 1331116982393660, guid: e5b4efae73f30f94b98d7de6df327571, type: 2}
+  - {fileID: 1482327377535236, guid: f7f5a8743acd8e641826a1dd5ca8b1c5, type: 2}
+  - {fileID: 1321767840913690, guid: aa60825b1ec8ab34c8bc44c99d93ae57, type: 2}
   floatingPrefabs:
   - {fileID: 1654783539393930, guid: d4d67eee872e0824cbaa5b360757beb0, type: 2}
   - {fileID: 1763461469336902, guid: 4f42e8104cec84444bc21be3453c11c1, type: 2}

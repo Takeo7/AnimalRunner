@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 114036428111771368}
   - component: {fileID: 95673502269830876}
   - component: {fileID: 114237448862297296}
+  - component: {fileID: 61648766067569548}
   m_Layer: 0
   m_Name: Bear_Trap
   m_TagString: Untagged
@@ -132,7 +133,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1904981198315766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.39, y: 0, z: 0}
+  m_LocalPosition: {x: 3.39, y: 0, z: -1.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4895313517534800}
@@ -331,6 +332,31 @@ PolygonCollider2D:
       - {x: 1.6809906, y: -0.24462618}
       - {x: 1.7109905, y: -0.21462618}
       - {x: 1.7109905, y: 0.08537382}
+--- !u!61 &61648766067569548
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1904981198315766}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.06971812, y: 0.27887034}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.281474, y: 0.94825876}
+  m_EdgeRadius: 0
 --- !u!95 &95673502269830876
 Animator:
   serializedVersion: 3

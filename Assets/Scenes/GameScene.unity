@@ -2745,7 +2745,7 @@ Prefab:
     - target: {fileID: 114001242601144446, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
         type: 2}
       propertyPath: Health
-      value: 100
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1355157842876838, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
       propertyPath: m_IsActive
