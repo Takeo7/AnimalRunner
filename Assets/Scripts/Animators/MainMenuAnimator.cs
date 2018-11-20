@@ -13,6 +13,9 @@ public class MainMenuAnimator : MonoBehaviour {
     public GameObject IntroWindow;
     public GameObject deadWindow;
 
+    public GameObject Lifes;
+    public GameObject Meters;
+
 
     private void Start()
     {
@@ -55,7 +58,10 @@ public class MainMenuAnimator : MonoBehaviour {
         if (shopWindow.active == true)
         {
             ToogleShopWindow();
-        }     
+        }
+        Lifes.SetActive(true);
+        Lifes.GetComponent<Health>().SetHearts();
+        Meters.SetActive(true);
 		EnvironmentController.instance.StartGame();
 	}
     public void ResetScene()

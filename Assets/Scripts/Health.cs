@@ -14,7 +14,9 @@ public class Health : MonoBehaviour {
     int initialHealth;
     Image[] hearts;
 
-    private void Start()
+
+
+    public void SetHearts()
     {
         initialHealth = ps.Health;
         hearts = new Image[initialHealth];

@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212716985305186034}
   - component: {fileID: 95543633702201504}
   - component: {fileID: 114918450625807422}
-  - component: {fileID: 60749819035008670}
+  - component: {fileID: 60953347573016284}
   m_Layer: 0
   m_Name: Electric_Trap
   m_TagString: Untagged
@@ -38,12 +38,12 @@ Transform:
   m_GameObject: {fileID: 1787306735302194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.671, z: 1}
+  m_LocalScale: {x: 0.664, y: 0.44554397, z: 0.664}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &60749819035008670
+--- !u!60 &60953347573016284
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
