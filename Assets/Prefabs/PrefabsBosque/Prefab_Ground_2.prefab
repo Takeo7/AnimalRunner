@@ -989,7 +989,15 @@ MonoBehaviour:
   - {fileID: 1375003835107346, guid: d536587667094934babbc9ba0f9b8bb2, type: 2}
   traps:
   - {fileID: 1787306735302194, guid: 5947f0b913abb914393443c63ba3707e, type: 2}
-  - {fileID: 1725288858820888, guid: 7652fd924e3b57749a21538322818c76, type: 2}
+  - {fileID: 1904981198315766, guid: 19fe505d0dd201647b1cb34e92f2793b, type: 2}
+  decorations:
+  - {fileID: 1861729040506578, guid: 137c35bbabdfd2b429fb809ca134e3eb, type: 2}
+  - {fileID: 1099337880937628, guid: 2956266c5e6437d46b960efe31891da9, type: 2}
+  - {fileID: 1059399603282608, guid: 037ea6d9e09375b40ab2255458f6f082, type: 2}
+  - {fileID: 1201409272682248, guid: 520600b42efbb7d42b5a4494bdeb6dac, type: 2}
+  - {fileID: 1383873983811542, guid: 56678bb11f026294da2d0fb84f3035e0, type: 2}
+  - {fileID: 1479342905613698, guid: 4aa37fcf5b4d20441ae9adf262a0cbbc, type: 2}
+  - {fileID: 1194898912877296, guid: 038489826bed4a94c863e4706a16c359, type: 2}
   isSpawneable: 1
 --- !u!114 &114768903389589324
 MonoBehaviour:
@@ -1047,7 +1055,7 @@ SpriteRenderer:
   m_Size: {x: 6.85, y: 4.44}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!212 &212049317884736696
@@ -1369,7 +1377,7 @@ SpriteRenderer:
   m_Size: {x: 3.06, y: 2.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!212 &212443101032843274
@@ -1507,7 +1515,7 @@ SpriteRenderer:
   m_Size: {x: 1.58, y: 1.91}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!212 &212743948240537580
@@ -1553,7 +1561,7 @@ SpriteRenderer:
   m_Size: {x: 2.36, y: 2.82}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!212 &212968126129563450

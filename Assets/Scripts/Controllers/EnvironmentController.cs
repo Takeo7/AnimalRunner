@@ -140,7 +140,7 @@ public class EnvironmentController : MonoBehaviour {
 	{
 		while (inGame)
 		{
-			yield return new WaitForSeconds(1);
+			yield return new WaitForSeconds(2f);
 			characterSpeed += 0.1f;
 		}
 	}

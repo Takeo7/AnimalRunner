@@ -227,6 +227,7 @@
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SpineAttributes.cs" />
+    <Compile Include="Assets\TrapAnimation.cs" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Eyes\eyes.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Utility\HiddenPass.shader" />
     <None Include="Assets\spine\Tortuga spine-unity\tortuga final 2.json.txt" />
