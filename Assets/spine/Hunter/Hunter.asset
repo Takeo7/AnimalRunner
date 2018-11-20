@@ -15,8 +15,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 926b4216e4ed57d4b8f2ee6b20b609d3, type: 2}
   scale: 0.01
   skeletonJSON: {fileID: 4900000, guid: 701bd0f4d84d8ff4498eddc5fb1fd147, type: 3}
-  fromAnimation: []
-  toAnimation: []
-  duration: []
-  defaultMix: 0
+  fromAnimation:
+  - attack
+  toAnimation:
+  - idle
+  duration:
+  - 0.5
+  defaultMix: 0.15
   controller: {fileID: 0}

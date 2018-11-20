@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour {
 
-    public int Health = 3;
+	#region Singleton
+	public static PlayerStats instance;
+	private void Awake()
+	{
+		instance = this;
+	}
+	#endregion
+	public int Health = 3;
     public Health healthScript;
     public int attackDamage = 1;
     public AnimatorController AC;
@@ -19,7 +26,6 @@ public class PlayerStats : MonoBehaviour {
     }
     public void takeDammage(int i)
     {
-        //AC.AttackAnim();//¿PK Has puesto aquí attack anim?
         Health -= i;
         healthScript.UpdateHearts(Health);
 		CheckHealth();

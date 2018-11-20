@@ -11,6 +11,8 @@ TagManager:
   - SpawnPoint
   - Enemy
   - FloorCheck
+  - EnemiesSight
+  - Bullet
   layers:
   - Default
   - TransparentFX

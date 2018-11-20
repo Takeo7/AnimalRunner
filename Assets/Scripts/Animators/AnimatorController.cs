@@ -52,9 +52,16 @@ public class AnimatorController : MonoBehaviour {
 	{
 		anim.state.ClearTrack(actionTrack);
 	}
-	public void AttackAnim()
+	public void AttackAnim(bool isTrack)
 	{
-		StartCoroutine("AttackAnimCO");
+		if (isTrack)
+		{
+			StartCoroutine("AttackAnimCO");
+		}
+		else
+		{
+			ChangeAnim(0, attack, false);
+		}
 	}
 	IEnumerator AttackAnimCO()
 	{
