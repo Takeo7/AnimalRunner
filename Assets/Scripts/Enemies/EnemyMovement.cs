@@ -56,7 +56,7 @@ public class EnemyMovement : MonoBehaviour {
 		else if(collision.collider.tag == "Player")
         {
             collision.gameObject.GetComponent<PlayerStats>().UpdateHealth(damage);
-            Destroy(gameObject);
+			StartCoroutine("Die");
         }
     }
     public void TakeDamage(int i)
@@ -64,11 +64,16 @@ public class EnemyMovement : MonoBehaviour {
         health -= i;
         if (health <= 0)
         {
-			AC.DeathAnim();
-            //Destroy(gameObject);
+			StartCoroutine("Die");
         }
 
     }
+	IEnumerator Die()
+	{
+		AC.DeathAnim();
+		yield return new WaitForSeconds(3f);
+		Destroy(gameObject);
+	}
 	IEnumerator DestroyAfterX(float x)
 	{
 		yield return new WaitForSeconds(x);

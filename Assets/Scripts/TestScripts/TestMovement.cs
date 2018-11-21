@@ -28,15 +28,12 @@ public class TestMovement : MonoBehaviour {
 			transform.position += Vector3.right * EC.characterSpeed * Time.deltaTime;
             if (Input.GetMouseButtonDown(0) && jumpCount<jumps)
             {
-				animator.SetBool("isGrounded", false);
 				if(jumpCount == 0)
 				{
-					animator.SetTrigger("Jump");
 					AC.JumpOneAnim();
 				}
 				else if(jumpCount == 1)
 				{
-					animator.SetTrigger("SecondJump");
 					AC.JumpTwoAnim();
 				}
 				rb.velocity = Vector3.zero;
@@ -64,12 +61,14 @@ public class TestMovement : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
 		//Debug.Log(collision.collider.name);
-        if (collision.collider.CompareTag("Floor"))
-        {
+		if (collision.collider.CompareTag("Floor"))
+		{
 			//Debug.Log("FloorEntered");
-            ResetJumps();
-			animator.SetBool("isGrounded", true);
-			AC.RunAnim();
+			ResetJumps();
+			if (!ps.isDead)
+			{
+				AC.RunAnim();
+			}
 		}
     }
 }

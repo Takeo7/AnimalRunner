@@ -1372,16 +1372,16 @@ MonoBehaviour:
   - {fileID: 4786099924276182}
   - {fileID: 4836775828255468}
   - {fileID: 4334891567059996}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4447842191560158}
+  - {fileID: 4457431265385742}
   - {fileID: 4904703787681814}
   - {fileID: 4009553279141832}
   trapSpawnPoints:
   - {fileID: 4194270291142178}
   - {fileID: 4908018065638322}
   - {fileID: 4813005299267746}
-  - {fileID: 0}
   - {fileID: 4853361661691680}
+  - {fileID: 4087842601859090}
   decorationSpawnPoints:
   - {fileID: 4069946917295390}
   - {fileID: 4773123447814574}
@@ -1391,8 +1391,8 @@ MonoBehaviour:
   - {fileID: 4891455016557978}
   - {fileID: 4148399215393606}
   - {fileID: 4759627855275378}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4292260196111100}
+  - {fileID: 4367140291795084}
   - {fileID: 4454158650489066}
   - {fileID: 4593371963899850}
   enemys:

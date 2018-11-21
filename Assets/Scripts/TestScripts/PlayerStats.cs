@@ -15,6 +15,7 @@ public class PlayerStats : MonoBehaviour {
     public Health healthScript;
     public int attackDamage = 1;
     public AnimatorController AC;
+	public bool isDead;
 
     public AttackType attackType;
 
@@ -35,6 +36,7 @@ public class PlayerStats : MonoBehaviour {
 	{
 		if (Health <= 0)
 		{
+			isDead = true;
 			EnvironmentController.instance.gameOverDelegate();
 			//gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
 			//gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
