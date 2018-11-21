@@ -146,6 +146,10 @@ MonoBehaviour:
   yOffset: 0
   zOffset: 0
   isParallax: 0
+  isFrontal: 0
+  transitionToForest: 0
+  isCave: 0
+  forestParallax: []
 --- !u!212 &212530406104255882
 SpriteRenderer:
   m_ObjectHideFlags: 1

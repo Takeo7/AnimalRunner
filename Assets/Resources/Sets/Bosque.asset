@@ -11,6 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9b68b5eacf341b44a0a92a6f67457c5, type: 3}
   m_Name: Bosque
   m_EditorClassIdentifier: 
+  setType: 0
+  parallaxElements:
+  - {fileID: 21300000, guid: 334edd82c1dba144284720bdcd9615c0, type: 3}
+  - {fileID: 21300000, guid: eec497d6eb9764a4b990143e45b06035, type: 3}
+  - {fileID: 21300000, guid: 1c465a8d28ba5064e97975ab8845df21, type: 3}
   floorPrefabs:
   - {fileID: 1665789271856866, guid: e2763cb499b88734e8fa55686200622a, type: 2}
   - {fileID: 1771702789747872, guid: 86e264decccee3d43974d2a337cd842d, type: 2}

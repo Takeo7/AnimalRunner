@@ -15,8 +15,13 @@ public class ParallaxController : MonoBehaviour {
 	private float lastCameraX;
 	public float yOffset;
 	public float zOffset;
-
 	public bool isParallax;
+
+	//
+	public ParallaxType parallaxType;
+	public bool inTransition;
+
+
 
 	void Start()
 	{

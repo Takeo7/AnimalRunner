@@ -81,6 +81,9 @@
     <Compile Include="Assets\Scripts\Enemies\TrapScript.cs" />
     <Compile Include="Assets\Scripts\FloatingFloor.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\Parallax\CaveInOut.cs" />
+    <Compile Include="Assets\Scripts\Parallax\ParallaxChecker.cs" />
+    <Compile Include="Assets\Scripts\Parallax\ParallaxMainController.cs" />
     <Compile Include="Assets\Scripts\SceneManagement\LevelLoader.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjejct\EnvironmentSet.cs" />
     <Compile Include="Assets\Scripts\TestScripts\PlayerStats.cs" />
