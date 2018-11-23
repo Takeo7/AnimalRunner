@@ -687,7 +687,6 @@ MonoBehaviour:
   deadWindow: {fileID: 1332126587}
   Lifes: {fileID: 805089370}
   Meters: {fileID: 1932914912}
-  AttackButton: {fileID: 0}
 --- !u!1 &318462073 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1355157842876838, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
