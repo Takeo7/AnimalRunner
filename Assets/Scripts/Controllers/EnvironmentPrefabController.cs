@@ -15,6 +15,7 @@ public class EnvironmentPrefabController : MonoBehaviour {
     public GameObject[] decorations;
     public bool isEnemySpawneable;
     public bool isTrapSpawneable;
+    public bool isCave;
     public int numberOfDeco = 2;
 
     private void Start()
@@ -31,7 +32,7 @@ public class EnvironmentPrefabController : MonoBehaviour {
         }
         if (isTrapSpawneable)
         {
-            float isTrap = Random.Range(0, 2);
+            float isTrap = Random.Range(0, 5);
             if (isTrap <= 1)
             {
                 CreateNewTrap();
@@ -39,7 +40,10 @@ public class EnvironmentPrefabController : MonoBehaviour {
         }
         try
         {
-            CreateNewDeco(numberOfDeco);
+            if (isCave == false)
+            {
+                CreateNewDeco(numberOfDeco);
+            }
         }
         catch (System.Exception)
         {
@@ -86,7 +90,8 @@ public class EnvironmentPrefabController : MonoBehaviour {
             {
                 randDeco = 0;
             }
-            GameObject deco = Instantiate(decorations[randDeco], new Vector3(decorationSpawnPoints[rand3].position.x, decorationSpawnPoints[rand3].position.y, 1), Quaternion.identity);
+            GameObject deco = Instantiate(decorations[randDeco], 
+                new Vector3(decorationSpawnPoints[rand3].position.x, decorationSpawnPoints[rand3].position.y, 1), Quaternion.identity);
             deco.transform.SetParent(decorationSpawnPoints[rand3]);
         }
         

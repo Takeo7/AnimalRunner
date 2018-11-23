@@ -14,10 +14,15 @@ public class EnemyMovement : MonoBehaviour {
 	public Transform bulletSpawn;
 	public float secondsToAttackAgain;
 
+    TestMovement tm;
+    bool isDead = false;
+    public bool dontDie;
+
 	public AnimatorController AC;//AC.TheAnimationYouWant(); EXAMPLE: AC.AttackAnim();
 
     private void Start()
     {
+        tm = TestMovement.instance;
         direction = Random.Range(-1, 1);
         if (direction == 0)
         {
@@ -46,6 +51,10 @@ public class EnemyMovement : MonoBehaviour {
         {
             ChangeDirection();
         }
+        if (collision.CompareTag("PlayerBullet"))
+        {
+            TakeDamage(tm.DealDamage());
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -62,34 +71,29 @@ public class EnemyMovement : MonoBehaviour {
     public void TakeDamage(int i)
     {
         health -= i;
-        if (health <= 0)
+        if (health <= 0 && isDead == false)
         {
+            isDead = true;
+            StopCoroutine("Attacks");
 			StartCoroutine("Die");
         }
 
     }
 	IEnumerator Die()
 	{
-		AC.DeathAnim();
-		yield return new WaitForSeconds(3f);
-		Destroy(gameObject);
-	}
-	IEnumerator DestroyAfterX(float x)
-	{
-		yield return new WaitForSeconds(x);
-		Destroy(gameObject);
-	}
-	//ANIMS:
-	//On changing direction: 
-	//To make him look at right: isFlipX(true);
-	//To make him look at left: isFLipX(false);
+        if (dontDie)
+        {
+            Debug.Log("IsDing");
+            AC.DeathAnim();
+            yield return new WaitForSeconds(3f);
+            Destroy(gameObject);
+        }
 
-
-	//
+	}
 	public void CharacterOnSight(bool _isOnSight)
 	{
 		isOnSight = _isOnSight;
-		if (isOnSight)
+		if (isOnSight && isDead == false)
 		{
 			StartCoroutine("Attacks");
 		}
@@ -111,5 +115,4 @@ public class EnemyMovement : MonoBehaviour {
 			AC.IdleAnim();
 		}
 	}
-
 }

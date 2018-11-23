@@ -24,6 +24,7 @@ public class EnvironmentController : MonoBehaviour {
 	public GameObject cavePrefab;
 	public int[] caveMeters;
 	public bool caveBool = true;
+    public bool isCaveBool = false;
 	GameObject prefabTemp;
 
 	public bool inGame;
@@ -47,8 +48,9 @@ public class EnvironmentController : MonoBehaviour {
 	}
 	private void Update()
 	{
-		if (caveMeters.Contains<int>(Mathf.RoundToInt(UIC.target.transform.position.x)))//If the character reached meters for a cave
+		if (caveMeters.Contains<int>(Mathf.RoundToInt(UIC.target.transform.position.x)) && isCaveBool == false)//If the character reached meters for a cave
 		{
+            isCaveBool = true;
 			caveBool = true;//caveBool = true to let the generator know that the next prefab will be the cave
 		}
 	}
@@ -100,12 +102,14 @@ public class EnvironmentController : MonoBehaviour {
 	{
 		if (caveBool)//if the next prefab must be a cave
 		{
-			caveBool = false;
+            Debug.Log("NewCave");
+            caveBool = false;
 			prefabTemp = Instantiate(cavePrefab);//instantiate the prefab
             SetNewEnvironment();//Change environment
 		}
 		else//if the next prefab wont be a cave
 		{
+            isCaveBool = false;
 			if (Random.value <= floorPercentage)
 			{
 				//Debug.Log("InstantiatedFloor");

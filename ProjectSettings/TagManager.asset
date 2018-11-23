@@ -13,6 +13,7 @@ TagManager:
   - FloorCheck
   - EnemiesSight
   - Bullet
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Floor
   - 
   - 
   - 

@@ -34,11 +34,9 @@ public class Health : MonoBehaviour {
 
     public void UpdateHearts(int h)
     {
-        Debug.Log("Health left= " + h);
         for (int i = h; i < initialHealth; i++)
         {
             hearts[i].sprite = EmptyHeart;
-            Debug.Log("EmptyHeart");
         }
         if (h > 0)
         {
