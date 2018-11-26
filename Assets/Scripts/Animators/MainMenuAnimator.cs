@@ -15,7 +15,8 @@ public class MainMenuAnimator : MonoBehaviour {
 
     public GameObject Lifes;
     public GameObject Meters;
-   // public GameObject AttackButton;
+    public GameObject AttackButton;
+    public GameObject JumpButton;
 
 
     private void Start()
@@ -63,7 +64,8 @@ public class MainMenuAnimator : MonoBehaviour {
         Lifes.SetActive(true);
         Lifes.GetComponent<Health>().SetHearts();
         Meters.SetActive(true);
-        //AttackButton.SetActive(true);
+        AttackButton.SetActive(true);
+        JumpButton.SetActive(true);
 		EnvironmentController.instance.StartGame();
 	}
     public void ResetScene()

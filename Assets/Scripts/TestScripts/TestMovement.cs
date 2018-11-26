@@ -93,33 +93,33 @@ public class TestMovement : MonoBehaviour {
                 col.isTrigger = true;
             }
         }
-
-
-
-
         if (EC.inGame)
-		{
-			transform.position += Vector3.right * EC.characterSpeed * Time.deltaTime;
-            if (Input.GetMouseButtonDown(0) && jumpCount<jumps)
-            {
-				if(jumpCount == 0)
-				{
-					AC.JumpOneAnim();
-				}
-				else if(jumpCount == 1)
-				{
-					AC.JumpTwoAnim();
-				}
-				rb.velocity = Vector3.zero;
-                rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-                jumpCount++;
-            }
-		}
-		if (Input.GetMouseButtonDown(1))
+        {
+            transform.position += Vector3.right * EC.characterSpeed * Time.deltaTime;
+        }
+        if (Input.GetMouseButtonDown(1))
 		{
             AttackRanged();
         }
 	}
+
+    public void Jump()
+    {
+        if (jumpCount < jumps)
+        {
+            if (jumpCount == 0)
+            {
+                AC.JumpOneAnim();
+            }
+            else if (jumpCount == 1)
+            {
+                AC.JumpTwoAnim();
+            }
+            rb.velocity = Vector3.zero;
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            jumpCount++;
+        }
+    }
 
     public void AttackRanged()
     {
