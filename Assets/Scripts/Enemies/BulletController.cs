@@ -34,10 +34,6 @@ public class BulletController : MonoBehaviour {
 		{
 			PlayerStats.instance.takeDammage((int)damage);
 		}
-		else
-		{
-
-		}
 		//Effect
 		Destroy(gameObject);
 	}

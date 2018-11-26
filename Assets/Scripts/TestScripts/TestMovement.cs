@@ -105,7 +105,7 @@ public class TestMovement : MonoBehaviour {
 
     public void Jump()
     {
-        if (jumpCount < jumps)
+        if (jumpCount < jumps && EC.inGame)
         {
             if (jumpCount == 0)
             {
@@ -123,8 +123,11 @@ public class TestMovement : MonoBehaviour {
 
     public void AttackRanged()
     {
-        AC.AttackAnim(true);
-        StartCoroutine("AttackCoroutine");
+        if (EC.inGame)
+        {
+            AC.AttackAnim(true);
+            StartCoroutine("AttackCoroutine");
+        }
     }
 
     void ResetJumps()
@@ -161,8 +164,9 @@ public class TestMovement : MonoBehaviour {
 
     IEnumerator AttackCoroutine()
     {
-        yield return new WaitForSeconds(0.47f);
+        yield return new WaitForSeconds(0.19f);
         GameObject g = Instantiate(bulletPrefab, bulletSpawnPoint);
+        g.transform.SetParent(null);
         StopCoroutine("AttackCoroutine");
     }
     /* private void OnCollisionEnter2D(Collision2D collision)

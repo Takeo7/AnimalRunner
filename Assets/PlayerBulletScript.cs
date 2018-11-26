@@ -5,26 +5,34 @@ using UnityEngine;
 public class PlayerBulletScript : MonoBehaviour {
 
 
-    public Rigidbody2D rb;
-    public float force;
+    public float speed;
+    public int damage;
 
-	void Start () {
-        rb.AddForce((Vector2.right * force) + Vector2.up*force/2 , ForceMode2D.Impulse);
-	}
+    private void Start()
+    {
+        StartCoroutine("DestroyAfterX", 2);
+    }
 
+    private void Update()
+    {
+        transform.Translate(Vector3.right * speed * Time.deltaTime);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") == false)
-        {
-            Destroy(gameObject,3f);
-        }
         if (collision.CompareTag("Enemy"))
         {
-            Destroy(gameObject);
+            collision.GetComponent<EnemyMovement>().TakeDamage(damage);
+            DestroyBullet(true);
         }
     }
-    private void OnBecameInvisible()
+    IEnumerator DestroyAfterX(float seconds)
     {
+        yield return new WaitForSeconds(seconds);
+        DestroyBullet(false);
+    }
+    void DestroyBullet(bool enemyCollided)
+    {
+        //Effect
         Destroy(gameObject);
     }
 }

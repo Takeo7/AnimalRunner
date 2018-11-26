@@ -27,8 +27,8 @@ MonoBehaviour:
   - jump2
   duration:
   - 0.5
-  - 0.5
-  - 0.5
+  - 0.2
+  - 0.2
   - 0.5
   defaultMix: 0.15
   controller: {fileID: 9100000, guid: c8f4f60459b1c034f857e42675483a81, type: 2}
