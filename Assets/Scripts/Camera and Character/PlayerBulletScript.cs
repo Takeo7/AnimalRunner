@@ -10,7 +10,7 @@ public class PlayerBulletScript : MonoBehaviour {
 
     private void Start()
     {
-        StartCoroutine("DestroyAfterX", 2);
+        StartCoroutine("DestroyAfterX", 1);
     }
 
     private void Update()

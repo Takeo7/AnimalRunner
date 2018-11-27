@@ -85,25 +85,14 @@ public class EnemyMovement : MonoBehaviour {
             TakeDamage(tm.DealDamage());
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.tag == "Enemy")
-        {
-            ChangeDirection();
-        }
-		else if(collision.collider.tag == "Player")
-        {
-            collision.gameObject.GetComponent<PlayerStats>().UpdateHealth(damage);
-			StartCoroutine("Die");
-        }
-    }
     public void TakeDamage(int i)
     {
         health -= i;
         if (health <= 0 && isDead == false)
         {
-			AC.TakeDamage(true);
-			isDead = true;
+            isAttacking = false;
+            isDead = true;
+            AC.TakeDamage(true);
             StopCoroutine("Attacks");
 			StartCoroutine("Die");
         }
@@ -138,7 +127,7 @@ public class EnemyMovement : MonoBehaviour {
 		{
 			isAttacking = true;
 			AC.AttackAnim(false);
-			yield return new WaitForSeconds(0.7f);
+			yield return new WaitForSeconds(1f);
 			if (!isMelee)
 			{
 				GameObject bullet = Instantiate(bulletPrefab);
