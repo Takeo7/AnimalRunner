@@ -54,8 +54,8 @@ GameObject:
   - component: {fileID: 4540759750056760}
   - component: {fileID: 212632755882459758}
   - component: {fileID: 50067130875623092}
-  - component: {fileID: 114320185102934506}
   - component: {fileID: 70017966248899824}
+  - component: {fileID: 114320185102934506}
   - component: {fileID: 114846726699647374}
   m_Layer: 0
   m_Name: CazadorEscopeta
@@ -265,11 +265,17 @@ MonoBehaviour:
   direction: 0
   damage: 1
   isOnSight: 0
+  isMelee: 0
   bulletPrefab: {fileID: 1131160632608988, guid: b617c1e2640374843b887f90df00a9b4,
     type: 2}
   bulletSpawn: {fileID: 4361076317485512}
+  meleeAttackOffset: {x: 0, y: 0}
+  meleeAttackRadius: 0
+  attackLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
   secondsToAttackAgain: 1
-  dontDie: 1
+  dontDie: 0
   AC: {fileID: 114846726699647374}
 --- !u!114 &114523145508903688
 MonoBehaviour:
@@ -332,6 +338,8 @@ MonoBehaviour:
   secondJump: jump2
   death: death
   idle: idle
+  takeDamage: hurt
+  takeDamageDuration: 0.16
 --- !u!212 &212632755882459758
 SpriteRenderer:
   m_ObjectHideFlags: 1

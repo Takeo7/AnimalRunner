@@ -1,0 +1,97 @@
+
+cazadora2.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+boca dano
+  rotate: true
+  xy: 977, 114
+  size: 52, 26
+  orig: 52, 26
+  offset: 0, 0
+  index: -1
+boca normal
+  rotate: false
+  xy: 299, 85
+  size: 44, 26
+  orig: 44, 26
+  offset: 0, 0
+  index: -1
+bota derecha
+  rotate: true
+  xy: 87, 9
+  size: 51, 87
+  orig: 51, 87
+  offset: 0, 0
+  index: -1
+bota izquierda
+  rotate: false
+  xy: 226, 80
+  size: 71, 108
+  orig: 71, 108
+  offset: 0, 0
+  index: -1
+brazo dercho
+  rotate: true
+  xy: 306, 113
+  size: 134, 186
+  orig: 134, 186
+  offset: 0, 0
+  index: -1
+brazo izquierdo
+  rotate: false
+  xy: 823, 118
+  size: 152, 129
+  orig: 152, 129
+  offset: 0, 0
+  index: -1
+cabeza
+  rotate: false
+  xy: 670, 104
+  size: 151, 143
+  orig: 151, 143
+  offset: 0, 0
+  index: -1
+coleta
+  rotate: true
+  xy: 977, 168
+  size: 79, 45
+  orig: 79, 45
+  offset: 0, 0
+  index: -1
+cuerno trasero
+  rotate: false
+  xy: 176, 5
+  size: 41, 55
+  orig: 41, 55
+  offset: 0, 0
+  index: -1
+cuernos
+  rotate: false
+  xy: 2, 2
+  size: 83, 58
+  orig: 83, 58
+  offset: 0, 0
+  index: -1
+machete
+  rotate: true
+  xy: 2, 190
+  size: 57, 302
+  orig: 57, 302
+  offset: 0, 0
+  index: -1
+piernas
+  rotate: false
+  xy: 2, 62
+  size: 222, 126
+  orig: 222, 126
+  offset: 0, 0
+  index: -1
+torso
+  rotate: true
+  xy: 494, 99
+  size: 148, 174
+  orig: 148, 174
+  offset: 0, 0
+  index: -1

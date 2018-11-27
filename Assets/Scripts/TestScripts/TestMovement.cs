@@ -164,9 +164,9 @@ public class TestMovement : MonoBehaviour {
 
     IEnumerator AttackCoroutine()
     {
-        yield return new WaitForSeconds(0.19f);
-        GameObject g = Instantiate(bulletPrefab, bulletSpawnPoint);
-        g.transform.SetParent(null);
+        yield return new WaitForSeconds(0.4f);
+        GameObject g = Instantiate(bulletPrefab, bulletSpawnPoint.position,Quaternion.identity);
+        //g.transform.SetParent(null);
         StopCoroutine("AttackCoroutine");
     }
     /* private void OnCollisionEnter2D(Collision2D collision)

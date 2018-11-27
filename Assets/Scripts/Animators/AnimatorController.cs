@@ -22,6 +22,10 @@ public class AnimatorController : MonoBehaviour {
 	string death = "death";
 	[SerializeField]
 	string idle = "idle";
+	[SerializeField]
+	string takeDamage = "takeDamage";
+	[SerializeField]
+	float takeDamageDuration;
 
     public void RunAnim()
 	{
@@ -40,6 +44,10 @@ public class AnimatorController : MonoBehaviour {
 	public void DeathAnim()
 	{
 		ChangeAnim(0, death, false);
+	}
+	public void TakeDamage(bool isDeadAfter)
+	{
+		StartCoroutine("TakeDamageAnimCO",isDeadAfter);
 	}
 	public void ChangeAnim(byte track,string name,bool isLoop)
 	{
@@ -68,6 +76,19 @@ public class AnimatorController : MonoBehaviour {
 		ChangeAnim(actionTrack, attack, false);
 		yield return new WaitForSeconds(0.5f);
 		ClearAttackAnim();
+	}
+	IEnumerator TakeDamageAnimCO(bool isDeadAfter)
+	{
+		ChangeAnim(0, takeDamage, false);
+		yield return new WaitForSeconds(takeDamageDuration);
+		if (isDeadAfter && anim.state.ToString() != "death")
+		{
+			DeathAnim();
+		}
+		else if(!isDeadAfter && anim.state.ToString() != "death")
+		{
+			IdleAnim();
+		}
 	}
 	public void IdleAnim()
 	{
