@@ -1,0 +1,9 @@
+lastUpgrade=00954
+proj.pluginVersion=0.9.54
+proj.AppId=694445475600
+and.BundleId=com.WagenerGames.RunForLife
+proj.classDir=Assets
+proj.ConstantsClassName=GPGSIds
+and.ResourceData=%3c%3fxml+version%3d%221.0%22+encoding%3d%22utf-8%22%3f%3e%0d%0a%3c%21--%0d%0aGoogle+Play+game+services+IDs.%0d%0aSave+this+file+as+res%2fvalues%2fgames-ids.xml+in+your+project.%0d%0a--%3e%0d%0a%3cresources%3e%0d%0a++%3c%21--+app_id+--%3e%0d%0a++%3cstring+name%3d%22app_id%22+translatable%3d%22false%22%3e694445475600%3c%2fstring%3e%0d%0a++%3c%21--+package_name+--%3e%0d%0a++%3cstring+name%3d%22package_name%22+translatable%3d%22false%22%3ecom.WagenerGames.RunForLife%3c%2fstring%3e%0d%0a++%3c%21--+leaderboard+Meters+--%3e%0d%0a++%3cstring+name%3d%22leaderboard_meters%22+translatable%3d%22false%22%3eCgkIkI60gZsUEAIQAQ%3c%2fstring%3e%0d%0a%3c%2fresources%3e%0d%0a
+and.ClientId=694445475600-724ktrmcltdrsves7p26u699lfomkdg4.apps.googleusercontent.com
+android.SetupDone=true

@@ -61,6 +61,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GooglePlayGames\Editor\ForceNoGpgsForIOS.cs" />
+    <Compile Include="Assets\GooglePlayGames\Editor\GPGSAndroidSetupUI.cs" />
+    <Compile Include="Assets\GooglePlayGames\Editor\GPGSDocsUI.cs" />
+    <Compile Include="Assets\GooglePlayGames\Editor\GPGSPostBuild.cs" />
+    <Compile Include="Assets\GooglePlayGames\Editor\GPGSProjectSettings.cs" />
+    <Compile Include="Assets\GooglePlayGames\Editor\GPGSStrings.cs" />
+    <Compile Include="Assets\GooglePlayGames\Editor\GPGSUpgrader.cs" />
+    <Compile Include="Assets\GooglePlayGames\Editor\GPGSUtil.cs" />
+    <Compile Include="Assets\GooglePlayGames\Editor\NearbyConnectionUI.cs" />
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Editor\AnimationReferenceAssetEditor.cs" />
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Editor\AssetDatabaseAvailabilityDetector.cs" />
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Editor\AtlasAssetInspector.cs" />
@@ -92,6 +101,13 @@
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\Editor\SkeletonUtilityBoneInspector.cs" />
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\Editor\SkeletonUtilityInspector.cs" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Editor\Resources\SpineAssetDatabaseMarker.txt" />
+    <None Include="Assets\GooglePlayGames\Editor\GooglePlayGamesPlugin_v0.9.54.txt" />
+    <None Include="Assets\GooglePlayGames\Editor\m2repository\com\google\games\gpgs-plugin-support\maven-metadata.xml" />
+    <None Include="Assets\GooglePlayGames\Editor\template-GameInfo.txt" />
+    <None Include="Assets\GooglePlayGames\Editor\template-AndroidManifest.txt" />
+    <None Include="Assets\GooglePlayGames\Editor\template-Constants.txt" />
+    <None Include="Assets\GooglePlayGames\Editor\GooglePlayGamesPluginDependencies.xml" />
+    <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.95.0.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/arthu/Documents/EstudioChinoVideojuegos/RunForLife - Unity/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -370,6 +386,18 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandler">
+      <HintPath>C:/Users/arthu/Documents/EstudioChinoVideojuegos/RunForLife - Unity/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.JarResolver_v1.2.95.0">
+      <HintPath>C:/Users/arthu/Documents/EstudioChinoVideojuegos/RunForLife - Unity/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.95.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.IOSResolver_v1.2.95.0">
+      <HintPath>C:/Users/arthu/Documents/EstudioChinoVideojuegos/RunForLife - Unity/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.95.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.VersionHandlerImpl_v1.2.95.0">
+      <HintPath>C:/Users/arthu/Documents/EstudioChinoVideojuegos/RunForLife - Unity/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.95.0.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
