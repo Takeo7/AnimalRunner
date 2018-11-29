@@ -25,6 +25,8 @@ public class AnimatorController : MonoBehaviour {
 	[SerializeField]
 	string takeDamage = "takeDamage";
 	[SerializeField]
+	string specialAttack = "protect";
+	[SerializeField]
 	float takeDamageDuration;
 
     public void RunAnim()
@@ -44,6 +46,10 @@ public class AnimatorController : MonoBehaviour {
 	public void DeathAnim()
 	{
 		ChangeAnim(0, death, false);
+	}
+	public void SpecialAttack()
+	{
+		ChangeAnim(0, specialAttack, false);
 	}
 	public void TakeDamage(bool isDeadAfter)
 	{
