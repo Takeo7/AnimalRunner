@@ -24,6 +24,7 @@
 
 public static class GPGSIds
 {
+        public const string achievement_new_animal = "CgkIkI60gZsUEAIQAg"; // <GPGSID>
         public const string leaderboard_meters = "CgkIkI60gZsUEAIQAQ"; // <GPGSID>
 
 }

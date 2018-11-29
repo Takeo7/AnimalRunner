@@ -10,6 +10,7 @@ public class MainMenuAnimator : MonoBehaviour {
 
     public Text signInButtonText;
     public Text authStatus;
+    public GameObject achiveButton;
     [Space]
     public Animator animator;
     [Space]
@@ -30,7 +31,12 @@ public class MainMenuAnimator : MonoBehaviour {
         StartClientConfiguration();
         EnvironmentController.instance.gameOverDelegate += ToogleDeadWindow;
     }
+    private void Update()
+    {
+        achiveButton.SetActive(Social.localUser.authenticated);
+    }
     #region GoogleStuff
+    #region SingIn
     public void StartClientConfiguration()
     {
         // Create client configuration
@@ -96,7 +102,49 @@ public class MainMenuAnimator : MonoBehaviour {
             authStatus.text += PlayGamesPlatform.Instance.GetServerAuthCode();
         }
     }
-
+    #endregion
+    #region Achievements
+    public enum achievements
+    {
+        achievement_new_animal
+    }
+    public void ShowAchievements()
+    {
+        if (PlayGamesPlatform.Instance.localUser.authenticated)
+        {
+            PlayGamesPlatform.Instance.ShowAchievementsUI();
+        }
+        else
+        {
+            Debug.Log("Cannot show Achievements, not logged in");
+        }
+    }
+    public void UpdateAchievement(achievements achiv)
+    {
+        if (Social.localUser.authenticated)
+        {
+            switch (achiv)
+            {
+                case achievements.achievement_new_animal:
+                    PlayGamesPlatform.Instance.ReportProgress(
+                    GPGSIds.achievement_new_animal,
+                    100.0f, (bool success) => {
+                        Debug.Log("(RunForLife) Welcome Unlock: " +
+                              success);
+                    });
+                    break;
+            }
+        }
+        //Increment
+        /*PlayGamesPlatform.Instance.IncrementAchievement(
+        GPGSIds.achievement_sharpshooter,
+                      1,
+                      (bool success) => {
+                          Debug.Log("(Lollygagger) Sharpshooter Increment: " +
+                             success);
+                      });*/
+    }
+    #endregion
     #endregion
     public void ToogleDeadWindow()
     {
