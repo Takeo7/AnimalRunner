@@ -8,9 +8,8 @@ using UnityEngine.UI;
 
 public class MainMenuAnimator : MonoBehaviour {
 
-    public Text signInButtonText;
-    public Text authStatus;
     public GameObject achiveButton;
+    public GameObject leadButton;
     [Space]
     public Animator animator;
     [Space]
@@ -24,7 +23,10 @@ public class MainMenuAnimator : MonoBehaviour {
     public GameObject Meters;
     public GameObject AttackButton;
     public GameObject JumpButton;
-
+    [Space]
+    public Text meters;
+    public int currentMeters;
+    public Transform rootTarget;
 
     private void Start()
     {
@@ -33,7 +35,11 @@ public class MainMenuAnimator : MonoBehaviour {
     }
     private void Update()
     {
+        currentMeters = Mathf.RoundToInt(rootTarget.transform.position.x);
+        meters.text = Mathf.RoundToInt(rootTarget.transform.position.x) + " m";
+
         achiveButton.SetActive(Social.localUser.authenticated);
+        leadButton.SetActive(Social.localUser.authenticated);
     }
     #region GoogleStuff
     #region SingIn
@@ -52,8 +58,14 @@ public class MainMenuAnimator : MonoBehaviour {
         PlayGamesPlatform.Activate();
 
         // Try silent sign-in (second parameter is isSilent)
+        if (PlayGamesPlatform.Instance.IsAuthenticated())
+        {
+
+        }
+        else {
+            PlayGamesPlatform.Instance.Authenticate(SignInCallback, true);
+        }
         
-        //PlayGamesPlatform.Instance.Authenticate(SignInCallback, true);
     }
     public void SingInGoogle()
     {
@@ -73,9 +85,9 @@ public class MainMenuAnimator : MonoBehaviour {
             PlayGamesPlatform.Instance.SignOut();
 
             // Reset UI
-            signInButtonText.text = "Sign In";
+            /*signInButtonText.text = "Sign In";
             authStatus.text = "";
-            authStatus.text += PlayGamesPlatform.Instance.GetServerAuthCode();
+            authStatus.text += PlayGamesPlatform.Instance.GetServerAuthCode();*/
         }
     }
     public void SignInCallback(bool success)
@@ -83,13 +95,14 @@ public class MainMenuAnimator : MonoBehaviour {
         if (success)
         {
             Debug.Log("(RunForLife) Signed in!");
+            UpdateAchievement(achievements.achievement_new_animal);
 
             // Change sign-in button text
-            signInButtonText.text = "Sign out";
+           /* signInButtonText.text = "Sign out";
 
             // Show the user's name
             authStatus.text = "Signed in as: " + Social.localUser.userName;
-            ToogleIntro();
+            ToogleIntro();*/
 
         }
         else
@@ -97,9 +110,9 @@ public class MainMenuAnimator : MonoBehaviour {
             Debug.Log("(RunForLife) Sign-in failed...");
 
             // Show failure message
-            signInButtonText.text = "Sign in";
+           /* signInButtonText.text = "Sign in";
             authStatus.text = "Sign-in failed";
-            authStatus.text += PlayGamesPlatform.Instance.GetServerAuthCode();
+            authStatus.text += PlayGamesPlatform.Instance.GetServerAuthCode();*/
         }
     }
     #endregion
@@ -135,6 +148,10 @@ public class MainMenuAnimator : MonoBehaviour {
                     break;
             }
         }
+       
+    }
+    public void UpdateAchievement(achievements achiv, int increment)
+    {
         //Increment
         /*PlayGamesPlatform.Instance.IncrementAchievement(
         GPGSIds.achievement_sharpshooter,
@@ -144,6 +161,32 @@ public class MainMenuAnimator : MonoBehaviour {
                              success);
                       });*/
     }
+    #endregion
+    #region Leaderboards
+    public void ShowLeaderboards()
+    {
+        if (PlayGamesPlatform.Instance.localUser.authenticated)
+        {
+            PlayGamesPlatform.Instance.ShowLeaderboardUI();
+        }
+        else
+        {
+            Debug.Log("Cannot show leaderboard: not authenticated");
+        }
+    }
+    public void LeaderboardUpdate(int maxScore)
+    {
+        if (PlayGamesPlatform.Instance.localUser.authenticated)
+        {
+            PlayGamesPlatform.Instance.ReportScore(maxScore,
+                GPGSIds.leaderboard_meters,
+                (bool success) =>
+                {
+                    Debug.Log("(RunForLife) Leaderboard update success: " + success);
+                });
+        }
+    }
+
     #endregion
     #endregion
     public void ToogleDeadWindow()
@@ -191,11 +234,24 @@ public class MainMenuAnimator : MonoBehaviour {
 	}
     public void ResetScene()
     {
-        SceneManager.LoadScene(0);
+        if (PlayerPrefs.HasKey("MaxMeters"))
+        {
+            if (PlayerPrefs.GetInt("MaxMeters")<currentMeters)
+            {
+                PlayerPrefs.SetInt("MaxMeters", currentMeters);
+                LeaderboardUpdate(currentMeters);
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetInt("MaxMeters", currentMeters);
+            LeaderboardUpdate(currentMeters);
+        }
+        SceneManager.LoadScene(1);
     }
     IEnumerator IntroCoroutine()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.1f);
         ToogleNonTouch(false);
         IntroWindow.SetActive(false);
         StopCoroutine("IntroCoroutine");
