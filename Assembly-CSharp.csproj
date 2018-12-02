@@ -243,6 +243,7 @@
     <Compile Include="Assets\GooglePlayGames\Platforms\TokenClient.cs" />
     <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
     <Compile Include="Assets\GPGSIds.cs" />
+    <Compile Include="Assets\languaje.cs" />
     <Compile Include="Assets\Scripts\Animators\AnimatorController.cs" />
     <Compile Include="Assets\Scripts\Animators\MainMenuAnimator.cs" />
     <Compile Include="Assets\Scripts\Camera and Character\CameraController.cs" />
@@ -265,6 +266,7 @@
     <Compile Include="Assets\Scripts\FloatingFloor.cs" />
     <Compile Include="Assets\Scripts\GooglePlayScript.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\LanguajesDic.cs" />
     <Compile Include="Assets\Scripts\Parallax\CaveInOut.cs" />
     <Compile Include="Assets\Scripts\Parallax\ParallaxChecker.cs" />
     <Compile Include="Assets\Scripts\Parallax\ParallaxMainController.cs" />
