@@ -243,7 +243,6 @@
     <Compile Include="Assets\GooglePlayGames\Platforms\TokenClient.cs" />
     <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
     <Compile Include="Assets\GPGSIds.cs" />
-    <Compile Include="Assets\languaje.cs" />
     <Compile Include="Assets\Scripts\Animators\AnimatorController.cs" />
     <Compile Include="Assets\Scripts\Animators\MainMenuAnimator.cs" />
     <Compile Include="Assets\Scripts\Camera and Character\CameraController.cs" />
@@ -266,7 +265,8 @@
     <Compile Include="Assets\Scripts\FloatingFloor.cs" />
     <Compile Include="Assets\Scripts\GooglePlayScript.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
-    <Compile Include="Assets\Scripts\LanguajesDic.cs" />
+    <Compile Include="Assets\Scripts\Languajes\languaje.cs" />
+    <Compile Include="Assets\Scripts\Languajes\LanguajesDic.cs" />
     <Compile Include="Assets\Scripts\Parallax\CaveInOut.cs" />
     <Compile Include="Assets\Scripts\Parallax\ParallaxChecker.cs" />
     <Compile Include="Assets\Scripts\Parallax\ParallaxMainController.cs" />
@@ -417,6 +417,7 @@
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SpineAttributes.cs" />
+    <Compile Include="Assets\TextsScript.cs" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Eyes\eyes.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Utility\HiddenPass.shader" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Spine-Skeleton-Fill.shader" />
