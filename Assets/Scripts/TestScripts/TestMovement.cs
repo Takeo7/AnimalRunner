@@ -164,7 +164,7 @@ public class TestMovement : MonoBehaviour {
 
     IEnumerator AttackCoroutine()
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.01f);
         GameObject g = Instantiate(bulletPrefab, bulletSpawnPoint.position,Quaternion.identity);
         //g.transform.SetParent(null);
         StopCoroutine("AttackCoroutine");
