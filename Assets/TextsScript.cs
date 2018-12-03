@@ -7,15 +7,23 @@ public class TextsScript : MonoBehaviour {
 
     public Text t;
     public int ID;
-    public LanguajesDic LD;
+    public bool isHidden = true;
+    private void Awake()
+    {
+        LanguajesDic.instance.delegadoLang += GetKey;
+    }
 
     private void Start()
     {
-        LD.delegadoLang += GetKey;
+        if (isHidden)
+        {
+            GetKey();
+        }
+
     }
 
     public void GetKey()
     {
-        t.text = LD.GetText(ID);
+        t.text = LanguajesDic.instance.GetText(ID);
     }
 }
