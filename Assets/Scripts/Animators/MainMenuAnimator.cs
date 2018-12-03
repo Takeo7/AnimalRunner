@@ -1,13 +1,19 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using GooglePlayGames.BasicApi;
+using GooglePlayGames.BasicApi.SavedGame;
 using GooglePlayGames;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuAnimator : MonoBehaviour {
-
+    public int infoToSave;
+    public int MaxMeters;
+    [Space]
+    public Text MaxMetersText;
+    [Space]
     public GameObject achiveButton;
     public GameObject leadButton;
     [Space]
@@ -48,6 +54,7 @@ public class MainMenuAnimator : MonoBehaviour {
         // Create client configuration
         PlayGamesClientConfiguration config = new
             PlayGamesClientConfiguration.Builder()
+            .EnableSavedGames()
             .Build();
 
         // Enable debugging output (recommended)
@@ -65,7 +72,8 @@ public class MainMenuAnimator : MonoBehaviour {
         else {
             PlayGamesPlatform.Instance.Authenticate(SignInCallback, true);
         }
-        
+
+        UpdateLocalInfoRead();
     }
     public void SingInGoogle()
     {
@@ -184,7 +192,157 @@ public class MainMenuAnimator : MonoBehaviour {
                 {
                     Debug.Log("(RunForLife) Leaderboard update success: " + success);
                 });
+
+            WriteUpdatedScore(maxScore);
         }
+    }
+
+    #endregion
+    #region SaveGame
+    public void ReadSavedGame(string filename,
+                             Action<SavedGameRequestStatus, ISavedGameMetadata> callback)
+    {
+
+        ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+        savedGameClient.OpenWithAutomaticConflictResolution(
+            filename,
+            DataSource.ReadCacheOrNetwork,
+            ConflictResolutionStrategy.UseLongestPlaytime,
+            callback);
+    }
+
+    public void WriteSavedGame(ISavedGameMetadata game, byte[] savedData,
+                               Action<SavedGameRequestStatus, ISavedGameMetadata> callback)
+    {
+
+        SavedGameMetadataUpdate.Builder builder = new SavedGameMetadataUpdate.Builder()
+            .WithUpdatedPlayedTime(TimeSpan.FromMinutes(game.TotalTimePlayed.Minutes + 1))
+            .WithUpdatedDescription("Saved at: " + System.DateTime.Now);
+
+        // You can add an image to saved game data (such as as screenshot)
+        // byte[] pngData = <PNG AS BYTES>;
+        // builder = builder.WithUpdatedPngCoverImage(pngData);
+
+        SavedGameMetadataUpdate updatedMetadata = builder.Build();
+
+        ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+        savedGameClient.CommitUpdate(game, updatedMetadata, savedData, callback);
+    }
+
+    public void WriteUpdatedScore(int newMaxScore)
+    {
+        // Local variable
+        ISavedGameMetadata currentGame = null;
+
+        // CALLBACK: Handle the result of a write
+        Action<SavedGameRequestStatus, ISavedGameMetadata> writeCallback =
+        (SavedGameRequestStatus status, ISavedGameMetadata game) => {
+            Debug.Log("(RunForLife) Saved Game Write: " + status.ToString());
+        };
+
+        // CALLBACK: Handle the result of a binary read
+        Action<SavedGameRequestStatus, byte[]> readBinaryCallback =
+        (SavedGameRequestStatus status, byte[] data) => {
+            Debug.Log("(RunForLife) Saved Game Binary Read: " + status.ToString());
+            if (status == SavedGameRequestStatus.Success)
+            {
+                // Read score from the Saved Game
+                int[] score = new int[infoToSave];
+                try
+                {
+                    string scoreString = System.Text.Encoding.UTF8.GetString(data);
+                    string[] scoreStringArr = scoreString.Split(',');
+                    for (int i = 0; i < infoToSave; i++)
+                    {
+                        score[i] = Convert.ToInt32(scoreStringArr[i]);
+                    }
+                }
+                catch (Exception e)
+                {
+                    Debug.Log("(RunForLife) Saved Game Write: convert exception");
+                }
+
+                // Increment score, convert to byte[]
+                score[0] = newMaxScore;
+                string newScoreString = "";
+                for (int i = 0; i < infoToSave; i++)
+                {
+                    newScoreString += Convert.ToString(score[i]);
+                }
+                byte[] newData = System.Text.Encoding.UTF8.GetBytes(newScoreString);
+
+                // Write new data
+                WriteSavedGame(currentGame, newData, writeCallback);
+            }
+        };
+
+        // CALLBACK: Handle the result of a read, which should return metadata
+        Action<SavedGameRequestStatus, ISavedGameMetadata> readCallback =
+        (SavedGameRequestStatus status, ISavedGameMetadata game) => {
+            Debug.Log("(RunForLife) Saved Game Read: " + status.ToString());
+            if (status == SavedGameRequestStatus.Success)
+            {
+                // Read the binary game data
+                currentGame = game;
+                PlayGamesPlatform.Instance.SavedGame.ReadBinaryData(game,
+                                                    readBinaryCallback);
+            }
+        };
+
+        // Read the current data and kick off the callback chain
+        Debug.Log("(RunForLife) Saved Game: Reading");
+        ReadSavedGame("file_maxMeters", readCallback);
+    }
+
+    public int[] ReadUpdatedSaveData()
+    {
+        // Local variable
+        ISavedGameMetadata currentGame = null;
+
+        int[] score = new int[infoToSave];
+
+        // CALLBACK: Handle the result of a binary read
+        Action<SavedGameRequestStatus, byte[]> readBinaryCallback =
+        (SavedGameRequestStatus status, byte[] data) => {
+            Debug.Log("(RunForLife) Saved Game Binary Read: " + status.ToString());
+            if (status == SavedGameRequestStatus.Success)
+            {
+                // Read score from the Saved Game
+                try
+                {
+                    string scoreString = System.Text.Encoding.UTF8.GetString(data);
+                    string[] scoreStringArr = scoreString.Split(',');
+                    for (int i = 0; i < infoToSave; i++)
+                    {
+                        score[i] = Convert.ToInt32(scoreStringArr[i]);
+                    }                   
+                }
+                catch (Exception e)
+                {
+                    Debug.Log("(Lollygagger) Saved Game Write: convert exception");
+                }
+            }
+        };
+        // CALLBACK: Handle the result of a read, which should return metadata
+        Action<SavedGameRequestStatus, ISavedGameMetadata> readCallback =
+        (SavedGameRequestStatus status, ISavedGameMetadata game) => {
+            Debug.Log("(RunForLife) Saved Game Read: " + status.ToString());
+            if (status == SavedGameRequestStatus.Success)
+            {
+                // Read the binary game data
+                currentGame = game;
+                PlayGamesPlatform.Instance.SavedGame.ReadBinaryData(game,
+                                                    readBinaryCallback);
+            }
+        };
+        ReadSavedGame("file_maxMeters", readCallback);
+        return score;
+    }
+
+    public void UpdateLocalInfoRead()
+    {
+        MaxMeters = ReadUpdatedSaveData()[0];
+        MaxMetersText.text = MaxMeters+"m";
     }
 
     #endregion
