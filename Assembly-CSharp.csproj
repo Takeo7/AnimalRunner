@@ -243,6 +243,7 @@
     <Compile Include="Assets\GooglePlayGames\Platforms\TokenClient.cs" />
     <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
     <Compile Include="Assets\GPGSIds.cs" />
+    <Compile Include="Assets\MaxMetersTextScript.cs" />
     <Compile Include="Assets\Scripts\Animators\AnimatorController.cs" />
     <Compile Include="Assets\Scripts\Animators\MainMenuAnimator.cs" />
     <Compile Include="Assets\Scripts\Camera and Character\CameraController.cs" />
