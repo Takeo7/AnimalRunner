@@ -53,10 +53,12 @@ public class MainMenuAnimator : MonoBehaviour {
     public void StartClientConfiguration()
     {
         // Create client configuration
-        PlayGamesClientConfiguration config = new
-            PlayGamesClientConfiguration.Builder()
-            .EnableSavedGames()
+        PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
+            //.EnableSavedGames()
             .Build();
+
+
+
 
         // Enable debugging output (recommended)
         PlayGamesPlatform.DebugLogEnabled = true;
@@ -355,10 +357,18 @@ public class MainMenuAnimator : MonoBehaviour {
     public void ToogleSettingsWindow()
     {
         settingsWindow.SetActive(!settingsWindow.active);
+        if (settingsWindow.active)
+        {
+            shopWindow.SetActive(false);
+        }
     }
     public void ToogleShopWindow()
     {
         shopWindow.SetActive(!shopWindow.active);
+        if (shopWindow.active)
+        {
+            settingsWindow.SetActive(false);
+        }
     }
     public void ToogleNonTouch(bool b)
     {
