@@ -242,8 +242,6 @@
     <Compile Include="Assets\GooglePlayGames\Platforms\PlayGamesClientFactory.cs" />
     <Compile Include="Assets\GooglePlayGames\Platforms\TokenClient.cs" />
     <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
-    <Compile Include="Assets\GPGSIds.cs" />
-    <Compile Include="Assets\MaxMetersTextScript.cs" />
     <Compile Include="Assets\Scripts\Animators\AnimatorController.cs" />
     <Compile Include="Assets\Scripts\Animators\MainMenuAnimator.cs" />
     <Compile Include="Assets\Scripts\Camera and Character\CameraController.cs" />
@@ -254,10 +252,13 @@
     <Compile Include="Assets\Scripts\Challenges\ChallengeCompletedUIController.cs" />
     <Compile Include="Assets\Scripts\Challenges\ChallengesController.cs" />
     <Compile Include="Assets\Scripts\Challenges\ChallengesScriptable.cs" />
+    <Compile Include="Assets\Scripts\CharacterReferences.cs" />
+    <Compile Include="Assets\Scripts\CharacterVFXController.cs" />
     <Compile Include="Assets\Scripts\Controllers\EnvironmentController.cs" />
     <Compile Include="Assets\Scripts\Controllers\EnvironmentPrefabController.cs" />
     <Compile Include="Assets\Scripts\Controllers\FinisherController.cs" />
     <Compile Include="Assets\Scripts\Controllers\UIController.cs" />
+    <Compile Include="Assets\Scripts\DestroyAfterX.cs" />
     <Compile Include="Assets\Scripts\Enemies\BulletController.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Enemies\HunterSightController.cs" />
@@ -265,8 +266,10 @@
     <Compile Include="Assets\Scripts\Enemies\TrapScript.cs" />
     <Compile Include="Assets\Scripts\FloatingFloor.cs" />
     <Compile Include="Assets\Scripts\GooglePlayScript.cs" />
+    <Compile Include="Assets\Scripts\GPGSIds.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\Languajes\LanguajesDic.cs" />
+    <Compile Include="Assets\Scripts\MaxMetersTextScript.cs" />
     <Compile Include="Assets\Scripts\Parallax\CaveInOut.cs" />
     <Compile Include="Assets\Scripts\Parallax\ParallaxChecker.cs" />
     <Compile Include="Assets\Scripts\Parallax\ParallaxMainController.cs" />
@@ -275,6 +278,8 @@
     <Compile Include="Assets\Scripts\TestScripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\TestScripts\TestAttack.cs" />
     <Compile Include="Assets\Scripts\TestScripts\TestMovement.cs" />
+    <Compile Include="Assets\Scripts\TextsScript.cs" />
+    <Compile Include="Assets\Scripts\VFXAfterAction.cs" />
     <Compile Include="Assets\spine\spine-csharp\Properties\AssemblyInfo.cs" />
     <Compile Include="Assets\spine\spine-csharp\src\Animation.cs" />
     <Compile Include="Assets\spine\spine-csharp\src\AnimationState.cs" />
@@ -417,7 +422,6 @@
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SpineAttributes.cs" />
-    <Compile Include="Assets\TextsScript.cs" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Eyes\eyes.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Utility\HiddenPass.shader" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Spine-Skeleton-Fill.shader" />
@@ -445,6 +449,7 @@
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteLighting.cginc" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Screen.shader" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\spineboy-unity\spineboy.atlas.txt" />
+    <None Include="Assets\spine\Elefante spine-unity\farolillo.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpriteUnlit.cginc" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteUnlit.cginc" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\FootSoldier\license.txt" />
@@ -468,6 +473,7 @@
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic.shader" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Spine-Skeleton.shader" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CameraNormalsTexture.shader" />
+    <None Include="Assets\spine\Elefante spine-unity\farolillo.json.txt" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\spineboy-pro\spineboy-pro.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Spineunitygirl\Doi.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CameraDepthTexture.shader" />

@@ -33,7 +33,7 @@ public class MainMenuAnimator : MonoBehaviour {
     [Space]
     public Text meters;
     public int currentMeters;
-    public Transform rootTarget;
+	public CharacterReferences CR;
 
     private void Start()
     {
@@ -42,8 +42,8 @@ public class MainMenuAnimator : MonoBehaviour {
     }
     private void Update()
     {
-        currentMeters = Mathf.RoundToInt(rootTarget.transform.position.x);
-        meters.text = Mathf.RoundToInt(rootTarget.transform.position.x) + " m";
+        currentMeters = Mathf.RoundToInt(CR.characterTransform.transform.position.x);
+        meters.text = Mathf.RoundToInt(CR.characterTransform.transform.position.x) + " m";
 
         achiveButton.SetActive(Social.localUser.authenticated);
         leadButton.SetActive(Social.localUser.authenticated);

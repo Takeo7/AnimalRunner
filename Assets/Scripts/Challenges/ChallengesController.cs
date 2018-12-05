@@ -20,7 +20,7 @@ public class ChallengesController : MonoBehaviour {
 	
 
 	public UIController UIC;
-	public TestMovement CC;
+	public CharacterReferences CR;
 	public EnvironmentController EC;
 	public ChallengeCompletedUIController CCUIC;
 
@@ -109,7 +109,7 @@ public class ChallengesController : MonoBehaviour {
 			}
 			else if (currentChallenges[0].mustBeGrounded && !currentChallenges[0].mustBeOnce)
 			{
-				if (CC.isGrounded)
+				if (CR.TM.isGrounded)
 				{
 					metersRunGrounded += EC.characterSpeed * Time.deltaTime;
 					if ((metersRunGrounded + currentChallengesProgress[0]) >= currentChallenges[0].metersToRun)
@@ -120,7 +120,7 @@ public class ChallengesController : MonoBehaviour {
 			}
 			else if (currentChallenges[0].mustBeGrounded && currentChallenges[0].mustBeOnce)
 			{
-				if (CC.isGrounded)
+				if (CR.TM.isGrounded)
 				{
 					metersRunGrounded += EC.characterSpeed * Time.deltaTime;
 					if (metersRunGrounded >= currentChallenges[0].metersToRun)

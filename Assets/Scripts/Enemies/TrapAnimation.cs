@@ -8,6 +8,9 @@ public class TrapAnimation : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        anim.SetTrigger("Activate");
+		if (collision.CompareTag("Player"))
+		{
+			anim.SetTrigger("Activate");
+		}
     }
 }

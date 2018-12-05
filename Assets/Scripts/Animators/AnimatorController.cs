@@ -17,6 +17,8 @@ public class AnimatorController : MonoBehaviour {
 	[SerializeField]
 	string attack = "attack";
 	[SerializeField]
+	string secondAttack = "attack 2";
+	[SerializeField]
 	string secondJump = "jump2";
 	[SerializeField]
 	string death = "death";
@@ -28,6 +30,10 @@ public class AnimatorController : MonoBehaviour {
 	string specialAttack = "protect";
 	[SerializeField]
 	float takeDamageDuration;
+	[SerializeField]
+	float attackAnimDuration;
+	[SerializeField]
+	float secondAttackAnimDuration;
 
     public void RunAnim()
 	{
@@ -80,7 +86,7 @@ public class AnimatorController : MonoBehaviour {
 	IEnumerator AttackAnimCO()
 	{
 		ChangeAnim(actionTrack, attack, false);
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(attackAnimDuration);
 		ClearAttackAnim();
 	}
 	IEnumerator TakeDamageAnimCO(bool isDeadAfter)

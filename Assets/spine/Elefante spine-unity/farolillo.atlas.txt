@@ -1,0 +1,167 @@
+
+farolillo.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+brazo derecho
+  rotate: true
+  xy: 962, 172
+  size: 82, 59
+  orig: 82, 59
+  offset: 0, 0
+  index: -1
+brazo derecho estirado
+  rotate: false
+  xy: 642, 191
+  size: 130, 63
+  orig: 130, 63
+  offset: 0, 0
+  index: -1
+brazo izquierdo
+  rotate: false
+  xy: 871, 170
+  size: 89, 84
+  orig: 89, 84
+  offset: 0, 0
+  index: -1
+brazo izquierdo estirado
+  rotate: false
+  xy: 90, 19
+  size: 92, 99
+  orig: 92, 99
+  offset: 0, 0
+  index: -1
+cabeza
+  rotate: false
+  xy: 2, 120
+  size: 187, 134
+  orig: 187, 134
+  offset: 0, 0
+  index: -1
+cara ataque
+  rotate: false
+  xy: 270, 109
+  size: 76, 48
+  orig: 76, 48
+  offset: 0, 0
+  index: -1
+cara ataque 2
+  rotate: false
+  xy: 774, 151
+  size: 70, 29
+  orig: 70, 29
+  offset: 0, 0
+  index: -1
+cara dano
+  rotate: false
+  xy: 494, 143
+  size: 78, 50
+  orig: 78, 50
+  offset: 0, 0
+  index: -1
+cara normal
+  rotate: false
+  xy: 191, 107
+  size: 77, 50
+  orig: 77, 50
+  offset: 0, 0
+  index: -1
+cuerno delantero
+  rotate: false
+  xy: 326, 63
+  size: 36, 44
+  orig: 36, 44
+  offset: 0, 0
+  index: -1
+cuerno trasero
+  rotate: true
+  xy: 639, 116
+  size: 34, 41
+  orig: 34, 41
+  offset: 0, 0
+  index: -1
+mano derecha
+  rotate: true
+  xy: 184, 7
+  size: 46, 48
+  orig: 46, 48
+  offset: 0, 0
+  index: -1
+mano derecha ataque
+  rotate: false
+  xy: 714, 142
+  size: 58, 47
+  orig: 58, 47
+  offset: 0, 0
+  index: -1
+mano derecha atque 2
+  rotate: false
+  xy: 283, 64
+  size: 41, 43
+  orig: 41, 43
+  offset: 0, 0
+  index: -1
+mano izquierda
+  rotate: false
+  xy: 574, 143
+  size: 63, 50
+  orig: 63, 50
+  offset: 0, 0
+  index: -1
+mano izquierda ataque
+  rotate: false
+  xy: 184, 55
+  size: 52, 50
+  orig: 52, 50
+  offset: 0, 0
+  index: -1
+mano izquierda ataque 2
+  rotate: false
+  xy: 238, 57
+  size: 43, 48
+  orig: 43, 48
+  offset: 0, 0
+  index: -1
+oreja trasera
+  rotate: true
+  xy: 639, 152
+  size: 37, 73
+  orig: 37, 73
+  offset: 0, 0
+  index: -1
+piernas
+  rotate: false
+  xy: 191, 159
+  size: 179, 95
+  orig: 179, 95
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 372, 144
+  size: 120, 110
+  orig: 120, 110
+  offset: 0, 0
+  index: -1
+trompa
+  rotate: false
+  xy: 2, 2
+  size: 86, 116
+  orig: 86, 116
+  offset: 0, 0
+  index: -1
+trompa encogida
+  rotate: false
+  xy: 774, 182
+  size: 95, 72
+  orig: 95, 72
+  offset: 0, 0
+  index: -1
+trompa estirada
+  rotate: false
+  xy: 494, 195
+  size: 146, 59
+  orig: 146, 59
+  offset: 0, 0
+  index: -1

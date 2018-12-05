@@ -77,6 +77,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1409964354107182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4628995929712448}
+  m_Layer: 0
+  m_Name: VFXInstantiate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1511456970607496
 GameObject:
   m_ObjectHideFlags: 1
@@ -139,6 +154,7 @@ GameObject:
   - component: {fileID: 95673502269830876}
   - component: {fileID: 114237448862297296}
   - component: {fileID: 61648766067569548}
+  - component: {fileID: 114636325966148512}
   m_Layer: 0
   m_Name: Bear_Trap
   m_TagString: Untagged
@@ -167,9 +183,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1904981198315766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.39, y: 0, z: 0.5}
+  m_LocalPosition: {x: 3.39, y: -1.94, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4628995929712448}
   - {fileID: 4402388478156022}
   - {fileID: 4895313517534800}
   m_Father: {fileID: 0}
@@ -200,8 +217,21 @@ Transform:
   m_Children:
   - {fileID: 4871460679432442}
   m_Father: {fileID: 4209755381856138}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!4 &4628995929712448
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1409964354107182}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.22, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4209755381856138}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4717215847908650
 Transform:
   m_ObjectHideFlags: 1
@@ -255,7 +285,7 @@ Transform:
   - {fileID: 4026722487485824}
   - {fileID: 4860737305271630}
   m_Father: {fileID: 4209755381856138}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &60175151904078720
 PolygonCollider2D:
@@ -461,6 +491,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 95673502269830876}
+--- !u!114 &114636325966148512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1904981198315766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80d81fdd61b63443b04ec05866c708c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VFXPrefab: {fileID: 151244, guid: 2e8669fad00562946bae9b3c7d5ef2e5, type: 2}
+  instantiateOrigin: {fileID: 4628995929712448}
 --- !u!198 &198124757051929410
 ParticleSystem:
   m_ObjectHideFlags: 1

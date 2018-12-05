@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class FinisherController : MonoBehaviour {
 
-	public Transform player;
-    public TestMovement playerScript;
+	public CharacterReferences CR;
     public EnvironmentController enviroment;
 	EnvironmentController EC;
 
@@ -17,10 +16,10 @@ public class FinisherController : MonoBehaviour {
 
 	IEnumerator Follow()
 	{
-		while (playerScript.dead == false)
+		while (CR.TM.dead == false)
 		{
 			yield return new WaitForSeconds(0.01f);
-			transform.position = new Vector3(player.position.x, transform.position.y);
+			transform.position = new Vector3(CR.TM.transform.position.x, transform.position.y);
 		}
 	}
 
@@ -28,7 +27,7 @@ public class FinisherController : MonoBehaviour {
     {
         if (collision.CompareTag("Player"))
         {
-            playerScript.dead = true;
+			CR.TM.dead = true;
             enviroment.TriggerEndGame();
         }
 

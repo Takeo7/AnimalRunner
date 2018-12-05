@@ -17,7 +17,7 @@ public class TestMovement : MonoBehaviour {
 
     #endregion
 
-    EnvironmentController EC;
+    public EnvironmentController EC;
     public Rigidbody2D rb;
     public float jumpForce = 10;
     public byte jumps = 2;
@@ -50,8 +50,11 @@ public class TestMovement : MonoBehaviour {
     public GameObject bulletPrefab;
     public Transform bulletSpawnPoint;
     public int bulletDamage;
+	public bool jumpAnimEnabled;
+	public CharacterVFXController VFX;
 
-    private void Start()
+
+	private void Start()
 	{
 		EC = EnvironmentController.instance;
 	}
@@ -109,11 +112,18 @@ public class TestMovement : MonoBehaviour {
         {
             if (jumpCount == 0)
             {
-                AC.JumpOneAnim();
+				if (jumpAnimEnabled)
+				{
+					AC.JumpOneAnim();
+					VFX.JumpFromFloorVFX();
+				}
             }
             else if (jumpCount == 1)
             {
-                AC.JumpTwoAnim();
+				if (jumpAnimEnabled)
+				{
+					AC.JumpTwoAnim();
+				}
             }
             rb.velocity = Vector3.zero;
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
