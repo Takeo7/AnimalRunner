@@ -17,6 +17,7 @@ public class MainMenuAnimator : MonoBehaviour {
     [Space]
     public GameObject achiveButton;
     public GameObject leadButton;
+    public Text SignInButtonText;
     [Space]
     public Animator animator;
     [Space]
@@ -47,6 +48,14 @@ public class MainMenuAnimator : MonoBehaviour {
 
         achiveButton.SetActive(Social.localUser.authenticated);
         leadButton.SetActive(Social.localUser.authenticated);
+        if (Social.localUser.authenticated == true)
+        {
+            SignInButtonText.text = LanguajesDic.instance.GetText(9);
+        }
+        else
+        {
+            SignInButtonText.text = LanguajesDic.instance.GetText(8);
+        }
     }
     #region GoogleStuff
     #region SingIn
@@ -54,7 +63,7 @@ public class MainMenuAnimator : MonoBehaviour {
     {
         // Create client configuration
         PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
-            //.EnableSavedGames()
+            .EnableSavedGames()
             .Build();
 
 
@@ -68,11 +77,8 @@ public class MainMenuAnimator : MonoBehaviour {
         PlayGamesPlatform.Activate();
 
         // Try silent sign-in (second parameter is isSilent)
-        if (PlayGamesPlatform.Instance.IsAuthenticated())
+        if (PlayGamesPlatform.Instance.IsAuthenticated() == false)
         {
-
-        }
-        else {
             PlayGamesPlatform.Instance.Authenticate(SignInCallback, true);
         }
 
@@ -80,7 +86,7 @@ public class MainMenuAnimator : MonoBehaviour {
     }
     public void SingInGoogle()
     {
-        SignIn();
+        SignIn();   
     }
     public void SignIn()
     {
@@ -118,12 +124,8 @@ public class MainMenuAnimator : MonoBehaviour {
         }
         else
         {
-            Debug.Log("(RunForLife) Sign-in failed...");
-
-            // Show failure message
-           /* signInButtonText.text = "Sign in";
-            authStatus.text = "Sign-in failed";
-            authStatus.text += PlayGamesPlatform.Instance.GetServerAuthCode();*/
+            Debug.Log("(RunForLife) Sign-in failed..."+PlayGamesPlatform.Instance.GetServerAuthCode());
+            
         }
     }
     #endregion
