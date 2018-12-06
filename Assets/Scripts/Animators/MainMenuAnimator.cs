@@ -82,7 +82,7 @@ public class MainMenuAnimator : MonoBehaviour {
             PlayGamesPlatform.Instance.Authenticate(SignInCallback, true);
         }
 
-        //UpdateLocalInfoRead();
+        UpdateLocalInfoRead();
     }
     public void SingInGoogle()
     {
@@ -204,7 +204,7 @@ public class MainMenuAnimator : MonoBehaviour {
 
     #endregion
     #region SaveGame
-    /*public void ReadSavedGame(string filename,
+    public void ReadSavedGame(string filename,
                              Action<SavedGameRequestStatus, ISavedGameMetadata> callback)
     {
 
@@ -349,7 +349,7 @@ public class MainMenuAnimator : MonoBehaviour {
         MaxMeters = ReadUpdatedSaveData()[0];
         MaxMetersText.text = MaxMeters+"m";
     }
-    */
+    
     #endregion
     #endregion
     public void ToogleDeadWindow()
