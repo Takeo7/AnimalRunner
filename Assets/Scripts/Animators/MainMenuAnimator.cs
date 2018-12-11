@@ -9,7 +9,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuAnimator : MonoBehaviour {
-
+    public Text debugText;
+    [Space]
     public int infoToSave;
     public int MaxMeters;
     [Space]
@@ -111,7 +112,7 @@ public class MainMenuAnimator : MonoBehaviour {
     {
         if (success)
         {
-            Debug.Log("(RunForLife) Signed in!");
+            debugText.text = "Sign In";
             UpdateAchievement(achievements.achievement_new_animal);
 
             // Change sign-in button text
@@ -124,7 +125,7 @@ public class MainMenuAnimator : MonoBehaviour {
         }
         else
         {
-            Debug.Log("(RunForLife) Sign-in failed..."+PlayGamesPlatform.Instance.GetServerAuthCode());
+            debugText.text = "(RunForLife) Sign-in failed..."+PlayGamesPlatform.Instance.GetServerAuthCode();
             
         }
     }
@@ -142,7 +143,7 @@ public class MainMenuAnimator : MonoBehaviour {
         }
         else
         {
-            Debug.Log("Cannot show Achievements, not logged in");
+            debugText.text = "Cannot show Achievements, not logged in";
         }
     }
     public void UpdateAchievement(achievements achiv)
@@ -155,8 +156,8 @@ public class MainMenuAnimator : MonoBehaviour {
                     PlayGamesPlatform.Instance.ReportProgress(
                     GPGSIds.achievement_new_animal,
                     100.0f, (bool success) => {
-                        Debug.Log("(RunForLife) Welcome Unlock: " +
-                              success);
+                        debugText.text = "(RunForLife) Welcome Unlock: " +
+                              success;
                     });
                     break;
             }
@@ -184,7 +185,7 @@ public class MainMenuAnimator : MonoBehaviour {
         }
         else
         {
-            Debug.Log("Cannot show leaderboard: not authenticated");
+            debugText.text = "Cannot show leaderboard: not authenticated";
         }
     }
     public void LeaderboardUpdate(int maxScore)
@@ -195,21 +196,40 @@ public class MainMenuAnimator : MonoBehaviour {
                 GPGSIds.leaderboard_meters,
                 (bool success) =>
                 {
-                    Debug.Log("(RunForLife) Leaderboard update success: " + success);
+                    debugText.text = "Leaderboard update success: " + success;
                 });
 
-            //WriteUpdatedScore(maxScore);
+            try
+            {
+                //WriteUpdatedScore(maxScore);
+            }
+            catch (Exception)
+            {
+                debugText.text = "Cant WriteUpdatedScore";
+                throw;
+            } 
         }
     }
 
     #endregion
     #region SaveGame
+
+    public void OpenSaveGameUI()
+    {
+        Action<SelectUIStatus, ISavedGameMetadata> OpenSGUI = (SelectUIStatus status, ISavedGameMetadata game) =>
+         {
+             debugText.text = "OpenSaveUI: " + status.ToString();
+         };
+
+        PlayGamesPlatform.Instance.SavedGame.ShowSelectSavedGameUI("Saved Games",5,false,false,OpenSGUI);
+    }
+
     public void ReadSavedGame(string filename,
                              Action<SavedGameRequestStatus, ISavedGameMetadata> callback)
     {
 
-        ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
-        /*savedGameClient.OpenWithAutomaticConflictResolution(
+        /*ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+        savedGameClient.OpenWithAutomaticConflictResolution(
             filename,
             DataSource.ReadCacheOrNetwork,
             ConflictResolutionStrategy.UseLongestPlaytime,
@@ -230,7 +250,7 @@ public class MainMenuAnimator : MonoBehaviour {
         SavedGameMetadataUpdate updatedMetadata = builder.Build();
 
         ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
-        Debug.Log(game.Filename + ":_SAVED GAME");
+        debugText.text = game.Filename + ":_SAVED GAME";
         savedGameClient.CommitUpdate(game, updatedMetadata, savedData, callback);
     }
 
@@ -242,13 +262,13 @@ public class MainMenuAnimator : MonoBehaviour {
         // CALLBACK: Handle the result of a write
         Action<SavedGameRequestStatus, ISavedGameMetadata> writeCallback =
         (SavedGameRequestStatus status, ISavedGameMetadata game) => {
-            Debug.Log("(RunForLife) Saved Game Write: " + status.ToString());
+            debugText.text = "(RunForLife) Saved Game Write: " + status.ToString();
         };
 
         // CALLBACK: Handle the result of a binary read
         Action<SavedGameRequestStatus, byte[]> readBinaryCallback =
         (SavedGameRequestStatus status, byte[] data) => {
-            Debug.Log("(RunForLife) Saved Game Binary Read: " + status.ToString());
+            debugText.text = "(RunForLife) Saved Game Binary Read: " + status.ToString();
             if (status == SavedGameRequestStatus.Success)
             {
                 // Read score from the Saved Game
@@ -260,7 +280,7 @@ public class MainMenuAnimator : MonoBehaviour {
                 }
                 catch (Exception e)
                 {
-                    Debug.Log("(RunForLife) Saved Game Write: convert exception");
+                    debugText.text = "(RunForLife) Saved Game Write: convert exception";
                 }
 
                 // Increment score, convert to byte[]
@@ -277,7 +297,7 @@ public class MainMenuAnimator : MonoBehaviour {
         // CALLBACK: Handle the result of a read, which should return metadata
         Action<SavedGameRequestStatus, ISavedGameMetadata> readCallback =
         (SavedGameRequestStatus status, ISavedGameMetadata game) => {
-            Debug.Log("(RunForLife) Saved Game Read: " + status.ToString());
+            debugText.text = "(RunForLife) Saved Game Read: " + status.ToString();
             if (status == SavedGameRequestStatus.Success)
             {
                 // Read the binary game data
@@ -288,7 +308,7 @@ public class MainMenuAnimator : MonoBehaviour {
         };
 
         // Read the current data and kick off the callback chain
-        Debug.Log("(RunForLife) Saved Game: Reading");
+        debugText.text = "(RunForLife) Saved Game: Reading";
         ReadSavedGame("file_maxMeters", readCallback);
     }
 
@@ -302,7 +322,7 @@ public class MainMenuAnimator : MonoBehaviour {
         // CALLBACK: Handle the result of a binary read
         Action<SavedGameRequestStatus, byte[]> readBinaryCallback =
         (SavedGameRequestStatus status, byte[] data) => {
-            Debug.Log("(RunForLife) Saved Game Binary Read: " + status.ToString());
+            debugText.text = "(RunForLife) Saved Game Binary Read: " + status.ToString();
             if (status == SavedGameRequestStatus.Success)
             {
                 // Read score from the Saved Game
@@ -313,14 +333,14 @@ public class MainMenuAnimator : MonoBehaviour {
                 }
                 catch (Exception e)
                 {
-                    Debug.Log("(RunForLife) Saved Game Write: convert exception");
+                    debugText.text = "(RunForLife) Saved Game Write: convert exception";
                 }
             }
         };
         // CALLBACK: Handle the result of a read, which should return metadata
         Action<SavedGameRequestStatus, ISavedGameMetadata> readCallback =
         (SavedGameRequestStatus status, ISavedGameMetadata game) => {
-            Debug.Log("(RunForLife) Saved Game Read: " + status.ToString());
+            debugText.text = "(RunForLife) Saved Game Read: " + status.ToString();
             if (status == SavedGameRequestStatus.Success)
             {
                 // Read the binary game data
