@@ -2505,7 +2505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &805089371
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2535,7 +2535,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6e665406196e344eb2cbb70787d90be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ps: {fileID: 145081250}
   FullHeart: {fileID: 21300000, guid: a0858157a3cd7b94a898c1b90efcc64c, type: 3}
   EmptyHeart: {fileID: 21300000, guid: 862be81fbbbdf28459976ae7d342f1e2, type: 3}
   HeartPrefab: {fileID: 1458018478751882, guid: 84c059f0b48196248b7557b121d2a691,
@@ -2838,25 +2837,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1779014504}
   m_Script: {fileID: 11500000, guid: 294a16452852aa546a95447b3b0ef16c, type: 3}
---- !u!114 &896876605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 896876603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64ba5f48bf9214d419d36030ec0333e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meshRenderer: {fileID: 1498287066}
-  JumpFromFloor: {fileID: 195466, guid: 52837252d6c20f444a3f76c37b1d1cbf, type: 2}
-  SecondJump: {fileID: 0}
-  AttackRanged: {fileID: 0}
-  Idle: {fileID: 0}
-  Death: {fileID: 0}
-  StandardMaterial: {fileID: 2100000, guid: 5d1458cc4cda3bb4da9fda751eb66a34, type: 2}
-  DeathMaterial: {fileID: 0}
 --- !u!1 &928886216
 GameObject:
   m_ObjectHideFlags: 0
@@ -4360,11 +4340,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!23 &1498287066 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 23007616468842604, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1779014504}
 --- !u!1 &1515320142
 GameObject:
   m_ObjectHideFlags: 0
@@ -5303,25 +5278,6 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 114001242601144446, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
-        type: 2}
-      propertyPath: healthScript
-      value: 
-      objectReference: {fileID: 805089372}
-    - target: {fileID: 114826031726734700, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
-        type: 2}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1355157842876838, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114826031726734700, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
-        type: 2}
-      propertyPath: VFX
-      value: 
-      objectReference: {fileID: 896876605}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
   m_IsPrefabAsset: 0

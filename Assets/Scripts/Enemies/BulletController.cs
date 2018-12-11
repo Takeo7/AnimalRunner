@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletController : MonoBehaviour {
 
 	public float speed;
-	public float damage;
+	public int damage;
 
 	private void Start()
 	{
@@ -32,7 +32,7 @@ public class BulletController : MonoBehaviour {
 	{
 		if (characterCollided)
 		{
-			PlayerStats.instance.takeDammage((int)damage);
+            CharacterReferences.instance.PS.takeDammage(damage);
 		}
 		//Effect
 		Destroy(gameObject);

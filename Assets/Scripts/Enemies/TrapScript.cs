@@ -10,7 +10,7 @@ public class TrapScript : MonoBehaviour {
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<PlayerStats>().takeDammage(damage);
+            CharacterReferences.instance.PS.takeDammage(damage);
         }
     }
 }

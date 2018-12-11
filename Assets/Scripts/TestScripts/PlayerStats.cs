@@ -4,37 +4,38 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour {
 
-	#region Singleton
-	public static PlayerStats instance;
-	private void Awake()
-	{
-		instance = this;
-	}
-	#endregion
-	public int Health = 3;
-    public Health healthScript;
+
+	public int AmountHealth = 3;
+    [SerializeField]
+    Health healthScript;
     public int attackDamage = 1;
     public AnimatorController AC;
 	public bool isDead;
 
     public AttackType attackType;
 
+    private void Start()
+    {
+        healthScript = Health.instance;
+        Debug.Log(healthScript);
+    }
+
     public void UpdateHealth(int i)
     {
-        Health += i;
-        healthScript.UpdateHearts(Health);
+        AmountHealth += i;
+        healthScript.UpdateHearts(AmountHealth);
 		CheckHealth();
     }
     public void takeDammage(int i)
     {
-        Health -= i;
-        healthScript.UpdateHearts(Health);
+        AmountHealth -= i;
+        healthScript.UpdateHearts(AmountHealth);
 		CheckHealth();
     }
 
 	void CheckHealth()
 	{
-		if (Health <= 0)
+		if (AmountHealth <= 0)
 		{
 			isDead = true;
 			EnvironmentController.instance.gameOverDelegate();

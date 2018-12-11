@@ -57,7 +57,7 @@ public class EnemyMovement : MonoBehaviour {
 					if (temp[i].CompareTag("Player"))
 					{
 						isAttacking = false;
-						PlayerStats.instance.takeDammage(damage);
+                        CharacterReferences.instance.PS.takeDammage(damage);
 					}
 				}
 			}

@@ -5,7 +5,22 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour {
 
-    public PlayerStats ps;
+    #region Singleton
+    public static Health instance;
+    private void Awake()
+    {
+        if (instance==null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+    #endregion
+
+    PlayerStats ps;
 
     public Sprite FullHeart;
     public Sprite EmptyHeart;
@@ -18,7 +33,8 @@ public class Health : MonoBehaviour {
 
     public void SetHearts()
     {
-        initialHealth = ps.Health;
+        ps = CharacterReferences.instance.PS;
+        initialHealth = ps.AmountHealth;
         hearts = new Image[initialHealth];
         CreateHearts(initialHealth);
     }

@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114001242601144446}
   - component: {fileID: 114826031726734700}
   - component: {fileID: 114441635481245156}
+  - component: {fileID: 114461465313367578}
   m_Layer: 0
   m_Name: Root
   m_TagString: Player
@@ -97,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1355157842876838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8, y: -2.05, z: 0.38}
+  m_LocalPosition: {x: 1.8, y: -2.05, z: 0.25}
   m_LocalScale: {x: 0.47231, y: 0.47231, z: 0.47231}
   m_Children:
   - {fileID: 4030948066661120}
@@ -193,8 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed36610f2857ae1428347b4f6becd81d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 3
-  healthScript: {fileID: 0}
+  AmountHealth: 3
   attackDamage: 1
   AC: {fileID: 114441635481245156}
   isDead: 0
@@ -254,6 +254,25 @@ MonoBehaviour:
   takeDamageDuration: 0
   attackAnimDuration: 0.3
   secondAttackAnimDuration: 0
+--- !u!114 &114461465313367578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1355157842876838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64ba5f48bf9214d419d36030ec0333e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderer: {fileID: 23007616468842604}
+  JumpFromFloor: {fileID: 195466, guid: 52837252d6c20f444a3f76c37b1d1cbf, type: 2}
+  SecondJump: {fileID: 0}
+  AttackRanged: {fileID: 0}
+  Idle: {fileID: 0}
+  Death: {fileID: 0}
+  StandardMaterial: {fileID: 2100000, guid: 5d1458cc4cda3bb4da9fda751eb66a34, type: 2}
+  DeathMaterial: {fileID: 0}
 --- !u!114 &114826031726734700
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -290,4 +309,4 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 4571486539195516}
   bulletDamage: 1
   jumpAnimEnabled: 1
-  VFX: {fileID: 0}
+  VFX: {fileID: 114461465313367578}

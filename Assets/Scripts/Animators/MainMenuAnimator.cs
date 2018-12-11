@@ -218,8 +218,7 @@ public class MainMenuAnimator : MonoBehaviour {
 
     public void WriteSavedGame(ISavedGameMetadata game, byte[] savedData,
                                Action<SavedGameRequestStatus, ISavedGameMetadata> callback)
-    {
-
+    {        
         SavedGameMetadataUpdate.Builder builder = new SavedGameMetadataUpdate.Builder()
             .WithUpdatedPlayedTime(TimeSpan.FromMinutes(game.TotalTimePlayed.Minutes + 1))
             .WithUpdatedDescription("Saved at: " + System.DateTime.Now);
@@ -231,6 +230,7 @@ public class MainMenuAnimator : MonoBehaviour {
         SavedGameMetadataUpdate updatedMetadata = builder.Build();
 
         ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+        Debug.Log(game.Filename + ":_SAVED GAME");
         savedGameClient.CommitUpdate(game, updatedMetadata, savedData, callback);
     }
 
@@ -252,15 +252,11 @@ public class MainMenuAnimator : MonoBehaviour {
             if (status == SavedGameRequestStatus.Success)
             {
                 // Read score from the Saved Game
-                int[] score = new int[infoToSave];
+                int score;
                 try
                 {
                     string scoreString = System.Text.Encoding.UTF8.GetString(data);
-                    string[] scoreStringArr = scoreString.Split(',');
-                    for (int i = 0; i < infoToSave; i++)
-                    {
-                        score[i] = Convert.ToInt32(scoreStringArr[i]);
-                    }
+                    score = Convert.ToInt32(scoreString);
                 }
                 catch (Exception e)
                 {
@@ -268,12 +264,9 @@ public class MainMenuAnimator : MonoBehaviour {
                 }
 
                 // Increment score, convert to byte[]
-                score[0] = newMaxScore;
+                score = newMaxScore;
                 string newScoreString = "";
-                for (int i = 0; i < infoToSave; i++)
-                {
-                    newScoreString += Convert.ToString(score[i]);
-                }
+                newScoreString = Convert.ToString(score);
                 byte[] newData = System.Text.Encoding.UTF8.GetBytes(newScoreString);
 
                 // Write new data
@@ -299,12 +292,12 @@ public class MainMenuAnimator : MonoBehaviour {
         ReadSavedGame("file_maxMeters", readCallback);
     }
 
-    public int[] ReadUpdatedSaveData()
+    public int ReadUpdatedSaveData()
     {
         // Local variable
         ISavedGameMetadata currentGame = null;
 
-        int[] score = new int[infoToSave];
+        int score = 0;
 
         // CALLBACK: Handle the result of a binary read
         Action<SavedGameRequestStatus, byte[]> readBinaryCallback =
@@ -316,15 +309,11 @@ public class MainMenuAnimator : MonoBehaviour {
                 try
                 {
                     string scoreString = System.Text.Encoding.UTF8.GetString(data);
-                    string[] scoreStringArr = scoreString.Split(',');
-                    for (int i = 0; i < infoToSave; i++)
-                    {
-                        score[i] = Convert.ToInt32(scoreStringArr[i]);
-                    }                   
+                    score = Convert.ToInt32(scoreString);
                 }
                 catch (Exception e)
                 {
-                    Debug.Log("(Lollygagger) Saved Game Write: convert exception");
+                    Debug.Log("(RunForLife) Saved Game Write: convert exception");
                 }
             }
         };
@@ -346,7 +335,7 @@ public class MainMenuAnimator : MonoBehaviour {
 
     public void UpdateLocalInfoRead()
     {
-        MaxMeters = ReadUpdatedSaveData()[0];
+        MaxMeters = ReadUpdatedSaveData();
         MaxMetersText.text = MaxMeters+"m";
     }
     
