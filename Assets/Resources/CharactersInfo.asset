@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 727be7054b652f04c9fcf6b2ae848539, type: 3}
+  m_Name: CharactersInfo
+  m_EditorClassIdentifier: 
+  characters:
+  - name: Turtle
+    icon: {fileID: 21300012, guid: dc8fec20b08acda4da143dcbb59929ca, type: 3}
+    prefab: {fileID: 1355157842876838, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
+    description: A turtle
+  - name: Elephant
+    icon: {fileID: 21300000, guid: e5886b6bc16dd224f92921a874805779, type: 3}
+    prefab: {fileID: 1183136600057304, guid: b8b5ef6c163d0b847873b9dd8931b5c4, type: 2}
+    description: An elephant

@@ -8,10 +8,6 @@ public class TestMovement : MonoBehaviour {
     public static TestMovement instance;
     private void Awake()
     {
-        if (instance != null)
-        {
-            Destroy(gameObject);
-        }
         instance = this;
     }
 

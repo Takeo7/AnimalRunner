@@ -209,11 +209,11 @@ public class MainMenuAnimator : MonoBehaviour {
     {
 
         ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
-        savedGameClient.OpenWithAutomaticConflictResolution(
+        /*savedGameClient.OpenWithAutomaticConflictResolution(
             filename,
             DataSource.ReadCacheOrNetwork,
             ConflictResolutionStrategy.UseLongestPlaytime,
-            callback);
+            callback);*/ //LO HE COMENTADO PORQUE ME DABA ERROR SIEMPRE Y NO DEJA FUNCIONAR LOS TESTS QUE HAGO XD ////////////////////////////////////////////////////////////
     }
 
     public void WriteSavedGame(ISavedGameMetadata game, byte[] savedData,

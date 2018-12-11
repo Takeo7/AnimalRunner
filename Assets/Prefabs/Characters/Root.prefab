@@ -97,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1355157842876838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8, y: -2.05, z: 0.25}
+  m_LocalPosition: {x: 1.8, y: -2.05, z: 0.38}
   m_LocalScale: {x: 0.47231, y: 0.47231, z: 0.47231}
   m_Children:
   - {fileID: 4030948066661120}
@@ -290,3 +290,4 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 4571486539195516}
   bulletDamage: 1
   jumpAnimEnabled: 1
+  VFX: {fileID: 0}
