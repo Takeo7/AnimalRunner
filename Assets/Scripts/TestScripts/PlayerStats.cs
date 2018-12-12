@@ -17,7 +17,7 @@ public class PlayerStats : MonoBehaviour {
     private void Start()
     {
         healthScript = Health.instance;
-        Debug.Log(healthScript);
+        //Debug.Log(healthScript);
     }
 
     public void UpdateHealth(int i)

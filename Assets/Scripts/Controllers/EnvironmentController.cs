@@ -102,7 +102,7 @@ public class EnvironmentController : MonoBehaviour {
 	{
 		if (caveBool)//if the next prefab must be a cave
 		{
-            Debug.Log("NewCave");
+            //Debug.Log("NewCave");
             caveBool = false;
 			prefabTemp = Instantiate(cavePrefab);//instantiate the prefab
             SetNewEnvironment();//Change environment

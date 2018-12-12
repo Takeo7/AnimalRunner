@@ -22,7 +22,7 @@ public class DestroyAfterX : MonoBehaviour {
 	IEnumerator DestroyAfterXCO()
 	{
 		yield return new WaitForSeconds(secondsToDestroy);
-		Debug.Log(transform.rotation);
+		//Debug.Log(transform.rotation);
 		Destroy(gameObject);
 	}
 }

@@ -71,7 +71,7 @@ public class MainMenuAnimator : MonoBehaviour {
 
 
         // Enable debugging output (recommended)
-        PlayGamesPlatform.DebugLogEnabled = true;
+        PlayGamesPlatform.DebugLogEnabled = false;
 
         // Initialize and activate the platform
         PlayGamesPlatform.InitializeInstance(config);

@@ -169,7 +169,7 @@ public class ChallengesController : MonoBehaviour {
 	IEnumerator ChallengeCompletedCO(byte pos)
 	{
 		yield return new WaitForSeconds(1f);
-		Debug.Log("showThis "+pos);
+		//Debug.Log("showThis "+pos);
 		ShowChallengeCompletedUI(pos);
 		yield return new WaitForSeconds(1f);
 		showingCompleted = false;
