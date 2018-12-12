@@ -238,10 +238,10 @@ MonoBehaviour:
   floorLayer:
     serializedVersion: 2
     m_Bits: 256
-  bottomOffset: {x: 0, y: -0.27, z: 0}
-  topOffset: {x: 0.2, y: 2.65, z: 0}
+  bottomOffset: {x: 0, y: -0.76, z: 0}
+  topOffset: {x: 0.2, y: 2.16, z: 0}
   secondOverlapRadius: 0.24
-  sideOffset: {x: 0.7, y: 1.33, z: 0}
+  sideOffset: {x: 1.01, y: 0.84, z: 0}
   sideSize: {x: 0.48, y: 2.26}
   bulletPrefab: {fileID: 1503914469158978, guid: c364b77ee69aed34cb38b1573ccc7046,
     type: 2}
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed36610f2857ae1428347b4f6becd81d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 3
+  AmountHealth: 3
   healthScript: {fileID: 0}
   attackDamage: 1
   AC: {fileID: 114978386454116228}
