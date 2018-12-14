@@ -16,6 +16,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 334edd82c1dba144284720bdcd9615c0, type: 3}
   - {fileID: 21300000, guid: eec497d6eb9764a4b990143e45b06035, type: 3}
   - {fileID: 21300000, guid: 1c465a8d28ba5064e97975ab8845df21, type: 3}
+  - {fileID: 21300000, guid: d3c6e7a06babaf74fa9ccd0cee53979a, type: 3}
   floorPrefabs:
   - {fileID: 1665789271856866, guid: e2763cb499b88734e8fa55686200622a, type: 2}
   - {fileID: 1771702789747872, guid: 86e264decccee3d43974d2a337cd842d, type: 2}

@@ -437,6 +437,7 @@
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpriteLighting.cginc" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Gauge\Gauge.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic-TintBlack.shader" />
+    <None Include="Assets\spine\Elefante spine-unity\Elefante.json.txt" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\FootSoldier\FS_White.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\ShaderShared.cginc" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.txt" />

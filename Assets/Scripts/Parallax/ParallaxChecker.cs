@@ -19,15 +19,27 @@ public class ParallaxChecker : MonoBehaviour {
 			switch (PC.parallaxType)
 			{
 				case ParallaxType.Background:
-					sprite.sprite = EnvironmentController.instance.set.parallaxElements[0];
+					GetParallaxElements(0);
 					break;
 				case ParallaxType.Back:
-					sprite.sprite = EnvironmentController.instance.set.parallaxElements[1];
+					GetParallaxElements(1);
 					break;
 				case ParallaxType.Front:
-					sprite.sprite = EnvironmentController.instance.set.parallaxElements[2];
+					GetParallaxElements(2);
 					break;
 			}
+		}
+	}
+	void GetParallaxElements(byte x)
+	{
+		if(EnvironmentController.instance.set.parallaxElements[0] != null)
+		{
+			sprite.enabled = true;
+			sprite.sprite = EnvironmentController.instance.set.parallaxElements[x];
+		}
+		else if(EnvironmentController.instance.set.parallaxElements[0] == null)
+		{
+			sprite.enabled = false;
 		}
 	}
 }

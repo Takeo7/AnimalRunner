@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class ParallaxController : MonoBehaviour {
 
+	public SetType set;
+	public SpriteRenderer[] sprites;
 	public float backgroundSize;
 	public float parallaxSpeed;
-
+	public byte index;
 	private Transform cameraTransform;
-	private Transform[] layers;
+	public Transform[] layers;
 	private float viewZone = 10;
 	private int leftIndex;
 	private int rightIndex;
@@ -21,17 +23,18 @@ public class ParallaxController : MonoBehaviour {
 	public ParallaxType parallaxType;
 	public bool inTransition;
 
+	//Desert
+	//41.24
+	public float desertBackgroundSize;
+	public float yOffsetDesert;
+	public float zOffsetDesert;
+
 
 
 	void Start()
 	{
 		cameraTransform = Camera.main.transform;
 		lastCameraX = cameraTransform.position.x;
-		layers = new Transform[transform.childCount];
-		for (int i = 0; i < transform.childCount; i++)
-		{
-			layers[i] = transform.GetChild(i);
-		}
 		leftIndex = 0;
 		rightIndex = layers.Length - 1;
 	}
@@ -50,14 +53,47 @@ public class ParallaxController : MonoBehaviour {
 	}
 	void ScrollRight()
 	{
-		//Debug.Log("scrolledRight");
-		int lastLeft = leftIndex;
-		layers[leftIndex].position = Vector3.right * (layers[rightIndex].position.x + backgroundSize) + new Vector3(0, yOffset,zOffset);
-		rightIndex = leftIndex;
-		leftIndex++;
-		if(leftIndex == layers.Length)
+		if(set == SetType.Forest)
 		{
-			leftIndex = 0;
+			//Debug.Log("scrolledRight");
+			int lastLeft = leftIndex;
+			layers[leftIndex].position = Vector3.right * (layers[rightIndex].position.x + backgroundSize) + new Vector3(0, yOffset, zOffset);
+			rightIndex = leftIndex;
+			leftIndex++;
+			if (leftIndex == layers.Length)
+			{
+				leftIndex = 0;
+			}
+		}
+		else if(set == SetType.Desert)
+		{
+			//Debug.Log("scrolledRight");
+			int lastLeft = leftIndex;
+			layers[leftIndex].position = Vector3.right * (layers[rightIndex].position.x + desertBackgroundSize) + new Vector3(0, yOffsetDesert, zOffsetDesert);
+			rightIndex = leftIndex;
+			leftIndex++;
+			if (leftIndex == layers.Length)
+			{
+				leftIndex = 0;
+			}
+		}
+	}
+	public void SetHeight()
+	{
+		float yOffsetTemp = 0;
+		switch (set)
+		{
+			case SetType.Forest:
+				yOffsetTemp = yOffset;
+				break;
+			case SetType.Desert:
+				yOffsetTemp = yOffsetDesert;
+				break;
+		}
+		byte length = (byte)layers.Length;
+		for (int i = 0; i < length; i++)
+		{
+			layers[i].position = new Vector3(layers[i].position.x, yOffsetTemp, layers[i].position.z);
 		}
 	}
 }

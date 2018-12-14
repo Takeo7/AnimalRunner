@@ -12,12 +12,53 @@ public class ParallaxMainController : MonoBehaviour {
 	}
 	#endregion
 	public ParallaxController[] secondControllers;
-	public void SetInTransition()
+	public SpriteRenderer BackgroundSky;
+	private void Start()
 	{
-		int length = secondControllers.Length;
+		SetParallaxNewElements();
+	}
+	public void SetParallaxNewElements()
+	{
+		BackgroundSky.sprite = EnvironmentController.instance.set.parallaxElements[3];
+		byte length = (byte)secondControllers.Length;
 		for (int i = 0; i < length; i++)
 		{
-			secondControllers[i].inTransition = true;
+			secondControllers[i].set = EnvironmentController.instance.set.setType;
+			for (int j = 0; j < 3; j++)
+			{
+				SetElements(secondControllers[i],secondControllers[i].sprites[j]);
+			}
+			if(i == 0 || i == 1)
+			{
+				secondControllers[i].SetHeight();
+			}
+		}
+	}
+	void SetElements(ParallaxController secondController,SpriteRenderer sprite)
+	{
+		switch (secondController.parallaxType)
+		{
+			case ParallaxType.Background:
+				GetParallaxElements(0,sprite);
+				break;
+			case ParallaxType.Back:
+				GetParallaxElements(1, sprite);
+				break;
+			case ParallaxType.Front:
+				GetParallaxElements(2, sprite);
+				break;
+		}
+	}
+	void GetParallaxElements(byte x,SpriteRenderer sprite)
+	{
+		if (EnvironmentController.instance.set.parallaxElements[x] != null)
+		{
+			sprite.enabled = true;
+			sprite.sprite = EnvironmentController.instance.set.parallaxElements[x];
+		}
+		else if (EnvironmentController.instance.set.parallaxElements[x] == null)
+		{
+			sprite.enabled = false;
 		}
 	}
 }

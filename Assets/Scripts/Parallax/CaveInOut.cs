@@ -8,7 +8,7 @@ public class CaveInOut : MonoBehaviour {
 	{
 		if (collision.CompareTag("Player"))
 		{
-			ParallaxMainController.instance.SetInTransition();
+			ParallaxMainController.instance.SetParallaxNewElements();
 		}
 	}
 }
