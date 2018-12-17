@@ -7,6 +7,7 @@ public class AnimatorController : MonoBehaviour {
 
 	public SkeletonAnimation anim;
 	public bool isAnimatingSpine = false;
+    public bool isCharacter = false;
 
 	const byte movementTrack = 0;
 	const byte actionTrack = 1;
@@ -80,8 +81,8 @@ public class AnimatorController : MonoBehaviour {
 		}
 		else
 		{
-			ChangeAnim(0, attack, false);
-		}
+            StartCoroutine("AttackAnimCO_2");
+        }
 	}
 	IEnumerator AttackAnimCO()
 	{
@@ -89,7 +90,16 @@ public class AnimatorController : MonoBehaviour {
 		yield return new WaitForSeconds(attackAnimDuration);
 		ClearAttackAnim();
 	}
-	IEnumerator TakeDamageAnimCO(bool isDeadAfter)
+    IEnumerator AttackAnimCO_2()
+    {
+        ChangeAnim(movementTrack, attack, false);
+        yield return new WaitForSeconds(attackAnimDuration);
+        if (isCharacter)
+        {
+            ChangeAnim(0, run, true);
+        }
+    }
+    IEnumerator TakeDamageAnimCO(bool isDeadAfter)
 	{
 		ChangeAnim(0, takeDamage, false);
 		yield return new WaitForSeconds(takeDamageDuration);

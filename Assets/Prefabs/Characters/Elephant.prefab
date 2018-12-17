@@ -247,7 +247,9 @@ MonoBehaviour:
     type: 2}
   bulletSpawnPoint: {fileID: 4404307194283614}
   bulletDamage: 1
-  jumpAnimEnabled: 0
+  jumpAnimEnabled: 1
+  jumpVFXEnabled: 0
+  secondJumpAnimEnabled: 0
   VFX: {fileID: 0}
 --- !u!114 &114445682609795294
 MonoBehaviour:
@@ -263,8 +265,10 @@ MonoBehaviour:
   AmountHealth: 3
   healthScript: {fileID: 0}
   attackDamage: 1
+  numAttacks: 5
   AC: {fileID: 114978386454116228}
   isDead: 0
+  PlayerType: 1
   attackType: 1
 --- !u!114 &114978386454116228
 MonoBehaviour:
@@ -279,6 +283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 114197364752747128}
   isAnimatingSpine: 1
+  isCharacter: 1
   run: run
   jump: jump
   attack: attack
@@ -289,5 +294,5 @@ MonoBehaviour:
   takeDamage: takeDamage
   specialAttack: protect
   takeDamageDuration: 0.267
-  attackAnimDuration: 0.8
+  attackAnimDuration: 0.35
   secondAttackAnimDuration: 0.667

@@ -27,6 +27,7 @@ public class EnemyMovement : MonoBehaviour {
 	[SerializeField]
     bool isDead = false;
     public bool dontDie;
+    public Collider2D col;
 
 	public AnimatorController AC;//AC.TheAnimationYouWant(); EXAMPLE: AC.AttackAnim();
 
@@ -108,7 +109,8 @@ public class EnemyMovement : MonoBehaviour {
         {
             //Debug.Log("IsDing");
             AC.DeathAnim();
-            yield return new WaitForSeconds(4f);
+            col.enabled = false;
+            yield return new WaitForSeconds(2f);
             Destroy(gameObject);
         }
 

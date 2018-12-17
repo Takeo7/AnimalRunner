@@ -275,7 +275,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   secondsToAttackAgain: 1
+  isDead: 0
   dontDie: 0
+  col: {fileID: 70353825028097796}
   AC: {fileID: 114644620168891628}
 --- !u!114 &114644620168891628
 MonoBehaviour:
@@ -290,14 +292,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 114145291380421814}
   isAnimatingSpine: 1
+  isCharacter: 0
   run: run
   jump: jump
   attack: attack
+  secondAttack: attack 2
   secondJump: jump2
   death: death
   idle: idle
   takeDamage: hurt
+  specialAttack: protect
   takeDamageDuration: 0.23
+  attackAnimDuration: 0
+  secondAttackAnimDuration: 0
 --- !u!114 &114684640310316610
 MonoBehaviour:
   m_ObjectHideFlags: 1

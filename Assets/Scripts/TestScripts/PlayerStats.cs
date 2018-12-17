@@ -9,9 +9,11 @@ public class PlayerStats : MonoBehaviour {
     [SerializeField]
     Health healthScript;
     public int attackDamage = 1;
+    public int numAttacks;
     public AnimatorController AC;
 	public bool isDead;
 
+    public Characters PlayerType;
     public AttackType attackType;
 
     private void Start()
@@ -49,5 +51,11 @@ public class PlayerStats : MonoBehaviour {
     {
         Body,
         Ranged
+    }
+
+    public enum Characters
+    {
+        Turtle,
+        Elephant
     }
 }

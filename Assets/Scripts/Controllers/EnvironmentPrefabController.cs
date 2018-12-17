@@ -24,7 +24,7 @@ public class EnvironmentPrefabController : MonoBehaviour {
 
         if (isEnemySpawneable)
         {
-            float isEnemy = Random.Range(0, 2);
+            float isEnemy = Random.Range(0, 3);
             if (isEnemy <= 1)
             {
                 CreateNewEnemy();
@@ -32,7 +32,7 @@ public class EnvironmentPrefabController : MonoBehaviour {
         }
         if (isTrapSpawneable)
         {
-            float isTrap = Random.Range(0, 5);
+            float isTrap = Random.Range(0, 10);
             if (isTrap <= 1)
             {
                 CreateNewTrap();

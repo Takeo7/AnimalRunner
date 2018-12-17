@@ -29,6 +29,7 @@ public class MainMenuAnimator : MonoBehaviour {
     public GameObject deadWindow;
     [Space]
     public GameObject Lifes;
+    public GameObject Attacks;
     public GameObject Meters;
     public GameObject AttackButton;
     public GameObject JumpButton;
@@ -83,7 +84,7 @@ public class MainMenuAnimator : MonoBehaviour {
             PlayGamesPlatform.Instance.Authenticate(SignInCallback, true);
         }
 
-        UpdateLocalInfoRead();
+        //UpdateLocalInfoRead();
     }
     public void SingInGoogle()
     {
@@ -405,8 +406,8 @@ public class MainMenuAnimator : MonoBehaviour {
         {
             ToogleShopWindow();
         }
-        Lifes.SetActive(true);
         Lifes.GetComponent<Health>().SetHearts();
+        Attacks.GetComponent<AttacksUI>().SetAttacks();
         Meters.SetActive(true);
         AttackButton.SetActive(true);
         JumpButton.SetActive(true);

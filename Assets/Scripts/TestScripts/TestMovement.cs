@@ -47,12 +47,19 @@ public class TestMovement : MonoBehaviour {
     public Transform bulletSpawnPoint;
     public int bulletDamage;
 	public bool jumpAnimEnabled;
-	public CharacterVFXController VFX;
+    public bool jumpVFXEnabled;
+    public bool secondJumpAnimEnabled;
 
+    public CharacterVFXController VFX;
+
+    int attacksLeft;
+    int maxNumAttacks;
 
 	private void Start()
 	{
 		EC = EnvironmentController.instance;
+        attacksLeft = ps.numAttacks;
+        maxNumAttacks = attacksLeft;
 	}
 	private void Update()
 	{
@@ -111,12 +118,16 @@ public class TestMovement : MonoBehaviour {
 				if (jumpAnimEnabled)
 				{
 					AC.JumpOneAnim();
-					VFX.JumpFromFloorVFX();
+                    if (jumpVFXEnabled)
+                    {
+                        VFX.JumpFromFloorVFX();
+                    }
+
 				}
             }
             else if (jumpCount == 1)
             {
-				if (jumpAnimEnabled)
+				if (secondJumpAnimEnabled)
 				{
 					AC.JumpTwoAnim();
 				}
@@ -129,11 +140,27 @@ public class TestMovement : MonoBehaviour {
 
     public void AttackRanged()
     {
-        if (EC.inGame)
+        if (EC.inGame && attacksLeft > 0)
         {
-            AC.AttackAnim(true);
-            StartCoroutine("AttackCoroutine");
+            switch (ps.PlayerType)
+            {
+                case PlayerStats.Characters.Turtle:
+                    AC.AttackAnim(true);
+                    AttacksUI.instance.UpdateAttacks();
+                    StartCoroutine("AttackCoroutine");
+                    break;
+                case PlayerStats.Characters.Elephant:
+                    AC.AttackAnim(false);
+                    AttacksUI.instance.UpdateAttacks();
+                    StartCoroutine("AttackCoroutine");
+                    break;
+            }           
         }
+    }
+
+    public void UpdateAttacks()
+    {
+        attacksLeft++;
     }
 
     void ResetJumps()
@@ -168,6 +195,7 @@ public class TestMovement : MonoBehaviour {
         return bulletDamage;
     }
 
+
     IEnumerator AttackCoroutine()
     {
         yield return new WaitForSeconds(0.01f);
@@ -175,6 +203,7 @@ public class TestMovement : MonoBehaviour {
         //g.transform.SetParent(null);
         StopCoroutine("AttackCoroutine");
     }
+
     /* private void OnCollisionEnter2D(Collision2D collision)
      {
          //Debug.Log(collision.collider.name);
