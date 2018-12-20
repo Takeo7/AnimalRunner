@@ -5646,11 +5646,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4802710592366522, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.8
+      value: -3.73
       objectReference: {fileID: 0}
     - target: {fileID: 4802710592366522, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.05
+      value: -1.36
       objectReference: {fileID: 0}
     - target: {fileID: 4802710592366522, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5680,6 +5680,11 @@ Prefab:
         type: 2}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114826031726734700, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
+        type: 2}
+      propertyPath: overlapRadius
+      value: 0.41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
