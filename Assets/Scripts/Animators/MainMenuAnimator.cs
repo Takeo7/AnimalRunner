@@ -29,9 +29,9 @@ public class MainMenuAnimator : MonoBehaviour {
     public GameObject deadWindow;
     [Space]
     public GameObject Lifes;
-    public GameObject Attacks;
     public GameObject Meters;
     public GameObject AttackButton;
+    public GameObject AttackColdown;
     public GameObject JumpButton;
     [Space]
     public Text meters;
@@ -407,9 +407,10 @@ public class MainMenuAnimator : MonoBehaviour {
             ToogleShopWindow();
         }
         Lifes.GetComponent<Health>().SetHearts();
-        Attacks.GetComponent<AttacksUI>().SetAttacks();
         Meters.SetActive(true);
         AttackButton.SetActive(true);
+        AttackColdown.SetActive(true);
+        AttackButton.GetComponent<AttacksUI>().SetAttacks();
         JumpButton.SetActive(true);
 		EnvironmentController.instance.StartGame();
 	}

@@ -52,14 +52,11 @@ public class TestMovement : MonoBehaviour {
 
     public CharacterVFXController VFX;
 
-    int attacksLeft;
-    int maxNumAttacks;
+    bool attackBool = true;
 
 	private void Start()
 	{
 		EC = EnvironmentController.instance;
-        attacksLeft = ps.numAttacks;
-        maxNumAttacks = attacksLeft;
 	}
 	private void Update()
 	{
@@ -140,8 +137,9 @@ public class TestMovement : MonoBehaviour {
 
     public void AttackRanged()
     {
-        if (EC.inGame && attacksLeft > 0)
+        if (EC.inGame && attackBool)
         {
+            attackBool = false;
             switch (ps.PlayerType)
             {
                 case PlayerStats.Characters.Turtle:
@@ -158,9 +156,9 @@ public class TestMovement : MonoBehaviour {
         }
     }
 
-    public void UpdateAttacks()
+    public void UpdateAttack(bool b)
     {
-        attacksLeft++;
+        attackBool = b;
     }
 
     void ResetJumps()

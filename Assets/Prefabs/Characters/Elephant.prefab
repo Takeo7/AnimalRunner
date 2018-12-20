@@ -268,6 +268,8 @@ MonoBehaviour:
   numAttacks: 5
   AC: {fileID: 114978386454116228}
   isDead: 0
+  coldownTime: 1
+  AttackImage: {fileID: 0}
   PlayerType: 1
   attackType: 1
 --- !u!114 &114978386454116228

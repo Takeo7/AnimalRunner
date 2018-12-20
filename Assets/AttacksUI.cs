@@ -22,46 +22,47 @@ public class AttacksUI : MonoBehaviour {
 
     PlayerStats ps;
 
-    public GameObject AttackGO;
-    public int initialAttacks;
-    public int attacksleft;
+    public Image ColdownImage;
+    public Image ButtonImage;
 
-    public Image[] attacksImage;
+    public Color coldownColor;
+    public Color avaiableColor;
+    public Color buttonColor;
+
+    float coldownTime;
 
     public void SetAttacks()
     {
         ps = CharacterReferences.instance.PS;
-        initialAttacks = ps.numAttacks;
-        attacksleft = initialAttacks;
-        attacksImage = new Image[initialAttacks];
-        CreateAttacks(initialAttacks);
-    }
-
-    void CreateAttacks(int h)
-    {
-        for (int i = 0; i < h; i++)
-        {
-            GameObject g = Instantiate(AttackGO, transform);
-            attacksImage[i] = g.GetComponent<Image>();
-        }
+        ColdownImage.color = avaiableColor;
+        coldownTime = ps.coldownTime;
     }
 
     public void UpdateAttacks()
     {
-        attacksImage[attacksleft - 1].fillAmount = 0;
+        Debug.Log("UpdateAttacks");
         StartCoroutine("ColdownAttack");
-        attacksleft--;       
+        
     }
+
+
 
     IEnumerator ColdownAttack()
     {
-        while(attacksImage[attacksleft-1].fillAmount < 1)
+        float actualColdown = 0;
+        ButtonImage.color = buttonColor;
+        ColdownImage.color = coldownColor;
+        ColdownImage.fillAmount = 1;
+        while(actualColdown < coldownTime)
         {
             yield return new WaitForSeconds(0.01f);
-            attacksImage[attacksleft - 1].fillAmount += 0.01f;
+            ColdownImage.fillAmount -= 0.01f;
+            actualColdown += 0.01f;
         }
-        attacksleft++;
-        CharacterReferences.instance.TM.UpdateAttacks();
+        CharacterReferences.instance.TM.UpdateAttack(true);
+        ButtonImage.color = Color.white;
+        ColdownImage.fillAmount = 1;
+        ColdownImage.color = avaiableColor;
         StopCoroutine("ColdownAttack");
     }
 

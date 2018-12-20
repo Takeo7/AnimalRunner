@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour {
 
@@ -12,6 +13,9 @@ public class PlayerStats : MonoBehaviour {
     public int numAttacks;
     public AnimatorController AC;
 	public bool isDead;
+    public float coldownTime;
+
+    public Image AttackImage;
 
     public Characters PlayerType;
     public AttackType attackType;
