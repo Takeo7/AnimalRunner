@@ -18,6 +18,7 @@ public class MainMenuAnimator : MonoBehaviour {
     [Space]
     public GameObject achiveButton;
     public GameObject leadButton;
+    public GameObject saveGameButton;
     public Text SignInButtonText;
     [Space]
     public Animator animator;
@@ -27,6 +28,7 @@ public class MainMenuAnimator : MonoBehaviour {
     public GameObject shopWindow;
     public GameObject IntroWindow;
     public GameObject deadWindow;
+    public GameObject maxMetersPanel;
     [Space]
     public GameObject Lifes;
     public GameObject Meters;
@@ -50,6 +52,7 @@ public class MainMenuAnimator : MonoBehaviour {
 
         achiveButton.SetActive(Social.localUser.authenticated);
         leadButton.SetActive(Social.localUser.authenticated);
+        saveGameButton.SetActive(Social.localUser.authenticated);
         if (Social.localUser.authenticated == true)
         {
             SignInButtonText.text = LanguajesDic.instance.GetText(9);
@@ -406,6 +409,7 @@ public class MainMenuAnimator : MonoBehaviour {
         {
             ToogleShopWindow();
         }
+        maxMetersPanel.SetActive(false);
         Lifes.GetComponent<Health>().SetHearts();
         Meters.SetActive(true);
         AttackButton.SetActive(true);
