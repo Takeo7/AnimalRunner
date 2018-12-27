@@ -98,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1355157842876838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8, y: -2.05, z: 0.25}
+  m_LocalPosition: {x: 1.5, y: 2.3, z: 0.25}
   m_LocalScale: {x: 0.47231, y: 0.47231, z: 0.47231}
   m_Children:
   - {fileID: 4030948066661120}
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   meshRenderer: {fileID: 23007616468842604}
   JumpFromFloor: {fileID: 195466, guid: 52837252d6c20f444a3f76c37b1d1cbf, type: 2}
-  SecondJump: {fileID: 0}
+  SecondJump: {fileID: 195466, guid: 1f0a6aa5d70ecd34caf86f37b5a7d3ce, type: 2}
   AttackRanged: {fileID: 0}
   Idle: {fileID: 0}
   Death: {fileID: 0}
@@ -301,7 +301,7 @@ MonoBehaviour:
   dead: 0
   isGrounded: 1
   isJumping: 0
-  overlapRadius: 0.71
+  overlapRadius: 0.41
   floorLayer:
     serializedVersion: 2
     m_Bits: 256

@@ -898,7 +898,6 @@ MonoBehaviour:
   IntroWindow: {fileID: 0}
   deadWindow: {fileID: 1332126587}
   maxMetersPanel: {fileID: 957344926}
-  maxMetersText: {fileID: 0}
   Lifes: {fileID: 805089370}
   Meters: {fileID: 1932914912}
   AttackButton: {fileID: 192609526}
@@ -5758,11 +5757,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4802710592366522, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.73
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 4802710592366522, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.36
+      value: -1.41
       objectReference: {fileID: 0}
     - target: {fileID: 4802710592366522, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5792,16 +5791,6 @@ Prefab:
         type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114826031726734700, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
-        type: 2}
-      propertyPath: overlapRadius
-      value: 0.41
-      objectReference: {fileID: 0}
-    - target: {fileID: 114001242601144446, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
-        type: 2}
-      propertyPath: coldownTime
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}

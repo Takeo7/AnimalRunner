@@ -29,5 +29,9 @@ public class CharacterVFXController : MonoBehaviour {
 	{
 		Instantiate(JumpFromFloor, new Vector3(transform.position.x+1f,transform.position.y,transform.position.z-3f), Quaternion.identity);
 	}
+	public void JumpSecond()
+	{
+		Instantiate(SecondJump, new Vector3(transform.position.x + 1f, transform.position.y, transform.position.z - 3f), SecondJump.transform.rotation);
+	}
 
 }

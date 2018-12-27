@@ -30,8 +30,12 @@ public class EnemyMovement : MonoBehaviour {
     public Collider2D col;
 
 	public AnimatorController AC;//AC.TheAnimationYouWant(); EXAMPLE: AC.AttackAnim();
+	public VFXAfterAction VFXAA;
+	[SerializeField]
+	float meleeAttackDelay;
 
-    private void Start()
+
+	private void Start()
     {
         tm = TestMovement.instance;
         direction = Random.Range(-1, 1);
@@ -129,10 +133,15 @@ public class EnemyMovement : MonoBehaviour {
 		{
 			isAttacking = true;
 			AC.AttackAnim(false);
+			if (isMelee)
+			{
+				VFXAA.VFXInstantiate(meleeAttackDelay);
+			}
 			yield return new WaitForSeconds(1f);
 			if (!isMelee)
 			{
 				GameObject bullet = Instantiate(bulletPrefab);
+				VFXAA.VFXInstantiate();
 				bullet.transform.position = bulletSpawn.position;
 				bullet.GetComponent<BulletController>().damage = damage;
 			}

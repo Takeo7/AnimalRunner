@@ -127,6 +127,10 @@ public class TestMovement : MonoBehaviour {
 				if (secondJumpAnimEnabled)
 				{
 					AC.JumpTwoAnim();
+					if (jumpVFXEnabled)
+                    {
+                        VFX.JumpSecond();
+                    }
 				}
             }
             rb.velocity = Vector3.zero;

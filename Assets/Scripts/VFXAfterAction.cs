@@ -13,4 +13,13 @@ public class VFXAfterAction : MonoBehaviour {
 	{
 		Instantiate(VFXPrefab, instantiateOrigin.position,VFXPrefab.transform.rotation);
 	}
+	public void VFXInstantiate(float time)
+	{
+		StartCoroutine("VFXInstantiateWDelay", time);
+	}
+	IEnumerator VFXInstantiateWDelay(float delay)
+	{
+		yield return new WaitForSeconds(delay);
+		VFXInstantiate();
+	}
 }
