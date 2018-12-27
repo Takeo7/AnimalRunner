@@ -683,14 +683,19 @@ MonoBehaviour:
   traps:
   - {fileID: 1787306735302194, guid: 5947f0b913abb914393443c63ba3707e, type: 2}
   - {fileID: 1904981198315766, guid: 19fe505d0dd201647b1cb34e92f2793b, type: 2}
+  - {fileID: 1395996759783588, guid: 2b8de89f2bf6c4644a6632ca41835427, type: 2}
   decorations:
-  - {fileID: 1861729040506578, guid: 137c35bbabdfd2b429fb809ca134e3eb, type: 2}
-  - {fileID: 1099337880937628, guid: 2956266c5e6437d46b960efe31891da9, type: 2}
-  - {fileID: 1059399603282608, guid: 037ea6d9e09375b40ab2255458f6f082, type: 2}
-  - {fileID: 1201409272682248, guid: 520600b42efbb7d42b5a4494bdeb6dac, type: 2}
-  - {fileID: 1383873983811542, guid: 56678bb11f026294da2d0fb84f3035e0, type: 2}
-  - {fileID: 1479342905613698, guid: 4aa37fcf5b4d20441ae9adf262a0cbbc, type: 2}
-  - {fileID: 1194898912877296, guid: 038489826bed4a94c863e4706a16c359, type: 2}
+  - {fileID: 1671813754176672, guid: 4cedff71129db2b4e8fe7204357d8646, type: 2}
+  - {fileID: 1326841580904460, guid: b2159cb730caf2f469217f0052a969bd, type: 2}
+  - {fileID: 1792196261654118, guid: 48d7f14e221b82a4aa8710b8e7e5417f, type: 2}
+  - {fileID: 1659185073006844, guid: 49b8e272aeeb2b34bb6633d07c6707ca, type: 2}
+  - {fileID: 1085583212593066, guid: 426938bec11df09499a641424076b3c1, type: 2}
+  - {fileID: 1431428216187652, guid: af873f4ad27940443aa83e41ff5fa73c, type: 2}
+  - {fileID: 1914343040359878, guid: a071a131e3fa444449b2bc58f2c6a14d, type: 2}
+  - {fileID: 1867758252378958, guid: b79d7829ad5892449b83816f5209f52b, type: 2}
+  - {fileID: 1756775649486884, guid: 24c05a4b13a090843bcb3d68496c4dfa, type: 2}
+  - {fileID: 1643908715157754, guid: 290e9d1bde8e37c4fb534ead2aca7cae, type: 2}
+  - {fileID: 1889502959244904, guid: 521f32714b390d34bb07f2e0781960a8, type: 2}
   isEnemySpawneable: 1
   isTrapSpawneable: 1
   isCave: 0

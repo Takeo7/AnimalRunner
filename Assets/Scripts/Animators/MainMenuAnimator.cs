@@ -11,6 +11,12 @@ using UnityEngine.UI;
 public class MainMenuAnimator : MonoBehaviour {
     public Text debugText;
     [Space]
+    public CoinsController cc;
+    public Text coinsText;
+    public Text gemsText;
+    public GameObject coinsGO;
+    public GameObject gemsGO;
+    [Space]
     public int infoToSave;
     public int MaxMeters;
     [Space]
@@ -44,6 +50,8 @@ public class MainMenuAnimator : MonoBehaviour {
     {
         StartClientConfiguration();
         EnvironmentController.instance.gameOverDelegate += ToogleDeadWindow;
+
+        UpdateCoinsText();
     }
     private void Update()
     {
@@ -362,9 +370,10 @@ public class MainMenuAnimator : MonoBehaviour {
         MaxMeters = ReadUpdatedSaveData();
         MaxMetersText.text = MaxMeters+"m";
     }
-    
+
     #endregion
     #endregion
+    #region ToggleWindows
     public void ToogleDeadWindow()
     {
         deadWindow.SetActive(true);
@@ -397,6 +406,12 @@ public class MainMenuAnimator : MonoBehaviour {
     {
         StartCoroutine("IntroCoroutine");   
     }
+    #endregion
+    public void UpdateCoinsText()
+    {
+        coinsText.text = cc.GetCoins().ToString();
+        gemsText.text = cc.GetGems().ToString();
+    }
 	public void StartGame()
 	{
         ToggleOff();
@@ -410,6 +425,8 @@ public class MainMenuAnimator : MonoBehaviour {
             ToogleShopWindow();
         }
         maxMetersPanel.SetActive(false);
+        coinsGO.SetActive(false);
+        gemsGO.SetActive(false);
         Lifes.GetComponent<Health>().SetHearts();
         Meters.SetActive(true);
         AttackButton.SetActive(true);
