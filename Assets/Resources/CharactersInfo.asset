@@ -13,10 +13,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - name: Turtle
-    icon: {fileID: 21300012, guid: dc8fec20b08acda4da143dcbb59929ca, type: 3}
+    icon: {fileID: 21300000, guid: 4a9b7d02df7a1be48b8c11f13e36b03d, type: 3}
     prefab: {fileID: 1355157842876838, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
     description: A turtle
   - name: Elephant
-    icon: {fileID: 21300000, guid: e5886b6bc16dd224f92921a874805779, type: 3}
+    icon: {fileID: 21300000, guid: 057eac040ed635348b3b91c2f8e2f009, type: 3}
     prefab: {fileID: 1183136600057304, guid: b8b5ef6c163d0b847873b9dd8931b5c4, type: 2}
     description: An elephant
