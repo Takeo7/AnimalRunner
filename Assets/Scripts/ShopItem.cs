@@ -9,6 +9,8 @@ public class ShopItem : MonoBehaviour {
 	public GameObject selected;
 	public Image icon;
 	public Text text;
+	public GameObject priceGO;
+	public Text priceTXT;
 	public ShopController SC;
 
 	public void SetVisuals(Sprite sprite,string name)
@@ -25,10 +27,30 @@ public class ShopItem : MonoBehaviour {
 		selected.SetActive(selectedBool);
 		icon.sprite = sprite;
 		text.text = name;
+		if (SC.charactersInfo.characters[index].unlocked == false)
+		{
+			priceGO.SetActive(true);
+			priceTXT.text = "" + SC.charactersInfo.characters[index].price;
+		}
+		else
+		{
+			priceGO.SetActive(false);
+		}
+	}
+	public void RefreshPrice()
+	{
+		if (SC.charactersInfo.characters[index].unlocked == false)
+		{
+			priceGO.SetActive(true);
+			priceTXT.text = "" + SC.charactersInfo.characters[index].price;
+		}
+		else
+		{
+			priceGO.SetActive(false);
+		}
 	}
 	public void SelectCharacter()
 	{
-		PlayerPrefs.SetInt("CharacterSelected", index);
-		SC.InstantiateNewCharacter();
+		SC.UnlockCharacter(index,this);
 	}
 }

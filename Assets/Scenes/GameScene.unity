@@ -1898,6 +1898,7 @@ MonoBehaviour:
   charactersInfo: {fileID: 11400000, guid: 025b744779bcb9c4e93af2fbfefd1421, type: 2}
   parent: {fileID: 722239350}
   CR: {fileID: 472959689}
+  coins: 0
 --- !u!1 &590321997
 GameObject:
   m_ObjectHideFlags: 0

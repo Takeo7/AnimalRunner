@@ -7,12 +7,14 @@ public class ShopController : MonoBehaviour {
 
 	[SerializeField]
 	GameObject shopItemPrefab;
-	[SerializeField]
-	CharactersInfo charactersInfo;
+	public CharactersInfo charactersInfo;
 	List<ShopItem> instantiatedShopItems = new List<ShopItem>();
 
 	public RectTransform parent;
 	public CharacterReferences CR;
+
+	[Header("Variables")]
+	public int coins;
 
 	public void Start()
 	{
@@ -27,8 +29,8 @@ public class ShopController : MonoBehaviour {
 		{
 			ShopItem temp = Instantiate(shopItemPrefab, parent).GetComponent<ShopItem>();
 			temp.index = (byte)i;
-			temp.SetVisuals(charactersInfo.characters[i].icon,charactersInfo.characters[i].name);
 			temp.SC = this;
+			temp.SetVisuals(charactersInfo.characters[i].icon,charactersInfo.characters[i].name);
 			instantiatedShopItems.Add(temp);
 		}
 	}
@@ -66,5 +68,30 @@ public class ShopController : MonoBehaviour {
 		Destroy(CR.gameObj);
 		GameObject newChar = Instantiate(charactersInfo.characters[charSelected].prefab);
 		CR.NewReference(newChar.transform,newChar.GetComponent<TestMovement>(),newChar.GetComponent<PlayerStats>(),newChar.GetComponent<AnimatorController>(),newChar);
+	}
+	public void GetCoins()
+	{
+		coins = PlayerPrefs.GetInt("Coins");
+	}
+	public void UnlockCharacter(int index,ShopItem item)
+	{
+		GetCoins();
+		if (charactersInfo.characters[index].unlocked)
+		{
+			PlayerPrefs.SetInt("CharacterSelected", index);
+			InstantiateNewCharacter();
+		}
+		else if(charactersInfo.characters[index].unlocked == false && coins >= charactersInfo.characters[index].price)
+		{
+			charactersInfo.characters[index].unlocked = true;
+			coins -= charactersInfo.characters[index].price;
+			item.RefreshPrice();
+			PlayerPrefs.SetInt("CharacterSelected", index);
+			InstantiateNewCharacter();
+		}
+		else if(charactersInfo.characters[index].unlocked == false && coins < charactersInfo.characters[index].price)
+		{
+			Debug.Log("CantBuy");
+		}
 	}
 }

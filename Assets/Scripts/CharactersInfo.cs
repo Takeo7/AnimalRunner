@@ -17,5 +17,7 @@ public class Character
 	public Sprite icon;
 	public GameObject prefab;
 	public string description;
+	public bool unlocked;
+	public int price;
 
 }
