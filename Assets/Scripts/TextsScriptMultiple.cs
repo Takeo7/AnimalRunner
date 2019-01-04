@@ -22,6 +22,6 @@ public class TextsScriptMultiple : MonoBehaviour {
 
     public void GetKeys()
     {
-        t.text = LanguajesDic.instance.GetText(ID1)+ ": "+PlayerPrefs.GetInt("MaxMeters")+" "+LanguajesDic.instance.GetText(ID2);
+        t.text = LanguajesDic.instance.GetText(ID1)+ ": "+CharacterReferences.instance.playerInfo.metersRecord+" "+LanguajesDic.instance.GetText(ID2);
     }
 }

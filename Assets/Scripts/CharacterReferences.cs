@@ -19,6 +19,7 @@ public class CharacterReferences : MonoBehaviour {
 	}
 	#endregion
 
+	public CharacterInfo playerInfo;
 	public CharactersInfo charactersInfo;
 	public Transform characterTransform;
 	public TestMovement TM;
@@ -28,7 +29,7 @@ public class CharacterReferences : MonoBehaviour {
 
 	private void Start()
 	{
-		int charSelected = PlayerPrefs.GetInt("CharacterSelected");
+		int charSelected = playerInfo.selectedCharacter;
 		Destroy(gameObj);
 		GameObject newChar = Instantiate(charactersInfo.characters[charSelected].prefab);
 		NewReference(newChar.transform, newChar.GetComponent<TestMovement>(), newChar.GetComponent<PlayerStats>(), newChar.GetComponent<AnimatorController>(), newChar);

@@ -47,7 +47,7 @@ public class ShopController : MonoBehaviour {
 	}
 	void SetNewSelected()
 	{
-		int charSelected = PlayerPrefs.GetInt("CharacterSelected");
+		int charSelected = CR.playerInfo.selectedCharacter;
 		int length = instantiatedShopItems.Count;
 		for (int i = 0; i < length; i++)
 		{
@@ -64,21 +64,21 @@ public class ShopController : MonoBehaviour {
 	public void InstantiateNewCharacter()
 	{
 		SetNewSelected();
-		int charSelected = PlayerPrefs.GetInt("CharacterSelected");
+		int charSelected = CR.playerInfo.selectedCharacter;
 		Destroy(CR.gameObj);
 		GameObject newChar = Instantiate(charactersInfo.characters[charSelected].prefab);
 		CR.NewReference(newChar.transform,newChar.GetComponent<TestMovement>(),newChar.GetComponent<PlayerStats>(),newChar.GetComponent<AnimatorController>(),newChar);
 	}
 	public void GetCoins()
 	{
-		coins = PlayerPrefs.GetInt("Coins");
+		coins = CR.playerInfo.coins;
 	}
 	public void UnlockCharacter(int index,ShopItem item)
 	{
 		GetCoins();
 		if (charactersInfo.characters[index].unlocked)
 		{
-			PlayerPrefs.SetInt("CharacterSelected", index);
+			CR.playerInfo.selectedCharacter = index;
 			InstantiateNewCharacter();
 		}
 		else if(charactersInfo.characters[index].unlocked == false && coins >= charactersInfo.characters[index].price)
@@ -86,7 +86,7 @@ public class ShopController : MonoBehaviour {
 			charactersInfo.characters[index].unlocked = true;
 			coins -= charactersInfo.characters[index].price;
 			item.RefreshPrice();
-			PlayerPrefs.SetInt("CharacterSelected", index);
+			CR.playerInfo.selectedCharacter = index;
 			InstantiateNewCharacter();
 		}
 		else if(charactersInfo.characters[index].unlocked == false && coins < charactersInfo.characters[index].price)

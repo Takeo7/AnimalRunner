@@ -253,6 +253,7 @@
     <Compile Include="Assets\Scripts\Challenges\ChallengeCompletedUIController.cs" />
     <Compile Include="Assets\Scripts\Challenges\ChallengesController.cs" />
     <Compile Include="Assets\Scripts\Challenges\ChallengesScriptable.cs" />
+    <Compile Include="Assets\Scripts\CharacterInfo.cs" />
     <Compile Include="Assets\Scripts\CharacterLocalRefs.cs" />
     <Compile Include="Assets\Scripts\CharacterReferences.cs" />
     <Compile Include="Assets\Scripts\CharactersInfo.cs" />

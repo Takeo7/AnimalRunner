@@ -437,19 +437,11 @@ public class MainMenuAnimator : MonoBehaviour {
 	}
     public void ResetScene()
     {
-        if (PlayerPrefs.HasKey("MaxMeters"))
+        if (CR.playerInfo.metersRecord < currentMeters)
         {
-            if (PlayerPrefs.GetInt("MaxMeters")<currentMeters)
-            {
-                PlayerPrefs.SetInt("MaxMeters", currentMeters);
-                LeaderboardUpdate(currentMeters);
-            }
-        }
-        else
-        {
-            PlayerPrefs.SetInt("MaxMeters", currentMeters);
+			CR.playerInfo.metersRecord = currentMeters;
             LeaderboardUpdate(currentMeters);
-        }
+        }    
         SceneManager.LoadScene(1);
     }
     IEnumerator IntroCoroutine()

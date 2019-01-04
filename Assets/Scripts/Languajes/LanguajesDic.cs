@@ -17,9 +17,9 @@ public class LanguajesDic : MonoBehaviour {
         else
         {
             instance = this;
-            if (PlayerPrefs.HasKey("Languaje"))
+            if (CR.playerInfo.language > -1)
             {
-                currentlang = PlayerPrefs.GetInt("Languaje");
+                currentlang = CR.playerInfo.language;
             }
             else
             {
@@ -44,17 +44,17 @@ public class LanguajesDic : MonoBehaviour {
             }
         }       
     }
-    #endregion
-    int currentlang = 0;
+	#endregion
+	public CharacterReferences CR;
+	int currentlang = 0;
 
     public string[] English;
     public string[] Spanish;
     public string[] French;
-    public string[] Chiniese;
+    public string[] Chinese;
     public string[] German;
 
     string[] currentLangTexts;
-
     private void Start()
     {
         LoadCurrentLang(currentlang);
@@ -80,7 +80,7 @@ public class LanguajesDic : MonoBehaviour {
                 break;
         }
         currentlang = i;
-        PlayerPrefs.SetInt("Languaje", currentlang);
+		CR.playerInfo.language = currentlang;
         delegadoLang();
     }
 

@@ -16,7 +16,7 @@ public class ShopItem : MonoBehaviour {
 	public void SetVisuals(Sprite sprite,string name)
 	{
 		bool selectedBool;
-		if(PlayerPrefs.GetInt("CharacterSelected") == index)
+		if(CharacterReferences.instance.playerInfo.selectedCharacter == index)
 		{
 			selectedBool = true;
 		}

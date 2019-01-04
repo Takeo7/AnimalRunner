@@ -19,11 +19,12 @@ public class CoinsController : MonoBehaviour {
 
     int coins;
     int gems;
-
+	public CharacterReferences CR;
     private void Start()
     {
-        coins = PlayerPrefs.GetInt("Coins");
-        gems = PlayerPrefs.GetInt("Gems");
+		CR = CharacterReferences.instance;
+        coins = CR.playerInfo.coins;
+        gems = CR.playerInfo.gems;
     }
 
     public int GetCoins()
@@ -33,7 +34,7 @@ public class CoinsController : MonoBehaviour {
     public void SetCoins(int i)
     {
         coins += i;
-        PlayerPrefs.SetInt("Coins", coins);
+        CR.playerInfo.coins = coins;
     }
 
     public int GetGems()
@@ -43,6 +44,6 @@ public class CoinsController : MonoBehaviour {
     public void SetGems(int i)
     {
         gems += i;
-        PlayerPrefs.SetInt("Gems", gems);
+        CR.playerInfo.gems = gems;
     }
 }

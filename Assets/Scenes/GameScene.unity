@@ -1612,6 +1612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bbfe01d1c8620c498c7ba591a47d752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInfo: {fileID: 11400000, guid: cfe0770784b234542895585ea327d64f, type: 2}
   charactersInfo: {fileID: 11400000, guid: 025b744779bcb9c4e93af2fbfefd1421, type: 2}
   characterTransform: {fileID: 145081248}
   TM: {fileID: 145081251}
@@ -5051,6 +5052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2f9e76bc496fb4788da338d9cf26cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CR: {fileID: 472959689}
   English:
   - Play
   - Settings
@@ -5087,7 +5089,7 @@ MonoBehaviour:
   - Se connecter
   - "D\xE9connexion"
   - Record
-  Chiniese: []
+  Chinese: []
   German: []
 --- !u!4 &1421015780
 Transform:

@@ -78,13 +78,13 @@ public class ChallengesController : MonoBehaviour {
 	}
 	void RefillCurrentChallenges()
 	{
-		if((PlayerPrefs.GetInt("Challenge0") == 0) && (PlayerPrefs.GetInt("Challenge1") == 0) && (PlayerPrefs.GetInt("Challenge2") == 0))
+		if(CR.playerInfo.challengesIndex[0] == 0 && CR.playerInfo.challengesIndex[1] == 0 && CR.playerInfo.challengesIndex[2] == 0)
 		{
-			PlayerPrefs.SetInt("Challenge0",metersScriptables[Random.Range(0,metersScriptables.Count+1)].index);
-			PlayerPrefs.SetInt("Challenge1", killsScriptables[Random.Range(0, killsScriptables.Count + 1)].index);
+			CR.playerInfo.challengesIndex[0] = metersScriptables[Random.Range(0,metersScriptables.Count+1)].index;
+			CR.playerInfo.challengesIndex[1] = killsScriptables[Random.Range(0, killsScriptables.Count + 1)].index;
 		}
-		currentChallengesIndex[0] = PlayerPrefs.GetInt("Challenge0");
-		currentChallengesIndex[1] = PlayerPrefs.GetInt("Challenge1");
+		currentChallengesIndex[0] = CR.playerInfo.challengesIndex[0];
+		currentChallengesIndex[1] = CR.playerInfo.challengesIndex[1];
 		//currentChallengesIndex[2] = PlayerPrefs.GetInt("Challenge2");
 
 		for (int i = 0; i < 2; i++)//Set "i < 2" to "i < 3" when miscelaneous challenges added
@@ -92,8 +92,8 @@ public class ChallengesController : MonoBehaviour {
 			currentChallenges[i] = challengesScriptables[currentChallengesIndex[i]];
 		}
 
-		currentChallengesProgress[0] = PlayerPrefs.GetInt("Progress0");
-		currentChallengesProgress[1] = PlayerPrefs.GetInt("Progress1");
+		currentChallengesProgress[0] = CR.playerInfo.challengesProgress[0];
+		currentChallengesProgress[1] = CR.playerInfo.challengesProgress[1];
 		//currentChallengesProgress[2] = PlayerPrefs.GetInt("Progress2");
 	}
 	void CheckMeters()
@@ -196,11 +196,11 @@ public class ChallengesController : MonoBehaviour {
 		currentChallenges[pos] = null;
 		if (pos == 0)
 		{
-			PlayerPrefs.SetInt("Challenge0", metersScriptables[Random.Range(0, metersScriptables.Count + 1)].index);
+			CR.playerInfo.challengesIndex[0] = metersScriptables[Random.Range(0, metersScriptables.Count + 1)].index;
 		}
 		else if(pos == 1)
 		{
-			PlayerPrefs.SetInt("Challenge1", killsScriptables[Random.Range(0, killsScriptables.Count + 1)].index);
+			CR.playerInfo.challengesIndex[1] = killsScriptables[Random.Range(0, killsScriptables.Count + 1)].index;
 		}
 	}
 
