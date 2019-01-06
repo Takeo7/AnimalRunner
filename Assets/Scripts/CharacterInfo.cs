@@ -9,6 +9,8 @@ public class CharacterInfo : ScriptableObject {
 	[Header("Base")]
 	public string playerName;
 	public int playerLevel;
+	public float currentMedals;
+	public float medalsToNextRank;
 	[Space]
 	//Records
 	[Header("Records")]

@@ -13,8 +13,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerName: 
   playerLevel: 1
+  currentMedals: 0
+  medalsToNextRank: 3
   metersRecord: 0
   pointsRecord: 0
-  coins: 0
+  coins: 1
   gems: 0
   selectedCharacter: 0
+  language: 0
+  challengesIndex: 010000000300000000000000
+  challengesProgress: 000000000000000000000000

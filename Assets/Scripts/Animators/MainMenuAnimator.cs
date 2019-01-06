@@ -45,7 +45,7 @@ public class MainMenuAnimator : MonoBehaviour {
     public Text meters;
     public int currentMeters;
 	public CharacterReferences CR;
-
+	public ChallengesController CC;
     private void Start()
     {
         StartClientConfiguration();
@@ -376,9 +376,16 @@ public class MainMenuAnimator : MonoBehaviour {
     #region ToggleWindows
     public void ToogleDeadWindow()
     {
-        deadWindow.SetActive(true);
+		StartCoroutine("ToggleDeadWindowCO");
     }
-    public void ToogleSettingsWindow()
+	IEnumerator ToggleDeadWindowCO()
+	{
+		yield return new WaitForSeconds(2f);
+		CC.DieChallengesCheck();
+		deadWindow.SetActive(true);
+	}
+
+	public void ToogleSettingsWindow()
     {
         settingsWindow.SetActive(!settingsWindow.active);
         if (settingsWindow.active)

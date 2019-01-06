@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChallengesController : MonoBehaviour {
 
@@ -11,12 +12,18 @@ public class ChallengesController : MonoBehaviour {
 
 	int[] currentChallengesIndex = new int[3];//-1 == completed
 	int[] currentChallengesProgress = new int[3];
+	[SerializeField]
 	bool[] currentChallengesDone = new bool[3];
 	float metersRunGrounded = 0;
 	float metersRunTotal = 0;
 	bool showingCompleted = false;
 
 	float currKills;
+
+	public Text[] dieChallenges = new Text[2];
+	public GameObject[] dieChallengesDone = new GameObject[2];
+	public Text[] newDieChallenges = new Text[3];
+	public GameObject[] newDieChallengesImage = new GameObject[2];
 	
 
 	public UIController UIC;
@@ -95,6 +102,14 @@ public class ChallengesController : MonoBehaviour {
 		currentChallengesProgress[0] = CR.playerInfo.challengesProgress[0];
 		currentChallengesProgress[1] = CR.playerInfo.challengesProgress[1];
 		//currentChallengesProgress[2] = PlayerPrefs.GetInt("Progress2");
+
+		//Refill dead window with the challenges
+		for (int i = 0; i < 2; i++)
+		{
+			dieChallenges[i].text = currentChallenges[i].name;
+			dieChallengesDone[i].SetActive(false);
+		}
+
 	}
 	void CheckMeters()
 	{
@@ -181,16 +196,6 @@ public class ChallengesController : MonoBehaviour {
 		CCUIC.gameObject.SetActive(true);
 		currentChallenges[pos] = null;
 	}
-	void GiveNewChallengeOnFinish()
-	{
-		for (int i = 0; i < 2; i++)
-		{
-			if(currentChallenges[i] == null)
-			{
-				NewChallenge((byte)i);
-			}
-		}
-	}
 	void NewChallenge(byte pos)
 	{
 		currentChallenges[pos] = null;
@@ -201,6 +206,36 @@ public class ChallengesController : MonoBehaviour {
 		else if(pos == 1)
 		{
 			CR.playerInfo.challengesIndex[1] = killsScriptables[Random.Range(0, killsScriptables.Count + 1)].index;
+		}
+	}
+	public void DieChallengesCheck()
+	{
+		StartCoroutine("AddNewChallenges");
+	}
+	IEnumerator AddNewChallenges()
+	{
+		yield return new WaitForSeconds(2f);
+		for (int i = 0; i < 2; i++)
+		{
+			if (currentChallengesDone[i])
+			{
+				dieChallengesDone[i].SetActive(true);
+			}
+			else
+			{
+				dieChallengesDone[i].SetActive(false);
+			}
+		}
+		yield return new WaitForSeconds(2f);
+		for (int i = 0; i < 2; i++)
+		{
+			if (currentChallenges[i] == null)
+			{
+				NewChallenge((byte)i);
+				newDieChallenges[i].text = challengesScriptables[CR.playerInfo.challengesIndex[i]].name;
+				newDieChallengesImage[i].SetActive(true);
+				dieChallengesDone[i].SetActive(false);
+			}
 		}
 	}
 
