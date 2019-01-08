@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class ChallengesScriptable : ScriptableObject {
 
+	public byte xp;
 	public int index;
 	new public string name;
 	public challengeType type;

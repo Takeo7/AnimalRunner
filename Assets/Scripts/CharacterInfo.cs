@@ -9,8 +9,9 @@ public class CharacterInfo : ScriptableObject {
 	[Header("Base")]
 	public string playerName;
 	public int playerLevel;
-	public float currentMedals;
-	public float medalsToNextRank;
+	public byte currentMedals;
+	public byte medalsToNextRank;
+	public byte medalHolder;//from 0 to 8 first has 3 last has 10
 	[Space]
 	//Records
 	[Header("Records")]

@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352fb850bbd5f5d43b46d752d4644cab, type: 3}
   m_Name: 300meterRow
   m_EditorClassIdentifier: 
+  xp: 2
   index: 0
   name: Run 300 meters in a row
   type: 0

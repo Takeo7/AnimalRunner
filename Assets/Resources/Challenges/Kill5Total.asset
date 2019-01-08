@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352fb850bbd5f5d43b46d752d4644cab, type: 3}
   m_Name: Kill5Total
   m_EditorClassIdentifier: 
+  xp: 1
   index: 3
   name: Kill 5 enemies
   type: 1

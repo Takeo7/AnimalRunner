@@ -20,11 +20,18 @@ public class ChallengesController : MonoBehaviour {
 
 	float currKills;
 
+	byte xpToAdd;
+
 	public Text[] dieChallenges = new Text[2];
 	public GameObject[] dieChallengesDone = new GameObject[2];
 	public Text[] newDieChallenges = new Text[3];
 	public GameObject[] newDieChallengesImage = new GameObject[2];
-	
+
+	public GameObject[] medals;
+	public GameObject[] newMedals;
+	public GameObject[] medalsHolders;
+	public MedalsHolderController[] MHC;
+	public Text levelText;
 
 	public UIController UIC;
 	public CharacterReferences CR;
@@ -109,6 +116,14 @@ public class ChallengesController : MonoBehaviour {
 			dieChallenges[i].text = currentChallenges[i].name;
 			dieChallengesDone[i].SetActive(false);
 		}
+		medalsHolders[CR.playerInfo.medalHolder].SetActive(true);
+		MHC[CR.playerInfo.medalHolder].isExistent = true;
+		MHC[CR.playerInfo.medalHolder].SetMedalsRef(this);
+		for (int i = 0; i < CR.playerInfo.currentMedals; i++)
+		{
+			medals[i].SetActive(true);
+		}
+		levelText.text = CR.playerInfo.playerName + " Level: " + CR.playerInfo.playerLevel.ToString();
 
 	}
 	void CheckMeters()
@@ -178,6 +193,7 @@ public class ChallengesController : MonoBehaviour {
 	void ChallengeCompleted(byte pos)
 	{
 		//give XP
+		xpToAdd += currentChallenges[pos].xp;
 		currentChallengesDone[pos] = true;
 		StartCoroutine(ChallengeCompletedCO(pos));
 	}
@@ -201,7 +217,7 @@ public class ChallengesController : MonoBehaviour {
 		currentChallenges[pos] = null;
 		if (pos == 0)
 		{
-			CR.playerInfo.challengesIndex[0] = metersScriptables[Random.Range(0, metersScriptables.Count + 1)].index;
+			CR.playerInfo.challengesIndex[0] = metersScriptables[Random.Range(0, metersScriptables.Count)].index;
 		}
 		else if(pos == 1)
 		{
@@ -235,6 +251,34 @@ public class ChallengesController : MonoBehaviour {
 				newDieChallenges[i].text = challengesScriptables[CR.playerInfo.challengesIndex[i]].name;
 				newDieChallengesImage[i].SetActive(true);
 				dieChallengesDone[i].SetActive(false);
+			}
+		}
+		//Show the level going up
+		for (int i = xpToAdd; i > 0; i--)
+		{
+			CR.playerInfo.currentMedals++;
+			xpToAdd--;
+			Debug.Log(CR.playerInfo.currentMedals - 1);
+			newMedals[CR.playerInfo.currentMedals-1].SetActive(true);
+			yield return new WaitForSeconds(1f);
+			if ((CR.playerInfo.currentMedals) == CR.playerInfo.medalsToNextRank)
+			{
+				CR.playerInfo.medalHolder++;
+				if(CR.playerInfo.medalHolder > 8)
+				{
+					CR.playerInfo.medalHolder = 0;
+				}
+				CR.playerInfo.playerLevel++;
+				CR.playerInfo.currentMedals = 0;
+				CR.playerInfo.medalsToNextRank++;
+				if(CR.playerInfo.medalsToNextRank > 10)
+				{
+					CR.playerInfo.medalsToNextRank = 3;
+				}
+				medalsHolders[CR.playerInfo.medalHolder].SetActive(true);
+				MHC[CR.playerInfo.medalHolder].isExistent = false;
+				MHC[CR.playerInfo.medalHolder].SetTextRef(this);
+				levelText.text = CR.playerInfo.playerName + " Level: " + CR.playerInfo.playerLevel.ToString();
 			}
 		}
 	}

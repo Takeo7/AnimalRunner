@@ -276,6 +276,7 @@
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\Languajes\LanguajesDic.cs" />
     <Compile Include="Assets\Scripts\MaxMetersTextScript.cs" />
+    <Compile Include="Assets\Scripts\MedalsHolderController.cs" />
     <Compile Include="Assets\Scripts\Parallax\CaveInOut.cs" />
     <Compile Include="Assets\Scripts\Parallax\ParallaxChecker.cs" />
     <Compile Include="Assets\Scripts\Parallax\ParallaxMainController.cs" />
