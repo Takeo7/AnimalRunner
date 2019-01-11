@@ -45,12 +45,16 @@ public class TestMovement : MonoBehaviour {
 
     public GameObject bulletPrefab;
     public Transform bulletSpawnPoint;
+	public GameObject muzzleFlashPrefab;
+	public bool hasMuzzleFlash;
     public int bulletDamage;
 	public bool jumpAnimEnabled;
     public bool jumpVFXEnabled;
     public bool secondJumpAnimEnabled;
+	public bool hasSecondJumpAnim;
 
-    public CharacterVFXController VFX;
+
+	public CharacterVFXController VFX;
 
     bool attackBool = true;
 
@@ -126,7 +130,14 @@ public class TestMovement : MonoBehaviour {
             {
 				if (secondJumpAnimEnabled)
 				{
-					AC.JumpTwoAnim();
+					if (hasSecondJumpAnim)
+					{
+						AC.JumpTwoAnim();
+					}
+					else
+					{
+						AC.JumpOneAnim();
+					}
 					if (jumpVFXEnabled)
                     {
                         VFX.JumpSecond();
@@ -202,6 +213,11 @@ public class TestMovement : MonoBehaviour {
     {
         yield return new WaitForSeconds(0.01f);
         GameObject g = Instantiate(bulletPrefab, bulletSpawnPoint.position,Quaternion.identity);
+		if (hasMuzzleFlash)
+		{
+			GameObject m = Instantiate(muzzleFlashPrefab, bulletSpawnPoint.position, muzzleFlashPrefab.transform.rotation);
+			//m.transform.localScale = new Vector3(1, 1, 1);
+		}
         //g.transform.SetParent(null);
         StopCoroutine("AttackCoroutine");
     }

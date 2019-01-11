@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114445682609795294}
   - component: {fileID: 114387336263633450}
   - component: {fileID: 114978386454116228}
+  - component: {fileID: 114978610230510808}
   m_Layer: 0
   m_Name: Elephant
   m_TagString: Player
@@ -57,6 +58,7 @@ GameObject:
   - component: {fileID: 33076929865806938}
   - component: {fileID: 23844086053414870}
   - component: {fileID: 114197364752747128}
+  - component: {fileID: 114418714510339968}
   m_Layer: 0
   m_Name: ElephantSprite
   m_TagString: Untagged
@@ -71,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1183136600057304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.804, y: -2.05, z: 0.25}
+  m_LocalPosition: {x: 1.284, y: -1.406, z: 0.25}
   m_LocalScale: {x: 0.47231, y: 0.47231, z: 0.47231}
   m_Children:
   - {fileID: 4283539288527980}
@@ -243,14 +245,33 @@ MonoBehaviour:
   secondOverlapRadius: 0.24
   sideOffset: {x: 0.91, y: 0.84, z: 0}
   sideSize: {x: 0.48, y: 2.26}
-  bulletPrefab: {fileID: 1503914469158978, guid: c364b77ee69aed34cb38b1573ccc7046,
+  bulletPrefab: {fileID: 1256454435249092, guid: 14cec64f1d58719449899e3c9a5a6587,
     type: 2}
   bulletSpawnPoint: {fileID: 4404307194283614}
+  muzzleFlashPrefab: {fileID: 1674546203474612, guid: 9a1e9541411c3be429b72d4e81f4250e,
+    type: 2}
+  hasMuzzleFlash: 0
   bulletDamage: 1
   jumpAnimEnabled: 1
-  jumpVFXEnabled: 0
-  secondJumpAnimEnabled: 0
-  VFX: {fileID: 0}
+  jumpVFXEnabled: 1
+  secondJumpAnimEnabled: 1
+  hasSecondJumpAnim: 0
+  VFX: {fileID: 114978610230510808}
+--- !u!114 &114418714510339968
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1741204992221154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 1
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
 --- !u!114 &114445682609795294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -283,6 +304,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 294a16452852aa546a95447b3b0ef16c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasDeathEffects: 1
+  hasSlowerDeath: 1
+  slowerDeathValue: 0.5
   anim: {fileID: 114197364752747128}
   isAnimatingSpine: 1
   isCharacter: 1
@@ -298,3 +322,22 @@ MonoBehaviour:
   takeDamageDuration: 0.267
   attackAnimDuration: 0.35
   secondAttackAnimDuration: 0.667
+--- !u!114 &114978610230510808
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1183136600057304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64ba5f48bf9214d419d36030ec0333e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderer: {fileID: 23844086053414870}
+  JumpFromFloor: {fileID: 195466, guid: ff44dfec2855df847897bff725f8449a, type: 2}
+  SecondJump: {fileID: 195466, guid: ac39e087bf234604893f3d970b4923d3, type: 2}
+  AttackRanged: {fileID: 0}
+  Idle: {fileID: 0}
+  Death: {fileID: 1839709731973698, guid: 48d088085fee8214c9de9662997ea85e, type: 2}
+  StandardMaterial: {fileID: 0}
+  DeathMaterial: {fileID: 0}

@@ -1,0 +1,55 @@
+
+cazadora2.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cabeza
+  rotate: false
+  xy: 2, 22
+  size: 69, 96
+  orig: 69, 96
+  offset: 0, 0
+  index: -1
+cara enfadada
+  rotate: false
+  xy: 177, 60
+  size: 20, 18
+  orig: 20, 18
+  offset: 0, 0
+  index: -1
+cara feliz
+  rotate: false
+  xy: 2, 2
+  size: 29, 18
+  orig: 29, 18
+  offset: 0, 0
+  index: -1
+tentaculo abajo
+  rotate: false
+  xy: 199, 24
+  size: 37, 94
+  orig: 37, 94
+  offset: 0, 0
+  index: -1
+tentaculo arriba
+  rotate: true
+  xy: 73, 13
+  size: 30, 103
+  orig: 30, 103
+  offset: 0, 0
+  index: -1
+tentaculo medio
+  rotate: true
+  xy: 73, 80
+  size: 38, 124
+  orig: 38, 124
+  offset: 0, 0
+  index: -1
+tronco
+  rotate: true
+  xy: 73, 45
+  size: 33, 102
+  orig: 33, 102
+  offset: 0, 0
+  index: -1

@@ -5,6 +5,12 @@ using Spine.Unity;
 
 public class AnimatorController : MonoBehaviour {
 
+	[SerializeField]
+	bool hasDeathEffects;
+	[SerializeField]
+	bool hasSlowerDeath;
+	[SerializeField]
+	float slowerDeathValue;
 	public SkeletonAnimation anim;
 	public bool isAnimatingSpine = false;
     public bool isCharacter = false;
@@ -53,6 +59,14 @@ public class AnimatorController : MonoBehaviour {
 	public void DeathAnim()
 	{
 		ChangeAnim(0, death, false);
+		if (hasSlowerDeath)
+		{
+			anim.timeScale = slowerDeathValue;
+		}
+		if (hasDeathEffects)
+		{
+			CharacterReferences.instance.TM.VFX.DeathEffects();
+		}
 	}
 	public void SpecialAttack()
 	{
