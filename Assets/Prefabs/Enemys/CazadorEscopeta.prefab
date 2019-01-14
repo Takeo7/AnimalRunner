@@ -310,6 +310,7 @@ MonoBehaviour:
   col: {fileID: 70017966248899824}
   AC: {fileID: 114846726699647374}
   VFXAA: {fileID: 114505895406088226}
+  meleeAttackDelay: 0
 --- !u!114 &114505895406088226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -376,9 +377,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 294a16452852aa546a95447b3b0ef16c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasDeathEffects: 0
+  hasSlowerDeath: 0
+  slowerDeathValue: 0
   anim: {fileID: 114684637161760428}
   isAnimatingSpine: 1
   isCharacter: 0
+  rangedAttackDelay: 1
   run: run
   jump: jump
   attack: attack

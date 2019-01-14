@@ -137,7 +137,7 @@ public class EnemyMovement : MonoBehaviour {
 			{
 				VFXAA.VFXInstantiate(meleeAttackDelay);
 			}
-			yield return new WaitForSeconds(1f);
+			yield return new WaitForSeconds(AC.rangedAttackDelay);
 			if (!isMelee)
 			{
 				GameObject bullet = Instantiate(bulletPrefab);
@@ -145,6 +145,7 @@ public class EnemyMovement : MonoBehaviour {
 				bullet.transform.position = bulletSpawn.position;
 				bullet.GetComponent<BulletController>().damage = damage;
 			}
+			//yield return new WaitForSeconds(1f);
 			AC.IdleAnim();
 			isAttacking = false;
 			yield return new WaitForSeconds(secondsToAttackAgain);

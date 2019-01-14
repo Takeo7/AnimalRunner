@@ -14,6 +14,7 @@ public class AnimatorController : MonoBehaviour {
 	public SkeletonAnimation anim;
 	public bool isAnimatingSpine = false;
     public bool isCharacter = false;
+	public float rangedAttackDelay;
 
 	const byte movementTrack = 0;
 	const byte actionTrack = 1;

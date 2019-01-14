@@ -1,0 +1,111 @@
+
+Tirador.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Capa 47
+  rotate: false
+  xy: 380, 124
+  size: 37, 21
+  orig: 37, 21
+  offset: 0, 0
+  index: -1
+bota derecha
+  rotate: true
+  xy: 949, 209
+  size: 42, 52
+  orig: 42, 52
+  offset: 0, 0
+  index: -1
+bota izquierda
+  rotate: false
+  xy: 283, 72
+  size: 50, 48
+  orig: 50, 48
+  offset: 0, 0
+  index: -1
+brazo derecho T
+  rotate: false
+  xy: 380, 147
+  size: 120, 104
+  orig: 120, 104
+  offset: 0, 0
+  index: -1
+brazo izquierdo T
+  rotate: false
+  xy: 611, 158
+  size: 86, 93
+  orig: 86, 93
+  offset: 0, 0
+  index: -1
+cabeza T
+  rotate: false
+  xy: 699, 171
+  size: 78, 80
+  orig: 78, 80
+  offset: 0, 0
+  index: -1
+mano izquierda T
+  rotate: false
+  xy: 230, 39
+  size: 35, 31
+  orig: 35, 31
+  offset: 0, 0
+  index: -1
+nudo T
+  rotate: false
+  xy: 230, 72
+  size: 51, 48
+  orig: 51, 48
+  offset: 0, 0
+  index: -1
+piernas T
+  rotate: false
+  xy: 2, 2
+  size: 173, 145
+  orig: 173, 145
+  offset: 0, 0
+  index: -1
+rifle
+  rotate: false
+  xy: 2, 149
+  size: 243, 102
+  orig: 243, 102
+  offset: 0, 0
+  index: -1
+tela derecha
+  rotate: true
+  xy: 863, 221
+  size: 30, 84
+  orig: 30, 84
+  offset: 0, 0
+  index: -1
+tela izquierda
+  rotate: true
+  xy: 779, 192
+  size: 59, 82
+  orig: 59, 82
+  offset: 0, 0
+  index: -1
+torso T
+  rotate: false
+  xy: 247, 122
+  size: 131, 129
+  orig: 131, 129
+  offset: 0, 0
+  index: -1
+trenza
+  rotate: true
+  xy: 177, 25
+  size: 122, 51
+  orig: 122, 51
+  offset: 0, 0
+  index: -1
+turbante T
+  rotate: true
+  xy: 502, 158
+  size: 93, 107
+  orig: 93, 107
+  offset: 0, 0
+  index: -1

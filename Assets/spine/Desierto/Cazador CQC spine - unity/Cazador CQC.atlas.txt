@@ -1,0 +1,104 @@
+
+Cazador CQC.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Capa 49
+  rotate: false
+  xy: 137, 106
+  size: 41, 21
+  orig: 41, 21
+  offset: 0, 0
+  index: -1
+bota derecha
+  rotate: false
+  xy: 401, 50
+  size: 41, 52
+  orig: 41, 52
+  offset: 0, 0
+  index: -1
+bota izquierda
+  rotate: true
+  xy: 368, 114
+  size: 48, 53
+  orig: 48, 53
+  offset: 0, 0
+  index: -1
+brazo derecho CQC
+  rotate: false
+  xy: 300, 2
+  size: 66, 137
+  orig: 66, 137
+  offset: 0, 0
+  index: -1
+brazo izquierdo CQC
+  rotate: true
+  xy: 190, 15
+  size: 112, 108
+  orig: 112, 108
+  offset: 0, 0
+  index: -1
+cabeza CQC
+  rotate: true
+  xy: 351, 164
+  size: 85, 84
+  orig: 85, 84
+  offset: 0, 0
+  index: -1
+hoja espada
+  rotate: true
+  xy: 2, 10
+  size: 89, 186
+  orig: 89, 186
+  offset: 0, 0
+  index: -1
+mango espada
+  rotate: true
+  xy: 437, 104
+  size: 59, 65
+  orig: 59, 65
+  offset: 0, 0
+  index: -1
+nudo CQC
+  rotate: true
+  xy: 401, 3
+  size: 45, 43
+  orig: 45, 43
+  offset: 0, 0
+  index: -1
+piernas CQC
+  rotate: true
+  xy: 2, 101
+  size: 148, 133
+  orig: 148, 133
+  offset: 0, 0
+  index: -1
+tela derecha
+  rotate: false
+  xy: 368, 36
+  size: 31, 76
+  orig: 31, 76
+  offset: 0, 0
+  index: -1
+tela izquierda
+  rotate: false
+  xy: 437, 165
+  size: 72, 84
+  orig: 72, 84
+  offset: 0, 0
+  index: -1
+torso CQC
+  rotate: false
+  xy: 137, 129
+  size: 111, 120
+  orig: 111, 120
+  offset: 0, 0
+  index: -1
+turbante CQC
+  rotate: false
+  xy: 250, 141
+  size: 99, 108
+  orig: 99, 108
+  offset: 0, 0
+  index: -1
