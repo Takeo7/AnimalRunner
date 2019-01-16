@@ -76,7 +76,6 @@ public class MainMenuAnimator : MonoBehaviour {
     {
         // Create client configuration
         PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
-            .EnableSavedGames()
             .Build();
 
 
