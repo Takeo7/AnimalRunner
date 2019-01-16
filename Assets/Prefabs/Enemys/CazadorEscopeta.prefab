@@ -383,7 +383,7 @@ MonoBehaviour:
   anim: {fileID: 114684637161760428}
   isAnimatingSpine: 1
   isCharacter: 0
-  rangedAttackDelay: 1
+  rangedAttackDelay: 0.7
   run: run
   jump: jump
   attack: attack
@@ -394,7 +394,7 @@ MonoBehaviour:
   takeDamage: hurt
   specialAttack: protect
   takeDamageDuration: 0.16
-  attackAnimDuration: 0
+  attackAnimDuration: 0.8
   secondAttackAnimDuration: 0
 --- !u!212 &212632755882459758
 SpriteRenderer:

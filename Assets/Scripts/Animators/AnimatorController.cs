@@ -38,8 +38,7 @@ public class AnimatorController : MonoBehaviour {
 	string specialAttack = "protect";
 	[SerializeField]
 	float takeDamageDuration;
-	[SerializeField]
-	float attackAnimDuration;
+	public float attackAnimDuration;
 	[SerializeField]
 	float secondAttackAnimDuration;
 

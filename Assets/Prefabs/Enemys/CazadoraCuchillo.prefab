@@ -335,9 +335,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 294a16452852aa546a95447b3b0ef16c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasDeathEffects: 0
+  hasSlowerDeath: 0
+  slowerDeathValue: 0
   anim: {fileID: 114145291380421814}
   isAnimatingSpine: 1
   isCharacter: 0
+  rangedAttackDelay: 0
   run: run
   jump: jump
   attack: attack
@@ -348,7 +352,7 @@ MonoBehaviour:
   takeDamage: hurt
   specialAttack: protect
   takeDamageDuration: 0.23
-  attackAnimDuration: 0
+  attackAnimDuration: 0.6
   secondAttackAnimDuration: 0
 --- !u!114 &114684640310316610
 MonoBehaviour:

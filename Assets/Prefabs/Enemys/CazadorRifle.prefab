@@ -359,7 +359,7 @@ MonoBehaviour:
   attackLayerMask:
     serializedVersion: 2
     m_Bits: 0
-  secondsToAttackAgain: 1
+  secondsToAttackAgain: 1.2
   isDead: 0
   dontDie: 0
   col: {fileID: 70818071480867264}
