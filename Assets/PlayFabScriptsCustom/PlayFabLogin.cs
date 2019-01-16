@@ -27,8 +27,11 @@ public class PlayFabLogin : MonoBehaviour
         if (string.IsNullOrEmpty(PlayFabSettings.TitleId))
         {
             PlayFabSettings.TitleId = "144"; // Please change this value to your own titleId from PlayFab Game Manager
-        }
+        } 
+    }
 
+    public void LogInPlayFab()
+    {
         if (Application.platform == RuntimePlatform.Android)
         {
             var request = new LoginWithGoogleAccountRequest { CreateAccount = true, ServerAuthCode = PlayGamesPlatform.Instance.GetServerAuthCode() };
@@ -44,7 +47,6 @@ public class PlayFabLogin : MonoBehaviour
             var request = new LoginWithCustomIDRequest { CustomId = "GettingStartedGuide", CreateAccount = true };
             PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginFailure);
         }
-        
     }
 
     public void UploadUserData()

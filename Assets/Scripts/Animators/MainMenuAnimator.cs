@@ -93,8 +93,6 @@ public class MainMenuAnimator : MonoBehaviour {
         {
             PlayGamesPlatform.Instance.Authenticate(SignInCallback, true);
         }
-
-        //UpdateLocalInfoRead();
     }
     public void SingInGoogle()
     {
@@ -112,11 +110,6 @@ public class MainMenuAnimator : MonoBehaviour {
         {
             // Sign out of play games
             PlayGamesPlatform.Instance.SignOut();
-
-            // Reset UI
-            /*signInButtonText.text = "Sign In";
-            authStatus.text = "";
-            authStatus.text += PlayGamesPlatform.Instance.GetServerAuthCode();*/
         }
     }
     public void SignInCallback(bool success)
@@ -124,6 +117,7 @@ public class MainMenuAnimator : MonoBehaviour {
         if (success)
         {
             debugText.text = "Sign In";
+            PlayFabLogin.instance.LogInPlayFab();
             UpdateAchievement(achievements.achievement_new_animal);
 
             // Change sign-in button text
@@ -159,7 +153,7 @@ public class MainMenuAnimator : MonoBehaviour {
     }
     public void UpdateAchievement(achievements achiv)
     {
-        if (Social.localUser.authenticated)
+        /*if (Social.localUser.authenticated)
         {
             switch (achiv)
             {
@@ -172,7 +166,7 @@ public class MainMenuAnimator : MonoBehaviour {
                     });
                     break;
             }
-        }
+        }*/
        
     }
     public void UpdateAchievement(achievements achiv, int increment)
@@ -201,7 +195,7 @@ public class MainMenuAnimator : MonoBehaviour {
     }
     public void LeaderboardUpdate(int maxScore)
     {
-        if (PlayGamesPlatform.Instance.localUser.authenticated)
+       /* if (PlayGamesPlatform.Instance.localUser.authenticated)
         {
             PlayGamesPlatform.Instance.ReportScore(maxScore,
                 GPGSIds.leaderboard_meters,
@@ -219,155 +213,7 @@ public class MainMenuAnimator : MonoBehaviour {
                 debugText.text = "Cant WriteUpdatedScore";
                 throw;
             } 
-        }
-    }
-
-    #endregion
-    #region SaveGame
-
-    public void OpenSaveGameUI()
-    {
-        Action<SelectUIStatus, ISavedGameMetadata> OpenSGUI = (SelectUIStatus status, ISavedGameMetadata game) =>
-         {
-             debugText.text = "OpenSaveUI: " + status.ToString();
-         };
-
-        PlayGamesPlatform.Instance.SavedGame.ShowSelectSavedGameUI("Saved Games",5,false,false,OpenSGUI);
-    }
-
-    public void ReadSavedGame(string filename,
-                             Action<SavedGameRequestStatus, ISavedGameMetadata> callback)
-    {
-
-        /*ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
-        savedGameClient.OpenWithAutomaticConflictResolution(
-            filename,
-            DataSource.ReadCacheOrNetwork,
-            ConflictResolutionStrategy.UseLongestPlaytime,
-            callback);*/ //LO HE COMENTADO PORQUE ME DABA ERROR SIEMPRE Y NO DEJA FUNCIONAR LOS TESTS QUE HAGO XD ////////////////////////////////////////////////////////////
-    }
-
-    public void WriteSavedGame(ISavedGameMetadata game, byte[] savedData,
-                               Action<SavedGameRequestStatus, ISavedGameMetadata> callback)
-    {        
-        SavedGameMetadataUpdate.Builder builder = new SavedGameMetadataUpdate.Builder()
-            .WithUpdatedPlayedTime(TimeSpan.FromMinutes(game.TotalTimePlayed.Minutes + 1))
-            .WithUpdatedDescription("Saved at: " + System.DateTime.Now);
-
-        // You can add an image to saved game data (such as as screenshot)
-        // byte[] pngData = <PNG AS BYTES>;
-        // builder = builder.WithUpdatedPngCoverImage(pngData);
-
-        SavedGameMetadataUpdate updatedMetadata = builder.Build();
-
-        ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
-        debugText.text = game.Filename + ":_SAVED GAME";
-        savedGameClient.CommitUpdate(game, updatedMetadata, savedData, callback);
-    }
-
-    public void WriteUpdatedScore(int newMaxScore)
-    {
-        // Local variable
-        ISavedGameMetadata currentGame = null;
-
-        // CALLBACK: Handle the result of a write
-        Action<SavedGameRequestStatus, ISavedGameMetadata> writeCallback =
-        (SavedGameRequestStatus status, ISavedGameMetadata game) => {
-            debugText.text = "(RunForLife) Saved Game Write: " + status.ToString();
-        };
-
-        // CALLBACK: Handle the result of a binary read
-        Action<SavedGameRequestStatus, byte[]> readBinaryCallback =
-        (SavedGameRequestStatus status, byte[] data) => {
-            debugText.text = "(RunForLife) Saved Game Binary Read: " + status.ToString();
-            if (status == SavedGameRequestStatus.Success)
-            {
-                // Read score from the Saved Game
-                int score;
-                try
-                {
-                    string scoreString = System.Text.Encoding.UTF8.GetString(data);
-                    score = Convert.ToInt32(scoreString);
-                }
-                catch (Exception e)
-                {
-                    debugText.text = "(RunForLife) Saved Game Write: convert exception";
-                }
-
-                // Increment score, convert to byte[]
-                score = newMaxScore;
-                string newScoreString = "";
-                newScoreString = Convert.ToString(score);
-                byte[] newData = System.Text.Encoding.UTF8.GetBytes(newScoreString);
-
-                // Write new data
-                WriteSavedGame(currentGame, newData, writeCallback);
-            }
-        };
-
-        // CALLBACK: Handle the result of a read, which should return metadata
-        Action<SavedGameRequestStatus, ISavedGameMetadata> readCallback =
-        (SavedGameRequestStatus status, ISavedGameMetadata game) => {
-            debugText.text = "(RunForLife) Saved Game Read: " + status.ToString();
-            if (status == SavedGameRequestStatus.Success)
-            {
-                // Read the binary game data
-                currentGame = game;
-                PlayGamesPlatform.Instance.SavedGame.ReadBinaryData(game,
-                                                    readBinaryCallback);
-            }
-        };
-
-        // Read the current data and kick off the callback chain
-        debugText.text = "(RunForLife) Saved Game: Reading";
-        ReadSavedGame("file_maxMeters", readCallback);
-    }
-
-    public int ReadUpdatedSaveData()
-    {
-        // Local variable
-        ISavedGameMetadata currentGame = null;
-
-        int score = 0;
-
-        // CALLBACK: Handle the result of a binary read
-        Action<SavedGameRequestStatus, byte[]> readBinaryCallback =
-        (SavedGameRequestStatus status, byte[] data) => {
-            debugText.text = "(RunForLife) Saved Game Binary Read: " + status.ToString();
-            if (status == SavedGameRequestStatus.Success)
-            {
-                // Read score from the Saved Game
-                try
-                {
-                    string scoreString = System.Text.Encoding.UTF8.GetString(data);
-                    score = Convert.ToInt32(scoreString);
-                }
-                catch (Exception e)
-                {
-                    debugText.text = "(RunForLife) Saved Game Write: convert exception";
-                }
-            }
-        };
-        // CALLBACK: Handle the result of a read, which should return metadata
-        Action<SavedGameRequestStatus, ISavedGameMetadata> readCallback =
-        (SavedGameRequestStatus status, ISavedGameMetadata game) => {
-            debugText.text = "(RunForLife) Saved Game Read: " + status.ToString();
-            if (status == SavedGameRequestStatus.Success)
-            {
-                // Read the binary game data
-                currentGame = game;
-                PlayGamesPlatform.Instance.SavedGame.ReadBinaryData(game,
-                                                    readBinaryCallback);
-            }
-        };
-        ReadSavedGame("file_maxMeters", readCallback);
-        return score;
-    }
-
-    public void UpdateLocalInfoRead()
-    {
-        MaxMeters = ReadUpdatedSaveData();
-        MaxMetersText.text = MaxMeters+"m";
+        }*/
     }
 
     #endregion
