@@ -107,7 +107,8 @@ public class AnimatorController : MonoBehaviour {
 	}
     IEnumerator AttackAnimCO_2()
     {
-        ChangeAnim(movementTrack, attack, false);
+		Debug.Log("SER");
+		ChangeAnim(movementTrack, attack, false);
         yield return new WaitForSeconds(attackAnimDuration);
         if (isCharacter)
         {

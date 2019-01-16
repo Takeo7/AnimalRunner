@@ -132,7 +132,7 @@ public class EnemyMovement : MonoBehaviour {
 		while (isOnSight)
 		{
 			isAttacking = true;
-			AC.AttackAnim(false);
+			AC.AttackAnim(true);
 			if (isMelee)
 			{
 				VFXAA.VFXInstantiate(meleeAttackDelay);
