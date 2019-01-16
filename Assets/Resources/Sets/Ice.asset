@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9b68b5eacf341b44a0a92a6f67457c5, type: 3}
+  m_Name: Ice
+  m_EditorClassIdentifier: 
+  setType: 2
+  parallaxElements:
+  - {fileID: 21300000, guid: 8def50e115512714583236121d5d5f65, type: 3}
+  - {fileID: 21300000, guid: cce81cb70cf858d489c5496eab83e838, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 040466b11819dc94a86875f524fde672, type: 3}
+  floorPrefabs:
+  - {fileID: 1857769920330514, guid: 5d55768d6b3d56f4e9b8a9a9f1fc2be1, type: 2}
+  - {fileID: 1759568747965304, guid: b5e49f3483e5ca74ab1da4e0df680d4d, type: 2}
+  floatingPrefabs:
+  - {fileID: 1878426978204136, guid: b41ee72a0f5c0bf4a901ba1bef87c910, type: 2}
+  specialPrefabs:
+  - {fileID: 1265338769549626, guid: f9cb4472582f75f4b9a7c0504d162573, type: 2}
