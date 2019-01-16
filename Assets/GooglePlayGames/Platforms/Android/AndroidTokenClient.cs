@@ -64,6 +64,13 @@ namespace GooglePlayGames.Android
         private string authCode;
         private string idToken;
 
+        public static AndroidJavaObject CreateInvisibleView() {
+            using (var jc = new AndroidJavaClass(TokenFragmentClass))
+            {
+                return jc.CallStatic<AndroidJavaObject>("createInvisibleView", GetActivity());
+            }
+        }
+
         public static AndroidJavaObject GetActivity()
         {
             using (var jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))

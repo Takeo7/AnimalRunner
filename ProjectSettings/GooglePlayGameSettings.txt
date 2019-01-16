@@ -1,5 +1,5 @@
-lastUpgrade=00954
-proj.pluginVersion=0.9.54
+lastUpgrade=00957
+proj.pluginVersion=0.9.57
 proj.AppId=694445475600
 and.BundleId=com.WagenerGames.RunForLife
 proj.classDir=Assets

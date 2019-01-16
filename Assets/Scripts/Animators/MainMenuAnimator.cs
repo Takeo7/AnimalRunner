@@ -76,6 +76,8 @@ public class MainMenuAnimator : MonoBehaviour {
     {
         // Create client configuration
         PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
+            .RequestServerAuthCode(false)
+            .RequestEmail()
             .Build();
 
 
@@ -117,7 +119,7 @@ public class MainMenuAnimator : MonoBehaviour {
         if (success)
         {
             debugText.text = "Sign In";
-            PlayFabLogin.instance.LogInPlayFab();
+            PlayFabLogin.instance.LogInPlayFabMobile();
             UpdateAchievement(achievements.achievement_new_animal);
 
             // Change sign-in button text
@@ -130,8 +132,7 @@ public class MainMenuAnimator : MonoBehaviour {
         }
         else
         {
-            debugText.text = "(RunForLife) Sign-in failed..."+PlayGamesPlatform.Instance.GetServerAuthCode();
-            
+            debugText.text = "(RunForLife) Sign-in failed..."+PlayGamesPlatform.Instance.GetServerAuthCode();            
         }
     }
     #endregion
@@ -153,7 +154,7 @@ public class MainMenuAnimator : MonoBehaviour {
     }
     public void UpdateAchievement(achievements achiv)
     {
-        /*if (Social.localUser.authenticated)
+        if (Social.localUser.authenticated)
         {
             switch (achiv)
             {
@@ -166,7 +167,7 @@ public class MainMenuAnimator : MonoBehaviour {
                     });
                     break;
             }
-        }*/
+        }
        
     }
     public void UpdateAchievement(achievements achiv, int increment)
@@ -195,7 +196,7 @@ public class MainMenuAnimator : MonoBehaviour {
     }
     public void LeaderboardUpdate(int maxScore)
     {
-       /* if (PlayGamesPlatform.Instance.localUser.authenticated)
+       if (PlayGamesPlatform.Instance.localUser.authenticated)
         {
             PlayGamesPlatform.Instance.ReportScore(maxScore,
                 GPGSIds.leaderboard_meters,
@@ -213,7 +214,7 @@ public class MainMenuAnimator : MonoBehaviour {
                 debugText.text = "Cant WriteUpdatedScore";
                 throw;
             } 
-        }*/
+        }
     }
 
     #endregion
