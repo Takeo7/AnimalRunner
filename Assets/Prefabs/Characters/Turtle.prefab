@@ -98,7 +98,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1355157842876838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 2.3, z: 0.25}
+  m_LocalPosition: {x: 1.28, y: -1.41, z: 0.25}
   m_LocalScale: {x: 0.47231, y: 0.47231, z: 0.47231}
   m_Children:
   - {fileID: 4030948066661120}
@@ -245,9 +245,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 294a16452852aa546a95447b3b0ef16c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasDeathEffects: 0
+  hasSlowerDeath: 0
+  slowerDeathValue: 0
   anim: {fileID: 114355722373388528}
   isAnimatingSpine: 1
   isCharacter: 1
+  rangedAttackDelay: 0
   run: run
   jump: jump
   attack: attack
@@ -313,8 +317,11 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1503914469158978, guid: c364b77ee69aed34cb38b1573ccc7046,
     type: 2}
   bulletSpawnPoint: {fileID: 4571486539195516}
+  muzzleFlashPrefab: {fileID: 0}
+  hasMuzzleFlash: 0
   bulletDamage: 1
   jumpAnimEnabled: 1
   jumpVFXEnabled: 1
   secondJumpAnimEnabled: 1
+  hasSecondJumpAnim: 1
   VFX: {fileID: 114461465313367578}

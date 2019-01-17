@@ -245,8 +245,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/arthu/Documents/EstudioChinoVideojuegos/RunForLife
-    - Unity/RunForLifeKS.keystore
+  AndroidKeystoreName: F:/UnityProjects/AnimalRunnerG/RunForLifeKS.keystore
   AndroidKeyaliasName: takeo
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1

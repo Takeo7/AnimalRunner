@@ -56,10 +56,10 @@ public class MainMenuAnimator : MonoBehaviour {
     }
     private void Update()
     {
-        currentMeters = Mathf.RoundToInt(CR.characterTransform.transform.position.x);
+		currentMeters = Mathf.RoundToInt(CR.characterTransform.transform.position.x);
         meters.text = Mathf.RoundToInt(CR.characterTransform.transform.position.x) + " m";
 
-        achiveButton.SetActive(Social.localUser.authenticated);
+        /*achiveButton.SetActive(Social.localUser.authenticated);
         leadButton.SetActive(Social.localUser.authenticated);
         saveGameButton.SetActive(Social.localUser.authenticated);
         if (Social.localUser.authenticated == true)
@@ -69,8 +69,9 @@ public class MainMenuAnimator : MonoBehaviour {
         else
         {
             SignInButtonText.text = LanguajesDic.instance.GetText(8);
-        }
+        }*/
     }
+
     #region GoogleStuff
     #region SingIn
     public void StartClientConfiguration()
