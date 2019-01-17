@@ -31,6 +31,7 @@ public class MainMenuAnimator : MonoBehaviour {
     [Space]
     public GameObject nonTouch;
     public GameObject settingsWindow;
+    public GameObject logInWindow;
     public GameObject shopWindow;
     public GameObject IntroWindow;
     public GameObject deadWindow;
@@ -119,7 +120,7 @@ public class MainMenuAnimator : MonoBehaviour {
         if (success)
         {
             debugText.text = "Sign In";
-            PlayFabLogin.instance.LogInPlayFabMobile();
+            PlayFabLogin.instance.LogInPlayFabCustom();
             UpdateAchievement(achievements.achievement_new_animal);
 
             // Change sign-in button text
@@ -238,6 +239,10 @@ public class MainMenuAnimator : MonoBehaviour {
         {
             shopWindow.SetActive(false);
         }
+    }
+    public void ToogleLogInWindow()
+    {
+        logInWindow.SetActive(!logInWindow.active);
     }
     public void ToogleShopWindow()
     {

@@ -30,10 +30,34 @@ public class PlayFabLogin : MonoBehaviour
         if (string.IsNullOrEmpty(PlayFabSettings.TitleId))
         {
             PlayFabSettings.TitleId = "144"; // Please change this value to your own titleId from PlayFab Game Manager
-        } 
+        }
+        if (PlayerPrefs.HasKey("Email"))
+        {
+            LogInPlayFabEmail();
+        }
     }
 
-    public void LogInPlayFabMobile()
+    public void RegisterUserPlayFab()
+    {
+        var request = new RegisterPlayFabUserRequest { Email = PlayerPrefs.GetString("Email"), Password = PlayerPrefs.GetString("Password"), RequireBothUsernameAndEmail = false };
+        PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnRegisterFailure);
+    }
+    private void OnRegisterSuccess(RegisterPlayFabUserResult result)
+    {
+        Debug.Log("PlayFab - Register Successful");
+        DebugText.text = "PlayFab - Register Successful";
+        LogInPlayFabEmail();
+    }
+
+    private void OnRegisterFailure(PlayFabError error)
+    {
+        Debug.LogWarning("PlayFab - Register Failed");
+        Debug.LogError("Here's some debug information:");
+        Debug.LogError(error.GenerateErrorReport());
+        DebugText.text = "PlayFab - Register Failed || " + error;
+    }
+
+    public void LogInPlayFabCustom()
     {
         /*if (Application.platform == RuntimePlatform.Android)
         {
@@ -55,14 +79,36 @@ public class PlayFabLogin : MonoBehaviour
         PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginFailure);
 
     }
+    public void LogInPlayFabEmail()
+    {
+        var request = new LoginWithEmailAddressRequest { Email = PlayerPrefs.GetString("Email"), Password = PlayerPrefs.GetString("Password") };
+        PlayFabClientAPI.LoginWithEmailAddress(request, OnLoginSuccess, OnLoginFailure);
+    }
+    private void OnLoginSuccess(LoginResult result)
+    {
+        Debug.Log("PlayFab - Login Successful");
+        DebugText.text = "PlayFab - Login Successful";
+    }
+
+    private void OnLoginFailure(PlayFabError error)
+    {
+        Debug.LogWarning("PlayFab - Login Failed");
+        Debug.LogError("Here's some debug information:");
+        Debug.LogError(error.GenerateErrorReport());
+        DebugText.text = "PlayFab - Login Failed || " + error;
+    }
+
 
     public void UploadUserData()
     {
-        Debug.Log("PlayFab - UpdateData");
-        Dictionary<string, string> data = new Dictionary<string, string>();
-        data = CharacterReferences.instance.playerInfo.GetData();
-        var request = new UpdateUserDataRequest { Data = data };
-        PlayFabClientAPI.UpdateUserData(request, OnUpdateUserDataSuccess, OnUpdateUserDataFailure);
+        if (PlayFabAuthenticationAPI.IsEntityLoggedIn())
+        {
+            Debug.Log("PlayFab - UpdateData");
+            Dictionary<string, string> data = new Dictionary<string, string>();
+            data = CharacterReferences.instance.playerInfo.GetData();
+            var request = new UpdateUserDataRequest { Data = data };
+            PlayFabClientAPI.UpdateUserData(request, OnUpdateUserDataSuccess, OnUpdateUserDataFailure);
+        }
     }
 
     private void OnUpdateUserDataSuccess(UpdateUserDataResult result)
@@ -78,17 +124,5 @@ public class PlayFabLogin : MonoBehaviour
         DebugText.text = ""+error;
     }
 
-    private void OnLoginSuccess(LoginResult result)
-    {
-        Debug.Log("PlayFab - Login Successful");
-        DebugText.text = "PlayFab - Login Successful";
-    }
-
-    private void OnLoginFailure(PlayFabError error)
-    {
-        Debug.LogWarning("PlayFab - Login Failed");
-        Debug.LogError("Here's some debug information:");
-        Debug.LogError(error.GenerateErrorReport());
-        DebugText.text = "PlayFab - Login Failed || "+error;
-    }
+    
 }

@@ -52,7 +52,10 @@ public class Health : MonoBehaviour {
     {
         for (int i = h; i < initialHealth; i++)
         {
-            hearts[i].sprite = EmptyHeart;
+            if (h >= 0)
+            {
+                hearts[i].sprite = EmptyHeart;
+            }          
         }
         if (h > 0)
         {

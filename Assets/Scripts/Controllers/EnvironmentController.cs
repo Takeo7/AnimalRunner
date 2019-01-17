@@ -45,7 +45,8 @@ public class EnvironmentController : MonoBehaviour {
 		GetEnvironments();//Take Scriptables EnvironmentSet from Resources on runtime
 		SetEnvironment();//Set the first environment
         gameOverDelegate += EndGame;
-	}
+        gameOverDelegate += PlayFabLogin.instance.UploadUserData;
+    }
 	private void Update()
 	{
 		if (caveMeters.Contains<int>(Mathf.RoundToInt(UIC.target.transform.position.x)) && isCaveBool == false)//If the character reached meters for a cave
