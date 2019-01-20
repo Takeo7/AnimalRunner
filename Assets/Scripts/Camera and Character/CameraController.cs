@@ -25,8 +25,7 @@ public class CameraController : MonoBehaviour {
 			Vector3 delta = CR.characterTransform.position - cam.ViewportToWorldPoint(new Vector3(xOffset, yOffset, point.z)); //(new Vector3(0.5, 0.5, point.z));
             Vector3 destination = transform.position + delta;
 			destination.y = 2.8f;
-			//transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
-			transform.position = CR.characterTransform.position;
+			transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
 		}
 	}
 

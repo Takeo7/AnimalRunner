@@ -14,6 +14,7 @@ public class PlayerStats : MonoBehaviour {
     public AnimatorController AC;
 	public bool isDead;
     public float coldownTime;
+	public bool canDie = true;
 
     public Image AttackImage;
 
@@ -34,9 +35,12 @@ public class PlayerStats : MonoBehaviour {
     }
     public void takeDammage(int i)
     {
-        AmountHealth -= i;
-        healthScript.UpdateHearts(AmountHealth);
-		CheckHealth();
+		if (canDie)
+		{
+			AmountHealth -= i;
+			healthScript.UpdateHearts(AmountHealth);
+			CheckHealth();
+		}
     }
 
 	void CheckHealth()
@@ -60,6 +64,8 @@ public class PlayerStats : MonoBehaviour {
     public enum Characters
     {
         Turtle,
-        Elephant
+        Elephant,
+		Dragon,
+		Rabbit
     }
 }

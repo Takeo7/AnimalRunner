@@ -44,7 +44,10 @@ public class AnimatorController : MonoBehaviour {
 
     public void RunAnim()
 	{
-		anim.timeScale = 1;
+		if (isAnimatingSpine)
+		{
+			anim.timeScale = 1;
+		}
 		ChangeAnim(movementTrack, run, true);
 	}
 	public void JumpOneAnim()
@@ -53,7 +56,10 @@ public class AnimatorController : MonoBehaviour {
 	}
 	public void JumpTwoAnim()
 	{
-		anim.timeScale = 1.5f;
+		if (isAnimatingSpine)
+		{
+			anim.timeScale = 1;
+		}
 		ChangeAnim(0, secondJump, false);
 	}
 	public void DeathAnim()
@@ -106,7 +112,6 @@ public class AnimatorController : MonoBehaviour {
 	}
     IEnumerator AttackAnimCO_2()
     {
-		Debug.Log("SER");
 		ChangeAnim(movementTrack, attack, false);
         yield return new WaitForSeconds(attackAnimDuration);
         if (isCharacter)

@@ -426,6 +426,7 @@
     <Compile Include="Assets\Scripts\TextsScript.cs" />
     <Compile Include="Assets\Scripts\TextsScriptMultiple.cs" />
     <Compile Include="Assets\Scripts\VFXAfterAction.cs" />
+    <Compile Include="Assets\SpecialsUI.cs" />
     <Compile Include="Assets\spine\spine-csharp\Properties\AssemblyInfo.cs" />
     <Compile Include="Assets\spine\spine-csharp\src\Animation.cs" />
     <Compile Include="Assets\spine\spine-csharp\src\AnimationState.cs" />
@@ -568,6 +569,7 @@
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SpineAttributes.cs" />
+    <Compile Include="Assets\TurtleSpecial.cs" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Eyes\eyes.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Utility\HiddenPass.shader" />
     <None Include="Assets\PlayFabSdk\link.xml" />

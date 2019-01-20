@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114826031726734700}
   - component: {fileID: 114441635481245156}
   - component: {fileID: 114461465313367578}
+  - component: {fileID: 114589303490078164}
   m_Layer: 0
   m_Name: Turtle
   m_TagString: Player
@@ -201,6 +202,7 @@ MonoBehaviour:
   AC: {fileID: 114441635481245156}
   isDead: 0
   coldownTime: 1
+  canDie: 1
   AttackImage: {fileID: 0}
   PlayerType: 0
   attackType: 1
@@ -283,6 +285,18 @@ MonoBehaviour:
   Death: {fileID: 0}
   StandardMaterial: {fileID: 2100000, guid: 5d1458cc4cda3bb4da9fda751eb66a34, type: 2}
   DeathMaterial: {fileID: 0}
+--- !u!114 &114589303490078164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1355157842876838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d31cbd642915e4ca1e6076257a7c55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 500
 --- !u!114 &114826031726734700
 MonoBehaviour:
   m_ObjectHideFlags: 1

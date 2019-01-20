@@ -43,6 +43,22 @@ public class CharacterReferences : MonoBehaviour {
 		TM.AttackRanged();
 	}
 
+	public void Special()
+	{
+		switch (PS.PlayerType)
+		{
+			case PlayerStats.Characters.Turtle:
+				TurtleSpecial.instance.Special();
+				break;
+			case PlayerStats.Characters.Elephant:
+				break;
+			case PlayerStats.Characters.Dragon:
+				break;
+			case PlayerStats.Characters.Rabbit:
+				break;
+		}
+	}
+
 	public void NewReference(Transform newTransfrom,TestMovement newTM,PlayerStats newPS,AnimatorController newAC,GameObject newlast)
 	{
 		characterTransform = newTransfrom;
