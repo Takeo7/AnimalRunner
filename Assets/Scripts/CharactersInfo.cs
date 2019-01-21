@@ -17,6 +17,17 @@ public class CharactersInfo : ScriptableObject {
             characters[System.Convert.ToInt32(itemList[i].ItemId)].unlocked = true;
         }
     }
+
+    public void GetItemList(List<PlayFab.ClientModels.CatalogItem> items)
+    {
+        int length = items.Count;
+        for (int i = 0; i < length; i++)
+        {
+            characters[i].name = items[i].DisplayName;
+            characters[i].coinPrice = (int)items[i].VirtualCurrencyPrices["CO"];
+            characters[i].gemPrice = (int)items[i].VirtualCurrencyPrices["GE"];
+        }
+    }
 }
 
 [System.Serializable]
@@ -27,6 +38,9 @@ public class Character
 	public GameObject prefab;
 	public string description;
 	public bool unlocked;
-	public int price;
+    //Cosas a hacer
+    public bool hide;
+	public int coinPrice;
+    public int gemPrice;
 
 }

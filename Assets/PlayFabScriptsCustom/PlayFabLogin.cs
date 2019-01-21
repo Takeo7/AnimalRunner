@@ -17,8 +17,9 @@ public class PlayFabLogin : MonoBehaviour
         }
         else
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
+        DontDestroyOnLoad(gameObject);
     }
     #endregion
 
@@ -33,7 +34,7 @@ public class PlayFabLogin : MonoBehaviour
         {
             PlayFabSettings.TitleId = "C3D0"; // Please change this value to your own titleId from PlayFab Game Manager
         }
-        if (!PlayerPrefs.HasKey("FirstTime"))
+        if (CharacterReferences.instance.playerInfo.firstConection == true)
         {
             LogInWindow.SetActive(true);
         }
@@ -88,6 +89,7 @@ public class PlayFabLogin : MonoBehaviour
     {
         Debug.Log("PlayFab - Linked Android ID Successful");
         DebugText.text = "PlayFab - Linked Android ID Successful";
+        GetPlayFabData();
     }
 
     private void OnLinkDeviceIDFailure(PlayFabError error)
@@ -139,6 +141,11 @@ public class PlayFabLogin : MonoBehaviour
     {
         Debug.Log("PlayFab - LogIn Device Successful");
         DebugText.text = "PlayFab - LogIn Device Successful";
+        if (CharacterReferences.instance.playerInfo.firstConection == true)
+        {
+            UploadUserData();
+        }
+        GetPlayFabData();
     }
 
     private void OnLogInDeviceIDFailure(PlayFabError error)
@@ -161,6 +168,11 @@ public class PlayFabLogin : MonoBehaviour
     {
         Debug.Log("PlayFab - Login Custom Successful");
         DebugText.text = "PlayFab - Login Custom Successful";
+        if (CharacterReferences.instance.playerInfo.firstConection == true)
+        {
+            UploadUserData();
+        }
+        GetPlayFabData();
     }
 
     private void OnLoginCustomFailure(PlayFabError error)
@@ -182,6 +194,11 @@ public class PlayFabLogin : MonoBehaviour
     {
         Debug.Log("PlayFab - Login Email Successful");
         DebugText.text = "PlayFab - Login Email Successful";
+        if (CharacterReferences.instance.playerInfo.firstConection == true)
+        {
+            UploadUserData();
+        }
+        GetPlayFabData();
     }
 
     private void OnLoginEmailFailure(PlayFabError error)
@@ -204,6 +221,11 @@ public class PlayFabLogin : MonoBehaviour
     {
         Debug.Log("PlayFab - Login Username Successful");
         DebugText.text = "PlayFab - Login Username Successful";
+        if (CharacterReferences.instance.playerInfo.firstConection == true)
+        {
+            UploadUserData();
+        }
+        GetPlayFabData();
     }
 
     private void OnLoginUsernameFailure(PlayFabError error)
@@ -252,8 +274,11 @@ public class PlayFabLogin : MonoBehaviour
     private void OnGetDataSuccess(GetUserDataResult result)
     {
         CharacterReferences.instance.playerInfo.SetData(result.Data);
+        Debug.Log(result.Data.ContainsKey("Level") + "is inside");
         Debug.Log("PlayFab - GetDataSuccess");
         DebugText.text = "PlayFab - GetDataSuccess";
+        GetPlayFabInventory();
+        GetCatalogitemsPlayFab();
     }
 
     private void OnGetDataFailure(PlayFabError error)
@@ -274,17 +299,17 @@ public class PlayFabLogin : MonoBehaviour
 
     private void OnGetInventorySuccess(GetUserInventoryResult result)
     {
-        CharacterReferences.instance.playerInfo.SetCurrency(result.VirtualCurrency["Coins"], result.VirtualCurrency["Gems"]);
+        CharacterReferences.instance.playerInfo.SetCurrency(result.VirtualCurrency["CO"], result.VirtualCurrency["GE"]);
         CharacterReferences.instance.charactersInfo.CheckCharacters(result.Inventory);
-        Debug.Log("PlayFab - GetDataSuccess");
-        DebugText.text = "PlayFab - GetDataSuccess";
+        Debug.Log("PlayFab - GetInventorySuccess");
+        DebugText.text = "PlayFab - GetInventorySuccess";
     }
 
     private void OnGetInventoryFailure(PlayFabError error)
     {
-        Debug.Log("PlayFab - GetDataERROR");
+        Debug.Log("PlayFab - GetInventoryERROR");
         Debug.Log(error);
-        DebugText.text = "PlayFab - GetDataError";
+        DebugText.text = "PlayFab - GetInventoryError";
         DebugText.text = "" + error;
     }
     #endregion
@@ -298,7 +323,7 @@ public class PlayFabLogin : MonoBehaviour
 
     private void OnGetCatalogItemSuccess(GetCatalogItemsResult result)
     {
-        // Update Store with the catalog
+        CharacterReferences.instance.charactersInfo.GetItemList(result.Catalog);
         // CatalogItem info: https://api.playfab.com/documentation/Server/datatype/PlayFab.Server.Models/PlayFab.Server.Models.CatalogItem
         Debug.Log("PlayFab - GetCatalogItemSuccess");
         DebugText.text = "PlayFab - GetCatalogItemSuccess";
@@ -314,9 +339,9 @@ public class PlayFabLogin : MonoBehaviour
     #endregion
 
     #region Purchase Item
-    public void PurchaseItemPlayFab(int itemID , string currency)
+    public void PurchaseItemPlayFab(int itemID , string currency, int price)
     {
-        var request = new PurchaseItemRequest { ItemId = itemID.ToString(), VirtualCurrency = currency};
+        var request = new PurchaseItemRequest { ItemId = itemID.ToString(), VirtualCurrency = currency, Price = price};
         PlayFabClientAPI.PurchaseItem(request, OnPurchaseItemSuccess, OnPurchaseItemFailure);
     }
 

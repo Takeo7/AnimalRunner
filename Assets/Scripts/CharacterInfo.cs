@@ -35,6 +35,8 @@ public class CharacterInfo : ScriptableObject {
 	[Header("Challenges")]
 	public int[] challengesIndex = new int[3];
 	public int[] challengesProgress = new int[3];
+    //Others
+    public bool firstConection = true;
 
     public Dictionary<string,string> GetData()
     {

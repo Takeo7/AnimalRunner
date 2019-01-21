@@ -81,15 +81,16 @@ public class ShopController : MonoBehaviour {
 			CR.playerInfo.selectedCharacter = index;
 			InstantiateNewCharacter();
 		}
-		else if(charactersInfo.characters[index].unlocked == false && coins >= charactersInfo.characters[index].price)
+		else if(charactersInfo.characters[index].unlocked == false && coins >= charactersInfo.characters[index].coinPrice)
 		{
+            PlayFabLogin.instance.PurchaseItemPlayFab(index, "CO", CharacterReferences.instance.charactersInfo.characters[index].coinPrice); // A MODIFICAR CON GEMS TAMBIEN
 			charactersInfo.characters[index].unlocked = true;
-			coins -= charactersInfo.characters[index].price;
+			coins -= charactersInfo.characters[index].coinPrice;
 			item.RefreshPrice();
 			CR.playerInfo.selectedCharacter = index;
 			InstantiateNewCharacter();
 		}
-		else if(charactersInfo.characters[index].unlocked == false && coins < charactersInfo.characters[index].price)
+		else if(charactersInfo.characters[index].unlocked == false && coins < charactersInfo.characters[index].coinPrice)
 		{
 			Debug.Log("CantBuy");
 		}

@@ -17,10 +17,14 @@ MonoBehaviour:
     prefab: {fileID: 1355157842876838, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
     description: A turtle
     unlocked: 1
-    price: 0
+    hide: 0
+    coinPrice: 0
+    gemPrice: 0
   - name: Elephant
     icon: {fileID: 21300000, guid: 057eac040ed635348b3b91c2f8e2f009, type: 3}
     prefab: {fileID: 1183136600057304, guid: b8b5ef6c163d0b847873b9dd8931b5c4, type: 2}
     description: An elephant
     unlocked: 1
-    price: 20
+    hide: 0
+    coinPrice: 50
+    gemPrice: 10

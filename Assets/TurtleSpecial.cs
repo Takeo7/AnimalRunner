@@ -18,6 +18,7 @@ public class TurtleSpecial : MonoBehaviour {
 	public float rotationSpeed;
 	public void Special()
 	{
+        Debug.Log("DEBUUUUUUUUUUUUUG");
 		StartCoroutine("AnimTo0");
 		if(CR == null)
 		{

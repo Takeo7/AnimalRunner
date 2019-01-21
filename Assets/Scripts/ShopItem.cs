@@ -30,7 +30,7 @@ public class ShopItem : MonoBehaviour {
 		if (SC.charactersInfo.characters[index].unlocked == false)
 		{
 			priceGO.SetActive(true);
-			priceTXT.text = "" + SC.charactersInfo.characters[index].price;
+			priceTXT.text = "" + SC.charactersInfo.characters[index].coinPrice;
 		}
 		else
 		{
@@ -42,7 +42,7 @@ public class ShopItem : MonoBehaviour {
 		if (SC.charactersInfo.characters[index].unlocked == false)
 		{
 			priceGO.SetActive(true);
-			priceTXT.text = "" + SC.charactersInfo.characters[index].price;
+			priceTXT.text = "" + SC.charactersInfo.characters[index].coinPrice;
 		}
 		else
 		{
