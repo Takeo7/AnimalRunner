@@ -9,6 +9,10 @@ public class LogInWindowController : MonoBehaviour {
     {
         PlayerPrefs.SetString("Email", Email.text);
     }
+    public void SaveUsername(Text Username)
+    {
+        PlayerPrefs.SetString("Username", Username.text);
+    }
     public void SavePassword(Text Password)
     {
         PlayerPrefs.SetString("Password", Password.text);

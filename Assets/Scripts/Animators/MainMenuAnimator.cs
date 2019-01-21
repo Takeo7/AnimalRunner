@@ -121,7 +121,7 @@ public class MainMenuAnimator : MonoBehaviour {
         if (success)
         {
             debugText.text = "Sign In";
-            PlayFabLogin.instance.LogInPlayFabCustom();
+            //PlayFabLogin.instance.LogInPlayFabCustom();
             UpdateAchievement(achievements.achievement_new_animal);
 
             // Change sign-in button text

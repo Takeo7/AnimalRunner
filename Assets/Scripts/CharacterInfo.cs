@@ -5,8 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName ="CharacterInfo")]
 public class CharacterInfo : ScriptableObject {
 
-	//Base
-	[Header("Base")]
+    //Base
+    [Header("Base")]
 	public string playerName;
 	public int playerLevel;
 	public byte currentMedals;
@@ -40,7 +40,6 @@ public class CharacterInfo : ScriptableObject {
     {
         Dictionary<string, string> data = new Dictionary<string, string>();
         //Base
-        data.Add("Name", playerName);
         data.Add("Level", playerLevel.ToString());
         data.Add("Medals", currentMedals.ToString());
         data.Add("MedalsLast", medalsToNextRank.ToString());
@@ -50,18 +49,31 @@ public class CharacterInfo : ScriptableObject {
         data.Add("MetersRecord", metersRecord.ToString());
         data.Add("PointsRecord", pointsRecord.ToString());
 
-        //Money
-        data.Add("Coins", coins.ToString());
-        data.Add("Gems", gems.ToString());
-
-        //Characters
+        //Character
         data.Add("CurrentCharacter", selectedCharacter.ToString());
 
         return data;
     }
 
-    public void SetData(Dictionary<string,string> data)
+    public void SetData(Dictionary<string,PlayFab.ClientModels.UserDataRecord> data)
     {
+        //Base
+        playerLevel =  System.Convert.ToInt32(data["Level"].Value);
+        currentMedals = (byte)System.Convert.ToInt32(data["Medals"].Value);
+        medalsToNextRank = (byte)System.Convert.ToInt32(data["MedalsLast"].Value);
+        medalHolder = (byte)System.Convert.ToInt32(data["MedalHolder"].Value);
 
+        //Records
+        metersRecord = System.Convert.ToInt32(data["MetersRecord"].Value);
+        pointsRecord = System.Convert.ToInt32(data["PointsRecord"].Value);
+
+        //Character
+        selectedCharacter = System.Convert.ToInt32(data["CurrentCharacter"].Value);
+    }
+
+    public void SetCurrency(int ServerCoins, int ServerGems)
+    {
+        coins = ServerCoins;
+        gems = ServerGems;
     }
 }
