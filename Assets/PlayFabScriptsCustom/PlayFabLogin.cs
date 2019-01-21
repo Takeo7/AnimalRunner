@@ -275,7 +275,7 @@ public class PlayFabLogin : MonoBehaviour
     private void OnGetInventorySuccess(GetUserInventoryResult result)
     {
         CharacterReferences.instance.playerInfo.SetCurrency(result.VirtualCurrency["Coins"], result.VirtualCurrency["Gems"]);
-        //get items
+        CharacterReferences.instance.charactersInfo.CheckCharacters(result.Inventory);
         Debug.Log("PlayFab - GetDataSuccess");
         DebugText.text = "PlayFab - GetDataSuccess";
     }
@@ -285,6 +285,53 @@ public class PlayFabLogin : MonoBehaviour
         Debug.Log("PlayFab - GetDataERROR");
         Debug.Log(error);
         DebugText.text = "PlayFab - GetDataError";
+        DebugText.text = "" + error;
+    }
+    #endregion
+
+    #region Get Catalog Items
+    public void GetCatalogitemsPlayFab()
+    {
+        var request = new GetCatalogItemsRequest { };
+        PlayFabClientAPI.GetCatalogItems(request, OnGetCatalogItemSuccess, OnGetCatalogItemFailure);
+    }
+
+    private void OnGetCatalogItemSuccess(GetCatalogItemsResult result)
+    {
+        // Update Store with the catalog
+        // CatalogItem info: https://api.playfab.com/documentation/Server/datatype/PlayFab.Server.Models/PlayFab.Server.Models.CatalogItem
+        Debug.Log("PlayFab - GetCatalogItemSuccess");
+        DebugText.text = "PlayFab - GetCatalogItemSuccess";
+    }
+
+    private void OnGetCatalogItemFailure(PlayFabError error)
+    {
+        Debug.Log("PlayFab - GetCatalogItemERROR");
+        Debug.Log(error);
+        DebugText.text = "PlayFab - GetCatalogItemError";
+        DebugText.text = "" + error;
+    }
+    #endregion
+
+    #region Purchase Item
+    public void PurchaseItemPlayFab(int itemID , string currency)
+    {
+        var request = new PurchaseItemRequest { ItemId = itemID.ToString(), VirtualCurrency = currency};
+        PlayFabClientAPI.PurchaseItem(request, OnPurchaseItemSuccess, OnPurchaseItemFailure);
+    }
+
+    private void OnPurchaseItemSuccess(PurchaseItemResult result)
+    {
+        GetPlayFabInventory();
+        Debug.Log("PlayFab - PurchaseItemSuccess");
+        DebugText.text = "PlayFab - PurchaseItemSuccess";
+    }
+
+    private void OnPurchaseItemFailure(PlayFabError error)
+    {
+        Debug.Log("PlayFab - PurchaseItemERROR");
+        Debug.Log(error);
+        DebugText.text = "PlayFab - PurchaseItemError";
         DebugText.text = "" + error;
     }
     #endregion

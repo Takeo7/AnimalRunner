@@ -9,8 +9,20 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuAnimator : MonoBehaviour {
-    //hacer singleton y update coins
-
+    #region Singleton
+    public static MainMenuAnimator instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+    #endregion
 
     public Text debugText;
     [Space]

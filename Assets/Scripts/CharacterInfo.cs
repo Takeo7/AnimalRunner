@@ -75,5 +75,6 @@ public class CharacterInfo : ScriptableObject {
     {
         coins = ServerCoins;
         gems = ServerGems;
+        MainMenuAnimator.instance.UpdateCoinsText();
     }
 }
