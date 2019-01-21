@@ -33,7 +33,7 @@ public class PlayFabLogin : MonoBehaviour
         {
             PlayFabSettings.TitleId = "C3D0"; // Please change this value to your own titleId from PlayFab Game Manager
         }
-        if (PlayerPrefs.GetInt("FirstTime") == 1)
+        if (!PlayerPrefs.HasKey("FirstTime"))
         {
             LogInWindow.SetActive(true);
         }
@@ -275,7 +275,7 @@ public class PlayFabLogin : MonoBehaviour
     private void OnGetInventorySuccess(GetUserInventoryResult result)
     {
         CharacterReferences.instance.playerInfo.SetCurrency(result.VirtualCurrency["Coins"], result.VirtualCurrency["Gems"]);
-        //Update Characters Buyed
+        //get items
         Debug.Log("PlayFab - GetDataSuccess");
         DebugText.text = "PlayFab - GetDataSuccess";
     }

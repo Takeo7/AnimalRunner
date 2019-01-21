@@ -8,6 +8,15 @@ using UnityEngine.UI;
 public class CharactersInfo : ScriptableObject {
 
 	public Character[] characters;
+
+    public void CheckCharacters(List<PlayFab.ClientModels.ItemInstance> itemList)
+    {
+        int length = itemList.Count;
+        for (int i = 0; i < length; i++)
+        {
+            characters[System.Convert.ToInt32(itemList[i].ItemId)].unlocked = true;
+        }
+    }
 }
 
 [System.Serializable]

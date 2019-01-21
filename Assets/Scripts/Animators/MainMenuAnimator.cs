@@ -9,6 +9,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuAnimator : MonoBehaviour {
+    //hacer singleton y update coins
+
+
     public Text debugText;
     [Space]
     public CoinsController cc;
@@ -268,8 +271,8 @@ public class MainMenuAnimator : MonoBehaviour {
     #endregion
     public void UpdateCoinsText()
     {
-        coinsText.text = cc.GetCoins().ToString();
-        gemsText.text = cc.GetGems().ToString();
+        coinsText.text = CR.playerInfo.coins.ToString();
+        gemsText.text = CR.playerInfo.gems.ToString();
     }
 	public void StartGame()
 	{
