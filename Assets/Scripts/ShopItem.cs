@@ -49,8 +49,24 @@ public class ShopItem : MonoBehaviour {
 			priceGO.SetActive(false);
 		}
 	}
-	public void SelectCharacter()
+	public void SelectCharacter(bool coins)
 	{
-		SC.UnlockCharacter(index,this);
+		SC.UnlockCharacter(index,this,coins);
+	}
+	public void OpenPopUp()
+	{
+		ShopConfirmer.instance.InstantiateCharacter(index);
+		ShopController SC = ShopController.instance;
+		if (SC.charactersInfo.characters[index].unlocked)
+		{
+			SC.CR.playerInfo.selectedCharacter = index;
+			SC.InstantiateNewCharacter();
+		}
+		else
+		{
+			ShopConfirmer.instance.popUp.SetActive(true);
+			ShopConfirmer.instance.SI = this;
+		}
+		//ShowCharacter
 	}
 }

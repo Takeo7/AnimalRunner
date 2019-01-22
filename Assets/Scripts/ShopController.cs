@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class ShopController : MonoBehaviour {
 
-
+	#region Singleton
+	public static ShopController instance;
+	private void Awake()
+	{
+		instance = this;
+	}
+	#endregion
 	[SerializeField]
 	GameObject shopItemPrefab;
 	public CharactersInfo charactersInfo;
@@ -73,26 +79,51 @@ public class ShopController : MonoBehaviour {
 	{
 		coins = CR.playerInfo.coins;
 	}
-	public void UnlockCharacter(int index,ShopItem item)
+	public void UnlockCharacter(int index,ShopItem item, bool isCoins)
 	{
-		GetCoins();
-		if (charactersInfo.characters[index].unlocked)
+		if (isCoins)
 		{
-			CR.playerInfo.selectedCharacter = index;
-			InstantiateNewCharacter();
+			GetCoins();
+			if (charactersInfo.characters[index].unlocked)
+			{
+				CR.playerInfo.selectedCharacter = index;
+				InstantiateNewCharacter();
+			}
+			else if (charactersInfo.characters[index].unlocked == false && coins >= charactersInfo.characters[index].coinPrice)
+			{
+				PlayFabLogin.instance.PurchaseItemPlayFab(index, "CO", CharacterReferences.instance.charactersInfo.characters[index].coinPrice); // A MODIFICAR CON GEMS TAMBIEN
+				charactersInfo.characters[index].unlocked = true;
+				coins -= charactersInfo.characters[index].coinPrice;
+				item.RefreshPrice();
+				CR.playerInfo.selectedCharacter = index;
+				InstantiateNewCharacter();
+			}
+			else if (charactersInfo.characters[index].unlocked == false && coins < charactersInfo.characters[index].coinPrice)
+			{
+				Debug.Log("CantBuy");
+			}
 		}
-		else if(charactersInfo.characters[index].unlocked == false && coins >= charactersInfo.characters[index].coinPrice)
+		else
 		{
-            PlayFabLogin.instance.PurchaseItemPlayFab(index, "CO", CharacterReferences.instance.charactersInfo.characters[index].coinPrice); // A MODIFICAR CON GEMS TAMBIEN
-			charactersInfo.characters[index].unlocked = true;
-			coins -= charactersInfo.characters[index].coinPrice;
-			item.RefreshPrice();
-			CR.playerInfo.selectedCharacter = index;
-			InstantiateNewCharacter();
-		}
-		else if(charactersInfo.characters[index].unlocked == false && coins < charactersInfo.characters[index].coinPrice)
-		{
-			Debug.Log("CantBuy");
+			int gems = CR.playerInfo.gems;
+			if (charactersInfo.characters[index].unlocked)
+			{
+				CR.playerInfo.selectedCharacter = index;
+				InstantiateNewCharacter();
+			}
+			else if (charactersInfo.characters[index].unlocked == false && gems >= charactersInfo.characters[index].gemPrice)
+			{
+				PlayFabLogin.instance.PurchaseItemPlayFab(index, "GE", CharacterReferences.instance.charactersInfo.characters[index].gemPrice); // A MODIFICAR CON GEMS TAMBIEN
+				charactersInfo.characters[index].unlocked = true;
+				gems -= charactersInfo.characters[index].gemPrice;
+				item.RefreshPrice();
+				CR.playerInfo.selectedCharacter = index;
+				InstantiateNewCharacter();
+			}
+			else if (charactersInfo.characters[index].unlocked == false && gems < charactersInfo.characters[index].gemPrice)
+			{
+				Debug.Log("CantBuy");
+			}
 		}
 	}
 }

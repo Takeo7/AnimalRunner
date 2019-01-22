@@ -430,6 +430,7 @@
     <Compile Include="Assets\Scripts\TextsScriptMultiple.cs" />
     <Compile Include="Assets\Scripts\TurtleSpecial.cs" />
     <Compile Include="Assets\Scripts\VFXAfterAction.cs" />
+    <Compile Include="Assets\ShopConfirmer.cs" />
     <Compile Include="Assets\spine\spine-csharp\Properties\AssemblyInfo.cs" />
     <Compile Include="Assets\spine\spine-csharp\src\Animation.cs" />
     <Compile Include="Assets\spine\spine-csharp\src\AnimationState.cs" />
