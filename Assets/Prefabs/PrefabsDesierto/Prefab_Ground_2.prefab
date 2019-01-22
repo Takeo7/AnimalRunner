@@ -1181,8 +1181,8 @@ MonoBehaviour:
   - {fileID: 4677460881804926}
   - {fileID: 4456807065079826}
   enemys:
-  - {fileID: 1375003835107346, guid: 45711b8b0c65c78479494be2565dd11e, type: 2}
-  - {fileID: 1375003835107346, guid: d536587667094934babbc9ba0f9b8bb2, type: 2}
+  - {fileID: 1911028706213888, guid: 05e0cac0bbd191a4288001e335e3fac3, type: 2}
+  - {fileID: 1254460680897222, guid: 76a4e5c3e72bbeb4688efebd3b87a435, type: 2}
   traps:
   - {fileID: 1787306735302194, guid: 5947f0b913abb914393443c63ba3707e, type: 2}
   - {fileID: 1904981198315766, guid: 19fe505d0dd201647b1cb34e92f2793b, type: 2}

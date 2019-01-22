@@ -34,6 +34,8 @@ public class EnemyMovement : MonoBehaviour {
 	public VFXAfterAction VFXAA;
 	[SerializeField]
 	float meleeAttackDelay;
+	[SerializeField]
+	GameObject coin;
 
 
 	private void Start()
@@ -116,6 +118,7 @@ public class EnemyMovement : MonoBehaviour {
             AC.DeathAnim();
             col.enabled = false;
 			sight.enabled = false;
+			Instantiate(coin, transform.position+new Vector3(0,0,-7), Quaternion.identity);
 			yield return new WaitForSeconds(2f);
             Destroy(gameObject);
         }

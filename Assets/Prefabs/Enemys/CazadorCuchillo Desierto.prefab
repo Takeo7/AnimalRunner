@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 114849196653532054}
   - component: {fileID: 114294480796395366}
   m_Layer: 0
-  m_Name: Cazador Desierto
+  m_Name: CazadorCuchillo Desierto
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -367,6 +367,7 @@ MonoBehaviour:
   AC: {fileID: 114849196653532054}
   VFXAA: {fileID: 114294480796395366}
   meleeAttackDelay: 0.25
+  coin: {fileID: 1395996759783588, guid: 2b8de89f2bf6c4644a6632ca41835427, type: 2}
 --- !u!212 &212491253276368004
 SpriteRenderer:
   m_ObjectHideFlags: 1

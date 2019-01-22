@@ -36,7 +36,10 @@ public class ShopConfirmer : MonoBehaviour {
 	}
 	public void HideCameraAndChar()
 	{
-		character.SetActive(true);
+		if(character != null)
+		{
+			character.SetActive(false);
+		}
 		cam.SetActive(false);
 	}
 	public void InstantiateCharacter(byte index)
