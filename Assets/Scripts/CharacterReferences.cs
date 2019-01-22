@@ -51,6 +51,7 @@ public class CharacterReferences : MonoBehaviour {
 				TurtleSpecial.instance.Special();
 				break;
 			case PlayerStats.Characters.Elephant:
+				ElephantSpecial.instance.Special();
 				break;
 			case PlayerStats.Characters.Dragon:
 				break;

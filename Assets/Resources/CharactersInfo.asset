@@ -24,7 +24,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 057eac040ed635348b3b91c2f8e2f009, type: 3}
     prefab: {fileID: 1183136600057304, guid: b8b5ef6c163d0b847873b9dd8931b5c4, type: 2}
     description: An elephant
-    unlocked: 1
+    unlocked: 0
     hide: 0
     coinPrice: 50
     gemPrice: 10

@@ -28,6 +28,7 @@ public class EnemyMovement : MonoBehaviour {
     bool isDead = false;
     public bool dontDie;
     public Collider2D col;
+	public Collider2D sight;
 
 	public AnimatorController AC;//AC.TheAnimationYouWant(); EXAMPLE: AC.AttackAnim();
 	public VFXAfterAction VFXAA;
@@ -114,6 +115,7 @@ public class EnemyMovement : MonoBehaviour {
             //Debug.Log("IsDing");
             AC.DeathAnim();
             col.enabled = false;
+			sight.enabled = false;
 			yield return new WaitForSeconds(2f);
             Destroy(gameObject);
         }

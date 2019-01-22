@@ -3136,7 +3136,7 @@ RectTransform:
   - {fileID: 1525856117}
   - {fileID: 2009510113}
   m_Father: {fileID: 1812961817}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4772,7 +4772,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1812961817}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6714,7 +6714,7 @@ RectTransform:
   m_LocalScale: {x: 0.5751, y: 0.5751, z: 0.5751}
   m_Children: []
   m_Father: {fileID: 1812961817}
-  m_RootOrder: 10
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15194,7 +15194,7 @@ RectTransform:
   - {fileID: 685382915}
   - {fileID: 513116957}
   m_Father: {fileID: 1812961817}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16046,7 +16046,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1812961817}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -20674,7 +20674,7 @@ RectTransform:
   - {fileID: 835219259}
   - {fileID: 928886217}
   m_Father: {fileID: 1812961817}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -21224,13 +21224,13 @@ RectTransform:
   - {fileID: 390229422}
   - {fileID: 1868157530}
   - {fileID: 192609527}
+  - {fileID: 615856466}
+  - {fileID: 2137270013}
   - {fileID: 1332126588}
   - {fileID: 312277932}
   - {fileID: 1769569454}
   - {fileID: 470476432}
   - {fileID: 1377896477}
-  - {fileID: 615856466}
-  - {fileID: 2137270013}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25019,7 +25019,7 @@ RectTransform:
   m_LocalScale: {x: 0.5751, y: 0.5751, z: 0.5751}
   m_Children: []
   m_Father: {fileID: 1812961817}
-  m_RootOrder: 11
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25037,12 +25037,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c902c9d4e6fcb4986c5e3adc7fa1ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ColdownImage: {fileID: 615856464}
-  ButtonImage: {fileID: 2137270016}
+  cooldownImage: {fileID: 615856464}
+  buttonImage: {fileID: 2137270016}
+  button: {fileID: 2137270015}
   coldownColor: {r: 0.38416696, g: 0.6623469, b: 0.9150943, a: 1}
   avaiableColor: {r: 0.3843137, g: 0.9137255, b: 0.44905314, a: 1}
   buttonColor: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
-  cooldownTime: 3
+  cooldownTime: 20
 --- !u!114 &2137270015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25065,7 +25066,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:

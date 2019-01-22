@@ -49,15 +49,6 @@ public class ChallengesController : MonoBehaviour {
 		{
 			CheckMeters();
 		}
-		if (Input.GetKeyDown(KeyCode.T))//Complete meters
-		{
-			metersRunTotal += currentChallenges[0].metersToRun;
-			metersRunGrounded += currentChallenges[0].metersToRun;
-		}
-		if (Input.GetKeyDown(KeyCode.Y))//Complete kills
-		{
-			AddKills((byte)currentChallenges[1].unitsToKill);
-		}
 	}
 	void LoadScriptables()
 	{

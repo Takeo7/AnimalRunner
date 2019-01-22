@@ -232,7 +232,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.42, y: 2.5}
+  m_Offset: {x: -0.42, y: 0}
   serializedVersion: 2
   m_Radius: 24.34
 --- !u!70 &70353825028097796
@@ -308,6 +308,7 @@ MonoBehaviour:
   isDead: 0
   dontDie: 0
   col: {fileID: 70353825028097796}
+  sight: {fileID: 58514197208206374}
   AC: {fileID: 114644620168891628}
   VFXAA: {fileID: 114612968680724850}
   meleeAttackDelay: 0.25
