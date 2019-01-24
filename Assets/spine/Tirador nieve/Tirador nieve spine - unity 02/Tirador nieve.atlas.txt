@@ -1,0 +1,118 @@
+
+Tirador nieve.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arma
+  rotate: false
+  xy: 2, 43
+  size: 119, 51
+  orig: 119, 51
+  offset: 0, 0
+  index: -1
+brazo derecho
+  rotate: false
+  xy: 298, 139
+  size: 65, 61
+  orig: 65, 61
+  offset: 0, 0
+  index: -1
+brazo izquierdo
+  rotate: false
+  xy: 307, 40
+  size: 50, 56
+  orig: 50, 56
+  offset: 0, 0
+  index: -1
+cabeza
+  rotate: true
+  xy: 365, 144
+  size: 54, 61
+  orig: 54, 61
+  offset: 0, 0
+  index: -1
+cabeza ataque
+  rotate: false
+  xy: 428, 139
+  size: 54, 59
+  orig: 54, 59
+  offset: 0, 0
+  index: -1
+cabeza dano
+  rotate: true
+  xy: 365, 88
+  size: 54, 61
+  orig: 54, 61
+  offset: 0, 0
+  index: -1
+cabeza muneco nieve
+  rotate: false
+  xy: 229, 47
+  size: 76, 47
+  orig: 76, 47
+  offset: 0, 0
+  index: -1
+gorro
+  rotate: false
+  xy: 2, 2
+  size: 75, 39
+  orig: 75, 39
+  offset: 0, 0
+  index: -1
+gorro rojo
+  rotate: false
+  xy: 298, 202
+  size: 104, 48
+  orig: 104, 48
+  offset: 0, 0
+  index: -1
+gorro verde
+  rotate: false
+  xy: 123, 46
+  size: 104, 48
+  orig: 104, 48
+  offset: 0, 0
+  index: -1
+mano izquierda
+  rotate: true
+  xy: 482, 219
+  size: 31, 26
+  orig: 31, 26
+  offset: 0, 0
+  index: -1
+monticulo
+  rotate: false
+  xy: 2, 96
+  size: 294, 154
+  orig: 294, 154
+  offset: 0, 0
+  index: -1
+oreja delantera
+  rotate: false
+  xy: 79, 7
+  size: 38, 34
+  orig: 38, 34
+  offset: 0, 0
+  index: -1
+oreja trasera
+  rotate: false
+  xy: 428, 106
+  size: 29, 31
+  orig: 29, 31
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 404, 200
+  size: 76, 50
+  orig: 76, 50
+  offset: 0, 0
+  index: -1
+zanahoria
+  rotate: false
+  xy: 298, 98
+  size: 39, 39
+  orig: 39, 39
+  offset: 0, 0
+  index: -1

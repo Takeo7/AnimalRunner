@@ -29,13 +29,16 @@ public class PlayerStats : MonoBehaviour {
 
     public void UpdateHealth(int i)
     {
-        AmountHealth += i;
-        healthScript.UpdateHearts(AmountHealth);
-		CheckHealth();
+		if (!isDead)
+		{
+			AmountHealth += i;
+			healthScript.UpdateHearts(AmountHealth);
+			CheckHealth();
+		}
     }
     public void takeDammage(int i)
     {
-		if (canDie)
+		if (canDie && !isDead)
 		{
 			AmountHealth -= i;
 			healthScript.UpdateHearts(AmountHealth);
@@ -45,7 +48,7 @@ public class PlayerStats : MonoBehaviour {
 
 	void CheckHealth()
 	{
-		if (AmountHealth <= 0)
+		if (AmountHealth <= 0 && !isDead)
 		{
 			isDead = true;
 			EnvironmentController.instance.gameOverDelegate();

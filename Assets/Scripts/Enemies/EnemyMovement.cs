@@ -36,6 +36,8 @@ public class EnemyMovement : MonoBehaviour {
 	float meleeAttackDelay;
 	[SerializeField]
 	GameObject coin;
+	[SerializeField]
+	SoundController SC;
 
 
 	private void Start()
@@ -141,6 +143,7 @@ public class EnemyMovement : MonoBehaviour {
 			if (isMelee)
 			{
 				VFXAA.VFXInstantiate(meleeAttackDelay);
+				SC.PlaySound();
 				yield return new WaitForSeconds(AC.attackAnimDuration);
 			}
 			if (!isMelee)

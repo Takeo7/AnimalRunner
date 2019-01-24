@@ -420,8 +420,11 @@
     <Compile Include="Assets\Scripts\Parallax\ParallaxMainController.cs" />
     <Compile Include="Assets\Scripts\SceneManagement\LevelLoader.cs" />
     <Compile Include="Assets\Scripts\ScriptableObjejct\EnvironmentSet.cs" />
+    <Compile Include="Assets\Scripts\ShopConfirmer.cs" />
     <Compile Include="Assets\Scripts\ShopController.cs" />
     <Compile Include="Assets\Scripts\ShopItem.cs" />
+    <Compile Include="Assets\Scripts\Sound\SoundMainController.cs" />
+    <Compile Include="Assets\Scripts\Sound\SoundSettings.cs" />
     <Compile Include="Assets\Scripts\SpecialsUI.cs" />
     <Compile Include="Assets\Scripts\TestScripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\TestScripts\TestAttack.cs" />
@@ -430,7 +433,7 @@
     <Compile Include="Assets\Scripts\TextsScriptMultiple.cs" />
     <Compile Include="Assets\Scripts\TurtleSpecial.cs" />
     <Compile Include="Assets\Scripts\VFXAfterAction.cs" />
-    <Compile Include="Assets\ShopConfirmer.cs" />
+    <Compile Include="Assets\SoundController.cs" />
     <Compile Include="Assets\spine\spine-csharp\Properties\AssemblyInfo.cs" />
     <Compile Include="Assets\spine\spine-csharp\src\Animation.cs" />
     <Compile Include="Assets\spine\spine-csharp\src\AnimationState.cs" />
@@ -585,12 +588,14 @@
     <None Include="Assets\spine\Desierto\Tirador spine - unity\Tirador.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpriteLighting.cginc" />
     <None Include="Assets\Effects\CircleFresnelSprite\CircleFresnelSprite.shader" />
+    <None Include="Assets\spine\Cazador_arpon spine - unity 02\cazador arpon.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Gauge\Gauge.atlas.txt" />
     <None Include="Assets\Effects\Shader\SpriteDissolve.shader" />
     <None Include="Assets\Effects\SpineOutline\OutlineEffect\Resources\OutlineShader.shader" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic-TintBlack.shader" />
     <None Include="Assets\spine\Elefante spine-unity\Elefante.json.txt" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\FootSoldier\FS_White.atlas.txt" />
+    <None Include="Assets\spine\Tirador nieve\Tirador nieve spine - unity 02\Tirador nieve.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\ShaderShared.cginc" />
     <None Include="Assets\spine\Jellyfish\cazadora2.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.txt" />
@@ -612,6 +617,7 @@
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpriteUnlit.cginc" />
     <None Include="Assets\EasyFpsCounter\Fonts\READ ME (Square.ttf).txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteUnlit.cginc" />
+    <None Include="Assets\spine\Lanza nieve spine - unity\Lanza nieve.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\FootSoldier\license.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\version.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpritesPixelLit.shader" />

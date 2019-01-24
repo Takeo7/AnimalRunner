@@ -203,6 +203,7 @@ MonoBehaviour:
   isDead: 0
   coldownTime: 1
   canDie: 1
+  col: {fileID: 70307726821127648}
   AttackImage: {fileID: 0}
   PlayerType: 0
   attackType: 1

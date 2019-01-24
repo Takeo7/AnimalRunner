@@ -677,8 +677,9 @@ MonoBehaviour:
   - {fileID: 4639147707333160}
   - {fileID: 4532156538956408}
   enemys:
-  - {fileID: 1375003835107346, guid: 45711b8b0c65c78479494be2565dd11e, type: 2}
-  - {fileID: 1375003835107346, guid: d536587667094934babbc9ba0f9b8bb2, type: 2}
+  - {fileID: 1542274820795390, guid: fb55462cf1a320d468b6edf086697177, type: 2}
+  - {fileID: 1547166206792598, guid: cc7ee66ec00558d49bf8a93c70bb28b9, type: 2}
+  - {fileID: 1377371023085548, guid: 8885ffb16f2ed174298d97309ebf94b2, type: 2}
   traps:
   - {fileID: 1787306735302194, guid: 5947f0b913abb914393443c63ba3707e, type: 2}
   - {fileID: 1904981198315766, guid: 19fe505d0dd201647b1cb34e92f2793b, type: 2}

@@ -1,0 +1,104 @@
+
+cazador arpon.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Capa 2 copia
+  rotate: false
+  xy: 2, 161
+  size: 229, 89
+  orig: 229, 89
+  offset: 0, 0
+  index: -1
+brazo derecho
+  rotate: true
+  xy: 233, 175
+  size: 75, 103
+  orig: 75, 103
+  offset: 0, 0
+  index: -1
+brazo izquierdo
+  rotate: true
+  xy: 426, 187
+  size: 63, 80
+  orig: 63, 80
+  offset: 0, 0
+  index: -1
+cabeza
+  rotate: false
+  xy: 260, 111
+  size: 56, 62
+  orig: 56, 62
+  offset: 0, 0
+  index: -1
+cabeza ataque
+  rotate: false
+  xy: 318, 112
+  size: 55, 61
+  orig: 55, 61
+  offset: 0, 0
+  index: -1
+cabeza dano
+  rotate: false
+  xy: 318, 49
+  size: 53, 61
+  orig: 53, 61
+  offset: 0, 0
+  index: -1
+gorro
+  rotate: false
+  xy: 338, 187
+  size: 86, 63
+  orig: 86, 63
+  offset: 0, 0
+  index: -1
+mano izquierda
+  rotate: false
+  xy: 416, 147
+  size: 36, 38
+  orig: 36, 38
+  offset: 0, 0
+  index: -1
+oreja delantera
+  rotate: false
+  xy: 322, 2
+  size: 52, 45
+  orig: 52, 45
+  offset: 0, 0
+  index: -1
+oreja trasera
+  rotate: false
+  xy: 375, 137
+  size: 39, 48
+  orig: 39, 48
+  offset: 0, 0
+  index: -1
+pie der
+  rotate: true
+  xy: 260, 2
+  size: 43, 60
+  orig: 43, 60
+  offset: 0, 0
+  index: -1
+pie izq
+  rotate: true
+  xy: 260, 47
+  size: 62, 56
+  orig: 62, 56
+  offset: 0, 0
+  index: -1
+piernas copia 2
+  rotate: true
+  xy: 138, 19
+  size: 140, 120
+  orig: 140, 120
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 2, 10
+  size: 134, 149
+  orig: 134, 149
+  offset: 0, 0
+  index: -1
