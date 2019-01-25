@@ -23,7 +23,7 @@ public class MainMenuAnimator : MonoBehaviour {
         }
     }
     #endregion
-
+    public Animator damageImage;
     [Space]
     public Text debugText;
     [Space]

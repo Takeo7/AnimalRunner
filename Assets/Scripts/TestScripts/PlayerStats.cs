@@ -8,6 +8,7 @@ public class PlayerStats : MonoBehaviour {
 
 	public int AmountHealth = 3;
     [SerializeField]
+    Animator damageImage;
     Health healthScript;
     public int attackDamage = 1;
     public int numAttacks;
@@ -24,6 +25,7 @@ public class PlayerStats : MonoBehaviour {
     private void Start()
     {
         healthScript = Health.instance;
+        damageImage = MainMenuAnimator.instance.damageImage;
         //Debug.Log(healthScript);
     }
 
@@ -40,6 +42,7 @@ public class PlayerStats : MonoBehaviour {
     {
 		if (canDie && !isDead)
 		{
+            damageImage.SetTrigger("damage");
 			AmountHealth -= i;
 			healthScript.UpdateHearts(AmountHealth);
 			CheckHealth();
@@ -57,6 +60,8 @@ public class PlayerStats : MonoBehaviour {
 			AC.DeathAnim();
 		}
 	}
+
+    
 
     public enum AttackType
     {
