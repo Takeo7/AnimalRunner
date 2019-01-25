@@ -23,6 +23,8 @@ public class PlayFabLogin : MonoBehaviour
     }
     #endregion
 
+    public bool IsDevelopingID = false;
+
     public Text DebugText;
 
     public GameObject LogInWindow;
@@ -37,6 +39,10 @@ public class PlayFabLogin : MonoBehaviour
         if (CharacterReferences.instance.playerInfo.firstConection == true)
         {
             LogInWindow.SetActive(true);
+            if (IsDevelopingID == true)
+            {
+                LogInCustomPlayFab();
+            }
         }
         else
         {
@@ -170,6 +176,7 @@ public class PlayFabLogin : MonoBehaviour
         DebugText.text = "PlayFab - Login Custom Successful";
         if (CharacterReferences.instance.playerInfo.firstConection == true)
         {
+            LogInWindow.SetActive(false);
             UploadUserData();
         }
         GetPlayFabData();
@@ -196,6 +203,8 @@ public class PlayFabLogin : MonoBehaviour
         DebugText.text = "PlayFab - Login Email Successful";
         if (CharacterReferences.instance.playerInfo.firstConection == true)
         {
+            LogInWindow.SetActive(false);
+            CharacterReferences.instance.playerInfo.firstConection = false;
             UploadUserData();
         }
         GetPlayFabData();
@@ -223,6 +232,8 @@ public class PlayFabLogin : MonoBehaviour
         DebugText.text = "PlayFab - Login Username Successful";
         if (CharacterReferences.instance.playerInfo.firstConection == true)
         {
+            LogInWindow.SetActive(false);
+            CharacterReferences.instance.playerInfo.firstConection = false;
             UploadUserData();
         }
         GetPlayFabData();

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class LogInWindowController : MonoBehaviour {
 
-	public void SaveEmail(Text Email)
+    public void SaveEmail(Text Email)
     {
         PlayerPrefs.SetString("Email", Email.text);
     }

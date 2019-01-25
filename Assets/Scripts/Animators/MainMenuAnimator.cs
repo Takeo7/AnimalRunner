@@ -24,6 +24,7 @@ public class MainMenuAnimator : MonoBehaviour {
     }
     #endregion
 
+    [Space]
     public Text debugText;
     [Space]
     public CoinsController cc;
