@@ -69,7 +69,7 @@ public class MainMenuAnimator : MonoBehaviour {
 	public bool isFall;
     private void Start()
     {
-        StartClientConfiguration();
+        //StartClientConfiguration();
         EnvironmentController.instance.gameOverDelegate += ToogleDeadWindow;
 
         UpdateCoinsText();
@@ -294,12 +294,24 @@ public class MainMenuAnimator : MonoBehaviour {
         StartCoroutine("IntroCoroutine");   
     }
     #endregion
+    #region UpdateTexts
+    public void UpdateTexts()
+    {
+        UpdateCoinsText();
+        UpdateMeters();
+    }
     public void UpdateCoinsText()
     {
         coinsText.text = CR.playerInfo.coins.ToString();
         gemsText.text = CR.playerInfo.gems.ToString();
     }
-	public void StartGame()
+    public void UpdateMeters()
+    {
+        maxMetersPanel.GetComponentInChildren<TextsScriptMultiple>().GetKeys();
+    }
+    #endregion
+
+    public void StartGame()
 	{
         ToggleOff();
         ToogleNonTouch(true);

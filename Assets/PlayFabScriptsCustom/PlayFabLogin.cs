@@ -25,12 +25,19 @@ public class PlayFabLogin : MonoBehaviour
 
     public bool IsDevelopingID = false;
 
+    bool saveLocalInfo = false;
+
     public Text DebugText;
 
     public GameObject LogInWindow;
 
+    CharacterInfo CI;
+    MainMenuAnimator MMA;
+
     public void Start()
     {
+        CI = CharacterReferences.instance.playerInfo;
+        MMA = MainMenuAnimator.instance;
         //Note: Setting title Id here can be skipped if you have set the value in Editor Extensions already.
         if (string.IsNullOrEmpty(PlayFabSettings.TitleId))
         {
@@ -48,31 +55,38 @@ public class PlayFabLogin : MonoBehaviour
         {
             LogInPlayFabDeviceID();
         }
+
+        if (IsDevelopingID == true)
+        {
+            LogInCustomPlayFab();
+        }
+        else
+        {
+            LogInPlayFabDeviceID();
+        }    
     }
 
     #region Register User
     public void RegisterUserPlayFab()
     {
-        var request = new RegisterPlayFabUserRequest { Email = PlayerPrefs.GetString("Email"), Username = PlayerPrefs.GetString("Username"), Password = PlayerPrefs.GetString("Password"), RequireBothUsernameAndEmail = false };
+        var request = new RegisterPlayFabUserRequest { Username = PlayerPrefs.GetString("Username"), Password = PlayerPrefs.GetString("Password"), RequireBothUsernameAndEmail = false };
         PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnRegisterFailure);
     }
     private void OnRegisterSuccess(RegisterPlayFabUserResult result)
     {
         Debug.Log("PlayFab - Register Successful");
         DebugText.text = "PlayFab - Register Successful";
-        if (PlayerPrefs.GetString("Email") == "")
+        if (CI.firstConection || CI.isLocal)
         {
-            LogInPlayFabUsername();
+            saveLocalInfo = true;
         }
-        else if (PlayerPrefs.GetString("Username") == "")
+        if (CI.firstConection == false)
         {
-            LogInPlayFabEmail();
+            saveLocalInfo = false;
+            CI.ResetLocalData();
         }
-        else
-        {
-            LogInPlayFabUsername();
-        }
-        LinkPlayFabDeviceID();
+        UploadUserData();
+        LogInPlayFabUsername();
     }
 
     private void OnRegisterFailure(PlayFabError error)
@@ -95,7 +109,16 @@ public class PlayFabLogin : MonoBehaviour
     {
         Debug.Log("PlayFab - Linked Android ID Successful");
         DebugText.text = "PlayFab - Linked Android ID Successful";
-        GetPlayFabData();
+        if (CI.isLocal)
+        {
+            UploadUserData();
+        }
+        else
+        {
+            GetPlayFabData();
+        }
+        LogInWindow.SetActive(false);
+        CI.isLocal = false;
     }
 
     private void OnLinkDeviceIDFailure(PlayFabError error)
@@ -104,6 +127,7 @@ public class PlayFabLogin : MonoBehaviour
         Debug.LogError("Here's some debug information:");
         Debug.LogError(error.GenerateErrorReport());
         DebugText.text = "PlayFab - LinkAndroidID Failed || " + error;
+        CI.isLocal = true;
     }
     #endregion
 
@@ -140,18 +164,25 @@ public class PlayFabLogin : MonoBehaviour
             var request = new LoginWithIOSDeviceIDRequest { DeviceId = SystemInfo.deviceUniqueIdentifier };
             PlayFabClientAPI.LoginWithIOSDeviceID(request, OnLogInDeviceIDSuccess, OnLogInDeviceIDFailure);
         }
-        
+        else if (Application.platform == RuntimePlatform.WindowsEditor)
+        {
+            LogInPlayFabUsername();
+        }   
     }
 
     private void OnLogInDeviceIDSuccess(LoginResult result)
     {
         Debug.Log("PlayFab - LogIn Device Successful");
         DebugText.text = "PlayFab - LogIn Device Successful";
-        if (CharacterReferences.instance.playerInfo.firstConection == true)
+        if (CI.firstConection == true)
+        {
+            GetPlayFabData();
+            CI.firstConection = false;
+        }
+        else
         {
             UploadUserData();
-        }
-        GetPlayFabData();
+        }          
     }
 
     private void OnLogInDeviceIDFailure(PlayFabError error)
@@ -160,6 +191,8 @@ public class PlayFabLogin : MonoBehaviour
         Debug.LogError("Here's some debug information:");
         Debug.LogError(error.GenerateErrorReport());
         DebugText.text = "PlayFab - LogIn Device Failed || " + error;
+        CI.firstConection = true;
+        LogInWindow.SetActive(true);
     }
 
     #endregion
@@ -174,7 +207,7 @@ public class PlayFabLogin : MonoBehaviour
     {
         Debug.Log("PlayFab - Login Custom Successful");
         DebugText.text = "PlayFab - Login Custom Successful";
-        if (CharacterReferences.instance.playerInfo.firstConection == true)
+        if (CI.firstConection == true)
         {
             LogInWindow.SetActive(false);
             UploadUserData();
@@ -230,17 +263,27 @@ public class PlayFabLogin : MonoBehaviour
     {
         Debug.Log("PlayFab - Login Username Successful");
         DebugText.text = "PlayFab - Login Username Successful";
-        if (CharacterReferences.instance.playerInfo.firstConection == true)
+        if (CI.firstConection == true)
+        {           
+            CI.firstConection = false;
+            LinkPlayFabDeviceID();
+        }
+        if (saveLocalInfo)
         {
-            LogInWindow.SetActive(false);
-            CharacterReferences.instance.playerInfo.firstConection = false;
             UploadUserData();
         }
-        GetPlayFabData();
+        else
+        {
+            GetPlayFabData();
+        }
+        LogInWindow.SetActive(false);
+        MMA.UpdateTexts();
+        CI.isLocal = false;
     }
 
     private void OnLoginUsernameFailure(PlayFabError error)
     {
+        CI.isLocal = true;
         Debug.LogWarning("PlayFab - Login Username Failed");
         Debug.LogError("Here's some debug information:");
         Debug.LogError(error.GenerateErrorReport());

@@ -16,11 +16,13 @@ MonoBehaviour:
   currentMedals: 2
   medalsToNextRank: 3
   medalHolder: 0
-  metersRecord: 100
+  metersRecord: 127
   pointsRecord: 0
-  coins: 20
+  coins: 22
   gems: 0
-  selectedCharacter: 1
-  language: 0
+  selectedCharacter: 0
+  language: 2
   challengesIndex: 020000000300000000000000
   challengesProgress: 000000000000000000000000
+  firstConection: 1
+  isLocal: 1

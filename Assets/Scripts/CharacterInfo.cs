@@ -37,6 +37,7 @@ public class CharacterInfo : ScriptableObject {
 	public int[] challengesProgress = new int[3];
     //Others
     public bool firstConection = true;
+    public bool isLocal = true;
 
     public Dictionary<string,string> GetData()
     {
@@ -79,5 +80,30 @@ public class CharacterInfo : ScriptableObject {
         coins = ServerCoins;
         gems = ServerGems;
         MainMenuAnimator.instance.UpdateCoinsText();
+    }
+
+    public void ResetLocalData()
+    {
+        playerName = "";
+        playerLevel = 1;
+        currentMedals = 0;
+        medalsToNextRank = 3;
+        medalHolder = 0;
+
+        metersRecord = 0;
+        pointsRecord = 0;
+
+        coins = 0;
+        gems = 0;
+
+        selectedCharacter = 0;
+
+        language = 0;
+
+        challengesIndex = new int[3];
+        challengesProgress = new int[3];
+
+        firstConection = true;
+        isLocal = true;
     }
 }

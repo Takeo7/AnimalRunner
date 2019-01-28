@@ -5,10 +5,14 @@ using UnityEngine.UI;
 
 public class LogInWindowController : MonoBehaviour {
 
-    public void SaveEmail(Text Email)
+
+    PlayFabLogin PFL;
+
+    private void Start()
     {
-        PlayerPrefs.SetString("Email", Email.text);
+        PFL = PlayFabLogin.instance;
     }
+
     public void SaveUsername(Text Username)
     {
         PlayerPrefs.SetString("Username", Username.text);
@@ -16,5 +20,15 @@ public class LogInWindowController : MonoBehaviour {
     public void SavePassword(Text Password)
     {
         PlayerPrefs.SetString("Password", Password.text);
+    }
+
+    public void LogInUsername()
+    {
+        PFL.LogInPlayFabUsername();
+    }
+
+    public void Register()
+    {
+        PFL.RegisterUserPlayFab();
     }
 }
