@@ -38,6 +38,7 @@ public class TurtleSpecial : MonoBehaviour {
 		isRotating = false;
 		rotationTarget.localEulerAngles = Vector3.zero;
 		CR.PS.canDie = true;
+		SpecialsUI.instance.SetCooldown();
 	}
 	private void Update()
 	{

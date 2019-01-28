@@ -5,6 +5,14 @@ using UnityEngine.UI;
 
 public class SpecialsUI : MonoBehaviour {
 
+	#region  Singleton
+	public static SpecialsUI instance;
+	private void Awake()
+	{
+		instance = this;
+	}
+	#endregion
+
 	PlayerStats ps;
 
 	public Image cooldownImage;

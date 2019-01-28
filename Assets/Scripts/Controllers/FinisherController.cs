@@ -28,7 +28,8 @@ public class FinisherController : MonoBehaviour {
         if (collision.CompareTag("Player"))
         {
 			CR.TM.dead = true;
-            enviroment.TriggerEndGame();
+			MainMenuAnimator.instance.isFall = true;
+			enviroment.TriggerEndGame();
         }
 
     }

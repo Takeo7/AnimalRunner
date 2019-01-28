@@ -52,6 +52,9 @@ public class MainMenuAnimator : MonoBehaviour {
     public GameObject IntroWindow;
     public GameObject deadWindow;
     public GameObject maxMetersPanel;
+	public GameObject shopPopup;
+	public Text shopPopupCharacterDescription;
+	public Text shopPopupCharacterSpecialDescription;
     [Space]
     public GameObject Lifes;
     public GameObject Meters;
@@ -63,6 +66,7 @@ public class MainMenuAnimator : MonoBehaviour {
     public int currentMeters;
 	public CharacterReferences CR;
 	public ChallengesController CC;
+	public bool isFall;
     private void Start()
     {
         StartClientConfiguration();
@@ -240,11 +244,19 @@ public class MainMenuAnimator : MonoBehaviour {
     #region ToggleWindows
     public void ToogleDeadWindow()
     {
-		StartCoroutine("ToggleDeadWindowCO");
+		StartCoroutine("ToggleDeadWindowCO",isFall);
     }
-	IEnumerator ToggleDeadWindowCO()
+	IEnumerator ToggleDeadWindowCO(bool isFall)
 	{
-		yield return new WaitForSeconds(2f);
+		if (isFall)
+		{
+			yield return new WaitForSeconds(0f);
+		}
+		else
+		{
+			yield return new WaitForSeconds(2f);
+		}
+
 		CC.DieChallengesCheck();
 		deadWindow.SetActive(true);
 	}

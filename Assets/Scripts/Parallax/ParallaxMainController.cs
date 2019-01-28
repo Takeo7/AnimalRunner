@@ -28,10 +28,7 @@ public class ParallaxMainController : MonoBehaviour {
 			{
 				SetElements(secondControllers[i],secondControllers[i].sprites[j]);
 			}
-			if(i == 0 || i == 1)
-			{
-				secondControllers[i].SetHeight();
-			}
+			secondControllers[i].SetHeight();
 		}
 	}
 	void SetElements(ParallaxController secondController,SpriteRenderer sprite)

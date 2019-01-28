@@ -53,6 +53,7 @@ public class CharacterInfo : ScriptableObject {
 
         //Character
         data.Add("CurrentCharacter", selectedCharacter.ToString());
+		
 
         return data;
     }

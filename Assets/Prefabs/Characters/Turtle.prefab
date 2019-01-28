@@ -196,14 +196,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountHealth: 3
-  healthScript: {fileID: 0}
+  damageImage: {fileID: 0}
   attackDamage: 1
   numAttacks: 4
   AC: {fileID: 114441635481245156}
   isDead: 0
   coldownTime: 1
   canDie: 1
-  col: {fileID: 70307726821127648}
   AttackImage: {fileID: 0}
   PlayerType: 0
   attackType: 1
@@ -297,7 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9d31cbd642915e4ca1e6076257a7c55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 500
+  rotationSpeed: 0
 --- !u!114 &114826031726734700
 MonoBehaviour:
   m_ObjectHideFlags: 1

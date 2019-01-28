@@ -360,6 +360,7 @@ public class PlayFabLogin : MonoBehaviour
     {
         GetPlayFabInventory();
         Debug.Log("PlayFab - PurchaseItemSuccess");
+		MainMenuAnimator.instance.shopPopup.SetActive(false);
         DebugText.text = "PlayFab - PurchaseItemSuccess";
     }
 

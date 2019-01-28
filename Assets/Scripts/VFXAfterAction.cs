@@ -9,9 +9,13 @@ public class VFXAfterAction : MonoBehaviour {
 	[SerializeField]
 	Transform instantiateOrigin;
 
+	[SerializeField]
+	List<GameObject> effects;
+
 	public void VFXInstantiate()
 	{
-		Instantiate(VFXPrefab, instantiateOrigin.position,VFXPrefab.transform.rotation);
+		GameObject t = Instantiate(VFXPrefab, instantiateOrigin.position,VFXPrefab.transform.rotation);
+		effects.Add(t);
 	}
 	public void VFXInstantiate(float time)
 	{
@@ -21,5 +25,14 @@ public class VFXAfterAction : MonoBehaviour {
 	{
 		yield return new WaitForSeconds(delay);
 		VFXInstantiate();
+	}
+	public void DestroyVFX()
+	{
+		StopCoroutine("VFXInstantiateWDelay");
+		int length = effects.Count;
+		for (int i = 0; i < length; i++)
+		{
+			Destroy(effects[i]);
+		}
 	}
 }

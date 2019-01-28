@@ -14,9 +14,8 @@ public class ElephantSpecialHolder : MonoBehaviour {
 	}
 	private void OnTriggerEnter2D(Collider2D col)
 	{
-		if (col.CompareTag("EnemiesSight"))
+		if (col.CompareTag("EnemiesSight") && ES.canFire)
 		{
-			Debug.Log(col.transform.parent.name);
 			ES.Fire(col.transform.position+new Vector3(0,0.5f,0));
 		}
 	}

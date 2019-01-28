@@ -116,8 +116,10 @@ public class EnemyMovement : MonoBehaviour {
 	{
         if (dontDie == false)
         {
-            //Debug.Log("IsDing");
-            AC.DeathAnim();
+			StopCoroutine("Attacks");
+			VFXAA.DestroyVFX();
+			//Debug.Log("IsDing");
+			AC.DeathAnim();
             col.enabled = false;
 			sight.enabled = false;
 			Instantiate(coin, transform.position+new Vector3(0,0,-7), Quaternion.identity);
