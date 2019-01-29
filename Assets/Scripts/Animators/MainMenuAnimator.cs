@@ -71,7 +71,8 @@ public class MainMenuAnimator : MonoBehaviour {
     {
         //StartClientConfiguration();
         EnvironmentController.instance.gameOverDelegate += ToogleDeadWindow;
-
+        PlayFabLogin.instance.LogInWindow = logInWindow;
+        PlayFabLogin.instance.DebugText = debugText;
         UpdateCoinsText();
     }
     private void Update()

@@ -28,7 +28,6 @@ public class PlayFabLogin : MonoBehaviour
     bool saveLocalInfo = false;
 
     public Text DebugText;
-
     public GameObject LogInWindow;
 
     CharacterInfo CI;
