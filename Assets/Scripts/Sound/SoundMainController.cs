@@ -23,7 +23,7 @@ public class SoundMainController : MonoBehaviour {
 
 	public SoundSettings SS;
 	public AudioSource musicSpeaker;
-	public AudioSource[] speakers;
+	public List<AudioSource> speakers = new List<AudioSource>();
 	public Image muteButton;
 	public Sprite[] muteButtonImages;//0 sound 1 muted
 	public Slider soundSlider;
@@ -40,25 +40,40 @@ public class SoundMainController : MonoBehaviour {
 		{
 			//muteButton.sprite = muteButtonImages[0];
 		}
-		ChangeVolume(SS.volume);
-		MuteUnmute(SS.mute);
+		if(speakers.Count > 0)
+		{
+			ChangeVolume(SS.volume);
+			MuteUnmute(SS.mute);
+		}
 	}
 	public void ChangeVolume()
 	{
 		float volume = soundSlider.value;
-		int length = speakers.Length;
-		for (int i = 0; i < length; i++)
+		for (int i = 0; i < speakers.Count; i++)
 		{
-			speakers[i].volume = volume;
+			if(speakers[i] == null)
+			{
+				speakers.Remove(speakers[i]);
+			}
+			else
+			{
+				speakers[i].volume = volume;
+			}
 		}
 		SS.volume = volume;
 	}
 	public void ChangeVolume(float volume)
 	{
-		int length = speakers.Length;
-		for (int i = 0; i < length; i++)
+		for (int i = 0; i < speakers.Count; i++)
 		{
-			speakers[i].volume = volume;
+			if (speakers[i] == null)
+			{
+				speakers.Remove(speakers[i]);
+			}
+			else
+			{
+				speakers[i].volume = volume;
+			}
 		}
 	}
 	public void MuteUnmute()
@@ -74,7 +89,7 @@ public class SoundMainController : MonoBehaviour {
 			isMute = true;
 			//muteButton.sprite = muteButtonImages[1];
 		}
-		int length = speakers.Length;
+		int length = speakers.Count;
 		for (int i = 0; i < length; i++)
 		{
 			speakers[i].mute = isMute;
@@ -83,7 +98,7 @@ public class SoundMainController : MonoBehaviour {
 	}
 	public void MuteUnmute(bool isMute)
 	{
-		int length = speakers.Length;
+		int length = speakers.Count;
 		for (int i = 0; i < length; i++)
 		{
 			speakers[i].mute = isMute;

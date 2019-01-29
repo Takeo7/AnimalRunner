@@ -1594,6 +1594,7 @@ GameObject:
   - component: {fileID: 139116992}
   - component: {fileID: 139116991}
   - component: {fileID: 139116994}
+  - component: {fileID: 139116995}
   m_Layer: 5
   m_Name: GemsButton
   m_TagString: Untagged
@@ -1813,6 +1814,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &139116995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 139116989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4938b6ac896e2448be4a8d5141d6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 139116994}
 --- !u!1 &140169702
 GameObject:
   m_ObjectHideFlags: 0
@@ -3589,6 +3602,7 @@ GameObject:
   - component: {fileID: 312277933}
   - component: {fileID: 312277934}
   - component: {fileID: 312277935}
+  - component: {fileID: 312277936}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -3784,6 +3798,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &312277936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 312277931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4938b6ac896e2448be4a8d5141d6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 312277935}
 --- !u!1 &320483382
 GameObject:
   m_ObjectHideFlags: 0
@@ -10790,6 +10816,7 @@ GameObject:
   - component: {fileID: 884792450}
   - component: {fileID: 884792449}
   - component: {fileID: 884792452}
+  - component: {fileID: 884792453}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -11008,6 +11035,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &884792453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884792447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4938b6ac896e2448be4a8d5141d6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 884792452}
 --- !u!114 &890999186 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114775585256077300, guid: 02724398f97d2664c959dc4dae396508,
@@ -20315,6 +20354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1659535152}
   - component: {fileID: 1659535153}
+  - component: {fileID: 1659535154}
   m_Layer: 5
   m_Name: Volume
   m_TagString: Untagged
@@ -20389,20 +20429,22 @@ MonoBehaviour:
   m_Value: 0.485
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1940723318}
-        m_MethodName: ChangeVolume
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1659535154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1659535151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680dfb8d35a51aa44b37ec8c046af581, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1659535153}
+  muteButton: {fileID: 0}
 --- !u!1 &1663290923
 GameObject:
   m_ObjectHideFlags: 0
@@ -23747,6 +23789,7 @@ GameObject:
   - component: {fileID: 1940723316}
   - component: {fileID: 1940723318}
   - component: {fileID: 1940723317}
+  - component: {fileID: 1940723319}
   m_Layer: 0
   m_Name: SoundController
   m_TagString: Untagged
@@ -23875,16 +23918,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SS: {fileID: 11400000, guid: 47684dd734d0f424a8a7ddfe43266c44, type: 2}
   musicSpeaker: {fileID: 1940723317}
-  speakers:
-  - {fileID: 1940723317}
-  - {fileID: 884792452}
-  - {fileID: 2067146973}
-  - {fileID: 2006474348}
-  - {fileID: 139116994}
-  - {fileID: 312277935}
+  speakers: []
   muteButton: {fileID: 2020802081}
   muteButtonImages: []
   soundSlider: {fileID: 1659535153}
+--- !u!114 &1940723319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1940723315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4938b6ac896e2448be4a8d5141d6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 1940723317}
 --- !u!1 &1942754960
 GameObject:
   m_ObjectHideFlags: 0
@@ -24375,6 +24424,7 @@ GameObject:
   - component: {fileID: 2006474346}
   - component: {fileID: 2006474345}
   - component: {fileID: 2006474348}
+  - component: {fileID: 2006474349}
   m_Layer: 5
   m_Name: CoinsButton
   m_TagString: Untagged
@@ -24594,6 +24644,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2006474349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006474343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4938b6ac896e2448be4a8d5141d6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 2006474348}
 --- !u!1 &2008269350
 GameObject:
   m_ObjectHideFlags: 0
@@ -25367,6 +25429,7 @@ GameObject:
   - component: {fileID: 2067146971}
   - component: {fileID: 2067146970}
   - component: {fileID: 2067146973}
+  - component: {fileID: 2067146974}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -25585,6 +25648,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2067146974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2067146968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4938b6ac896e2448be4a8d5141d6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 2067146973}
 --- !u!1 &2067927483
 GameObject:
   m_ObjectHideFlags: 0
