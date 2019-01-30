@@ -648,7 +648,6 @@
     <None Include="Assets\spine\Elefante spine-unity\farolillo.json.txt" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\spineboy-pro\spineboy-pro.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Spineunitygirl\Doi.atlas.txt" />
-    <None Include="Assets\spine\Dragon spine - unity\Dragon.json.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CameraDepthTexture.shader" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Multiply.shader" />
     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Hero\hero-pro.atlas.txt" />
