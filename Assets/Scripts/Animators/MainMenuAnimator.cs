@@ -63,13 +63,16 @@ public class MainMenuAnimator : MonoBehaviour {
     public GameObject JumpButton;
     [Space]
     public Text meters;
+    [Space]
+    public Text logInUsername;
+    public Text PlayernameText;
     public int currentMeters;
 	public CharacterReferences CR;
 	public ChallengesController CC;
 	public bool isFall;
     private void Start()
     {
-        //StartClientConfiguration();
+        StartClientConfiguration();
         EnvironmentController.instance.gameOverDelegate += ToogleDeadWindow;
         PlayFabLogin.instance.LogInWindow = logInWindow;
         PlayFabLogin.instance.DebugText = debugText;
@@ -99,8 +102,6 @@ public class MainMenuAnimator : MonoBehaviour {
     {
         // Create client configuration
         PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
-            .RequestServerAuthCode(false)
-            .RequestEmail()
             .Build();
 
 
@@ -116,7 +117,7 @@ public class MainMenuAnimator : MonoBehaviour {
         // Try silent sign-in (second parameter is isSilent)
         if (PlayGamesPlatform.Instance.IsAuthenticated() == false)
         {
-            PlayGamesPlatform.Instance.Authenticate(SignInCallback, true);
+            PlayGamesPlatform.Instance.Authenticate(SignInCallback, false);
         }
     }
     public void SingInGoogle()
@@ -141,22 +142,33 @@ public class MainMenuAnimator : MonoBehaviour {
     {
         if (success)
         {
-            debugText.text = "Sign In";
+            debugText.text += "\nGoogleSignIn Success";
+            CharacterReferences.instance.playerInfo.loggedWithGoogle = true;
+            CR.playerInfo.playerName = PlayGamesPlatform.Instance.GetUserDisplayName();
+            CR.playerInfo.playerEmail = PlayGamesPlatform.Instance.GetUserEmail();
+            PlayerPrefs.SetString("Username", CR.playerInfo.playerName);
+            PlayerPrefs.SetString("CustomID", CR.playerInfo.playerName);
+            debugText.text += "Username added to log in";
+            logInUsername.text = CR.playerInfo.name;
             //PlayFabLogin.instance.LogInPlayFabCustom();
             UpdateAchievement(achievements.achievement_new_animal);
-
+            
             // Change sign-in button text
-           /* signInButtonText.text = "Sign out";
+            SignInButtonText.text = "Sign out";
+            PlayFabLogin.instance.LogInCustomPlayFab();
+            //PlayFabLogin.instance.StartLogIn();
 
             // Show the user's name
-            authStatus.text = "Signed in as: " + Social.localUser.userName;
+            /*authStatus.text = "Signed in as: " + Social.localUser.userName;
             ToogleIntro();*/
 
         }
         else
         {
-            debugText.text = "(RunForLife) Sign-in failed..."+PlayGamesPlatform.Instance.GetServerAuthCode();            
+            debugText.text += "\nGoogle SignIn Failed"+PlayGamesPlatform.Instance.GetIdToken();
+            PlayFabLogin.instance.StartLogIn();
         }
+        
     }
     #endregion
     #region Achievements
@@ -172,7 +184,7 @@ public class MainMenuAnimator : MonoBehaviour {
         }
         else
         {
-            debugText.text = "Cannot show Achievements, not logged in";
+            debugText.text += "\nCannot show Achievements, not logged in";
         }
     }
     public void UpdateAchievement(achievements achiv)
@@ -185,7 +197,7 @@ public class MainMenuAnimator : MonoBehaviour {
                     PlayGamesPlatform.Instance.ReportProgress(
                     GPGSIds.achievement_new_animal,
                     100.0f, (bool success) => {
-                        debugText.text = "(RunForLife) Welcome Unlock: " +
+                        debugText.text += "\n(RunForLife) Welcome Unlock: " +
                               success;
                     });
                     break;
@@ -225,7 +237,7 @@ public class MainMenuAnimator : MonoBehaviour {
                 GPGSIds.leaderboard_meters,
                 (bool success) =>
                 {
-                    debugText.text = "Leaderboard update success: " + success;
+                    debugText.text += "\nLeaderboard update success: " + success;
                 });
 
             try
@@ -234,7 +246,7 @@ public class MainMenuAnimator : MonoBehaviour {
             }
             catch (Exception)
             {
-                debugText.text = "Cant WriteUpdatedScore";
+                debugText.text += "\nCant WriteUpdatedScore";
                 throw;
             } 
         }
@@ -305,10 +317,15 @@ public class MainMenuAnimator : MonoBehaviour {
     {
         coinsText.text = CR.playerInfo.coins.ToString();
         gemsText.text = CR.playerInfo.gems.ToString();
+        UpdatePlayerName();
     }
     public void UpdateMeters()
     {
         maxMetersPanel.GetComponentInChildren<TextsScriptMultiple>().GetKeys();
+    }
+    public void UpdatePlayerName()
+    {
+        PlayernameText.text = PlayerPrefs.GetString("Username");
     }
     #endregion
 

@@ -7,10 +7,12 @@ public class LogInWindowController : MonoBehaviour {
 
 
     PlayFabLogin PFL;
+    public Text UsernameText;
 
     private void Start()
     {
         PFL = PlayFabLogin.instance;
+        UsernameText.text = PlayerPrefs.GetString("Username");
     }
 
     public void SaveUsername(Text Username)

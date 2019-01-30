@@ -41,10 +41,21 @@ public class PlayFabLogin : MonoBehaviour
         if (string.IsNullOrEmpty(PlayFabSettings.TitleId))
         {
             PlayFabSettings.TitleId = "C3D0"; // Please change this value to your own titleId from PlayFab Game Manager
-        }
+        }        
+    }
+
+    public void StartLogIn()
+    {
         if (CharacterReferences.instance.playerInfo.firstConection == true)
         {
-            LogInWindow.SetActive(true);
+            if (CI.loggedWithGoogle == true)
+            {
+                LogInPlayFabOS();
+            }
+            else
+            {
+                LogInWindow.SetActive(true);
+            }
             if (IsDevelopingID == true)
             {
                 LogInCustomPlayFab();
@@ -62,13 +73,18 @@ public class PlayFabLogin : MonoBehaviour
         else
         {
             LogInPlayFabDeviceID();
-        }    
+        }
     }
 
     #region Register User
     public void RegisterUserPlayFab()
     {
         var request = new RegisterPlayFabUserRequest { Username = PlayerPrefs.GetString("Username"), Password = PlayerPrefs.GetString("Password"), RequireBothUsernameAndEmail = false };
+        PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnRegisterFailure);
+    }
+    public void RegisterUserPlayFab(string email)
+    {
+        var request = new RegisterPlayFabUserRequest {Email = email, Username = PlayerPrefs.GetString("Username"), Password = PlayerPrefs.GetString("Password"), RequireBothUsernameAndEmail = false };
         PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnRegisterFailure);
     }
     private void OnRegisterSuccess(RegisterPlayFabUserResult result)
@@ -130,25 +146,52 @@ public class PlayFabLogin : MonoBehaviour
     }
     #endregion
 
+    #region LogIn Google/Apple
     public void LogInPlayFabOS()
     {
-        /*if (Application.platform == RuntimePlatform.Android)
+        if (Application.platform == RuntimePlatform.Android)
         {
-            var request = new LoginWithGoogleAccountRequest { CreateAccount = true, ServerAuthCode = PlayGamesPlatform.Instance.GetServerAuthCode() };
-            PlayFabClientAPI.LoginWithGoogleAccount(request, OnLoginSuccess, OnLoginFailure);
+            var request = new LoginWithGoogleAccountRequest { CreateAccount = true, ServerAuthCode = PlayGamesPlatform.Instance.GetIdToken() };
+            PlayFabClientAPI.LoginWithGoogleAccount(request, OnLoginOSSuccess, OnLoginOSFailure);
         }
         else if (Application.platform == RuntimePlatform.IPhonePlayer)
         {
             /*var request = new LoginWithGoogleAccountRequest { CreateAccount = true };
-            PlayFabClientAPI.LoginWithGoogleAccount(request, OnLoginSuccess, OnLoginFailure);
+            PlayFabClientAPI.LoginWithGoogleAccount(request, OnLoginSuccess, OnLoginFailure);*/
+        }
+        Debug.Log("PlayFab - LogInOS");
+    }
+
+    private void OnLoginOSSuccess(LoginResult result)
+    {
+        Debug.Log("PlayFab - LogIn with Google success");
+        DebugText.text = "PlayFab - LogIn with Google success";
+        CI.loggedWithGoogle = true;
+        if (CI.firstConection == true)
+        {
+            CI.firstConection = false;
+            LinkPlayFabDeviceID();
+        }
+        if (saveLocalInfo)
+        {
+            UploadUserData();
         }
         else
         {
-            var request = new LoginWithCustomIDRequest { CustomId = "TestPlayer", CreateAccount = true };
-            PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnLoginFailure);
-        }*/
-        Debug.Log("PlayFab - LogInOS");
+            GetPlayFabData();
+        }
+        LogInWindow.SetActive(false);
+        MMA.UpdateTexts();
+        CI.isLocal = false;
     }
+    private void OnLoginOSFailure(PlayFabError error)
+    {
+        Debug.LogWarning("PlayFab - LogIn Google Failed");
+        Debug.LogError("Here's some debug information:");
+        Debug.LogError(error.GenerateErrorReport());
+        DebugText.text = "PlayFab - LogIn Google Failed || " + error;
+    }
+    #endregion
 
     #region LogIn DeviceID
     public void LogInPlayFabDeviceID()
@@ -199,7 +242,7 @@ public class PlayFabLogin : MonoBehaviour
     #region LogIn Custom
     public void LogInCustomPlayFab()
     {
-        var request = new LoginWithCustomIDRequest { CustomId = "TestPlayer"};
+        var request = new LoginWithCustomIDRequest {CreateAccount = true, CustomId = PlayerPrefs.GetString("CustomID")};
         PlayFabClientAPI.LoginWithCustomID(request, OnLoginCustomSuccess, OnLoginCustomFailure);
     }
     private void OnLoginCustomSuccess(LoginResult result)
@@ -220,6 +263,7 @@ public class PlayFabLogin : MonoBehaviour
         Debug.LogError("Here's some debug information:");
         Debug.LogError(error.GenerateErrorReport());
         DebugText.text = "PlayFab - Login Custom Failed || " + error;
+        StartLogIn();
     }
     #endregion
 
@@ -307,6 +351,7 @@ public class PlayFabLogin : MonoBehaviour
     {
         Debug.Log("PlayFab - UpdatedDataSuccess");
         DebugText.text = "PlayFab - UpdatedDataSuccess";
+        GetPlayFabData();
     }
     private void OnUpdateUserDataFailure(PlayFabError error)
     {

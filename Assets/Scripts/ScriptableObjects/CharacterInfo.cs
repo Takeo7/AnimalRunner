@@ -7,6 +7,7 @@ public class CharacterInfo : ScriptableObject {
 
     //Base
     [Header("Base")]
+    public string playerEmail;
 	public string playerName;
 	public int playerLevel;
 	public byte currentMedals;
@@ -36,6 +37,7 @@ public class CharacterInfo : ScriptableObject {
 	public int[] challengesIndex = new int[3];
 	public int[] challengesProgress = new int[3];
     //Others
+    public bool loggedWithGoogle = false;
     public bool firstConection = true;
     public bool isLocal = true;
 
@@ -54,7 +56,6 @@ public class CharacterInfo : ScriptableObject {
 
         //Character
         data.Add("CurrentCharacter", selectedCharacter.ToString());
-		
 
         return data;
     }
