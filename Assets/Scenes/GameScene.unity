@@ -5696,6 +5696,8 @@ MonoBehaviour:
   characterList:
   - {fileID: 1336313573956010, guid: b712cb109fba1194c836d6e8583daefc, type: 2}
   - {fileID: 1220323509927470, guid: af52b3d8a124e5445a2c82c7331ec4ff, type: 2}
+  - {fileID: 1078697026748136, guid: 0eefb640ab2157840a102fce523255a0, type: 2}
+  - {fileID: 1001171156554562, guid: 716748173561f0d4eb5b7f172c2d7bb2, type: 2}
 --- !u!1 &476433191
 GameObject:
   m_ObjectHideFlags: 0
@@ -21851,6 +21853,15 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1355157842876838, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114441635481245156, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
+        type: 2}
+      propertyPath: attackAnimDuration
+      value: 0.33
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
   m_IsPrefabAsset: 0
@@ -23629,7 +23640,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.9380322
+  orthographic size: 2.5942132
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -23652,7 +23663,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1931523861}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -104.22, y: 1, z: -3.05}
+  m_LocalPosition: {x: -104.22, y: 1.95, z: -3.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 244743037}

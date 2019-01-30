@@ -1,0 +1,118 @@
+
+Dragon.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ala derecha
+  rotate: false
+  xy: 197, 2
+  size: 81, 73
+  orig: 81, 73
+  offset: 0, 0
+  index: -1
+ala izquierda
+  rotate: true
+  xy: 197, 176
+  size: 108, 88
+  orig: 108, 88
+  offset: 0, 0
+  index: -1
+brazo derecho
+  rotate: false
+  xy: 287, 244
+  size: 102, 66
+  orig: 102, 66
+  offset: 0, 0
+  index: -1
+brazo izquierdo
+  rotate: false
+  xy: 197, 77
+  size: 91, 97
+  orig: 91, 97
+  offset: 0, 0
+  index: -1
+cabeza ataque 1 am
+  rotate: false
+  xy: 473, 297
+  size: 219, 208
+  orig: 219, 208
+  offset: 0, 0
+  index: -1
+cabeza ataque 2 am
+  rotate: false
+  xy: 2, 286
+  size: 227, 219
+  orig: 227, 219
+  offset: 0, 0
+  index: -1
+cabeza dano
+  rotate: false
+  xy: 694, 369
+  size: 239, 136
+  orig: 239, 136
+  offset: 0, 0
+  index: -1
+cabeza normal am
+  rotate: true
+  xy: 2, 44
+  size: 240, 193
+  orig: 240, 193
+  offset: 0, 0
+  index: -1
+cola
+  rotate: true
+  xy: 862, 213
+  size: 154, 93
+  orig: 154, 93
+  offset: 0, 0
+  index: -1
+ojo cerrado
+  rotate: false
+  xy: 231, 312
+  size: 240, 193
+  orig: 240, 193
+  offset: 0, 0
+  index: -1
+oreja trasera
+  rotate: false
+  xy: 935, 375
+  size: 77, 130
+  orig: 77, 130
+  offset: 0, 0
+  index: -1
+pierna derecha
+  rotate: true
+  xy: 287, 181
+  size: 61, 103
+  orig: 61, 103
+  offset: 0, 0
+  index: -1
+pierna derecha 2
+  rotate: false
+  xy: 347, 74
+  size: 50, 105
+  orig: 50, 105
+  offset: 0, 0
+  index: -1
+pierna izquierda
+  rotate: false
+  xy: 957, 259
+  size: 63, 114
+  orig: 63, 114
+  offset: 0, 0
+  index: -1
+pierna izquierda 2
+  rotate: false
+  xy: 290, 72
+  size: 55, 107
+  orig: 55, 107
+  offset: 0, 0
+  index: -1
+torso
+  rotate: true
+  xy: 694, 236
+  size: 131, 166
+  orig: 131, 166
+  offset: 0, 0
+  index: -1

@@ -39,6 +39,8 @@ public class EnemyMovement : MonoBehaviour {
 	[SerializeField]
 	SoundController SC;
 
+	bool canDestroy;
+
 
 	private void Start()
     {
@@ -124,7 +126,7 @@ public class EnemyMovement : MonoBehaviour {
 			sight.enabled = false;
 			Instantiate(coin, transform.position+new Vector3(0,0,-7), Quaternion.identity);
 			yield return new WaitForSeconds(2f);
-            Destroy(gameObject);
+			canDestroy = true;
         }
 
 	}
@@ -164,6 +166,13 @@ public class EnemyMovement : MonoBehaviour {
 		if(isOnSight == false)
 		{
 			AC.IdleAnim();
+		}
+	}
+	private void OnBecameInvisible()
+	{
+		if (canDestroy)
+		{
+			Destroy(gameObject);
 		}
 	}
 	private void OnDrawGizmosSelected()

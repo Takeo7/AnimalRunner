@@ -26,5 +26,21 @@ MonoBehaviour:
     description: An elephant
     unlocked: 0
     hide: 0
-    coinPrice: 50
+    coinPrice: 100
     gemPrice: 10
+  - name: Dragon
+    icon: {fileID: 21300000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
+    prefab: {fileID: 1385950287651850, guid: 789b3609ab054574d9e2f823327edef0, type: 2}
+    description: A dragon
+    unlocked: 1
+    hide: 0
+    coinPrice: 150
+    gemPrice: 20
+  - name: Rabbit
+    icon: {fileID: 21300000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
+    prefab: {fileID: 1778632533777940, guid: 0561f6770b7e19a41a4b9e5a6a76e346, type: 2}
+    description: A rabbit
+    unlocked: 0
+    hide: 0
+    coinPrice: 150
+    gemPrice: 20

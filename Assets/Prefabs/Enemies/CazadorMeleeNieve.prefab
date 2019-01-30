@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114467663211696104}
   - component: {fileID: 114083742621568062}
   - component: {fileID: 82209844653868758}
+  - component: {fileID: 114012651315500774}
   m_Layer: 0
   m_Name: CazadorMeleeNieve
   m_TagString: Enemy
@@ -347,6 +348,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &114012651315500774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1542274820795390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4938b6ac896e2448be4a8d5141d6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 82209844653868758}
 --- !u!114 &114083742621568062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -440,6 +453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VFXPrefab: {fileID: 150944, guid: 64798a1ed4bb2584aa219fafa6cdfa35, type: 2}
   instantiateOrigin: {fileID: 4381578005861174}
+  effects: []
 --- !u!114 &114717256922398180
 MonoBehaviour:
   m_ObjectHideFlags: 1

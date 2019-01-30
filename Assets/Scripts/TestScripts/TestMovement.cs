@@ -167,7 +167,17 @@ public class TestMovement : MonoBehaviour {
                     AttacksUI.instance.UpdateAttacks();
                     StartCoroutine("AttackCoroutine");
                     break;
-            }           
+				case PlayerStats.Characters.Dragon:
+					AC.AttackAnim(true);
+					AttacksUI.instance.UpdateAttacks();
+					StartCoroutine("AttackCoroutine");
+					break;
+				case PlayerStats.Characters.Rabbit:
+					AC.AttackAnim(true);
+					AttacksUI.instance.UpdateAttacks();
+					StartCoroutine("AttackCoroutine");
+					break;
+			}           
         }
     }
 

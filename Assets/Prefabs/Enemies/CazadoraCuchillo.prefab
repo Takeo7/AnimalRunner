@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114612968680724850}
   - component: {fileID: 82281940807648968}
   - component: {fileID: 114136147322838024}
+  - component: {fileID: 114775093618113170}
   m_Layer: 0
   m_Name: CazadoraCuchillo
   m_TagString: Enemy
@@ -440,6 +441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VFXPrefab: {fileID: 124808, guid: 968b04f286175bb418256b6bb8b1abc6, type: 2}
   instantiateOrigin: {fileID: 4826869090940166}
+  effects: []
 --- !u!114 &114644620168891628
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -482,6 +484,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EM: {fileID: 114320185102934506}
+--- !u!114 &114775093618113170
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375003835107346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4938b6ac896e2448be4a8d5141d6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 82281940807648968}
 --- !u!212 &212632755882459758
 SpriteRenderer:
   m_ObjectHideFlags: 1

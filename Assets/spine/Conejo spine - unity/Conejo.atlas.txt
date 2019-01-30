@@ -1,0 +1,139 @@
+
+Conejo.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+boca ataque
+  rotate: false
+  xy: 355, 112
+  size: 89, 39
+  orig: 89, 39
+  offset: 0, 0
+  index: -1
+boca dano
+  rotate: true
+  xy: 268, 37
+  size: 79, 38
+  orig: 79, 38
+  offset: 0, 0
+  index: -1
+boca normal
+  rotate: false
+  xy: 451, 216
+  size: 55, 38
+  orig: 55, 38
+  offset: 0, 0
+  index: -1
+brazo derecho
+  rotate: true
+  xy: 189, 25
+  size: 46, 73
+  orig: 46, 73
+  offset: 0, 0
+  index: -1
+brazo izquierdo
+  rotate: true
+  xy: 355, 208
+  size: 46, 94
+  orig: 46, 94
+  offset: 0, 0
+  index: -1
+cabeza
+  rotate: false
+  xy: 2, 10
+  size: 138, 105
+  orig: 138, 105
+  offset: 0, 0
+  index: -1
+cola
+  rotate: false
+  xy: 308, 2
+  size: 38, 42
+  orig: 38, 42
+  offset: 0, 0
+  index: -1
+ojos
+  rotate: false
+  xy: 218, 159
+  size: 86, 55
+  orig: 86, 55
+  offset: 0, 0
+  index: -1
+ojos ataque
+  rotate: false
+  xy: 355, 153
+  size: 82, 53
+  orig: 82, 53
+  offset: 0, 0
+  index: -1
+ojos cute
+  rotate: true
+  xy: 306, 130
+  size: 84, 47
+  orig: 84, 47
+  offset: 0, 0
+  index: -1
+ojos cute ataque
+  rotate: true
+  xy: 308, 46
+  size: 82, 34
+  orig: 82, 34
+  offset: 0, 0
+  index: -1
+ojos cute cerrados
+  rotate: false
+  xy: 218, 118
+  size: 84, 39
+  orig: 84, 39
+  offset: 0, 0
+  index: -1
+ojos cute dano
+  rotate: false
+  xy: 189, 73
+  size: 77, 43
+  orig: 77, 43
+  offset: 0, 0
+  index: -1
+ojos dano
+  rotate: true
+  xy: 142, 25
+  size: 90, 45
+  orig: 90, 45
+  offset: 0, 0
+  index: -1
+oreja dercha
+  rotate: true
+  xy: 218, 216
+  size: 38, 135
+  orig: 38, 135
+  offset: 0, 0
+  index: -1
+oreja izquierda
+  rotate: false
+  xy: 2, 117
+  size: 146, 137
+  orig: 146, 137
+  offset: 0, 0
+  index: -1
+pierna derecha
+  rotate: true
+  xy: 344, 48
+  size: 29, 75
+  orig: 29, 75
+  offset: 0, 0
+  index: -1
+pierna izquierda
+  rotate: true
+  xy: 344, 79
+  size: 31, 75
+  orig: 31, 75
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 150, 136
+  size: 66, 118
+  orig: 66, 118
+  offset: 0, 0
+  index: -1
