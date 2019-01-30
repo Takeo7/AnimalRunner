@@ -327,7 +327,6 @@ public class PlayFabLogin : MonoBehaviour
     private void OnGetDataSuccess(GetUserDataResult result)
     {
         CharacterReferences.instance.playerInfo.SetData(result.Data);
-        Debug.Log(result.Data.ContainsKey("Level") + "is inside");
         Debug.Log("PlayFab - GetDataSuccess");
         DebugText.text = "PlayFab - GetDataSuccess";
         GetPlayFabInventory();
