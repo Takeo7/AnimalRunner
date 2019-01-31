@@ -74,6 +74,8 @@ public class PlayerStats : MonoBehaviour {
         Turtle,
         Elephant,
 		Dragon,
-		Rabbit
+		Rabbit,
+		Unicorn,
+		Okami
     }
 }

@@ -177,6 +177,16 @@ public class TestMovement : MonoBehaviour {
 					AttacksUI.instance.UpdateAttacks();
 					StartCoroutine("AttackCoroutine");
 					break;
+				case PlayerStats.Characters.Unicorn:
+					AC.AttackAnim(true);
+					AttacksUI.instance.UpdateAttacks();
+					StartCoroutine("AttackCoroutine");
+					break;
+				case PlayerStats.Characters.Okami:
+					AC.AttackAnim(true);
+					AttacksUI.instance.UpdateAttacks();
+					StartCoroutine("AttackCoroutine");
+					break;
 			}           
         }
     }

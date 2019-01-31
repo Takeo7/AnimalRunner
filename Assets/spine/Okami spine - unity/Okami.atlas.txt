@@ -1,0 +1,153 @@
+
+Okami.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ala derecha
+  rotate: false
+  xy: 553, 276
+  size: 52, 93
+  orig: 52, 93
+  offset: 0, 0
+  index: -1
+ala izquierda
+  rotate: true
+  xy: 304, 391
+  size: 111, 162
+  orig: 111, 162
+  offset: 0, 0
+  index: -1
+cabeza ataque
+  rotate: false
+  xy: 468, 371
+  size: 139, 131
+  orig: 139, 131
+  offset: 0, 0
+  index: -1
+cabeza dano
+  rotate: false
+  xy: 609, 379
+  size: 139, 123
+  orig: 139, 123
+  offset: 0, 0
+  index: -1
+casbeza
+  rotate: false
+  xy: 750, 382
+  size: 139, 120
+  orig: 139, 120
+  offset: 0, 0
+  index: -1
+cola
+  rotate: false
+  xy: 2, 355
+  size: 300, 147
+  orig: 300, 147
+  offset: 0, 0
+  index: -1
+ojo ataque
+  rotate: false
+  xy: 386, 272
+  size: 47, 25
+  orig: 47, 25
+  offset: 0, 0
+  index: -1
+ojo dano
+  rotate: true
+  xy: 281, 322
+  size: 31, 19
+  orig: 31, 19
+  offset: 0, 0
+  index: -1
+ojo normal
+  rotate: true
+  xy: 252, 6
+  size: 45, 32
+  orig: 45, 32
+  offset: 0, 0
+  index: -1
+oreja derecha
+  rotate: true
+  xy: 281, 204
+  size: 35, 53
+  orig: 35, 53
+  offset: 0, 0
+  index: -1
+oreja derecja dano
+  rotate: false
+  xy: 344, 250
+  size: 40, 47
+  orig: 40, 47
+  offset: 0, 0
+  index: -1
+oreja izquierda
+  rotate: true
+  xy: 186, 2
+  size: 49, 64
+  orig: 49, 64
+  offset: 0, 0
+  index: -1
+oreja izquierda dano
+  rotate: false
+  xy: 281, 241
+  size: 61, 56
+  orig: 61, 56
+  offset: 0, 0
+  index: -1
+parpadeo
+  rotate: false
+  xy: 290, 175
+  size: 40, 27
+  orig: 40, 27
+  offset: 0, 0
+  index: -1
+pata derecha delantera
+  rotate: true
+  xy: 304, 299
+  size: 90, 139
+  orig: 90, 139
+  offset: 0, 0
+  index: -1
+pata derecha trasera
+  rotate: true
+  xy: 891, 426
+  size: 76, 131
+  orig: 76, 131
+  offset: 0, 0
+  index: -1
+pata izquierda delantera
+  rotate: false
+  xy: 2, 12
+  size: 182, 189
+  orig: 182, 189
+  offset: 0, 0
+  index: -1
+pata izquierda tarsera
+  rotate: false
+  xy: 186, 53
+  size: 102, 148
+  orig: 102, 148
+  offset: 0, 0
+  index: -1
+pelo mejilla
+  rotate: false
+  xy: 445, 264
+  size: 106, 105
+  orig: 106, 105
+  offset: 0, 0
+  index: -1
+plato
+  rotate: false
+  xy: 891, 370
+  size: 122, 54
+  orig: 122, 54
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 2, 203
+  size: 277, 150
+  orig: 277, 150
+  offset: 0, 0
+  index: -1

@@ -26,8 +26,8 @@ MonoBehaviour:
     description: An elephant
     unlocked: 0
     hide: 0
-    coinPrice: 100
-    gemPrice: 10
+    coinPrice: 150
+    gemPrice: 20
   - name: Dragon
     icon: {fileID: 21300000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
     prefab: {fileID: 1385950287651850, guid: 789b3609ab054574d9e2f823327edef0, type: 2}
@@ -40,6 +40,22 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
     prefab: {fileID: 1778632533777940, guid: 0561f6770b7e19a41a4b9e5a6a76e346, type: 2}
     description: A rabbit
+    unlocked: 1
+    hide: 0
+    coinPrice: 150
+    gemPrice: 20
+  - name: Unicornio
+    icon: {fileID: 21300000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
+    prefab: {fileID: 1395222153171100, guid: fa370bf33291107488c4927e8a2db71b, type: 2}
+    description: A unicorn
+    unlocked: 0
+    hide: 0
+    coinPrice: 150
+    gemPrice: 20
+  - name: Okami
+    icon: {fileID: 21300000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
+    prefab: {fileID: 1737348973768176, guid: 230dfb274080ca74898be845f500f0bc, type: 2}
+    description: A Okami
     unlocked: 0
     hide: 0
     coinPrice: 150

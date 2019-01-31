@@ -1,0 +1,132 @@
+
+Unicornio.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cabeza
+  rotate: false
+  xy: 2, 2
+  size: 127, 116
+  orig: 127, 116
+  offset: 0, 0
+  index: -1
+cabeza copia
+  rotate: false
+  xy: 354, 206
+  size: 126, 124
+  orig: 126, 124
+  offset: 0, 0
+  index: -1
+cabeza dano
+  rotate: false
+  xy: 354, 88
+  size: 127, 116
+  orig: 127, 116
+  offset: 0, 0
+  index: -1
+cola
+  rotate: false
+  xy: 2, 120
+  size: 167, 228
+  orig: 167, 228
+  offset: 0, 0
+  index: -1
+cuello
+  rotate: true
+  xy: 776, 385
+  size: 120, 183
+  orig: 120, 183
+  offset: 0, 0
+  index: -1
+cuerno
+  rotate: true
+  xy: 286, 59
+  size: 74, 66
+  orig: 74, 66
+  offset: 0, 0
+  index: -1
+flequillo
+  rotate: true
+  xy: 961, 418
+  size: 87, 61
+  orig: 87, 61
+  offset: 0, 0
+  index: -1
+ojo abierto
+  rotate: true
+  xy: 961, 385
+  size: 31, 37
+  orig: 31, 37
+  offset: 0, 0
+  index: -1
+ojo ataque
+  rotate: false
+  xy: 131, 56
+  size: 33, 30
+  orig: 33, 30
+  offset: 0, 0
+  index: -1
+ojo cerrado
+  rotate: false
+  xy: 776, 370
+  size: 33, 13
+  orig: 33, 13
+  offset: 0, 0
+  index: -1
+ojo dano
+  rotate: false
+  xy: 131, 88
+  size: 36, 30
+  orig: 36, 30
+  offset: 0, 0
+  index: -1
+oreja
+  rotate: true
+  xy: 509, 326
+  size: 63, 48
+  orig: 63, 48
+  offset: 0, 0
+  index: -1
+pata derecha frontal
+  rotate: false
+  xy: 286, 135
+  size: 66, 195
+  orig: 66, 195
+  offset: 0, 0
+  index: -1
+pata derecha trasera
+  rotate: true
+  xy: 293, 332
+  size: 57, 214
+  orig: 57, 214
+  offset: 0, 0
+  index: -1
+pata izquierda detras
+  rotate: false
+  xy: 171, 121
+  size: 113, 227
+  orig: 113, 227
+  offset: 0, 0
+  index: -1
+pata izquierda frontal
+  rotate: true
+  xy: 293, 391
+  size: 114, 265
+  orig: 114, 265
+  offset: 0, 0
+  index: -1
+pelo trasero
+  rotate: true
+  xy: 560, 359
+  size: 146, 214
+  orig: 146, 214
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 2, 350
+  size: 289, 155
+  orig: 289, 155
+  offset: 0, 0
+  index: -1
