@@ -34,6 +34,7 @@ public class CoinsController : MonoBehaviour {
     public void SetCoins(int i)
     {
         coins += i;
+        PlayFabLogin.instance.AddPlayFabVirtualCurrecy(i, "CO");
         CR.playerInfo.coins = coins;
     }
 
@@ -44,6 +45,7 @@ public class CoinsController : MonoBehaviour {
     public void SetGems(int i)
     {
         gems += i;
+        PlayFabLogin.instance.AddPlayFabVirtualCurrecy(i, "GE");
         CR.playerInfo.gems = gems;
     }
 }

@@ -13,6 +13,7 @@ public class MainMenuAnimator : MonoBehaviour {
     public static MainMenuAnimator instance;
     private void Awake()
     {
+        
         if (instance == null)
         {
             instance = this;
@@ -72,10 +73,14 @@ public class MainMenuAnimator : MonoBehaviour {
 	public bool isFall;
     private void Start()
     {
+        if (PlayGamesPlatform.Instance.IsAuthenticated())
+        {
+            UpdateTexts();
+        }
+        PlayFabLogin.instance.GetVIV(CR.playerInfo, instance, EnvironmentController.instance, debugText, logInWindow);
         StartClientConfiguration();
         EnvironmentController.instance.gameOverDelegate += ToogleDeadWindow;
-        PlayFabLogin.instance.LogInWindow = logInWindow;
-        PlayFabLogin.instance.DebugText = debugText;
+        
         UpdateCoinsText();
     }
     private void Update()
@@ -95,7 +100,6 @@ public class MainMenuAnimator : MonoBehaviour {
             SignInButtonText.text = LanguajesDic.instance.GetText(8);
         }*/
     }
-
     #region GoogleStuff
     #region SingIn
     public void StartClientConfiguration()
@@ -136,36 +140,45 @@ public class MainMenuAnimator : MonoBehaviour {
         {
             // Sign out of play games
             PlayGamesPlatform.Instance.SignOut();
+            SignInButtonText.text = "Sign In";
         }
     }
     public void SignInCallback(bool success)
     {
         if (success)
         {
+            //DebugText
             debugText.text += "\nGoogleSignIn Success";
+
+            //Logged With Google True
             CharacterReferences.instance.playerInfo.loggedWithGoogle = true;
+
+            //Get user Name from google and Setting Playerprefs
             CR.playerInfo.playerName = PlayGamesPlatform.Instance.GetUserDisplayName();
-            CR.playerInfo.playerEmail = PlayGamesPlatform.Instance.GetUserEmail();
             PlayerPrefs.SetString("Username", CR.playerInfo.playerName);
             PlayerPrefs.SetString("CustomID", CR.playerInfo.playerName);
+
+            //DebugText
             debugText.text += "Username added to log in";
+
+            //Update Name Shown
             logInUsername.text = CR.playerInfo.name;
-            //PlayFabLogin.instance.LogInPlayFabCustom();
+
+            //Update First Achievement
             UpdateAchievement(achievements.achievement_new_animal);
             
             // Change sign-in button text
             SignInButtonText.text = "Sign out";
+
+            // Log In With Custom ID
             PlayFabLogin.instance.LogInCustomPlayFab();
-            //PlayFabLogin.instance.StartLogIn();
-
-            // Show the user's name
-            /*authStatus.text = "Signed in as: " + Social.localUser.userName;
-            ToogleIntro();*/
-
         }
         else
         {
-            debugText.text += "\nGoogle SignIn Failed"+PlayGamesPlatform.Instance.GetIdToken();
+            //DebugText
+            debugText.text += "\nGoogle SignIn Failed";
+
+            //Start Login Without Google
             PlayFabLogin.instance.StartLogIn();
         }
         
