@@ -143,7 +143,7 @@ public class MainMenuAnimator : MonoBehaviour {
             SignInButtonText.text = "Sign In";
         }
     }
-    public void SignInCallback(bool success)
+    public void SignInCallback(bool success, string result)
     {
         if (success)
         {
@@ -176,8 +176,7 @@ public class MainMenuAnimator : MonoBehaviour {
         else
         {
             //DebugText
-            debugText.text += "\nGoogle SignIn Failed";
-
+            debugText.text += "\nGoogle SignIn Failed: "+result;
             //Start Login Without Google
             PlayFabLogin.instance.StartLogIn();
         }
