@@ -494,7 +494,7 @@ MonoBehaviour:
   AC: {fileID: 114849196653532054}
   VFXAA: {fileID: 114294480796395366}
   meleeAttackDelay: 0.25
-  coin: {fileID: 1395996759783588, guid: 2b8de89f2bf6c4644a6632ca41835427, type: 2}
+  coin: {fileID: 1751257628520874, guid: 45baf7faabcc38d419d77984ef3b1c20, type: 2}
   SC: {fileID: 114619979783319238}
 --- !u!212 &212491253276368004
 SpriteRenderer:

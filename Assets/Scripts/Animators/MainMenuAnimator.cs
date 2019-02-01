@@ -39,9 +39,6 @@ public class MainMenuAnimator : MonoBehaviour {
     [Space]
     public Text MaxMetersText;
     [Space]
-    public GameObject achiveButton;
-    public GameObject leadButton;
-    public GameObject saveGameButton;
     public Text SignInButtonText;
     [Space]
     public Animator animator;
@@ -71,11 +68,12 @@ public class MainMenuAnimator : MonoBehaviour {
 	public CharacterReferences CR;
 	public ChallengesController CC;
 	public bool isFall;
+    public GameObject LoadingScreen;
     private void Start()
     {
         if (PlayGamesPlatform.Instance.IsAuthenticated())
         {
-            UpdateTexts();
+            //UpdateTexts();
         }
         PlayFabLogin.instance.GetVIV(CR.playerInfo, instance, EnvironmentController.instance, debugText, logInWindow);
         StartClientConfiguration();
@@ -324,6 +322,7 @@ public class MainMenuAnimator : MonoBehaviour {
     {
         UpdateCoinsText();
         UpdateMeters();
+        LoadingScreen.SetActive(false);
     }
     public void UpdateCoinsText()
     {
@@ -344,7 +343,7 @@ public class MainMenuAnimator : MonoBehaviour {
     public void StartGame()
 	{
         ToggleOff();
-        ToogleNonTouch(true);
+        //ToogleNonTouch(true);
         if (settingsWindow.active == true)
         {
             ToogleSettingsWindow();

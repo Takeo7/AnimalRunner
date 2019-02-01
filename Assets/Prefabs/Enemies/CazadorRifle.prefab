@@ -334,6 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VFXPrefab: {fileID: 150944, guid: 64798a1ed4bb2584aa219fafa6cdfa35, type: 2}
   instantiateOrigin: {fileID: 4966738108160980}
+  effects: []
 --- !u!114 &114520346391622114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -367,7 +368,8 @@ MonoBehaviour:
   AC: {fileID: 114162088366918134}
   VFXAA: {fileID: 114474449178872042}
   meleeAttackDelay: 0
-  coin: {fileID: 1395996759783588, guid: 2b8de89f2bf6c4644a6632ca41835427, type: 2}
+  coin: {fileID: 1751257628520874, guid: 45baf7faabcc38d419d77984ef3b1c20, type: 2}
+  SC: {fileID: 0}
 --- !u!114 &114937318004417872
 MonoBehaviour:
   m_ObjectHideFlags: 1

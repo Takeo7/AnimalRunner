@@ -194,7 +194,7 @@ public class PlayFabLogin : MonoBehaviour
             GetPlayFabData();
         }
         LogInWindow.SetActive(false);
-        MMA.UpdateTexts();
+        //MMA.UpdateTexts();
         CI.isLocal = false;
     }
     private void OnLoginOSFailure(PlayFabError error)
@@ -354,7 +354,7 @@ public class PlayFabLogin : MonoBehaviour
             GetPlayFabData();
         }
         LogInWindow.SetActive(false);
-        MMA.UpdateTexts();
+        //MMA.UpdateTexts();
         CI.isLocal = false;
     }
 
