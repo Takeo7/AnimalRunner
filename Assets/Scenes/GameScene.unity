@@ -17048,9 +17048,30 @@ MonoBehaviour:
   - Meters
   - Go Back
   - DEAD
-  - Sign In
-  - Sign Out
+  - Log In
+  - Log out
   - Record
+  - Level
+  - Points
+  - Register
+  - Username
+  - Password
+  - Enter Username...
+  - Enter Password...
+  - Challenge
+  - Very Soon!
+  - Sally
+  - This is a very angry Turtle.
+  - Godus
+  - This is a Mhystic Elephant.
+  - Drake
+  - This is a Happy Dragon.
+  - Bunny
+  - This is a Hungry Bunny
+  - Lunnaris
+  - This is a Beautiful and strange Horse
+  - Kiuvi
+  - WHAT DOES THE FOX SAY?!
   Spanish:
   - Jugar
   - Ajustes
@@ -17063,6 +17084,27 @@ MonoBehaviour:
   - "Iniciar sesi\xF3n"
   - "Cerrar sesi\xF3n"
   - "R\xE9cord"
+  - Nivel
+  - Puntos
+  - Registrar
+  - Usuario
+  - "Contrase\xF1a"
+  - Introduce Usuario...
+  - "Introuce contrase\xF1a..."
+  - Reto
+  - Muy Pronto!
+  - Sally
+  - Esta es una Tortuga enfadada.
+  - Godus
+  - "Este es un elefante M\xEDstico."
+  - Drake
+  - "Es un Drag\xF3n feliz."
+  - Bunny
+  - Un conejo hambriento.
+  - Lunnaris
+  - "Una clase bonita y extra\xF1a de Caballo."
+  - Kiuvi
+  - WHAT DOES THE FOX SAY?!
   French:
   - Jouer
   - "Param\xE8tres"

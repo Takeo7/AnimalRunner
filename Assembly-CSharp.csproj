@@ -407,6 +407,8 @@
     <Compile Include="Assets\Scripts\GooglePlayScript.cs" />
     <Compile Include="Assets\Scripts\GPGSIds.cs" />
     <Compile Include="Assets\Scripts\Languajes\LanguajesDic.cs" />
+    <Compile Include="Assets\Scripts\Languajes\TextsScript.cs" />
+    <Compile Include="Assets\Scripts\Languajes\TextsScriptMultiple.cs" />
     <Compile Include="Assets\Scripts\LogInWindowController.cs" />
     <Compile Include="Assets\Scripts\MaxMetersTextScript.cs" />
     <Compile Include="Assets\Scripts\MedalsHolderController.cs" />
@@ -428,8 +430,6 @@
     <Compile Include="Assets\Scripts\TestScripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\TestScripts\TestAttack.cs" />
     <Compile Include="Assets\Scripts\TestScripts\TestMovement.cs" />
-    <Compile Include="Assets\Scripts\TextsScript.cs" />
-    <Compile Include="Assets\Scripts\TextsScriptMultiple.cs" />
     <Compile Include="Assets\Scripts\UIScripts\AttacksUI.cs" />
     <Compile Include="Assets\Scripts\UIScripts\Health.cs" />
     <Compile Include="Assets\Scripts\UIScripts\SpecialsUI.cs" />
