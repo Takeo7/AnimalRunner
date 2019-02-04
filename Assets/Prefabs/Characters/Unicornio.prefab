@@ -285,7 +285,7 @@ MonoBehaviour:
   secondOverlapRadius: 0.24
   sideOffset: {x: 0.7, y: 1.33, z: 0}
   sideSize: {x: 0.48, y: 2.26}
-  bulletPrefab: {fileID: 1585025872454260, guid: 2162322f5e733f9469a627a8591fc319,
+  bulletPrefab: {fileID: 1422937757704112, guid: 26d8874ca8da62e44b6253e71f067848,
     type: 2}
   bulletSpawnPoint: {fileID: 4396297025569988}
   muzzleFlashPrefab: {fileID: 0}
