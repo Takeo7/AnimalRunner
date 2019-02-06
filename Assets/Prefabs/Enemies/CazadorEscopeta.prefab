@@ -312,7 +312,7 @@ MonoBehaviour:
   AC: {fileID: 114846726699647374}
   VFXAA: {fileID: 114505895406088226}
   meleeAttackDelay: 0
-  coin: {fileID: 1751257628520874, guid: 45baf7faabcc38d419d77984ef3b1c20, type: 2}
+  coin: {fileID: 1395996759783588, guid: 2b8de89f2bf6c4644a6632ca41835427, type: 2}
   SC: {fileID: 0}
 --- !u!114 &114505895406088226
 MonoBehaviour:

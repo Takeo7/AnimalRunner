@@ -356,7 +356,7 @@ MonoBehaviour:
   damage: 1
   isOnSight: 0
   isMelee: 0
-  bulletPrefab: {fileID: 1563870469100566, guid: ea75a9ee6ae7e99429c7ff1502f34031,
+  bulletPrefab: {fileID: 1941163806498398, guid: 3a37ab0ea53477948bc1b8d0cd87e895,
     type: 2}
   bulletSpawn: {fileID: 4015343068316290}
   meleeAttackOffset: {x: 0, y: 0}
@@ -372,7 +372,7 @@ MonoBehaviour:
   AC: {fileID: 114421286822416210}
   VFXAA: {fileID: 114898571002990614}
   meleeAttackDelay: 0
-  coin: {fileID: 1751257628520874, guid: 45baf7faabcc38d419d77984ef3b1c20, type: 2}
+  coin: {fileID: 1395996759783588, guid: 2b8de89f2bf6c4644a6632ca41835427, type: 2}
   SC: {fileID: 0}
 --- !u!114 &114817817969677790
 MonoBehaviour:
