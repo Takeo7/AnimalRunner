@@ -56,6 +56,7 @@ public class CharacterReferences : MonoBehaviour {
 			case PlayerStats.Characters.Dragon:
 				break;
 			case PlayerStats.Characters.Rabbit:
+				RabbitSpecial.instance.Special();
 				break;
 		}
 	}

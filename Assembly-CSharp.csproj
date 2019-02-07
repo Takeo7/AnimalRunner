@@ -391,6 +391,8 @@
     <Compile Include="Assets\Scripts\Characters\ElephantSpecial.cs" />
     <Compile Include="Assets\Scripts\Characters\ElephantSpecialHolder.cs" />
     <Compile Include="Assets\Scripts\Characters\FillAmountVariation.cs" />
+    <Compile Include="Assets\Scripts\Characters\RabbitMeteor.cs" />
+    <Compile Include="Assets\Scripts\Characters\RabbitSpecial.cs" />
     <Compile Include="Assets\Scripts\Characters\TurtleSpecial.cs" />
     <Compile Include="Assets\Scripts\Coins\CoinsController.cs" />
     <Compile Include="Assets\Scripts\Coins\CoinScript.cs" />

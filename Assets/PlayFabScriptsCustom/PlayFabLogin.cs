@@ -338,7 +338,7 @@ public class PlayFabLogin : MonoBehaviour
 
     private void OnLogInUsernameSuccess(LoginResult result)
     {
-        Debug.Log("PlayFab - Login Username Successful");
+        //Debug.Log("PlayFab - Login Username Successful");
         DebugText.text += "\nPlayFab - Login Username Successful";
         if (CI.firstConection == true)
         {           
@@ -361,9 +361,9 @@ public class PlayFabLogin : MonoBehaviour
     private void OnLoginUsernameFailure(PlayFabError error)
     {
         CI.isLocal = true;
-        Debug.LogWarning("PlayFab - Login Username Failed");
-        Debug.LogError("Here's some debug information:");
-        Debug.LogError(error.GenerateErrorReport());
+        //Debug.LogWarning("PlayFab - Login Username Failed");
+        //Debug.LogError("Here's some debug information:");
+        //Debug.LogError(error.GenerateErrorReport());
         DebugText.text += "\nPlayFab - Login Username Failed || " + error;
     }
     #endregion
@@ -412,7 +412,7 @@ public class PlayFabLogin : MonoBehaviour
     private void OnGetDataSuccess(GetUserDataResult result)
     {
         //Debug
-        Debug.Log("PlayFab - GetDataSuccess");
+        //Debug.Log("PlayFab - GetDataSuccess");
         DebugText.text += "\nPlayFab - GetDataSuccess";
 
         //Set data from server to Scriptable
@@ -424,8 +424,8 @@ public class PlayFabLogin : MonoBehaviour
 
     private void OnGetDataFailure(PlayFabError error)
     {
-        Debug.Log("PlayFab - GetDataERROR");
-        Debug.Log(error);
+        //Debug.Log("PlayFab - GetDataERROR");
+        //Debug.Log(error);
         DebugText.text += "\nPlayFab - GetDataError";
         DebugText.text += "\n" + error;
     }
@@ -441,7 +441,7 @@ public class PlayFabLogin : MonoBehaviour
     private void OnGetInventorySuccess(GetUserInventoryResult result)
     {
         //Debug
-        Debug.Log("PlayFab - GetInventorySuccess");
+        //Debug.Log("PlayFab - GetInventorySuccess");
         DebugText.text += "\nPlayFab - GetInventorySuccess";
 
         //Set Virtual currecy & Items owned
@@ -453,8 +453,8 @@ public class PlayFabLogin : MonoBehaviour
     private void OnGetInventoryFailure(PlayFabError error)
     {
         //Debug
-        Debug.Log("PlayFab - GetInventoryERROR");
-        Debug.Log(error);
+        //Debug.Log("PlayFab - GetInventoryERROR");
+        //Debug.Log(error);
         DebugText.text += "\nPlayFab - GetInventoryError";
         DebugText.text += "\n" + error;
     }
@@ -472,7 +472,7 @@ public class PlayFabLogin : MonoBehaviour
         // CatalogItem info: https://api.playfab.com/documentation/Server/datatype/PlayFab.Server.Models/PlayFab.Server.Models.CatalogItem
 
         //Debug
-        Debug.Log("PlayFab - GetCatalogItemSuccess");
+        //Debug.Log("PlayFab - GetCatalogItemSuccess");
         DebugText.text += "\nPlayFab - GetCatalogItemSuccess";
 
         //Set Catalog of items to the shop list Scriptable
@@ -485,8 +485,8 @@ public class PlayFabLogin : MonoBehaviour
     private void OnGetCatalogItemFailure(PlayFabError error)
     {
         //Debug
-        Debug.Log("PlayFab - GetCatalogItemERROR");
-        Debug.Log(error);
+        //Debug.Log("PlayFab - GetCatalogItemERROR");
+        //Debug.Log(error);
         DebugText.text += "\nPlayFab - GetCatalogItemError";
         DebugText.text += "\n" + error;
     }
