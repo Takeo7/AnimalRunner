@@ -7,10 +7,19 @@ public class PlayerBulletScript : MonoBehaviour {
 
     public float speed;
     public int damage;
+	public bool isSpecial;
 
     private void Start()
     {
-        StartCoroutine("DestroyAfterX", 1);
+		if (isSpecial)
+		{
+			StartCoroutine("DestroyAfterX", 5);
+		}
+		else
+		{
+			StartCoroutine("DestroyAfterX", 1);
+		}
+
     }
 
     private void Update()
@@ -28,11 +37,14 @@ public class PlayerBulletScript : MonoBehaviour {
     IEnumerator DestroyAfterX(float seconds)
     {
         yield return new WaitForSeconds(seconds);
-        DestroyBullet(false);
+		Destroy(gameObject);
     }
     void DestroyBullet(bool enemyCollided)
     {
-        //Effect
-        Destroy(gameObject);
+		//Effect
+		if (!isSpecial)
+		{
+			Destroy(gameObject);
+		}
     }
 }

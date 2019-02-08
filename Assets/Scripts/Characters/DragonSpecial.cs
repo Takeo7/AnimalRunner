@@ -4,13 +4,27 @@ using UnityEngine;
 
 public class DragonSpecial : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+	#region Singleton
+	public static DragonSpecial instance;
+	private void Awake()
+	{
+		instance = this;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	#endregion
+
+	public GameObject specialBullet;
+	CharacterReferences CR;
+	public void Special()
+	{
+		CR = CharacterReferences.instance;
+		StartCoroutine("SpecialCO");
+	}
+	IEnumerator SpecialCO()
+	{
+		CR.TM.AC.AttackAnim(true);
+		yield return new WaitForSeconds(CR.TM.AC.attackAnimDuration);
+		Instantiate(specialBullet, CR.TM.bulletSpawnPoint.position, specialBullet.transform.rotation);
+		yield return new WaitForSeconds(5f);
+		SpecialsUI.instance.SetCooldown();
 	}
 }

@@ -35,7 +35,7 @@ public class RabbitSpecial : MonoBehaviour {
 	{
 		if (col.CompareTag("Enemy") && isActive)
 		{
-			Debug.Log("METEOR INSTANTIATED");
+			//Debug.Log("METEOR INSTANTIATED");
 			Instantiate(meteorPrefab, col.transform.position, meteorPrefab.transform.rotation);
 		}
 	}
