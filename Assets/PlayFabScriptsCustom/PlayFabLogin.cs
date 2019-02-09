@@ -31,6 +31,8 @@ public class PlayFabLogin : MonoBehaviour
     public Text DebugText;
     public GameObject LogInWindow;
 
+    public bool isPlayFabLogged = false;
+
     CharacterInfo CI;
     MainMenuAnimator MMA;
     EnvironmentController EC;
@@ -448,6 +450,7 @@ public class PlayFabLogin : MonoBehaviour
         CharacterReferences.instance.playerInfo.SetCurrency(result.VirtualCurrency["CO"], result.VirtualCurrency["GE"]);
         CharacterReferences.instance.charactersInfo.CheckCharacters(result.Inventory);
         MMA.UpdateTexts();
+        isPlayFabLogged = true;
     }
 
     private void OnGetInventoryFailure(PlayFabError error)

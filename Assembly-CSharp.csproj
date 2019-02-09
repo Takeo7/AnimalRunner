@@ -247,6 +247,7 @@
     <Compile Include="Assets\GooglePlayGames\Platforms\PlayGamesClientFactory.cs" />
     <Compile Include="Assets\GooglePlayGames\Platforms\TokenClient.cs" />
     <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
+    <Compile Include="Assets\GooglePlayLogin.cs" />
     <Compile Include="Assets\GPGSIds.cs" />
     <Compile Include="Assets\PlayFabScriptsCustom\PlayFabLogin.cs" />
     <Compile Include="Assets\PlayFabSdk\Admin\PlayFabAdminAPI.cs" />
