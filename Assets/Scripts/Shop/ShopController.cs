@@ -97,6 +97,7 @@ public class ShopController : MonoBehaviour {
 				item.RefreshPrice();
 				CR.playerInfo.selectedCharacter = index;
 				InstantiateNewCharacter();
+				EnvironmentController.instance.UpdateEnvironments();
 			}
 			else if (charactersInfo.characters[index].unlocked == false && coins < charactersInfo.characters[index].coinPrice)
 			{
@@ -119,6 +120,7 @@ public class ShopController : MonoBehaviour {
 				item.RefreshPrice();
 				CR.playerInfo.selectedCharacter = index;
 				InstantiateNewCharacter();
+				EnvironmentController.instance.UpdateEnvironments();
 			}
 			else if (charactersInfo.characters[index].unlocked == false && gems < charactersInfo.characters[index].gemPrice)
 			{

@@ -39,6 +39,7 @@ public class EnvironmentController : MonoBehaviour {
 
 	public UIController UIC;
 	EnvironmentSet[] sets;
+	public List<EnvironmentSet> setsList;
 
 	private void Start()
 	{
@@ -55,23 +56,78 @@ public class EnvironmentController : MonoBehaviour {
 			caveBool = true;//caveBool = true to let the generator know that the next prefab will be the cave
 		}
 	}
+	public void UpdateEnvironments()
+	{
+		CharacterReferences CR = CharacterReferences.instance;
+		int length = sets.Length;
+		for (int i = 0; i < length; i++)
+		{
+			switch (sets[i].setType)
+			{
+				case SetType.Forest:
+					if (CR.charactersInfo.characters[0].unlocked)
+					{
+						setsList.Add(sets[i]);
+					}
+					break;
+				case SetType.Desert:
+					if (CR.charactersInfo.characters[1].unlocked)
+					{
+						setsList.Add(sets[i]);
+					}
+					break;
+				case SetType.Ice:
+					if (CR.charactersInfo.characters[3].unlocked)
+					{
+						setsList.Add(sets[i]);
+					}
+					break;
+			}
+		}
+	}
 	void GetEnvironments()
 	{
+		CharacterReferences CR = CharacterReferences.instance;
 		sets = Resources.LoadAll<EnvironmentSet>("Sets");//Take scriptables EnvironmentSet from Resources on runtime
+		int length = sets.Length;
+		for (int i = 0; i < length; i++)
+		{
+			switch (sets[i].setType)
+			{
+				case SetType.Forest:
+					if (CR.charactersInfo.characters[0].unlocked)
+					{
+						setsList.Add(sets[i]);
+					}
+					break;
+				case SetType.Desert:
+					if (CR.charactersInfo.characters[1].unlocked)
+					{
+						setsList.Add(sets[i]);
+					}
+					break;
+				case SetType.Ice:
+					if (CR.charactersInfo.characters[3].unlocked)
+					{
+						setsList.Add(sets[i]);
+					}
+					break;
+			}
+		}
 	}
 	void SetEnvironment()
 	{
-		set = sets[Random.Range(0, sets.Length)];//Set the first environment
+		set = setsList[Random.Range(0, setsList.Count)];//Set the first environment
 		GameObject spawn = Instantiate(set.specialPrefabs[0]);//Instantiate the Spawn
 		prefabsInstantiated.Add(spawn.GetComponent<EnvironmentPrefabController>());//Add the spawn to the list of instantiated prefabs
 	}
     void SetNewEnvironment()
     {
-		EnvironmentSet temp = sets[Random.Range(0, sets.Length)];//Set the first environment
+		EnvironmentSet temp = setsList[Random.Range(0, setsList.Count)];//Set the first environment
 		//Debug.Log(set.name + "  " + temp.name);
 		while (set == temp)//Redo the random until we get an environment different to the actual
 		{
-			temp = sets[Random.Range(0, sets.Length)];
+			temp = setsList[Random.Range(0, setsList.Count)];
 			//Debug.Log("IN "+set.name + "  " + temp.name);
 		}
 		set = temp;//Set the environment

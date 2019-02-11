@@ -17,36 +17,10 @@ public class LanguajesDic : MonoBehaviour {
         else
         {
             instance = this;
-            if (CR.playerInfo.language > -1)
-            {
-                currentlang = CR.playerInfo.language;
-            }
-            else
-            {
-                switch (Application.systemLanguage)
-                {
-                    case SystemLanguage.English:
-                        currentlang = 0;
-                        break;
-                    case SystemLanguage.Spanish:
-                        currentlang = 1;
-                        break;
-                    case SystemLanguage.French:
-                        currentlang = 2;
-                            break;
-                    case SystemLanguage.German:
-                    case SystemLanguage.Chinese:
-                    case SystemLanguage.ChineseSimplified:
-                    default:
-                        currentlang = 0;
-                        break;
-                }
-            }
         }       
     }
 	#endregion
 	public CharacterReferences CR;
-	int currentlang = 0;
 
     public string[] English;
     public string[] Spanish;
@@ -57,7 +31,32 @@ public class LanguajesDic : MonoBehaviour {
     string[] currentLangTexts;
     private void Start()
     {
-        LoadCurrentLang(currentlang);
+		if (CR.playerInfo.language > -1)
+		{
+			
+		}
+		else
+		{
+			switch (Application.systemLanguage)
+			{
+				case SystemLanguage.English:
+					CR.playerInfo.language = 0;
+					break;
+				case SystemLanguage.Spanish:
+					CR.playerInfo.language = 1;
+					break;
+				case SystemLanguage.French:
+					CR.playerInfo.language = 2;
+					break;
+				case SystemLanguage.German:
+				case SystemLanguage.Chinese:
+				case SystemLanguage.ChineseSimplified:
+				default:
+					CR.playerInfo.language = 0;
+					break;
+			}
+		}
+		LoadCurrentLang(CR.playerInfo.language);
     }
 
     public delegate void Delegadolang();
@@ -79,8 +78,6 @@ public class LanguajesDic : MonoBehaviour {
             default:
                 break;
         }
-        currentlang = i;
-		CR.playerInfo.language = currentlang;
         delegadoLang();
     }
 

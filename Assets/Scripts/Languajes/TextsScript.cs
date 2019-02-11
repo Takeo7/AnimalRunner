@@ -21,7 +21,6 @@ public class TextsScript : MonoBehaviour {
         }
 
     }
-
     public void GetKey()
     {
         t.text = LanguajesDic.instance.GetText(ID);

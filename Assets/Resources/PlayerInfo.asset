@@ -11,18 +11,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b1eeef0dc616f4448c5d68aec86a7ef, type: 3}
   m_Name: PlayerInfo
   m_EditorClassIdentifier: 
+  playerEmail: 
   playerName: TestPlayer
   playerLevel: 1
   currentMedals: 2
   medalsToNextRank: 3
   medalHolder: 0
-  metersRecord: 127
+  metersRecord: 437
   pointsRecord: 0
-  coins: 22
-  gems: 0
-  selectedCharacter: 0
-  language: 2
+  coins: 4304
+  gems: 3000
+  selectedCharacter: 3
+  language: -1
   challengesIndex: 020000000300000000000000
   challengesProgress: 000000000000000000000000
-  firstConection: 1
-  isLocal: 1
+  loggedWithGoogle: 0
+  firstConection: 0
+  isLocal: 0
