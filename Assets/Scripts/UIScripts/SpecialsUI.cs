@@ -15,11 +15,48 @@ public class SpecialsUI : MonoBehaviour {
 
 	PlayerStats ps;
 
+    public Button specialattackbutton;
+
 	public Image cooldownImage;
 	public Image buttonImage;
 	public Button button;
 
-	public Color coldownColor;
+    public Sprite[] attackButtonsForest;
+    public Sprite[] attackButtonsDesert;
+    public Sprite[] attackButtonsIce;
+
+    private void Start()
+    {
+        SetSpecialAttackButtonSprite();
+    }
+
+    public void SetSpecialAttackButtonSprite()
+    {
+        SpriteState sps = new SpriteState();
+        switch (EnvironmentController.instance.set.setType)
+        {
+            case SetType.Forest:
+                specialattackbutton.image.sprite = attackButtonsForest[0];
+                sps.pressedSprite = attackButtonsForest[1];
+                Debug.Log("Special button Forest");
+                break;
+            case SetType.Desert:
+                specialattackbutton.image.sprite = attackButtonsDesert[0];
+                sps.pressedSprite = attackButtonsDesert[1];
+                Debug.Log("Special button Desert");
+                break;
+            case SetType.Ice:
+                specialattackbutton.image.sprite = attackButtonsIce[0];
+                sps.pressedSprite = attackButtonsIce[1];
+                Debug.Log("Special button Ice");
+                break;
+            default:
+                break;
+        }
+        specialattackbutton.spriteState = sps;
+    }
+
+    public Color coldownColor;
 	public Color avaiableColor;
 	public Color buttonColor;
 

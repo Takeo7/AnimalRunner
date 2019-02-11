@@ -23,13 +23,46 @@ public class AttacksUI : MonoBehaviour {
     PlayerStats ps;
 
     public Image ColdownImage;
-    public Image ButtonImage;
+    public Image buttonImage;
+    public Button attackbutton;
+
+    public Sprite[] attackButtonsForest;
+    public Sprite[] attackButtonsDesert;
+    public Sprite[] attackButtonsIce;
 
     public Color coldownColor;
     public Color avaiableColor;
     public Color buttonColor;
 
     float coldownTime;
+
+    private void Start()
+    {
+        SetAttackButtonSprite();
+    }
+
+    public void SetAttackButtonSprite()
+    {
+        SpriteState sps = new SpriteState();
+        switch (EnvironmentController.instance.set.setType)
+        {
+            case SetType.Forest:
+                attackbutton.image.sprite = attackButtonsForest[0];
+                sps.pressedSprite = attackButtonsForest[1];
+                break;
+            case SetType.Desert:
+                attackbutton.image.sprite = attackButtonsDesert[0];
+                sps.pressedSprite = attackButtonsDesert[1];
+                break;
+            case SetType.Ice:
+                attackbutton.image.sprite = attackButtonsIce[0];
+                sps.pressedSprite = attackButtonsIce[1];
+                break;
+            default:
+                break;
+        }
+        attackbutton.spriteState = sps;
+    }
 
     public void SetAttacks()
     {
@@ -41,8 +74,7 @@ public class AttacksUI : MonoBehaviour {
     public void UpdateAttacks()
     {
         Debug.Log("UpdateAttacks");
-        StartCoroutine("ColdownAttack");
-        
+        StartCoroutine("ColdownAttack");        
     }
 
 
@@ -50,7 +82,7 @@ public class AttacksUI : MonoBehaviour {
     IEnumerator ColdownAttack()
     {
         float actualColdown = 0;
-        ButtonImage.color = buttonColor;
+        buttonImage.color = buttonColor;
         ColdownImage.color = coldownColor;
         ColdownImage.fillAmount = 1;
         while(actualColdown < coldownTime)
@@ -60,7 +92,7 @@ public class AttacksUI : MonoBehaviour {
             actualColdown += 0.01f;
         }
         CharacterReferences.instance.TM.UpdateAttack(true);
-        ButtonImage.color = Color.white;
+        buttonImage.color = Color.white;
         ColdownImage.fillAmount = 1;
         ColdownImage.color = avaiableColor;
         StopCoroutine("ColdownAttack");
