@@ -62,6 +62,9 @@ public class CharacterReferences : MonoBehaviour {
 			case PlayerStats.Characters.Unicorn:
 				UnicornSpecial.instance.Special();
 				break;
+			case PlayerStats.Characters.Okami:
+				OkamiSpecial.instance.Special();
+				break;
 		}
 	}
 
