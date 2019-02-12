@@ -31,31 +31,6 @@ public class LanguajesDic : MonoBehaviour {
     string[] currentLangTexts;
     private void Start()
     {
-		if (CR.playerInfo.language > -1)
-		{
-			
-		}
-		else
-		{
-			switch (Application.systemLanguage)
-			{
-				case SystemLanguage.English:
-					CR.playerInfo.language = 0;
-					break;
-				case SystemLanguage.Spanish:
-					CR.playerInfo.language = 1;
-					break;
-				case SystemLanguage.French:
-					CR.playerInfo.language = 2;
-					break;
-				case SystemLanguage.German:
-				case SystemLanguage.Chinese:
-				case SystemLanguage.ChineseSimplified:
-				default:
-					CR.playerInfo.language = 0;
-					break;
-			}
-		}
 		LoadCurrentLang(CR.playerInfo.language);
     }
 

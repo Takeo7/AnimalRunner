@@ -77,7 +77,6 @@ public class GooglePlayLogin : MonoBehaviour {
         {
             // Sign out of play games
             PlayGamesPlatform.Instance.SignOut();
-            MMA.SignInButtonText.text = "Sign In";
         }
     }
     public void SignInCallback(bool success, string result)
@@ -106,7 +105,6 @@ public class GooglePlayLogin : MonoBehaviour {
             UpdateAchievement(achievements.achievement_new_animal);
 
             // Change sign-in button text
-            MMA.SignInButtonText.text = "Sign out";
 
             // Log In With Custom ID
             PlayFabLogin.instance.LogInCustomPlayFab();

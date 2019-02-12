@@ -31,6 +31,10 @@ public class PlayFabLogin : MonoBehaviour
     public Text DebugText;
     public GameObject LogInWindow;
 
+    TextsScript LoginText;
+
+    TextsScript errorLogIn;
+
     public bool isPlayFabLogged = false;
 
     CharacterInfo CI;
@@ -50,7 +54,7 @@ public class PlayFabLogin : MonoBehaviour
         }        
     }
 
-    public void GetVIV(CharacterInfo ci, MainMenuAnimator mma, EnvironmentController ec, Text debugtext, GameObject loginwindow)
+    public void GetVIV(CharacterInfo ci, MainMenuAnimator mma, EnvironmentController ec, Text debugtext, GameObject loginwindow, TextsScript loginText)
     {
         //Debug
         Debug.Log("Updating variables Playfab");
@@ -61,6 +65,7 @@ public class PlayFabLogin : MonoBehaviour
         EC = ec;
         DebugText = debugtext;
         LogInWindow = loginwindow;
+        LoginText = loginText;
         //StartCoroutine("CheckDataCoroutine");
     }
 
@@ -125,6 +130,20 @@ public class PlayFabLogin : MonoBehaviour
         Debug.LogError("Here's some debug information:");
         Debug.LogError(error.GenerateErrorReport());
         DebugText.text += "\nPlayFab - Register Failed || " + error;
+        switch (error.HttpCode)
+        {
+            case 1009:
+                //UsernameNotAvailable
+                break;
+            case 1008:
+                //InvalidPassword
+                break;
+            case 1007:
+                //InvalidUsername
+                break;
+            default:
+                break;
+        }
     }
     #endregion
 
@@ -288,6 +307,7 @@ public class PlayFabLogin : MonoBehaviour
         }
         //Get Data from server
         GetPlayFabData();
+        isPlayFabLogged = true;
     }
 
     private void OnLoginCustomFailure(PlayFabError error)
@@ -367,6 +387,17 @@ public class PlayFabLogin : MonoBehaviour
         //Debug.LogError("Here's some debug information:");
         //Debug.LogError(error.GenerateErrorReport());
         DebugText.text += "\nPlayFab - Login Username Failed || " + error;
+        switch (error.HttpCode)
+        {
+            case 1001:
+                //Account not found
+                break;
+            case 1142:
+                //Invalid username or password
+                break;
+            default:
+                break;
+        }
     }
     #endregion
 
@@ -516,6 +547,14 @@ public class PlayFabLogin : MonoBehaviour
         Debug.Log(error);
         DebugText.text += "\nPlayFab - PurchaseItemError";
         DebugText.text += "\n" + error;
+        switch (error.HttpCode)
+        {
+            case 1059:
+                //InsufficientFunds
+                break;
+            default:
+                break;
+        }
     }
     #endregion
 

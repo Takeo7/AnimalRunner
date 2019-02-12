@@ -45,6 +45,8 @@ public class MainMenuAnimator : MonoBehaviour {
     public GameObject nonTouch;
     public GameObject settingsWindow;
     public GameObject logInWindow;
+    public TextsScript GoogleLogInText;
+    public TextsScript PlayFabLogInText;
     public GameObject shopWindow;
     public GameObject IntroWindow;
     public GameObject deadWindow;
@@ -74,6 +76,35 @@ public class MainMenuAnimator : MonoBehaviour {
 
     private void Start()
     {
+        if (PlayerPrefs.GetInt("FirstTime") != 1)
+        {
+            PlayerPrefs.SetInt("FirstTime", 1);
+            switch (Application.systemLanguage)
+            {         
+                case SystemLanguage.English:
+                    CR.playerInfo.language = 0;
+                    LanguajesDic.instance.LoadCurrentLang(0);
+                    break;
+                case SystemLanguage.French:
+                    CR.playerInfo.language = 2;
+                    LanguajesDic.instance.LoadCurrentLang(2);
+                    break;
+                case SystemLanguage.Spanish:
+                    CR.playerInfo.language = 1;
+                    LanguajesDic.instance.LoadCurrentLang(1);
+                    break;
+                case SystemLanguage.Chinese:
+                case SystemLanguage.ChineseSimplified:
+                case SystemLanguage.ChineseTraditional:
+                    CR.playerInfo.language = 0;
+                    LanguajesDic.instance.LoadCurrentLang(0);
+                    break;
+                default:
+                    CR.playerInfo.language = 0;
+                    LanguajesDic.instance.LoadCurrentLang(0);
+                    break;
+            }
+        }
         GPL = GooglePlayLogin.instance;
         if (GPL.isGoogleLogged == true || PlayFabLogin.instance.isPlayFabLogged == true)
         {
@@ -84,7 +115,7 @@ public class MainMenuAnimator : MonoBehaviour {
         {
             //UpdateTexts();
         }
-        PlayFabLogin.instance.GetVIV(CR.playerInfo, instance, EnvironmentController.instance, debugText, logInWindow);
+        PlayFabLogin.instance.GetVIV(CR.playerInfo, instance, EnvironmentController.instance, debugText, logInWindow, PlayFabLogInText);
         EnvironmentController.instance.gameOverDelegate += ToogleDeadWindow;
         
         UpdateCoinsText();

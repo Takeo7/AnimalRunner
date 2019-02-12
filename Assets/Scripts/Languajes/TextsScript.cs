@@ -25,4 +25,8 @@ public class TextsScript : MonoBehaviour {
     {
         t.text = LanguajesDic.instance.GetText(ID);
     }
+    public void GetKey(int key)
+    {
+        t.text = LanguajesDic.instance.GetText(key);
+    }
 }

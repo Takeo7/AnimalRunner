@@ -24,7 +24,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 057eac040ed635348b3b91c2f8e2f009, type: 3}
     prefab: {fileID: 1183136600057304, guid: b8b5ef6c163d0b847873b9dd8931b5c4, type: 2}
     description: An elephant
-    unlocked: 0
+    unlocked: 1
     hide: 0
     coinPrice: 150
     gemPrice: 20
@@ -32,7 +32,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
     prefab: {fileID: 1385950287651850, guid: 789b3609ab054574d9e2f823327edef0, type: 2}
     description: A dragon
-    unlocked: 1
+    unlocked: 0
     hide: 0
     coinPrice: 150
     gemPrice: 20
@@ -40,11 +40,11 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
     prefab: {fileID: 1778632533777940, guid: 0561f6770b7e19a41a4b9e5a6a76e346, type: 2}
     description: A rabbit
-    unlocked: 1
+    unlocked: 0
     hide: 0
     coinPrice: 150
     gemPrice: 20
-  - name: Unicornio
+  - name: Unicorn
     icon: {fileID: 21300000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
     prefab: {fileID: 1395222153171100, guid: fa370bf33291107488c4927e8a2db71b, type: 2}
     description: A unicorn
