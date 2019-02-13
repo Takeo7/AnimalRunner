@@ -225,7 +225,7 @@ public class MainMenuAnimator : MonoBehaviour {
         {
             ToogleShopWindow();
         }
-        maxMetersPanel.SetActive(false);
+        //maxMetersPanel.SetActive(false);
         coinsGO.SetActive(false);
         gemsGO.SetActive(false);
         Lifes.GetComponent<Health>().SetHearts();
