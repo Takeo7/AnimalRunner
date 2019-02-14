@@ -74,6 +74,8 @@ public class CharacterInfo : ScriptableObject {
 
         //Character
         selectedCharacter = System.Convert.ToInt32(data["CurrentCharacter"].Value);
+        LanguajesDic.instance.LoadCurrentLang(language);
+        MainMenuAnimator.instance.UpdateTexts();
     }
 
     public void SetCurrency(int ServerCoins, int ServerGems)
@@ -81,6 +83,11 @@ public class CharacterInfo : ScriptableObject {
         coins = ServerCoins;
         gems = ServerGems;
         MainMenuAnimator.instance.UpdateCoinsText();
+    }
+
+    public void SetLanguage(int i)
+    {
+        language = i;
     }
 
     public void ResetLocalData()

@@ -865,7 +865,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -140, y: -173}
+  m_AnchoredPosition: {x: -140, y: -206}
   m_SizeDelta: {x: 255.7, y: 95.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &87402661
@@ -4123,7 +4123,7 @@ MonoBehaviour:
   shopWindow: {fileID: 588234920}
   IntroWindow: {fileID: 0}
   deadWindow: {fileID: 1332126587}
-  maxMetersPanel: {fileID: 1602166118}
+  maxMetersPanel: {fileID: 1296692654}
   shopPopup: {fileID: 45047739}
   shopPopupCharacterDescription: {fileID: 1993429966}
   shopPopupCharacterSpecialDescription: {fileID: 2088047470}
@@ -4854,7 +4854,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 129, y: -173}
+  m_AnchoredPosition: {x: 129, y: -206}
   m_SizeDelta: {x: 255.7, y: 95.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &383676115
@@ -17544,7 +17544,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -18458,6 +18458,94 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGoogleLogged: 0
+--- !u!1 &1420193187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1420193188}
+  - component: {fileID: 1420193191}
+  - component: {fileID: 1420193190}
+  - component: {fileID: 1420193189}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1420193188
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420193187}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2096093228}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -25.97499, y: -120.40002}
+  m_SizeDelta: {x: 478.95, y: 75.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1420193189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420193187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f255dfe248efe1f4bb7eabce51417e20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t: {fileID: 1420193190}
+--- !u!114 &1420193190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420193187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8490566, g: 0.34042364, b: 0.34042364, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 6e12e985bdd5b3a49a369e2270bd71d2, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 70
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: ERROR TEXT
+--- !u!222 &1420193191
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420193187}
+  m_CullTransparentMesh: 0
 --- !u!1 &1421015778
 GameObject:
   m_ObjectHideFlags: 0
@@ -18510,7 +18598,7 @@ MonoBehaviour:
   - Sally
   - This is a very angry Turtle.
   - Godus
-  - This is a Mhystic Elephant.
+  - This is a Mystic Elephant.
   - Drake
   - This is a Happy Dragon.
   - Bunny
@@ -18519,6 +18607,13 @@ MonoBehaviour:
   - This is a Beautiful and strange Horse
   - Kiuvi
   - WHAT DOES THE FOX SAY?!
+  English_Errors:
+  - Username not available
+  - Invalid Password
+  - Invalid Username
+  - Account not found
+  - Invalid Username or Password
+  - Insufficient Funds
   Spanish:
   - Jugar
   - Ajustes
@@ -18552,6 +18647,13 @@ MonoBehaviour:
   - "Una clase bonita y extra\xF1a de Caballo."
   - Kiuvi
   - WHAT DOES THE FOX SAY?!
+  Spanish_Errors:
+  - Usuario no disponible
+  - "Contrase\xF1a no valida"
+  - Usuario no valido
+  - Cuenta no encontrada
+  - "Usuario o contrase\xF1a incorrectos"
+  - Fondos Insuficientes
   French:
   - Jouer
   - "Param\xE8tres"
@@ -18564,8 +18666,55 @@ MonoBehaviour:
   - Se connecter
   - "D\xE9connexion"
   - Record
-  Chinese: []
+  French_Errors:
+  - Nom d'utilisateur indisponible
+  - Mot de passe incorrect
+  - Nom d'utilisateur invalide
+  - "Compte non trouv\xE9"
+  - Nom d'utilisateur ou mot de passe invalide
+  - Fonds insuffisants
+  Chinese:
+  - "\u73A9"
+  - "\u8BBE\u7F6E"
+  - "\u5E97"
+  - "\u6210\u5C31"
+  - "\u6392\u884C\u699C"
+  - "\u7C73"
+  - "\u56DE\u53BB"
+  - "\u6B7B"
+  - "\u767B\u5F55"
+  - "\u767B\u51FA"
+  - "\u8BB0\u5F55"
+  - "\u6C34\u5E73"
+  - "\u70B9"
+  - "\u5BC4\u5B58\u5668"
+  - "\u7528\u6237\u540D"
+  - "\u5BC6\u7801"
+  - "\u8F93\u5165\u7528\u6237\u540D..."
+  - "\u8F93\u5165\u5BC6\u7801..."
+  - "\u6311\u6218"
+  - "\u5F88\u5FEB\uFF01"
+  - Sally
+  - "\u8FD9\u662F\u4E00\u53EA\u975E\u5E38\u751F\u6C14\u7684\u4E4C\u9F9F\u3002"
+  - Godus
+  - "\u8FD9\u662F\u4E00\u4E2A\u795E\u79D8\u7684\u5927\u8C61\u3002"
+  - Drake
+  - "\u8FD9\u662F\u4E00\u6761\u5FEB\u4E50\u9F99\u3002"
+  - Bunny
+  - "\u8FD9\u662F\u4E00\u4E2A\u9965\u997F\u7684\u5154\u5B50"
+  - Lunnaris
+  - "\u8FD9\u662F\u4E00\u5339\u7F8E\u4E3D\u800C\u5947\u602A\u7684\u9A6C"
+  - Kiuvi
+  - "\u72D0\u72F8\u8BF4\u4EC0\u4E48\uFF1F\uFF01"
+  Chinese_Errors:
+  - "\u7528\u6237\u540D\u4E0D\u53EF\u7528"
+  - "\u65E0\u6548\u7684\u5BC6\u7801"
+  - "\u65E0\u6548\u7684\u7528\u6237\u540D"
+  - "\u627E\u4E0D\u5230\u5E10\u6237"
+  - "\u65E0\u6548\u7684\u7528\u6237\u540D\u6216\u5BC6\u7801"
+  - "\u4E0D\u5145\u8DB3\u7684\u8D44\u91D1"
   German: []
+  German_Errors: []
 --- !u!4 &1421015780
 Transform:
   m_ObjectHideFlags: 0
@@ -28310,6 +28459,7 @@ RectTransform:
   - {fileID: 1340168490}
   - {fileID: 87402660}
   - {fileID: 383676114}
+  - {fileID: 1420193188}
   m_Father: {fileID: 1643834840}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
