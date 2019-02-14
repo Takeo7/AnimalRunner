@@ -22,6 +22,7 @@ public class ElephantSpecial : MonoBehaviour {
 	CharacterReferences CR;
 	[SerializeField]
 	byte bulletFiredCount;
+	public float radius;
 	public bool canFire;
 
 	public void Special()
@@ -43,6 +44,7 @@ public class ElephantSpecial : MonoBehaviour {
 	}
 	public void Fire(Vector3 targetPosition)
 	{
+		PBS[bulletFiredCount].tag = "PlayerBullet";
 		PBS[bulletFiredCount].transform.parent = null;
 		Vector3 direction = targetPosition - transform.position;
 		Quaternion toRotation = Quaternion.FromToRotation(transform.right, direction);
@@ -72,7 +74,7 @@ public class ElephantSpecial : MonoBehaviour {
 	}
 	IEnumerator Countdown()
 	{
-		yield return new WaitForSeconds(15f);
+		yield return new WaitForSeconds(10f);
 		Debug.Log("Countdown");
 		int length = PBS.Length;
 		for (int i = 0; i < length; i++)
@@ -89,5 +91,10 @@ public class ElephantSpecial : MonoBehaviour {
 	{
 		yield return new WaitForSeconds(2f);
 		canFire = true;
+	}
+	private void OnDrawGizmos()
+	{
+		Gizmos.color = Color.red;
+		Gizmos.DrawWireSphere(transform.position, radius);
 	}
 }

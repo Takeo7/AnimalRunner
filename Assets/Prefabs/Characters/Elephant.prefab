@@ -616,14 +616,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AmountHealth: 3
-  healthScript: {fileID: 0}
+  damageImage: {fileID: 0}
   attackDamage: 1
   numAttacks: 5
   AC: {fileID: 114978386454116228}
   isDead: 0
   coldownTime: 1
   canDie: 1
-  col: {fileID: 70004302928714834}
   AttackImage: {fileID: 0}
   PlayerType: 1
   attackType: 1
@@ -660,6 +659,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   bulletFiredCount: 0
+  radius: 14
+  canFire: 0
 --- !u!114 &114978386454116228
 MonoBehaviour:
   m_ObjectHideFlags: 1

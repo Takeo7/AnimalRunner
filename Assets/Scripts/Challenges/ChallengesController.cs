@@ -270,6 +270,7 @@ public class ChallengesController : MonoBehaviour {
 				MHC[CR.playerInfo.medalHolder].isExistent = false;
 				MHC[CR.playerInfo.medalHolder].SetTextRef(this);
 				levelText.text = CR.playerInfo.playerName + " Level: " + CR.playerInfo.playerLevel.ToString();
+				ShopConfirmer.instance.DoAttack();
 			}
 		}
 	}

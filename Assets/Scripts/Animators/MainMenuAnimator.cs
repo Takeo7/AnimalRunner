@@ -152,7 +152,8 @@ public class MainMenuAnimator : MonoBehaviour {
 		{
 			yield return new WaitForSeconds(2f);
 		}
-
+		ShopConfirmer.instance.cam.SetActive(true);
+		ShopConfirmer.instance.InstantiateCharacter((byte)CR.playerInfo.selectedCharacter);
 		CC.DieChallengesCheck();
 		deadWindow.SetActive(true);
 	}

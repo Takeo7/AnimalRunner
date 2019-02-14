@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Spine.Unity;
 
 public class ShopConfirmer : MonoBehaviour {
 	
@@ -14,6 +15,7 @@ public class ShopConfirmer : MonoBehaviour {
 	#endregion
 
 	public GameObject character;
+	public SpineShopAnimator SSA;
 	public Transform characterPos;
 	public GameObject popUp;
 	public ShopItem SI;
@@ -21,6 +23,16 @@ public class ShopConfirmer : MonoBehaviour {
 	public GameObject cam;
 	public GameObject[] characterList;
 
+	public bool doit;
+
+	private void Update()
+	{
+		if (doit)
+		{
+			doit = false;
+			DoAttack();
+		}
+	}
 	public void PurchaseCharacter(bool coins)
 	{
 		if (coins)
@@ -48,7 +60,11 @@ public class ShopConfirmer : MonoBehaviour {
 		{
 			Destroy(character);
 		}
-		character = Instantiate(characterList[index], characterPos.position, characterPos.rotation);
+		character = Instantiate(characterList[index],characterPos);
 
+	}
+	public void DoAttack()
+	{
+		SSA.Attack();
 	}
 }

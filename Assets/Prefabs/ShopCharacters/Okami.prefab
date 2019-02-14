@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33793593970873752}
   - component: {fileID: 23362441896705766}
   - component: {fileID: 114666025250487308}
+  - component: {fileID: 114685955642349450}
   m_Layer: 0
   m_Name: Okami
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1944192447339650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -104.2, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.56, y: 0.56, z: 0.56}
   m_Children: []
   m_Father: {fileID: 0}
@@ -114,3 +115,16 @@ MonoBehaviour:
   _animationName: idle
   loop: 1
   timeScale: 1
+--- !u!114 &114685955642349450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1944192447339650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf464bcf76bcd448a43e22eaeb3f3c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SA: {fileID: 114666025250487308}
+  attackTime: 0.22
