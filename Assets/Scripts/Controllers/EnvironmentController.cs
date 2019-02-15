@@ -43,6 +43,7 @@ public class EnvironmentController : MonoBehaviour {
 
 	private void Start()
 	{
+		ResumeTime();
 		GetEnvironments();//Take Scriptables EnvironmentSet from Resources on runtime
 		SetEnvironment();//Set the first environment
         gameOverDelegate += EndGame;
@@ -56,6 +57,16 @@ public class EnvironmentController : MonoBehaviour {
 			caveBool = true;//caveBool = true to let the generator know that the next prefab will be the cave
 		}
 	}
+	//TimeControl
+	public void StopTime()
+	{
+		Time.timeScale = 0;
+	}
+	public void ResumeTime()
+	{
+		Time.timeScale = 1;
+	}
+	//FinishTimeControl
 	public void UpdateEnvironments()
 	{
 		CharacterReferences CR = CharacterReferences.instance;

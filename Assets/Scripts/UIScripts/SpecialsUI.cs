@@ -37,17 +37,20 @@ public class SpecialsUI : MonoBehaviour {
         {
             case SetType.Forest:
                 specialattackbutton.image.sprite = attackButtonsForest[0];
-                sps.pressedSprite = attackButtonsForest[1];
+				cooldownImage.sprite = attackButtonsForest[0];
+				sps.pressedSprite = attackButtonsForest[1];
                 Debug.Log("Special button Forest");
                 break;
             case SetType.Desert:
                 specialattackbutton.image.sprite = attackButtonsDesert[0];
-                sps.pressedSprite = attackButtonsDesert[1];
+				cooldownImage.sprite = attackButtonsDesert[0];
+				sps.pressedSprite = attackButtonsDesert[1];
                 Debug.Log("Special button Desert");
                 break;
             case SetType.Ice:
                 specialattackbutton.image.sprite = attackButtonsIce[0];
-                sps.pressedSprite = attackButtonsIce[1];
+				cooldownImage.sprite = attackButtonsIce[0];
+				sps.pressedSprite = attackButtonsIce[1];
                 Debug.Log("Special button Ice");
                 break;
             default:
@@ -82,5 +85,9 @@ public class SpecialsUI : MonoBehaviour {
 		buttonImage.color = Color.white;
 		cooldownImage.color = avaiableColor;
 		button.interactable = true;
+	}
+	public void SetColorToPressed()
+	{
+		buttonImage.color = buttonColor;
 	}
 }

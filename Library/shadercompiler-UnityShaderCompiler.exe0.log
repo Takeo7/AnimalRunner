@@ -1,11 +1,29 @@
-Base path: C:/Program Files/Unity/Editor/Data
+Base path: F:/Unity/Editor/2018.2/Editor/Data
 Cmd: initializeCompiler
 Cmd: preprocess
-  insize=7594 outsize=1824 ok=1
+  insize=7592 outsize=1822 ok=1
 Cmd: preprocess
-  insize=8239 outsize=5196 ok=1
+  insize=8103 outsize=5134 ok=1
 Cmd: preprocess
-  insize=9835 outsize=5780 ok=1
+  insize=9682 outsize=5719 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler

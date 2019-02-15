@@ -59,6 +59,7 @@ public class MainMenuAnimator : MonoBehaviour {
     public GameObject Meters;
     public GameObject AttackButton;
     public GameObject AttackColdown;
+	public GameObject pauseButton;
     public GameObject JumpButton;
     [Space]
     public Text meters;
@@ -232,6 +233,7 @@ public class MainMenuAnimator : MonoBehaviour {
         Lifes.GetComponent<Health>().SetHearts();
         Meters.SetActive(true);
         AttackButton.SetActive(true);
+		pauseButton.SetActive(true);
         AttackColdown.SetActive(true);
         AttackButton.GetComponent<AttacksUI>().SetAttacks();
         JumpButton.SetActive(true);
