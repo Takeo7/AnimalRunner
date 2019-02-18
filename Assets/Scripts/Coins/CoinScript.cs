@@ -9,6 +9,7 @@ public class CoinScript : MonoBehaviour {
         if (collision.CompareTag("Player"))
         {
             CoinsController.instance.SetCoins(1);
+			CoinsController.instance.coinsOnRun++;
             Destroy(gameObject);
         }
         

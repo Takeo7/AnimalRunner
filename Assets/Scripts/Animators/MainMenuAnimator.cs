@@ -72,6 +72,8 @@ public class MainMenuAnimator : MonoBehaviour {
 	public bool isFall;
     [Space]
     public GameObject LoadingScreen;
+	[Space]
+	public Text coinsTakenTXT;
 
     GooglePlayLogin GPL;
 
@@ -156,6 +158,7 @@ public class MainMenuAnimator : MonoBehaviour {
 		ShopConfirmer.instance.cam.SetActive(true);
 		ShopConfirmer.instance.InstantiateCharacter((byte)CR.playerInfo.selectedCharacter);
 		CC.DieChallengesCheck();
+		coinsTakenTXT.text =  LanguajesDic.instance.GetText(34)+": "+CoinsController.instance.coinsOnRun;
 		deadWindow.SetActive(true);
 	}
 

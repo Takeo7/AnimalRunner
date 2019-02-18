@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CoinsController : MonoBehaviour {
 
-    public static CoinsController instance;
+	public static CoinsController instance;
     private void Awake()
     {
         if (instance == null)
@@ -20,6 +20,7 @@ public class CoinsController : MonoBehaviour {
     int coins;
     int gems;
 	public CharacterReferences CR;
+	public int coinsOnRun;
     private void Start()
     {
 		CR = CharacterReferences.instance;
