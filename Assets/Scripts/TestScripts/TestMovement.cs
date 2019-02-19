@@ -57,10 +57,11 @@ public class TestMovement : MonoBehaviour {
 	public CharacterVFXController VFX;
 
     bool attackBool = true;
-
+	CharacterReferences CR;
 	private void Start()
 	{
 		EC = EnvironmentController.instance;
+		CR = CharacterReferences.instance;
 	}
 	private void Update()
 	{
@@ -114,6 +115,7 @@ public class TestMovement : MonoBehaviour {
     {
         if (jumpCount < jumps && EC.inGame)
         {
+			CR.playerInfo.totalJumps++;
             if (jumpCount == 0)
             {
 				if (jumpAnimEnabled)

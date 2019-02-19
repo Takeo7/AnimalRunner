@@ -41,10 +41,12 @@ public class CharacterReferences : MonoBehaviour {
 	public void Attack()
 	{
 		TM.AttackRanged();
+		playerInfo.totalAttacks++;
 	}
 
 	public void Special()
 	{
+		playerInfo.totalSpecialUsed++;
 		switch (PS.PlayerType)
 		{
 			case PlayerStats.Characters.Turtle:

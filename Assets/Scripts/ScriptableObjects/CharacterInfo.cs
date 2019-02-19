@@ -37,9 +37,21 @@ public class CharacterInfo : ScriptableObject {
 	public int[] challengesIndex = new int[3];
 	public int[] challengesProgress = new int[3];
     //Others
+	[Space]
+	[Header("Others")]
     public bool loggedWithGoogle = false;
     public bool firstConection = true;
     public bool isLocal = true;
+	[Space]
+	[Header("Stats")]
+	public int totalAttacks;
+	public int totalChallengesCompleted;
+	public int totalCoinsEarned;
+	public int totalDeaths;
+	public int totalEnemiesKilled;
+	public int totalJumps;
+	public int totalMetersRunned;
+	public int totalSpecialUsed;
 
     public Dictionary<string,string> GetData()
     {
@@ -57,7 +69,17 @@ public class CharacterInfo : ScriptableObject {
         //Character
         data.Add("CurrentCharacter", selectedCharacter.ToString());
 
-        return data;
+		//Stats
+		data.Add("TotalAttacks", totalAttacks.ToString());
+		data.Add("TotalChallengesCompleted", totalChallengesCompleted.ToString());
+		data.Add("TotalCoinsEarned", totalCoinsEarned.ToString());
+		data.Add("TotalDeaths", totalDeaths.ToString());
+		data.Add("TotalEnemiesKilled", totalEnemiesKilled.ToString());
+		data.Add("TotalJumps", totalJumps.ToString());
+		data.Add("TotalMetersRunned", totalMetersRunned.ToString());
+		data.Add("TotalSpecialUsed", totalSpecialUsed.ToString());
+
+		return data;
     }
 
     public void SetData(Dictionary<string,PlayFab.ClientModels.UserDataRecord> data)
@@ -74,7 +96,18 @@ public class CharacterInfo : ScriptableObject {
 
         //Character
         selectedCharacter = System.Convert.ToInt32(data["CurrentCharacter"].Value);
-        LanguajesDic.instance.LoadCurrentLang(language);
+
+		//Stats
+		totalAttacks = System.Convert.ToInt32(data["Total attacks"].Value);
+		totalChallengesCompleted = System.Convert.ToInt32(data["Total challenges completed"].Value);
+		totalCoinsEarned = System.Convert.ToInt32(data["Total coins earned"].Value);
+		totalDeaths = System.Convert.ToInt32(data["Total deaths"].Value);
+		totalEnemiesKilled = System.Convert.ToInt32(data["Total enemies killed"].Value);
+		totalJumps = System.Convert.ToInt32(data["Total jumps"].Value);
+		totalMetersRunned = System.Convert.ToInt32(data["Total meters runned"].Value);
+		totalSpecialUsed = System.Convert.ToInt32(data["Total special used"].Value);
+
+		LanguajesDic.instance.LoadCurrentLang(language);
         MainMenuAnimator.instance.UpdateTexts();
     }
 

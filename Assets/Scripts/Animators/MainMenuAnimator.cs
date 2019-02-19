@@ -74,11 +74,25 @@ public class MainMenuAnimator : MonoBehaviour {
     public GameObject LoadingScreen;
 	[Space]
 	public Text coinsTakenTXT;
+	[Space]
+	[Header("Stats")]
+	public Text levelStats;
+	public Text metersRecordStats;
+	public Text totalAttacksStats;
+	public Text totalChallengesCompletedStats;
+	public Text totalCoinsEarnedStats;
+	public Text totalDeathsStats;
+	public Text totalEnemiesKilledStats;
+	public Text totalJumpsStats;
+	public Text TotalMetersRunnedStats;
+	public Text TotalSpecialUsedStats;
 
+	LanguajesDic LANG;
     GooglePlayLogin GPL;
 
     private void Start()
     {
+		LANG = LanguajesDic.instance;
         if (PlayerPrefs.GetInt("FirstTime") != 1)
         {
             PlayerPrefs.SetInt("FirstTime", 1);
@@ -201,6 +215,7 @@ public class MainMenuAnimator : MonoBehaviour {
         UpdateCoinsText();
         UpdateMeters();
         LoadingScreen.SetActive(false);
+		UpdateStatsText();
     }
     public void UpdateCoinsText()
     {
@@ -216,6 +231,20 @@ public class MainMenuAnimator : MonoBehaviour {
     {
         PlayernameText.text = PlayerPrefs.GetString("Username");
     }
+	void UpdateStatsText()
+	{
+		//UPDATE STATS TEXT
+		levelStats.text = LANG.GetText(11)+": "+CR.playerInfo.playerLevel;
+		metersRecordStats.text = LANG.GetText(36) + ": " + CR.playerInfo.metersRecord;
+		totalAttacksStats.text = LANG.GetText(35) + ": " + CR.playerInfo.totalAttacks;
+		totalChallengesCompletedStats.text = LANG.GetText(37) + ": " + CR.playerInfo.totalChallengesCompleted;
+		totalCoinsEarnedStats.text = LANG.GetText(38) + ": " + CR.playerInfo.totalCoinsEarned;
+		totalDeathsStats.text = LANG.GetText(39) + ": " + CR.playerInfo.totalDeaths;
+		totalEnemiesKilledStats.text = LANG.GetText(40) + ": " + CR.playerInfo.totalEnemiesKilled;
+		totalJumpsStats.text = LANG.GetText(41) + ": " + CR.playerInfo.totalJumps;
+		TotalMetersRunnedStats.text = LANG.GetText(42) + ": " + CR.playerInfo.totalMetersRunned;
+		TotalSpecialUsedStats.text = LANG.GetText(43) + ": " + CR.playerInfo.totalSpecialUsed;
+	}
     #endregion
 
     public void StartGame()

@@ -10,6 +10,7 @@ public class CoinScript : MonoBehaviour {
         {
             CoinsController.instance.SetCoins(1);
 			CoinsController.instance.coinsOnRun++;
+			CharacterReferences.instance.playerInfo.totalCoinsEarned++;
             Destroy(gameObject);
         }
         

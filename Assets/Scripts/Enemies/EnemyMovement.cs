@@ -118,6 +118,7 @@ public class EnemyMovement : MonoBehaviour {
 	{
         if (dontDie == false)
         {
+			CharacterReferences.instance.playerInfo.totalEnemiesKilled++;
 			StopCoroutine("Attacks");
 			VFXAA.DestroyVFX();
 			//Debug.Log("IsDing");

@@ -184,6 +184,7 @@ public class ChallengesController : MonoBehaviour {
 	void ChallengeCompleted(byte pos)
 	{
 		//give XP
+		CR.playerInfo.totalChallengesCompleted++;
 		xpToAdd += currentChallenges[pos].xp;
 		currentChallengesDone[pos] = true;
 		StartCoroutine(ChallengeCompletedCO(pos));
