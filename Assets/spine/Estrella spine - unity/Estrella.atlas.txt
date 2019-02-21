@@ -1,0 +1,20 @@
+
+Estrella.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+estrella 2
+  rotate: false
+  xy: 2, 2
+  size: 151, 142
+  orig: 151, 142
+  offset: 0, 0
+  index: -1
+resplandor
+  rotate: false
+  xy: 2, 146
+  size: 299, 293
+  orig: 299, 293
+  offset: 0, 0
+  index: -1

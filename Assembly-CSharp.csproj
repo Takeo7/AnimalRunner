@@ -649,6 +649,7 @@
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CameraDepthNormalsTexture.shader" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Spine-Skeleton-TintBlack.shader" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderShared.cginc" />
+    <None Include="Assets\spine\Estrella spine - unity\Estrella.atlas.txt" />
     <None Include="Assets\spine\Tortuga spine-unity\tortuga final 2.atlas.txt" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic.shader" />
     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Spine-Skeleton.shader" />
