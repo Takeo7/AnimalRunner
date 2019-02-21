@@ -123,6 +123,12 @@ public class EnvironmentController : MonoBehaviour {
 						setsList.Add(sets[i]);
 					}
 					break;
+				case SetType.Lava:
+					if (CR.charactersInfo.characters[2].unlocked)
+					{
+						setsList.Add(sets[i]);
+					}
+					break;
 			}
 		}
 	}

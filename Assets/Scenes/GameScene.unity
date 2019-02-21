@@ -6782,7 +6782,7 @@ MonoBehaviour:
   prefabsInstantiated: []
   set: {fileID: 11400000, guid: bd60e0f0fb97cfa45b8f9a8058a6baba, type: 2}
   cavePrefab: {fileID: 1665789271856866, guid: 2554f7b4180e22945b301498b55410e2, type: 2}
-  caveMeters: e8030000d0070000b80b0000
+  caveMeters: e8030000d0070000b80b0000a00f00008813000070170000581b0000401f00002823000010270000
   caveBool: 0
   isCaveBool: 0
   inGame: 0
@@ -16485,6 +16485,11 @@ Prefab:
       propertyPath: layers.Array.data[2]
       value: 
       objectReference: {fileID: 2015441923}
+    - target: {fileID: 114775585256077300, guid: 02724398f97d2664c959dc4dae396508,
+        type: 2}
+      propertyPath: zOffsetLava
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02724398f97d2664c959dc4dae396508, type: 2}
   m_IsPrefabAsset: 0
@@ -16963,6 +16968,16 @@ Prefab:
       propertyPath: layers.Array.data[2]
       value: 
       objectReference: {fileID: 34908395}
+    - target: {fileID: 114775585256077300, guid: 02724398f97d2664c959dc4dae396508,
+        type: 2}
+      propertyPath: zOffsetLava
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114775585256077300, guid: 02724398f97d2664c959dc4dae396508,
+        type: 2}
+      propertyPath: yOffsetLava
+      value: -4.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02724398f97d2664c959dc4dae396508, type: 2}
   m_IsPrefabAsset: 0

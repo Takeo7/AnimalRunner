@@ -29,6 +29,11 @@ public class ParallaxController : MonoBehaviour {
 	public float yOffsetDesert;
 	public float zOffsetDesert;
 	public float yOffsetIce;
+	//LAVA
+	[Space]
+	public float lavaBackgroundSize;
+	public float yOffsetLava;
+	public float zOffsetLava;
 
 
 
@@ -83,6 +88,18 @@ public class ParallaxController : MonoBehaviour {
 			//Debug.Log("scrolledRight");
 			int lastLeft = leftIndex;
 			layers[leftIndex].position = Vector3.right * (layers[rightIndex].position.x + backgroundSize) + new Vector3(0, yOffsetIce, zOffsetDesert);
+			rightIndex = leftIndex;
+			leftIndex++;
+			if (leftIndex == layers.Length)
+			{
+				leftIndex = 0;
+			}
+		}
+		else if(set == SetType.Lava)
+		{
+			//Debug.Log("scrolledRight");
+			int lastLeft = leftIndex;
+			layers[leftIndex].position = Vector3.right * (layers[rightIndex].position.x + backgroundSize) + new Vector3(0, yOffsetLava, zOffsetLava);
 			rightIndex = leftIndex;
 			leftIndex++;
 			if (leftIndex == layers.Length)

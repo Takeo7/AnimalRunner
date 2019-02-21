@@ -14,4 +14,4 @@ public class EnvironmentSet : ScriptableObject {
 
 	
 }
-public enum SetType { Forest,Desert, Ice}
+public enum SetType { Forest,Desert, Ice, Lava, Candy}
