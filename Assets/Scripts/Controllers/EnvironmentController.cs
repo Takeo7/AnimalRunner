@@ -93,6 +93,12 @@ public class EnvironmentController : MonoBehaviour {
 						setsList.Add(sets[i]);
 					}
 					break;
+				case SetType.Candy:
+					if (CR.charactersInfo.characters[4].unlocked)
+					{
+						setsList.Add(sets[i]);
+					}
+					break;
 			}
 		}
 	}
