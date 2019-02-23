@@ -448,15 +448,37 @@ public class PlayFabLogin : MonoBehaviour
     #region Upload Data
     public void UploadUserData()
     {
+        UploadUD1();
+    }
+
+    public void UploadUD1()
+    {
         if (PlayFabAuthenticationAPI.IsEntityLoggedIn())
         {
             Debug.Log("PlayFab - UpdateData");
 
             Dictionary<string, string> data = new Dictionary<string, string>();
-            data = CharacterReferences.instance.playerInfo.GetData();
+            data = CharacterReferences.instance.playerInfo.GetData1();
+
+            var request = new UpdateUserDataRequest { Data = data};
+            PlayFabClientAPI.UpdateUserData(request, OnUpdateUserDataSuccess1, OnUpdateUserDataFailure);
+        }
+        else
+        {
+            LogInWindow.SetActive(true);
+        }
+    }
+    public void UploadUD2()
+    {
+        if (PlayFabAuthenticationAPI.IsEntityLoggedIn())
+        {
+            Debug.Log("PlayFab - UpdateData");
+
+            Dictionary<string, string> data = new Dictionary<string, string>();
+            data = CharacterReferences.instance.playerInfo.GetData2();
 
             var request = new UpdateUserDataRequest { Data = data };
-            PlayFabClientAPI.UpdateUserData(request, OnUpdateUserDataSuccess, OnUpdateUserDataFailure);
+            PlayFabClientAPI.UpdateUserData(request, OnUpdateUserDataSuccess2, OnUpdateUserDataFailure);
         }
         else
         {
@@ -464,10 +486,17 @@ public class PlayFabLogin : MonoBehaviour
         }
     }
 
-    private void OnUpdateUserDataSuccess(UpdateUserDataResult result)
+    private void OnUpdateUserDataSuccess1(UpdateUserDataResult result)
     {
-        Debug.Log("PlayFab - UpdatedDataSuccess");
-        DebugText.text += "\nPlayFab - UpdatedDataSuccess";
+        Debug.Log("PlayFab - UpdatedDataSuccess 1");
+        DebugText.text += "\nPlayFab - UpdatedDataSuccess 1";
+        UploadUD2();
+    }
+
+    private void OnUpdateUserDataSuccess2(UpdateUserDataResult result)
+    {
+        Debug.Log("PlayFab - UpdatedDataSuccess 2");
+        DebugText.text += "\nPlayFab - UpdatedDataSuccess 2";
         GetPlayFabData();
     }
     private void OnUpdateUserDataFailure(PlayFabError error)

@@ -53,7 +53,7 @@ public class CharacterInfo : ScriptableObject {
 	public int totalMetersRunned;
 	public int totalSpecialUsed;
 
-    public Dictionary<string,string> GetData()
+    public Dictionary<string,string> GetData1()
     {
         Dictionary<string, string> data = new Dictionary<string, string>();
         //Base
@@ -69,17 +69,25 @@ public class CharacterInfo : ScriptableObject {
         //Character
         data.Add("CurrentCharacter", selectedCharacter.ToString());
 
-		//Stats
-		data.Add("TotalAttacks", totalAttacks.ToString());
-		data.Add("TotalChallengesCompleted", totalChallengesCompleted.ToString());
-		data.Add("TotalCoinsEarned", totalCoinsEarned.ToString());
-		data.Add("TotalDeaths", totalDeaths.ToString());
-		data.Add("TotalEnemiesKilled", totalEnemiesKilled.ToString());
-		data.Add("TotalJumps", totalJumps.ToString());
-		data.Add("TotalMetersRunned", totalMetersRunned.ToString());
-		data.Add("TotalSpecialUsed", totalSpecialUsed.ToString());
 
 		return data;
+    }
+
+    public Dictionary<string, string> GetData2()
+    {
+        Dictionary<string, string> data = new Dictionary<string, string>();
+
+        //Stats
+        data.Add("TotalAttacks", totalAttacks.ToString());
+        data.Add("TotalChallengesCompleted", totalChallengesCompleted.ToString());
+        data.Add("TotalCoinsEarned", totalCoinsEarned.ToString());
+        data.Add("TotalDeaths", totalDeaths.ToString());
+        data.Add("TotalEnemiesKilled", totalEnemiesKilled.ToString());
+        data.Add("TotalJumps", totalJumps.ToString());
+        data.Add("TotalMetersRunned", totalMetersRunned.ToString());
+        data.Add("TotalSpecialUsed", totalSpecialUsed.ToString());
+
+        return data;
     }
 
     public void SetData(Dictionary<string,PlayFab.ClientModels.UserDataRecord> data)
@@ -98,14 +106,14 @@ public class CharacterInfo : ScriptableObject {
         selectedCharacter = System.Convert.ToInt32(data["CurrentCharacter"].Value);
 
 		//Stats
-		totalAttacks = System.Convert.ToInt32(data["Total attacks"].Value);
-		totalChallengesCompleted = System.Convert.ToInt32(data["Total challenges completed"].Value);
-		totalCoinsEarned = System.Convert.ToInt32(data["Total coins earned"].Value);
-		totalDeaths = System.Convert.ToInt32(data["Total deaths"].Value);
-		totalEnemiesKilled = System.Convert.ToInt32(data["Total enemies killed"].Value);
-		totalJumps = System.Convert.ToInt32(data["Total jumps"].Value);
-		totalMetersRunned = System.Convert.ToInt32(data["Total meters runned"].Value);
-		totalSpecialUsed = System.Convert.ToInt32(data["Total special used"].Value);
+		totalAttacks = System.Convert.ToInt32(data["TotalAttacks"].Value);
+		totalChallengesCompleted = System.Convert.ToInt32(data["TotalChallengesCompleted"].Value);
+		totalCoinsEarned = System.Convert.ToInt32(data["TotalCoinsEarned"].Value);
+		totalDeaths = System.Convert.ToInt32(data["TotalDeaths"].Value);
+		totalEnemiesKilled = System.Convert.ToInt32(data["TotalEnemiesKilled"].Value);
+		totalJumps = System.Convert.ToInt32(data["TotalJumps"].Value);
+		totalMetersRunned = System.Convert.ToInt32(data["TotalMetersRunned"].Value);
+		totalSpecialUsed = System.Convert.ToInt32(data["TotalSpecialUsed"].Value);
 
 		LanguajesDic.instance.LoadCurrentLang(language);
         MainMenuAnimator.instance.UpdateTexts();

@@ -27,6 +27,10 @@ namespace CompleteProject
         public static string kProductIDNonConsumable = "nonconsumable";
         public static string kProductIDSubscription = "subscription";
 
+        public static string BuyProductGems100 = "BuyGems100";
+        public static string BuyProductGems200 = "BuyGems200";
+        public static string BuyProductGems500 = "BuyGems500";
+
         // Apple App Store-specific product identifier for the subscription product.
         private static string kProductNameAppleSubscription = "com.unity3d.subscription.new";
 

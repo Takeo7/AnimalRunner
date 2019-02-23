@@ -48,6 +48,7 @@ public class EnvironmentController : MonoBehaviour {
 		SetEnvironment();//Set the first environment
         gameOverDelegate += EndGame;
         gameOverDelegate += PlayFabLogin.instance.UploadUserData;
+        gameOverDelegate += CharacterReferences.instance.PC.CalculatePoints;
     }
 	private void Update()
 	{
@@ -144,17 +145,27 @@ public class EnvironmentController : MonoBehaviour {
 		GameObject spawn = Instantiate(set.specialPrefabs[0]);//Instantiate the Spawn
 		prefabsInstantiated.Add(spawn.GetComponent<EnvironmentPrefabController>());//Add the spawn to the list of instantiated prefabs
 	}
+
     void SetNewEnvironment()
     {
-		EnvironmentSet temp = setsList[Random.Range(0, setsList.Count)];//Set the first environment
-		//Debug.Log(set.name + "  " + temp.name);
-		while (set == temp)//Redo the random until we get an environment different to the actual
-		{
-			temp = setsList[Random.Range(0, setsList.Count)];
-			//Debug.Log("IN "+set.name + "  " + temp.name);
-		}
-		set = temp;//Set the environment
+        if (setsList.Count == 1)
+        {
+            set = setsList[0];
+        }
+        else
+        {
+            EnvironmentSet temp = setsList[Random.Range(0, setsList.Count)];//Set the first environment
+                                                                            //Debug.Log(set.name + "  " + temp.name);
+            while (set == temp)//Redo the random until we get an environment different to the actual
+            {
+                temp = setsList[Random.Range(0, setsList.Count)];
+                //Debug.Log("IN "+set.name + "  " + temp.name);
+            }
+            set = temp;//Set the environment        }
+
+        }
     }
+
 	public void StartGame()
 	{
 		inGame = true;

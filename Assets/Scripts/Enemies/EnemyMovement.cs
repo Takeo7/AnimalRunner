@@ -105,6 +105,7 @@ public class EnemyMovement : MonoBehaviour {
             isAttacking = false;
             isDead = true;
             AC.TakeDamage(true);
+            CharacterReferences.instance.PC.enemysKilled++;
             StopCoroutine("Attacks");
 			StartCoroutine("Die");
         }

@@ -90,6 +90,9 @@ public class MainMenuAnimator : MonoBehaviour {
 	LanguajesDic LANG;
     GooglePlayLogin GPL;
 
+    [Space]
+    public Text pointsText;
+
     private void Start()
     {
 		LANG = LanguajesDic.instance;
@@ -134,8 +137,12 @@ public class MainMenuAnimator : MonoBehaviour {
         }
         PlayFabLogin.instance.GetVIV(CR.playerInfo, instance, EnvironmentController.instance, debugText, logInWindow, PlayFabLogInText);
         EnvironmentController.instance.gameOverDelegate += ToogleDeadWindow;
-        
+
         UpdateCoinsText();
+        UpdateMeters();
+        UpdateStatsText();
+
+        
     }
     private void Update()
     {
@@ -212,6 +219,7 @@ public class MainMenuAnimator : MonoBehaviour {
     #region UpdateTexts
     public void UpdateTexts()
     {
+        Debug.Log("UpdatedTexts");
         UpdateCoinsText();
         UpdateMeters();
         LoadingScreen.SetActive(false);
@@ -245,6 +253,10 @@ public class MainMenuAnimator : MonoBehaviour {
 		TotalMetersRunnedStats.text = LANG.GetText(42) + ": " + CR.playerInfo.totalMetersRunned;
 		TotalSpecialUsedStats.text = LANG.GetText(43) + ": " + CR.playerInfo.totalSpecialUsed;
 	}
+    public void UpdatePointText(int points)
+    {
+        StartCoroutine("UpdatePointsCoroutine", points);
+    }
     #endregion
 
     public void StartGame()
@@ -289,6 +301,31 @@ public class MainMenuAnimator : MonoBehaviour {
         ToogleNonTouch(false);
         IntroWindow.SetActive(false);
         StopCoroutine("IntroCoroutine");
+    }
+    IEnumerator UpdatePointsCoroutine(int points)
+    {
+        CoinsController cc = CoinsController.instance;
+        string textPoints = LANG.GetText(12);
+        string textCoins = LANG.GetText(34);
+        int temp = 0;
+        int temp2 = 0;
+        int temp3 = 0;
+        int pointsTotal = points;
+        while (temp <= points)
+        {
+            yield return new WaitForSeconds(0.5f);
+            temp++;
+            temp2++;
+            if (temp2 == 10)
+            {
+                cc.coinsOnRun++;
+                temp3++;
+                coinsTakenTXT.text = textCoins + ": " + cc.coinsOnRun;
+                temp2 = 0;
+            }
+            pointsText.text = textPoints + ": " + temp;
+        }
+        cc.SetCoins(temp3);
     }
 
 }

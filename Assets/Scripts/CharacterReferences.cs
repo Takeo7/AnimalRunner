@@ -26,6 +26,8 @@ public class CharacterReferences : MonoBehaviour {
 	public PlayerStats PS;
 	public AnimatorController AC;
 	public GameObject gameObj;
+    [Space]
+    public PointsController PC;
 
 	private void Start()
 	{
