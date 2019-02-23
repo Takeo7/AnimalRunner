@@ -92,6 +92,7 @@ public class MainMenuAnimator : MonoBehaviour {
 
     [Space]
     public Text pointsText;
+    public Animator pointTextAnim;
 
     private void Start()
     {
@@ -313,13 +314,14 @@ public class MainMenuAnimator : MonoBehaviour {
         int pointsTotal = points;
         while (temp <= points)
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.2f);
             temp++;
             temp2++;
             if (temp2 == 10)
             {
                 cc.coinsOnRun++;
                 temp3++;
+                pointTextAnim.SetTrigger("OnePlusTrigger");
                 coinsTakenTXT.text = textCoins + ": " + cc.coinsOnRun;
                 temp2 = 0;
             }
