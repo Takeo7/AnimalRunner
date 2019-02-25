@@ -325,15 +325,20 @@ public class PlayFabLogin : MonoBehaviour
         DebugText.text += "\nPlayFab - Login Custom Successful";
 
         //If is first connection to this device
-        if (CI.firstConection == true)
+        if (CI.firstConection == true || result.NewlyCreated)
         {
             //Hide Log In window
             LogInWindow.SetActive(false);
             //Upload User Data to new user to set variables to Default
+            CI.ResetLocalData();
+            UploadUserData();
+        }
+        else
+        {
+            LogInWindow.SetActive(false);
             UploadUserData();
         }
         //Get Data from server
-        GetPlayFabData();
         isPlayFabLogged = true;
     }
 
@@ -537,36 +542,6 @@ public class PlayFabLogin : MonoBehaviour
     }
     #endregion
 
-    #region Get Inventory
-    public void GetPlayFabInventory()
-    {
-        var request = new GetUserInventoryRequest { };
-        PlayFabClientAPI.GetUserInventory(request, OnGetInventorySuccess, OnGetInventoryFailure);
-    }
-
-    private void OnGetInventorySuccess(GetUserInventoryResult result)
-    {
-        //Debug
-        //Debug.Log("PlayFab - GetInventorySuccess");
-        DebugText.text += "\nPlayFab - GetInventorySuccess";
-
-        //Set Virtual currecy & Items owned
-        CharacterReferences.instance.playerInfo.SetCurrency(result.VirtualCurrency["CO"], result.VirtualCurrency["GE"]);
-        CharacterReferences.instance.charactersInfo.CheckCharacters(result.Inventory);
-        MMA.UpdateTexts();
-        isPlayFabLogged = true;
-    }
-
-    private void OnGetInventoryFailure(PlayFabError error)
-    {
-        //Debug
-        //Debug.Log("PlayFab - GetInventoryERROR");
-        //Debug.Log(error);
-        DebugText.text += "\nPlayFab - GetInventoryError";
-        DebugText.text += "\n" + error;
-    }
-    #endregion
-
     #region Get Catalog Items
     public void GetCatalogitemsPlayFab()
     {
@@ -595,6 +570,36 @@ public class PlayFabLogin : MonoBehaviour
         //Debug.Log("PlayFab - GetCatalogItemERROR");
         //Debug.Log(error);
         DebugText.text += "\nPlayFab - GetCatalogItemError";
+        DebugText.text += "\n" + error;
+    }
+    #endregion
+
+    #region Get Inventory
+    public void GetPlayFabInventory()
+    {
+        var request = new GetUserInventoryRequest { };
+        PlayFabClientAPI.GetUserInventory(request, OnGetInventorySuccess, OnGetInventoryFailure);
+    }
+
+    private void OnGetInventorySuccess(GetUserInventoryResult result)
+    {
+        //Debug
+        //Debug.Log("PlayFab - GetInventorySuccess");
+        DebugText.text += "\nPlayFab - GetInventorySuccess";
+
+        //Set Virtual currecy & Items owned
+        CharacterReferences.instance.playerInfo.SetCurrency(result.VirtualCurrency["CO"], result.VirtualCurrency["GE"]);
+        CharacterReferences.instance.charactersInfo.CheckCharacters(result.Inventory);
+        MMA.UpdateTexts();
+        isPlayFabLogged = true;
+    }
+
+    private void OnGetInventoryFailure(PlayFabError error)
+    {
+        //Debug
+        //Debug.Log("PlayFab - GetInventoryERROR");
+        //Debug.Log(error);
+        DebugText.text += "\nPlayFab - GetInventoryError";
         DebugText.text += "\n" + error;
     }
     #endregion

@@ -96,7 +96,7 @@ public class GooglePlayLogin : MonoBehaviour {
             PlayerPrefs.SetString("CustomID", MMA.CR.playerInfo.playerName);
 
             //DebugText
-            MMA.debugText.text += "Username added to log in";
+            MMA.debugText.text += " - Username added to log in";
 
             //Update Name Shown
             MMA.logInUsername.text = MMA.CR.playerInfo.name;
