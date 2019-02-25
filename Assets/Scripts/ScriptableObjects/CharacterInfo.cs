@@ -116,7 +116,7 @@ public class CharacterInfo : ScriptableObject {
 		totalSpecialUsed = System.Convert.ToInt32(data["TotalSpecialUsed"].Value);
 
 		LanguajesDic.instance.LoadCurrentLang(language);
-        MainMenuAnimator.instance.UpdateTexts();
+        MainMenuAnimator.instance.UpdateTexts(false);
     }
 
     public void SetCurrency(int ServerCoins, int ServerGems)
@@ -154,5 +154,28 @@ public class CharacterInfo : ScriptableObject {
 
         firstConection = true;
         isLocal = true;
+
+        CharactersInfo chi = CharacterReferences.instance.charactersInfo;
+
+        int length = chi.characters.Length;
+        for (int i = 1; i < length; i++)
+        {
+            chi.characters[i].unlocked = false;
+        }
+
+        EnvironmentController ec = EnvironmentController.instance;
+
+        Destroy(ec.prefabsInstantiated[0].gameObject);
+        ec.setsList = new List<EnvironmentSet>();
+
+        ec.GetEnvironments();
+        ec.SetEnvironment();
+
+        ParallaxMainController.instance.SetParallaxNewElements();
+
+
+        MainMenuAnimator.instance.ToogleShopWindow();
+        ShopController.instance.InstantiateNewCharacter();
+        MainMenuAnimator.instance.ToogleShopWindow();
     }
 }

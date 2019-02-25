@@ -218,13 +218,16 @@ public class MainMenuAnimator : MonoBehaviour {
     }
     #endregion
     #region UpdateTexts
-    public void UpdateTexts()
+    public void UpdateTexts(bool login)
     {
         Debug.Log("UpdatedTexts");
         UpdateCoinsText();
         UpdateMeters();
-        LoadingScreen.SetActive(false);
-		UpdateStatsText();
+        if (login)
+        {
+            LoadingScreen.SetActive(false);
+        }       
+        UpdateStatsText();
     }
     public void UpdateCoinsText()
     {

@@ -122,7 +122,14 @@ public class ParallaxController : MonoBehaviour {
 			case SetType.Ice:
 				yOffsetTemp = yOffsetIce;
 				break;
-		}
+            case SetType.Lava:
+                yOffsetTemp = yOffsetLava;
+                break;
+            case SetType.Candy:
+                yOffsetTemp = yOffsetLava;
+                break;
+
+        }
 		byte length = (byte)layers.Length;
 		for (int i = 0; i < length; i++)
 		{

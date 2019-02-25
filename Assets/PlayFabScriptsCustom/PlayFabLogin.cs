@@ -75,7 +75,27 @@ public class PlayFabLogin : MonoBehaviour
     {
         errorText = tse;
     }
+    public void StartNoInternet()
+    {
+        saveLocalInfo = true;
 
+        EnvironmentController ec = EnvironmentController.instance;
+
+        Destroy(ec.prefabsInstantiated[0].gameObject);
+        ec.setsList = new List<EnvironmentSet>();
+
+        ec.GetEnvironments();
+        ec.SetEnvironment();
+
+        ParallaxMainController.instance.SetParallaxNewElements();
+
+        MMA.UpdateTexts(true);
+
+        MMA.ToogleShopWindow();
+        ShopController.instance.InstantiateNewCharacter();
+        MMA.ToogleShopWindow();
+
+    }
     public void StartLogIn()
     {
         if (CharacterReferences.instance.playerInfo.firstConection == true)
@@ -327,15 +347,12 @@ public class PlayFabLogin : MonoBehaviour
         //If is first connection to this device
         if (CI.firstConection == true || result.NewlyCreated)
         {
-            //Hide Log In window
-            LogInWindow.SetActive(false);
             //Upload User Data to new user to set variables to Default
             CI.ResetLocalData();
             UploadUserData();
         }
         else
         {
-            LogInWindow.SetActive(false);
             UploadUserData();
         }
         //Get Data from server
@@ -590,7 +607,24 @@ public class PlayFabLogin : MonoBehaviour
         //Set Virtual currecy & Items owned
         CharacterReferences.instance.playerInfo.SetCurrency(result.VirtualCurrency["CO"], result.VirtualCurrency["GE"]);
         CharacterReferences.instance.charactersInfo.CheckCharacters(result.Inventory);
-        MMA.UpdateTexts();
+        
+
+        EnvironmentController ec = EnvironmentController.instance;
+
+        Destroy(ec.prefabsInstantiated[0].gameObject);
+        ec.setsList = new List<EnvironmentSet>();
+
+        ec.GetEnvironments();
+        ec.SetEnvironment();
+
+        ParallaxMainController.instance.SetParallaxNewElements();
+
+        MMA.UpdateTexts(true);
+
+        MMA.ToogleShopWindow();
+        ShopController.instance.InstantiateNewCharacter();
+        MMA.ToogleShopWindow();
+
         isPlayFabLogged = true;
     }
 

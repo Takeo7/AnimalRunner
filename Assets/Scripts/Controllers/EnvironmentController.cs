@@ -103,7 +103,7 @@ public class EnvironmentController : MonoBehaviour {
 			}
 		}
 	}
-	void GetEnvironments()
+	public void GetEnvironments()
 	{
 		CharacterReferences CR = CharacterReferences.instance;
 		sets = Resources.LoadAll<EnvironmentSet>("Sets");//Take scriptables EnvironmentSet from Resources on runtime
@@ -139,7 +139,7 @@ public class EnvironmentController : MonoBehaviour {
 			}
 		}
 	}
-	void SetEnvironment()
+	public void SetEnvironment()
 	{
 		set = setsList[Random.Range(0, setsList.Count)];//Set the first environment
 		GameObject spawn = Instantiate(set.specialPrefabs[0]);//Instantiate the Spawn

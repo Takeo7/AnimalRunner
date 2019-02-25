@@ -51,7 +51,7 @@ public class ShopController : MonoBehaviour {
 			}
 		}
 	}
-	void SetNewSelected()
+	public void SetNewSelected()
 	{
 		int charSelected = CR.playerInfo.selectedCharacter;
 		int length = instantiatedShopItems.Count;

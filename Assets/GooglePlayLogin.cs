@@ -29,7 +29,14 @@ public class GooglePlayLogin : MonoBehaviour {
     private void Start()
     {
         MMA = MainMenuAnimator.instance;
-        StartClientConfiguration();
+        if (Application.internetReachability == NetworkReachability.NotReachable)
+        {
+            Debug.Log("Error. Check internet connection!");
+        }
+        else
+        {
+            StartClientConfiguration();
+        }       
     }
 
     public void GetMMA(MainMenuAnimator mma)
