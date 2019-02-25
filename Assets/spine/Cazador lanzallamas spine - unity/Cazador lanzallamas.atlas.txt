@@ -1,0 +1,111 @@
+
+Cazador lanzallamas.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Capa 96 copia
+  rotate: false
+  xy: 164, 75
+  size: 42, 48
+  orig: 42, 48
+  offset: 0, 0
+  index: -1
+bota derecha
+  rotate: false
+  xy: 294, 499
+  size: 115, 155
+  orig: 115, 155
+  offset: 0, 0
+  index: -1
+bota izquierda
+  rotate: false
+  xy: 161, 317
+  size: 123, 158
+  orig: 123, 158
+  offset: 0, 0
+  index: -1
+brazo derecho
+  rotate: false
+  xy: 161, 477
+  size: 131, 227
+  orig: 131, 227
+  offset: 0, 0
+  index: -1
+brazo izquierdo
+  rotate: false
+  xy: 864, 773
+  size: 158, 223
+  orig: 158, 223
+  offset: 0, 0
+  index: -1
+cabeza
+  rotate: false
+  xy: 2, 706
+  size: 264, 290
+  orig: 264, 290
+  offset: 0, 0
+  index: -1
+cable delantero
+  rotate: true
+  xy: 2, 60
+  size: 246, 160
+  orig: 246, 160
+  offset: 0, 0
+  index: -1
+cable trasero
+  rotate: true
+  xy: 2, 2
+  size: 56, 116
+  orig: 56, 116
+  offset: 0, 0
+  index: -1
+deposito
+  rotate: true
+  xy: 569, 825
+  size: 171, 293
+  orig: 171, 293
+  offset: 0, 0
+  index: -1
+guante derecho
+  rotate: false
+  xy: 294, 656
+  size: 160, 114
+  orig: 160, 114
+  offset: 0, 0
+  index: -1
+guante izquierdo
+  rotate: false
+  xy: 749, 756
+  size: 85, 67
+  orig: 85, 67
+  offset: 0, 0
+  index: -1
+lanzallamas
+  rotate: true
+  xy: 2, 308
+  size: 396, 157
+  orig: 396, 157
+  offset: 0, 0
+  index: -1
+pierna derecha
+  rotate: true
+  xy: 569, 723
+  size: 100, 178
+  orig: 100, 178
+  offset: 0, 0
+  index: -1
+pierna izquierda
+  rotate: false
+  xy: 164, 125
+  size: 118, 190
+  orig: 118, 190
+  offset: 0, 0
+  index: -1
+torso
+  rotate: true
+  xy: 268, 772
+  size: 224, 299
+  orig: 224, 299
+  offset: 0, 0
+  index: -1

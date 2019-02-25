@@ -40,6 +40,9 @@ public class EnemyMovement : MonoBehaviour {
 	SoundController SC;
 
 	bool canDestroy;
+	[SerializeField]
+	bool flamethrower;
+	bool firstflame;
 
 
 	private void Start()
@@ -70,6 +73,25 @@ public class EnemyMovement : MonoBehaviour {
 					{
 						isAttacking = false;
                         CharacterReferences.instance.PS.takeDammage(damage);
+					}
+				}
+			}
+		}
+		else if(!isMelee && isAttacking && flamethrower)
+		{
+			Collider2D[] temp = new Collider2D[5];
+			ContactFilter2D temp2 = new ContactFilter2D();
+			Physics2D.OverlapCircle(new Vector2(transform.position.x + meleeAttackOffset.x, transform.position.y + meleeAttackOffset.y), meleeAttackRadius, temp2, temp);
+
+			byte length = (byte)temp.Length;
+			for (byte i = 0; i < length; i++)
+			{
+				if (temp[i] != null)
+				{
+					if (temp[i].CompareTag("Player"))
+					{
+						isAttacking = false;
+						CharacterReferences.instance.PS.takeDammage(damage);
 					}
 				}
 			}
@@ -121,7 +143,15 @@ public class EnemyMovement : MonoBehaviour {
         {
 			CharacterReferences.instance.playerInfo.totalEnemiesKilled++;
 			StopCoroutine("Attacks");
-			VFXAA.DestroyVFX();
+			isAttacking = false;
+			if (flamethrower)
+			{
+				VFXAA.VFXPersistent(false);
+			}
+			else
+			{
+				VFXAA.DestroyVFX();
+			}
 			//Debug.Log("IsDing");
 			AC.DeathAnim();
             col.enabled = false;
@@ -145,7 +175,10 @@ public class EnemyMovement : MonoBehaviour {
 		while (isOnSight)
 		{
 			isAttacking = true;
-			AC.AttackAnim(false);
+			if (!flamethrower)
+			{
+				AC.AttackAnim(false);
+			}
 			if (isMelee)
 			{
 				VFXAA.VFXInstantiate(meleeAttackDelay);
@@ -154,15 +187,31 @@ public class EnemyMovement : MonoBehaviour {
 			}
 			if (!isMelee)
 			{
-				yield return new WaitForSeconds(AC.rangedAttackDelay);
-				GameObject bullet = Instantiate(bulletPrefab);
-				VFXAA.VFXInstantiate();
-				bullet.transform.position = bulletSpawn.position;
-				bullet.GetComponent<BulletController>().damage = damage;
-				yield return new WaitForSeconds(AC.attackAnimDuration - AC.rangedAttackDelay);
+				if (flamethrower)
+				{
+					if (!firstflame)
+					{
+						firstflame = true;
+						AC.AttackAnim(false);
+						VFXAA.VFXPersistent(true);
+					}
+					yield return new WaitForSeconds(AC.attackAnimDuration);
+				}
+				else
+				{
+					yield return new WaitForSeconds(AC.rangedAttackDelay);
+					GameObject bullet = Instantiate(bulletPrefab);
+					VFXAA.VFXInstantiate();
+					bullet.transform.position = bulletSpawn.position;
+					bullet.GetComponent<BulletController>().damage = damage;
+					yield return new WaitForSeconds(AC.attackAnimDuration - AC.rangedAttackDelay);
+				}
 			}
 			AC.IdleAnim();
-			isAttacking = false;
+			if (!flamethrower)
+			{
+				isAttacking = false;
+			}
 			yield return new WaitForSeconds(secondsToAttackAgain);
 		}
 		if(isOnSight == false)

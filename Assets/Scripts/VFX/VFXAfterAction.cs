@@ -8,10 +8,19 @@ public class VFXAfterAction : MonoBehaviour {
 	GameObject VFXPrefab;
 	[SerializeField]
 	Transform instantiateOrigin;
+	[SerializeField]
+	ParticleSystem VFXInScene;
 
 	[SerializeField]
 	List<GameObject> effects;
 
+	private void Start()
+	{
+		if(VFXInScene != null)
+		{
+			VFXInScene.Stop();
+		}
+	}
 	public void VFXInstantiate()
 	{
 		GameObject t = Instantiate(VFXPrefab, instantiateOrigin.position,VFXPrefab.transform.rotation);
@@ -33,6 +42,17 @@ public class VFXAfterAction : MonoBehaviour {
 		for (int i = 0; i < length; i++)
 		{
 			Destroy(effects[i]);
+		}
+	}
+	public void VFXPersistent(bool p)
+	{
+		if (p)
+		{
+			VFXInScene.Play();
+		}
+		else
+		{
+			VFXInScene.Stop();
 		}
 	}
 }

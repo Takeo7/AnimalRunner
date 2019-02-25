@@ -677,14 +677,13 @@ MonoBehaviour:
   - {fileID: 4071904248723954}
   - {fileID: 4122338501650616}
   enemys:
-  - {fileID: 1542274820795390, guid: fb55462cf1a320d468b6edf086697177, type: 2}
-  - {fileID: 1547166206792598, guid: cc7ee66ec00558d49bf8a93c70bb28b9, type: 2}
-  - {fileID: 1377371023085548, guid: 8885ffb16f2ed174298d97309ebf94b2, type: 2}
+  - {fileID: 1414524360426940, guid: 2750322abf8d3484d8e781d16bb41f66, type: 2}
+  - {fileID: 1414524360426940, guid: 2750322abf8d3484d8e781d16bb41f66, type: 2}
   traps:
   - {fileID: 1787306735302194, guid: 5947f0b913abb914393443c63ba3707e, type: 2}
   - {fileID: 1904981198315766, guid: 19fe505d0dd201647b1cb34e92f2793b, type: 2}
-  - {fileID: 1751257628520874, guid: 45baf7faabcc38d419d77984ef3b1c20, type: 2}
-  - {fileID: 1751257628520874, guid: 45baf7faabcc38d419d77984ef3b1c20, type: 2}
+  - {fileID: 1395996759783588, guid: 2b8de89f2bf6c4644a6632ca41835427, type: 2}
+  - {fileID: 1678720401822154, guid: a1cc25e01a5d63946af50dd212c763bc, type: 2}
   decorations:
   - {fileID: 1861729040506578, guid: 137c35bbabdfd2b429fb809ca134e3eb, type: 2}
   - {fileID: 1099337880937628, guid: 2956266c5e6437d46b960efe31891da9, type: 2}

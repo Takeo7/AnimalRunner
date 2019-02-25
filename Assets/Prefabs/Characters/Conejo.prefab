@@ -459,7 +459,7 @@ MonoBehaviour:
   secondOverlapRadius: 0.24
   sideOffset: {x: 0.7, y: 1.33, z: 0}
   sideSize: {x: 0.48, y: 2.26}
-  bulletPrefab: {fileID: 1503914469158978, guid: c364b77ee69aed34cb38b1573ccc7046,
+  bulletPrefab: {fileID: 1919657486459374, guid: 906af412f3069ab46a460d9dc3da8219,
     type: 2}
   bulletSpawnPoint: {fileID: 4542095571579150}
   muzzleFlashPrefab: {fileID: 0}
@@ -5824,7 +5824,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 15
+      scalar: 25
       minScalar: 10
       maxCurve:
         serializedVersion: 2

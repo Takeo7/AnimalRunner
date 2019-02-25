@@ -1,0 +1,139 @@
+
+Cazador silueta.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bota der
+  rotate: true
+  xy: 135, 63
+  size: 25, 30
+  orig: 25, 30
+  offset: 0, 0
+  index: -1
+bota izq
+  rotate: true
+  xy: 489, 94
+  size: 32, 21
+  orig: 32, 21
+  offset: 0, 0
+  index: -1
+brazo der
+  rotate: false
+  xy: 135, 90
+  size: 72, 36
+  orig: 72, 36
+  offset: 0, 0
+  index: -1
+brazo der copia
+  rotate: false
+  xy: 135, 90
+  size: 72, 36
+  orig: 72, 36
+  offset: 0, 0
+  index: -1
+cabeza
+  rotate: false
+  xy: 387, 78
+  size: 41, 48
+  orig: 41, 48
+  offset: 0, 0
+  index: -1
+gorro bosque
+  rotate: false
+  xy: 2, 5
+  size: 63, 46
+  orig: 63, 46
+  offset: 0, 0
+  index: -1
+gorro bosque oreja del
+  rotate: false
+  xy: 195, 65
+  size: 27, 23
+  orig: 27, 23
+  offset: 0, 0
+  index: -1
+gorro bosque oreja tras
+  rotate: true
+  xy: 430, 78
+  size: 17, 20
+  orig: 17, 20
+  offset: 0, 0
+  index: -1
+gorro lava
+  rotate: false
+  xy: 2, 53
+  size: 70, 73
+  orig: 70, 73
+  offset: 0, 0
+  index: -1
+gorro nieve
+  rotate: false
+  xy: 209, 90
+  size: 72, 36
+  orig: 72, 36
+  offset: 0, 0
+  index: -1
+gorro nieve oreja del
+  rotate: true
+  xy: 167, 63
+  size: 25, 26
+  orig: 25, 26
+  offset: 0, 0
+  index: -1
+gorro oreja tras
+  rotate: false
+  xy: 253, 66
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+gorro turbante
+  rotate: false
+  xy: 338, 75
+  size: 47, 51
+  orig: 47, 51
+  offset: 0, 0
+  index: -1
+gorro turbante lazo
+  rotate: false
+  xy: 430, 97
+  size: 57, 29
+  orig: 57, 29
+  offset: 0, 0
+  index: -1
+mano der
+  rotate: false
+  xy: 224, 65
+  size: 27, 23
+  orig: 27, 23
+  offset: 0, 0
+  index: -1
+mano der copia
+  rotate: false
+  xy: 224, 65
+  size: 27, 23
+  orig: 27, 23
+  offset: 0, 0
+  index: -1
+pierna der
+  rotate: false
+  xy: 74, 2
+  size: 43, 61
+  orig: 43, 61
+  offset: 0, 0
+  index: -1
+pierna izq
+  rotate: false
+  xy: 283, 74
+  size: 53, 52
+  orig: 53, 52
+  offset: 0, 0
+  index: -1
+torso
+  rotate: false
+  xy: 74, 65
+  size: 59, 61
+  orig: 59, 61
+  offset: 0, 0
+  index: -1
