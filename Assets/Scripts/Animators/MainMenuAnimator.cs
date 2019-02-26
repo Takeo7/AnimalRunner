@@ -313,7 +313,6 @@ public class MainMenuAnimator : MonoBehaviour {
         string textCoins = LANG.GetText(34);
         int temp = 0;
         int temp2 = 0;
-        int temp3 = 0;
         int pointsTotal = points;
         while (temp <= points)
         {
@@ -323,14 +322,13 @@ public class MainMenuAnimator : MonoBehaviour {
             if (temp2 == 10)
             {
                 cc.coinsOnRun++;
-                temp3++;
                 pointTextAnim.SetTrigger("OnePlusTrigger");
                 coinsTakenTXT.text = textCoins + ": " + cc.coinsOnRun;
                 temp2 = 0;
             }
             pointsText.text = textPoints + ": " + temp;
         }
-        cc.SetCoins(temp3);
+        cc.SetCoins(cc.coinsOnRun);
     }
 
 }

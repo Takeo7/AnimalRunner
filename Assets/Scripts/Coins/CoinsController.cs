@@ -28,6 +28,11 @@ public class CoinsController : MonoBehaviour {
         gems = CR.playerInfo.gems;
     }
 
+    public void AddnewCoins()
+    {
+        SetCoins(coinsOnRun);
+    }
+
     public int GetCoins()
     {
         return coins;
