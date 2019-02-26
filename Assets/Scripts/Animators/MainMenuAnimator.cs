@@ -289,12 +289,12 @@ public class MainMenuAnimator : MonoBehaviour {
 	}
     public void ResetScene()
     {
-        if (CR.playerInfo.metersRecord < currentMeters)
+        if (CR.playerInfo.metersRecord < CharacterReferences.instance.uic.metersRun)
         {
-			CR.playerInfo.metersRecord = currentMeters;
+			CR.playerInfo.metersRecord = CharacterReferences.instance.uic.metersRun;
             if (PlayGamesPlatform.Instance.IsAuthenticated())
             {
-                GPL.LeaderboardUpdate(currentMeters);
+                GPL.LeaderboardUpdate(CharacterReferences.instance.uic.metersRun);
             }           
         }    
         SceneManager.LoadScene(1);

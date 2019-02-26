@@ -7488,6 +7488,7 @@ MonoBehaviour:
   target: {fileID: 117053467}
   meters: {fileID: 1932914914}
   currentMeters: 0
+  metersRun: 0
 --- !u!114 &472959687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7586,6 +7587,7 @@ MonoBehaviour:
   AC: {fileID: 896876604}
   gameObj: {fileID: 896876603}
   PC: {fileID: 472959693}
+  uic: {fileID: 472959686}
 --- !u!114 &472959690
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ public class PointsController : MonoBehaviour {
 
     public void CalculatePoints()
     {
-        meters = cc.UIC.currentMeters;
+        meters = cc.UIC.metersRun;
         points += (meters / 500)*5;
         points += enemysKilled;
         MainMenuAnimator.instance.UpdatePointText(points);

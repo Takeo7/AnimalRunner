@@ -64,6 +64,7 @@ public class CharacterInfo : ScriptableObject {
 
         //Records
         data.Add("MetersRecord", metersRecord.ToString());
+        Debug.Log("MAX METERS: " + metersRecord);
         data.Add("PointsRecord", pointsRecord.ToString());
 
         //Character
@@ -154,6 +155,15 @@ public class CharacterInfo : ScriptableObject {
 
         firstConection = true;
         isLocal = true;
+
+        totalAttacks = 0;
+        totalChallengesCompleted = 0;
+        totalCoinsEarned = 0;
+        totalDeaths = 0;
+        totalEnemiesKilled = 0;
+        totalJumps = 0;
+        totalMetersRunned = 0;
+        totalSpecialUsed = 0;
 
         CharactersInfo chi = CharacterReferences.instance.charactersInfo;
 

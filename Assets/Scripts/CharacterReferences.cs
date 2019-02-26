@@ -28,6 +28,8 @@ public class CharacterReferences : MonoBehaviour {
 	public GameObject gameObj;
     [Space]
     public PointsController PC;
+    [Space]
+    public UIController uic;
 
 	private void Start()
 	{

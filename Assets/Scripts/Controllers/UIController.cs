@@ -10,6 +10,8 @@ public class UIController : MonoBehaviour {
 	public Text meters;
 	public int currentMeters;
 
+    public int metersRun;
+
 	private void Update()
 	{
 		currentMeters = Mathf.RoundToInt(target.transform.position.x);

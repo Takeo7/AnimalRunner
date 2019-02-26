@@ -57,7 +57,10 @@ public class PlayerStats : MonoBehaviour {
 			gameObject.tag = "Untagged";
 			CharacterReferences.instance.playerInfo.totalDeaths++;
 			CharacterReferences.instance.playerInfo.totalMetersRunned += EnvironmentController.instance.UIC.currentMeters;
-			EnvironmentController.instance.gameOverDelegate();
+            CharacterReferences.instance.uic.metersRun = CharacterReferences.instance.uic.currentMeters;
+
+            EnvironmentController.instance.gameOverDelegate();
+            
 			//gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
 			//gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
 			AC.DeathAnim();
