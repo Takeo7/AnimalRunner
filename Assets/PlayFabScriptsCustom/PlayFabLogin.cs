@@ -611,10 +611,13 @@ public class PlayFabLogin : MonoBehaviour
 
         EnvironmentController ec = EnvironmentController.instance;
 
-        Destroy(ec.prefabsInstantiated[0].gameObject);
         ec.setsList = new List<EnvironmentSet>();
 
-        ec.GetEnvironments();
+		EnvironmentPrefabController temp = ec.prefabsInstantiated[0];
+		ec.prefabsInstantiated = new List<EnvironmentPrefabController>();
+		Destroy(temp.gameObject);
+
+		ec.GetEnvironments();
         ec.SetEnvironment();
 
         ParallaxMainController.instance.SetParallaxNewElements();

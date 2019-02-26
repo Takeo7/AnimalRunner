@@ -111,29 +111,52 @@ public class ParallaxController : MonoBehaviour {
 	public void SetHeight()
 	{
 		float yOffsetTemp = 0;
+		float zOffsetTemp = 0;
+		float tempBackgroundSize = 0;
 		switch (set)
 		{
 			case SetType.Forest:
 				yOffsetTemp = yOffset;
+				zOffsetTemp = zOffset;
+				tempBackgroundSize = backgroundSize;
 				break;
 			case SetType.Desert:
 				yOffsetTemp = yOffsetDesert;
+				zOffsetTemp = zOffsetDesert;
+				tempBackgroundSize = desertBackgroundSize;
 				break;
 			case SetType.Ice:
 				yOffsetTemp = yOffsetIce;
+				zOffsetTemp = zOffsetDesert;
+				tempBackgroundSize = backgroundSize;
 				break;
             case SetType.Lava:
                 yOffsetTemp = yOffsetLava;
-                break;
+				zOffsetTemp = zOffsetLava;
+				tempBackgroundSize = backgroundSize;
+				break;
             case SetType.Candy:
                 yOffsetTemp = yOffsetLava;
-                break;
+				zOffsetTemp = zOffset;
+				tempBackgroundSize = backgroundSize;
+				break;
 
         }
 		byte length = (byte)layers.Length;
 		for (int i = 0; i < length; i++)
 		{
-			layers[i].position = new Vector3(layers[i].position.x, yOffsetTemp, layers[i].position.z);
+			if(i == 0)
+			{
+				layers[i].position = new Vector3(layers[i].position.x, yOffsetTemp, zOffsetTemp);
+			}
+			else if (i == 1)
+			{
+				layers[i].position = new Vector3(layers[0].position.x+tempBackgroundSize, yOffsetTemp, zOffsetTemp);
+			}
+			else if (i == 2)
+			{
+				layers[i].position = new Vector3(layers[0].position.x-tempBackgroundSize, yOffsetTemp, zOffsetTemp);
+			}
 		}
 	}
 }

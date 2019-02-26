@@ -26,12 +26,19 @@ public class ChallengesController : MonoBehaviour {
 	public GameObject[] dieChallengesDone = new GameObject[2];
 	public Text[] newDieChallenges = new Text[3];
 	public GameObject[] newDieChallengesImage = new GameObject[2];
+	public Text[] dieChallengesStars = new Text[2];
+	public Text[] newDieChallengesStars = new Text[2];
 
 	public GameObject[] medals;
 	public GameObject[] newMedals;
 	public GameObject[] medalsHolders;
 	public MedalsHolderController[] MHC;
 	public Text levelText;
+
+	public Text challenge01Pause;
+	public Text challenge02Pause;
+	public Text challenge01PauseStars;
+	public Text challenge02PauseStars;
 
 	public UIController UIC;
 	public CharacterReferences CR;
@@ -105,6 +112,15 @@ public class ChallengesController : MonoBehaviour {
 		for (int i = 0; i < 2; i++)
 		{
 			dieChallenges[i].text = currentChallenges[i].name;
+			if(currentChallenges[i].xp == 1)
+			{
+				dieChallengesStars[i].gameObject.SetActive(false);
+			}
+			else if(currentChallenges[i].xp > 1)
+			{
+				dieChallengesStars[i].gameObject.SetActive(true);
+				dieChallengesStars[i].text = "x"+currentChallenges[i].xp;
+			}
 			dieChallengesDone[i].SetActive(false);
 		}
 		medalsHolders[CR.playerInfo.medalHolder].SetActive(true);
@@ -115,6 +131,29 @@ public class ChallengesController : MonoBehaviour {
 			medals[i].SetActive(true);
 		}
 		levelText.text = CR.playerInfo.playerName + " Level: " + CR.playerInfo.playerLevel.ToString();
+
+		//Refill pause window with the challenges
+		challenge01Pause.text = currentChallenges[0].name;
+		challenge02Pause.text = currentChallenges[1].name;
+		if(currentChallenges[0].xp == 1)
+		{
+			challenge01PauseStars.gameObject.SetActive(false);
+		}
+		else if(currentChallenges[0].xp > 1)
+		{
+			challenge01PauseStars.gameObject.SetActive(true);
+			challenge01PauseStars.text = "x" + currentChallenges[0].xp;
+		}
+		if (currentChallenges[1].xp == 1)
+		{
+			challenge02PauseStars.gameObject.SetActive(false);
+		}
+		else if (currentChallenges[1].xp > 1)
+		{
+			challenge02PauseStars.gameObject.SetActive(true);
+			challenge02PauseStars.text = "x" + currentChallenges[1].xp;
+		}
+
 
 	}
 	void CheckMeters()
@@ -241,6 +280,15 @@ public class ChallengesController : MonoBehaviour {
 			{
 				NewChallenge((byte)i);
 				newDieChallenges[i].text = challengesScriptables[CR.playerInfo.challengesIndex[i]].name;
+				if(challengesScriptables[CR.playerInfo.challengesIndex[i]].xp == 1)
+				{
+					newDieChallengesStars[i].gameObject.SetActive(false);
+				}
+				else if(challengesScriptables[CR.playerInfo.challengesIndex[i]].xp > 1)
+				{
+					newDieChallengesStars[i].gameObject.SetActive(true);
+					newDieChallengesStars[i].text = "x" + challengesScriptables[CR.playerInfo.challengesIndex[i]].xp;
+				}
 				newDieChallengesImage[i].SetActive(true);
 				dieChallengesDone[i].SetActive(false);
 			}

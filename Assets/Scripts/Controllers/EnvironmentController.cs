@@ -145,7 +145,10 @@ public class EnvironmentController : MonoBehaviour {
 		GameObject spawn = Instantiate(set.specialPrefabs[0]);//Instantiate the Spawn
 		prefabsInstantiated.Add(spawn.GetComponent<EnvironmentPrefabController>());//Add the spawn to the list of instantiated prefabs
 	}
-
+	public void ClearList()
+	{
+		prefabsInstantiated.Clear();
+	}
     void SetNewEnvironment()
     {
         if (setsList.Count == 1)
@@ -225,6 +228,7 @@ public class EnvironmentController : MonoBehaviour {
 	{
 		if(prefabsInstantiated.Count > 5)
 		{
+			Debug.Log(prefabsInstantiated.Count);
 			EnvironmentPrefabController temp = prefabsInstantiated[0];
 			prefabsInstantiated.Remove(prefabsInstantiated[0]);
 			Destroy(temp.gameObject);

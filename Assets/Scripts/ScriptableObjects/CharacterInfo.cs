@@ -165,10 +165,13 @@ public class CharacterInfo : ScriptableObject {
 
         EnvironmentController ec = EnvironmentController.instance;
 
-        Destroy(ec.prefabsInstantiated[0].gameObject);
-        ec.setsList = new List<EnvironmentSet>();
+		ec.setsList = new List<EnvironmentSet>();
 
-        ec.GetEnvironments();
+		EnvironmentPrefabController temp = ec.prefabsInstantiated[0];
+		ec.prefabsInstantiated = new List<EnvironmentPrefabController>();
+		Destroy(temp.gameObject);
+
+		ec.GetEnvironments();
         ec.SetEnvironment();
 
         ParallaxMainController.instance.SetParallaxNewElements();
@@ -177,5 +180,6 @@ public class CharacterInfo : ScriptableObject {
         MainMenuAnimator.instance.ToogleShopWindow();
         ShopController.instance.InstantiateNewCharacter();
         MainMenuAnimator.instance.ToogleShopWindow();
+
     }
 }
