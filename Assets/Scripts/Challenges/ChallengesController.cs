@@ -263,7 +263,7 @@ public class ChallengesController : MonoBehaviour {
 		}
 		else if(pos == 1)
 		{
-			CR.playerInfo.challengesIndex[1] = killsScriptables[Random.Range(0, killsScriptables.Count + 1)].index;
+			CR.playerInfo.challengesIndex[1] = killsScriptables[Random.Range(0, killsScriptables.Count)].index;
 		}
 	}
 	public void DieChallengesCheck()

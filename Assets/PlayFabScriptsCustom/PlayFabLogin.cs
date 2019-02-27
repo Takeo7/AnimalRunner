@@ -39,6 +39,8 @@ using System.Collections.Generic;
 
         public bool isPlayFabLogged = false;
 
+        bool login = false;
+
         TextScriptErrors errorText;
 
         CharacterInfo CI;
@@ -152,7 +154,7 @@ using System.Collections.Generic;
                 saveLocalInfo = false;
                 CI.ResetLocalData();
             }
-            UploadUserData();
+            UploadUserData(true);
             LogInPlayFabUsername();
         }
 
@@ -212,7 +214,7 @@ using System.Collections.Generic;
             DebugText.text += "\nPlayFab - Linked Android ID Successful";
             if (CI.isLocal)
             {
-                UploadUserData();
+                UploadUserData(true);
             }
             else
             {
@@ -260,7 +262,7 @@ using System.Collections.Generic;
             }
             if (saveLocalInfo)
             {
-                UploadUserData();
+                UploadUserData(true);
             }
             else
             {
@@ -316,7 +318,7 @@ using System.Collections.Generic;
             else
             {
                 //Upload User Data for no internet progress
-                UploadUserData();
+                UploadUserData(true);
             }
         }
 
@@ -354,11 +356,11 @@ using System.Collections.Generic;
             {
                 //Upload User Data to new user to set variables to Default
                 CI.ResetLocalData();
-                UploadUserData();
+                UploadUserData(true);
             }
             else
             {
-                UploadUserData();
+                UploadUserData(true);
             }
             //Get Data from server
             isPlayFabLogged = true;
@@ -391,7 +393,7 @@ using System.Collections.Generic;
             {
                 LogInWindow.SetActive(false);
                 CharacterReferences.instance.playerInfo.firstConection = false;
-                UploadUserData();
+                UploadUserData(true);
             }
             GetPlayFabData();
         }
@@ -423,7 +425,7 @@ using System.Collections.Generic;
             }
             if (saveLocalInfo)
             {
-                UploadUserData();
+                UploadUserData(true);
             }
             else
             {
@@ -473,8 +475,9 @@ using System.Collections.Generic;
         #endregion
 
         #region Upload Data
-        public void UploadUserData()
+        public void UploadUserData(bool isLogin)
         {
+            login = isLogin;
             UploadUD1();
         }
 
@@ -524,7 +527,11 @@ using System.Collections.Generic;
         {
             //Debug.Log("PlayFab - UpdatedDataSuccess 2");
             DebugText.text += "\nPlayFab - UpdatedDataSuccess 2";
-            //GetPlayFabData();
+            if (login)
+            {
+                GetPlayFabData();
+            }
+            
         }
         private void OnUpdateUserDataFailure(PlayFabError error)
         {

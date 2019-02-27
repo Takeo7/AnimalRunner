@@ -32,6 +32,7 @@ public class GooglePlayLogin : MonoBehaviour {
         if (Application.internetReachability == NetworkReachability.NotReachable)
         {
             Debug.Log("Error. Check internet connection!");
+            PlayFabLogin.instance.StartNoInternet();
         }
         else
         {

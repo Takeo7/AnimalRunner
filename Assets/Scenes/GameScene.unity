@@ -7354,7 +7354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &470476432
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7636,6 +7636,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   doit: 0
+  nameText: {fileID: 1993429966}
+  descriptionText: {fileID: 2088047470}
+  coinsText: {fileID: 97405070}
+  gemsText: {fileID: 1475178790}
 --- !u!114 &472959692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15375,9 +15379,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c4552e368b69e52479ef599a27cc84f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a013c3c6da165bb4e9fb309dad1e0c33, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -21233,8 +21237,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -62.2, y: 5.8}
-  m_SizeDelta: {x: 42.79, y: 39.75}
+  m_AnchoredPosition: {x: -63.310017, y: 9.184008}
+  m_SizeDelta: {x: 56.98, y: 52.932}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1329046130
 MonoBehaviour:
@@ -21255,9 +21259,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8aa797626a88da4489c9db4aa9c5ef34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2368971d6089f1e4e8fba92ee00f0a41, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -23384,7 +23388,7 @@ MonoBehaviour:
   - This is a Happy Dragon.
   - Bunny
   - This is a Hungry Bunny
-  - Lunnaris
+  - Lunaris
   - This is a Beautiful and strange Horse
   - Kiuvi
   - WHAT DOES THE FOX SAY?!
@@ -23440,7 +23444,7 @@ MonoBehaviour:
   - "Es un Drag\xF3n feliz."
   - Bunny
   - Un conejo hambriento.
-  - Lunnaris
+  - Lunaris
   - "Una clase bonita y extra\xF1a de Caballo."
   - Kiuvi
   - WHAT DOES THE FOX SAY?!
@@ -23496,7 +23500,7 @@ MonoBehaviour:
   - C'est un dragon heureux.
   - Bunny
   - "Un lapin affam\xE9."
-  - Lunnaris
+  - Lunaris
   - "Un gentil et \xE9trange genre de cheval."
   - Kiuvi
   - WHAT DOES THE FOX SAY?!
@@ -23552,7 +23556,7 @@ MonoBehaviour:
   - "\u8FD9\u662F\u4E00\u6761\u5FEB\u4E50\u9F99\u3002"
   - Bunny
   - "\u8FD9\u662F\u4E00\u4E2A\u9965\u997F\u7684\u5154\u5B50"
-  - Lunnaris
+  - Lunaris
   - "\u8FD9\u662F\u4E00\u5339\u7F8E\u4E3D\u800C\u5947\u602A\u7684\u9A6C"
   - Kiuvi
   - "\u72D0\u72F8\u8BF4\u4EC0\u4E48\uFF1F\uFF01"
@@ -29412,7 +29416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 231.1, y: 93.99988}
+  m_AnchoredPosition: {x: 231.1, y: 94}
   m_SizeDelta: {x: 616.7, y: 161.09998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1769569455
@@ -32597,7 +32601,7 @@ GameObject:
   - component: {fileID: 1993429965}
   - component: {fileID: 1993429966}
   m_Layer: 5
-  m_Name: descriptionm
+  m_Name: name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

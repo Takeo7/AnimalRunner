@@ -47,8 +47,12 @@ public class EnvironmentController : MonoBehaviour {
 		GetEnvironments();//Take Scriptables EnvironmentSet from Resources on runtime
 		SetEnvironment();//Set the first environment
         gameOverDelegate += EndGame;
-        gameOverDelegate += PlayFabLogin.instance.UploadUserData;
+        gameOverDelegate += UploadUserDataEC;
         gameOverDelegate += CharacterReferences.instance.PC.CalculatePoints;
+    }
+    public void UploadUserDataEC()
+    {
+        PlayFabLogin.instance.UploadUserData(false);
     }
 	private void Update()
 	{

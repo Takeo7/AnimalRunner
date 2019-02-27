@@ -70,7 +70,22 @@ public class LanguajesDic : MonoBehaviour {
                 currentLangErrorTexts = English_Errors;
                 break;
         }
+        SetCharactersData();
         delegadoLang();
+    }
+
+    void SetCharactersData()
+    {
+        int startTexts = 20;
+        CharactersInfo chi = CharacterReferences.instance.charactersInfo;
+        int length = chi.characters.Length;
+        for (int i = 0; i < length; i++)
+        {
+            chi.characters[i].name = currentLangTexts[startTexts];
+            startTexts++;
+            chi.characters[i].description = currentLangTexts[startTexts];
+            startTexts++;
+        }
     }
 
     public string GetText(int key)

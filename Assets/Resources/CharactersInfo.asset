@@ -12,50 +12,50 @@ MonoBehaviour:
   m_Name: CharactersInfo
   m_EditorClassIdentifier: 
   characters:
-  - name: Turtle
+  - name: Sally
     icon: {fileID: 21300000, guid: 4a9b7d02df7a1be48b8c11f13e36b03d, type: 3}
     prefab: {fileID: 1355157842876838, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
-    description: A turtle
+    description: This is a very angry Turtle.
     unlocked: 1
     hide: 0
     coinPrice: 0
     gemPrice: 0
-  - name: Elephant
+  - name: Godus
     icon: {fileID: 21300000, guid: 057eac040ed635348b3b91c2f8e2f009, type: 3}
     prefab: {fileID: 1183136600057304, guid: b8b5ef6c163d0b847873b9dd8931b5c4, type: 2}
-    description: An elephant
+    description: This is a Mystic Elephant.
     unlocked: 1
     hide: 0
-    coinPrice: 150
-    gemPrice: 20
-  - name: Dragon
+    coinPrice: 200
+    gemPrice: 50
+  - name: Drake
     icon: {fileID: 21300000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
     prefab: {fileID: 1385950287651850, guid: 789b3609ab054574d9e2f823327edef0, type: 2}
-    description: A dragon
+    description: This is a Happy Dragon.
     unlocked: 0
     hide: 0
-    coinPrice: 150
-    gemPrice: 20
-  - name: Rabbit
+    coinPrice: 200
+    gemPrice: 50
+  - name: Bunny
     icon: {fileID: 21300000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
     prefab: {fileID: 1778632533777940, guid: 0561f6770b7e19a41a4b9e5a6a76e346, type: 2}
-    description: A rabbit
+    description: This is a Hungry Bunny
     unlocked: 0
     hide: 0
-    coinPrice: 150
-    gemPrice: 20
-  - name: Unicorn
+    coinPrice: 175
+    gemPrice: 30
+  - name: Lunaris
     icon: {fileID: 21300000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
     prefab: {fileID: 1395222153171100, guid: fa370bf33291107488c4927e8a2db71b, type: 2}
-    description: A unicorn
+    description: This is a Beautiful and strange Horse
     unlocked: 0
     hide: 1
-    coinPrice: 150
-    gemPrice: 20
-  - name: Okami
+    coinPrice: 200
+    gemPrice: 50
+  - name: Kiuvi
     icon: {fileID: 21300000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
     prefab: {fileID: 1737348973768176, guid: 230dfb274080ca74898be845f500f0bc, type: 2}
-    description: A Okami
+    description: WHAT DOES THE FOX SAY?!
     unlocked: 0
     hide: 0
     coinPrice: 150

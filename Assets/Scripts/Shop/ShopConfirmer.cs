@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Spine.Unity;
+using UnityEngine.UI;
 
 public class ShopConfirmer : MonoBehaviour {
 	
@@ -27,6 +28,11 @@ public class ShopConfirmer : MonoBehaviour {
 	public GameObject[] environmentList;
 
 	public bool doit;
+
+    public Text nameText;
+    public Text descriptionText;
+    public Text coinsText;
+    public Text gemsText;
 
 	private void Update()
 	{
@@ -61,7 +67,13 @@ public class ShopConfirmer : MonoBehaviour {
 	}
 	public void InstantiateCharacter(byte index)
 	{
-		if(character != null)
+        CharactersInfo chi = CharacterReferences.instance.charactersInfo;
+        nameText.text = chi.characters[index].name;
+        descriptionText.text = chi.characters[index].description;
+        coinsText.text = chi.characters[index].coinPrice.ToString();
+        gemsText.text = chi.characters[index].gemPrice.ToString();
+
+        if (character != null)
 		{
 			Destroy(character);
 		}

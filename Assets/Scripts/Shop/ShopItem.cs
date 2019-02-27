@@ -9,9 +9,11 @@ public class ShopItem : MonoBehaviour {
 	public GameObject selected;
 	public Image icon;
 	public Text text;
-	public GameObject priceGO;
-	public Text priceTXT;
-	public ShopController SC;
+	public GameObject priceCoinsGO;
+    public GameObject priceGemsGO;
+    public Text priceCoinsTXT;
+    public Text priceGemsTXT;
+    public ShopController SC;
 
 	public void SetVisuals(Sprite sprite,string name)
 	{
@@ -29,25 +31,31 @@ public class ShopItem : MonoBehaviour {
 		text.text = name;
 		if (SC.charactersInfo.characters[index].unlocked == false)
 		{
-			priceGO.SetActive(true);
-			priceTXT.text = "" + SC.charactersInfo.characters[index].coinPrice;
-		}
+			priceCoinsGO.SetActive(true);
+            priceGemsGO.SetActive(true);
+            priceCoinsTXT.text = "" + SC.charactersInfo.characters[index].coinPrice;
+            priceGemsTXT.text = "" + SC.charactersInfo.characters[index].gemPrice;
+        }
 		else
 		{
-			priceGO.SetActive(false);
-		}
+			priceCoinsGO.SetActive(false);
+            priceGemsGO.SetActive(false);
+        }
 	}
 	public void RefreshPrice()
 	{
 		if (SC.charactersInfo.characters[index].unlocked == false)
 		{
-			priceGO.SetActive(true);
-			priceTXT.text = "" + SC.charactersInfo.characters[index].coinPrice;
-		}
+			priceCoinsGO.SetActive(true);
+            priceGemsGO.SetActive(true);
+            priceCoinsTXT.text = "" + SC.charactersInfo.characters[index].coinPrice;
+            priceGemsTXT.text = "" + SC.charactersInfo.characters[index].gemPrice;
+        }
 		else
 		{
-			priceGO.SetActive(false);
-		}
+			priceCoinsGO.SetActive(false);
+            priceGemsGO.SetActive(false);
+        }
 	}
 	public void SelectCharacter(bool coins)
 	{

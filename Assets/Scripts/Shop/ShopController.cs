@@ -33,11 +33,14 @@ public class ShopController : MonoBehaviour {
 		int length = charactersInfo.characters.Length;
 		for (int i = 0; i < length; i++)
 		{
-			ShopItem temp = Instantiate(shopItemPrefab, parent).GetComponent<ShopItem>();
-			temp.index = (byte)i;
-			temp.SC = this;
-			temp.SetVisuals(charactersInfo.characters[i].icon,charactersInfo.characters[i].name);
-			instantiatedShopItems.Add(temp);
+            if (charactersInfo.characters[i].hide == false)
+            {
+                ShopItem temp = Instantiate(shopItemPrefab, parent).GetComponent<ShopItem>();
+                temp.index = (byte)i;
+                temp.SC = this;
+                temp.SetVisuals(charactersInfo.characters[i].icon, charactersInfo.characters[i].name);
+                instantiatedShopItems.Add(temp);
+            }		
 		}
 	}
 	void CheckShopItemsToDelete()
