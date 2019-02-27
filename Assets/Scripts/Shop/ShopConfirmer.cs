@@ -70,7 +70,7 @@ public class ShopConfirmer : MonoBehaviour {
 			Destroy(environment);
 		}
 		character = Instantiate(characterList[index],characterPos);
-		if((index != 0)|| (index != 4) || (index != 5))
+		if((index != 0) && (index != 4) && (index != 5))
 		{
 			environment = Instantiate(environmentList[index], environmentPos);
 		}

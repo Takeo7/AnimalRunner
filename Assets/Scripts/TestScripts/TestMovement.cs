@@ -13,6 +13,8 @@ public class TestMovement : MonoBehaviour {
 
     #endregion
 
+    public SoundController sc;
+    [Space]
     public EnvironmentController EC;
     public Rigidbody2D rb;
     public float jumpForce = 10;
@@ -123,6 +125,10 @@ public class TestMovement : MonoBehaviour {
 					AC.JumpOneAnim();
                     if (jumpVFXEnabled)
                     {
+                        if (sc != null)
+                        {
+                            sc.PlaySound(0);
+                        }
                         VFX.JumpFromFloorVFX();
                     }
 
@@ -142,6 +148,10 @@ public class TestMovement : MonoBehaviour {
 					}
 					if (jumpVFXEnabled)
                     {
+                        if (sc != null)
+                        {
+                            sc.PlaySound(0);
+                        }
                         VFX.JumpSecond();
                     }
 				}
@@ -161,31 +171,37 @@ public class TestMovement : MonoBehaviour {
             {
                 case PlayerStats.Characters.Turtle:
                     AC.AttackAnim(true);
+                    sc.PlaySound(1);
                     AttacksUI.instance.UpdateAttacks();
                     StartCoroutine("AttackCoroutine");
                     break;
                 case PlayerStats.Characters.Elephant:
                     AC.AttackAnim(false);
+                    sc.PlaySound(1);
                     AttacksUI.instance.UpdateAttacks();
                     StartCoroutine("AttackCoroutine");
                     break;
 				case PlayerStats.Characters.Dragon:
 					AC.AttackAnim(true);
-					AttacksUI.instance.UpdateAttacks();
+
+                    AttacksUI.instance.UpdateAttacks();
 					StartCoroutine("AttackCoroutine");
 					break;
 				case PlayerStats.Characters.Rabbit:
 					AC.AttackAnim(true);
+
 					AttacksUI.instance.UpdateAttacks();
 					StartCoroutine("AttackCoroutine");
 					break;
 				case PlayerStats.Characters.Unicorn:
 					AC.AttackAnim(true);
+
 					AttacksUI.instance.UpdateAttacks();
 					StartCoroutine("AttackCoroutine");
 					break;
 				case PlayerStats.Characters.Okami:
 					AC.AttackAnim(true);
+
 					AttacksUI.instance.UpdateAttacks();
 					StartCoroutine("AttackCoroutine");
 					break;

@@ -41,6 +41,9 @@ GameObject:
   - component: {fileID: 114978386454116228}
   - component: {fileID: 114978610230510808}
   - component: {fileID: 114895165784344060}
+  - component: {fileID: 82003146095968684}
+  - component: {fileID: 114692581662125380}
+  - component: {fileID: 114176057281876120}
   m_Layer: 0
   m_Name: Elephant
   m_TagString: Player
@@ -485,6 +488,101 @@ CapsuleCollider2D:
   m_Offset: {x: -0.03, y: 1.71}
   m_Size: {x: 2.9, y: 5.68}
   m_Direction: 0
+--- !u!82 &82003146095968684
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1183136600057304}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &95712176884772408
 Animator:
   serializedVersion: 3
@@ -516,6 +614,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 20
   ES: {fileID: 114895165784344060}
+--- !u!114 &114176057281876120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1183136600057304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8631da5bdcb3d3344b600bc4a913558e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 82003146095968684}
+  sounds:
+  - {fileID: 8300000, guid: 7690156cf3105d044b51f17ec093ab3b, type: 3}
+  - {fileID: 8300000, guid: 9787df93b7794a1478ff7aa0f498f135, type: 3}
 --- !u!114 &114197364752747128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -557,6 +670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 492d779f62e86db4489cf7e73fc2836b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sc: {fileID: 114176057281876120}
   EC: {fileID: 0}
   rb: {fileID: 50604040519960826}
   jumpForce: 16.5
@@ -626,6 +740,18 @@ MonoBehaviour:
   AttackImage: {fileID: 0}
   PlayerType: 1
   attackType: 1
+--- !u!114 &114692581662125380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1183136600057304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4938b6ac896e2448be4a8d5141d6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 82003146095968684}
 --- !u!114 &114895165784344060
 MonoBehaviour:
   m_ObjectHideFlags: 1

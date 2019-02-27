@@ -29601,11 +29601,6 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114441635481245156, guid: c1e580a81d45fc44dadd9cb1ea2981a6,
-        type: 2}
-      propertyPath: attackAnimDuration
-      value: 0.33
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
   m_IsPrefabAsset: 0

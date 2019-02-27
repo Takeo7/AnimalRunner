@@ -11,6 +11,8 @@ public class PlayerBulletScript : MonoBehaviour {
     public int damage;
 	public bool isSpecial;
 
+    
+
     private void Start()
     {
 		if (isSpecial)
@@ -50,7 +52,10 @@ public class PlayerBulletScript : MonoBehaviour {
 		}
 		if (enemyCollided)
 		{
-			Instantiate(hit,transform.position,hit.transform.rotation);
+            if (hit != null)
+            {
+                Instantiate(hit, transform.position, hit.transform.rotation);
+            }			
 		}
     }
 }
