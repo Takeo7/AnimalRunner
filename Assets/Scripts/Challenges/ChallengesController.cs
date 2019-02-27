@@ -5,6 +5,13 @@ using UnityEngine.UI;
 
 public class ChallengesController : MonoBehaviour {
 
+	#region Singleton
+	public static ChallengesController instance;
+	private void Awake()
+	{
+		instance = this;
+	}
+	#endregion
 	ChallengesScriptable[] challengesScriptables;
 	List<ChallengesScriptable> killsScriptables = new List<ChallengesScriptable>();
 	List<ChallengesScriptable> metersScriptables= new List<ChallengesScriptable>();
@@ -18,6 +25,7 @@ public class ChallengesController : MonoBehaviour {
 	float metersRunTotal = 0;
 	bool showingCompleted = false;
 
+	[SerializeField]
 	float currKills;
 
 	byte xpToAdd;
@@ -201,7 +209,10 @@ public class ChallengesController : MonoBehaviour {
 	public void AddKills(byte kills)
 	{
 		currKills += kills;
-		CheckKills();
+		if (!currentChallengesDone[1])
+		{
+			CheckKills();
+		}
 	}
 	void CheckKills()
 	{
@@ -230,7 +241,7 @@ public class ChallengesController : MonoBehaviour {
 	}
 	IEnumerator ChallengeCompletedCO(byte pos)
 	{
-		yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(0.5f);
 		//Debug.Log("showThis "+pos);
 		ShowChallengeCompletedUI(pos);
 		yield return new WaitForSeconds(1f);
@@ -261,7 +272,7 @@ public class ChallengesController : MonoBehaviour {
 	}
 	IEnumerator AddNewChallenges()
 	{
-		yield return new WaitForSeconds(2f);
+		yield return new WaitForSeconds(1f);
 		for (int i = 0; i < 2; i++)
 		{
 			if (currentChallengesDone[i])
@@ -273,7 +284,7 @@ public class ChallengesController : MonoBehaviour {
 				dieChallengesDone[i].SetActive(false);
 			}
 		}
-		yield return new WaitForSeconds(2f);
+		yield return new WaitForSeconds(1f);
 		for (int i = 0; i < 2; i++)
 		{
 			if (currentChallenges[i] == null)
@@ -298,7 +309,7 @@ public class ChallengesController : MonoBehaviour {
 		{
 			CR.playerInfo.currentMedals++;
 			xpToAdd--;
-			Debug.Log(CR.playerInfo.currentMedals - 1);
+			//Debug.Log(CR.playerInfo.currentMedals - 1);
 			newMedals[CR.playerInfo.currentMedals-1].SetActive(true);
 			yield return new WaitForSeconds(1f);
 			if ((CR.playerInfo.currentMedals) == CR.playerInfo.medalsToNextRank)

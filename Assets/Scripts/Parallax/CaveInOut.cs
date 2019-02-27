@@ -9,6 +9,7 @@ public class CaveInOut : MonoBehaviour {
 		if (collision.CompareTag("Player"))
 		{
 			ParallaxMainController.instance.SetParallaxNewElements();
+			Debug.Log("CaveInOut");
 		}
 	}
 }

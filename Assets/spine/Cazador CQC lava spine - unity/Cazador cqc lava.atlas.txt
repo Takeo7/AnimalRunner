@@ -1,0 +1,83 @@
+
+Cazador cqc lava.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bota derecha
+  rotate: true
+  xy: 813, 137
+  size: 70, 104
+  orig: 70, 104
+  offset: 0, 0
+  index: -1
+bota izquierda
+  rotate: true
+  xy: 580, 51
+  size: 66, 87
+  orig: 66, 87
+  offset: 0, 0
+  index: -1
+brazo derecho
+  rotate: true
+  xy: 452, 129
+  size: 78, 128
+  orig: 78, 128
+  offset: 0, 0
+  index: -1
+brazo izquierdo
+  rotate: true
+  xy: 698, 135
+  size: 72, 113
+  orig: 72, 113
+  offset: 0, 0
+  index: -1
+cabeza
+  rotate: false
+  xy: 2, 9
+  size: 166, 198
+  orig: 166, 198
+  offset: 0, 0
+  index: -1
+guante derecho
+  rotate: true
+  xy: 582, 119
+  size: 88, 114
+  orig: 88, 114
+  offset: 0, 0
+  index: -1
+guante izquierdo
+  rotate: false
+  xy: 919, 140
+  size: 88, 67
+  orig: 88, 67
+  offset: 0, 0
+  index: -1
+pierna derecha
+  rotate: true
+  xy: 450, 40
+  size: 87, 128
+  orig: 87, 128
+  offset: 0, 0
+  index: -1
+pierna izquierda
+  rotate: false
+  xy: 359, 17
+  size: 89, 129
+  orig: 89, 129
+  offset: 0, 0
+  index: -1
+porra electrica
+  rotate: true
+  xy: 170, 148
+  size: 59, 280
+  orig: 59, 280
+  offset: 0, 0
+  index: -1
+torso
+  rotate: true
+  xy: 170, 2
+  size: 144, 187
+  orig: 144, 187
+  offset: 0, 0
+  index: -1

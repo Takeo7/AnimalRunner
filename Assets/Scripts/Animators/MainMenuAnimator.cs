@@ -220,7 +220,7 @@ public class MainMenuAnimator : MonoBehaviour {
     #region UpdateTexts
     public void UpdateTexts(bool login)
     {
-        Debug.Log("UpdatedTexts");
+        //Debug.Log("UpdatedTexts");
         UpdateCoinsText();
         UpdateMeters();
         if (login)

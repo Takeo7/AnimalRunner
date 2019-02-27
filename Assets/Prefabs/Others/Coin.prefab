@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a852530ef6888a6448e940ce75621291, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinsBurst: {fileID: 157776, guid: ee6b751876f7e8b48a3d5d4f93e9d3cf, type: 2}
 --- !u!212 &212044834677163480
 SpriteRenderer:
   m_ObjectHideFlags: 1

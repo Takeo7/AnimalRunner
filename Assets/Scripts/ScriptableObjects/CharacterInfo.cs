@@ -64,7 +64,7 @@ public class CharacterInfo : ScriptableObject {
 
         //Records
         data.Add("MetersRecord", metersRecord.ToString());
-        Debug.Log("MAX METERS: " + metersRecord);
+        //Debug.Log("MAX METERS: " + metersRecord);
         data.Add("PointsRecord", pointsRecord.ToString());
 
         //Character
@@ -185,6 +185,7 @@ public class CharacterInfo : ScriptableObject {
         ec.SetEnvironment();
 
         ParallaxMainController.instance.SetParallaxNewElements();
+		Debug.Log("CharacterInfo");
 
 
         MainMenuAnimator.instance.ToogleShopWindow();

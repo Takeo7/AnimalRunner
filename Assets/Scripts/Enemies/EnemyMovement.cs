@@ -128,6 +128,7 @@ public class EnemyMovement : MonoBehaviour {
             isDead = true;
             AC.TakeDamage(true);
             CharacterReferences.instance.PC.enemysKilled++;
+			ChallengesController.instance.AddKills(1);
             StopCoroutine("Attacks");
 			StartCoroutine("Die");
         }

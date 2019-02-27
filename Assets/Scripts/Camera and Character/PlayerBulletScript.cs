@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerBulletScript : MonoBehaviour {
 
 
+	[SerializeField]
+	GameObject hit;
     public float speed;
     public int damage;
 	public bool isSpecial;
@@ -45,6 +47,10 @@ public class PlayerBulletScript : MonoBehaviour {
 		if (!isSpecial)
 		{
 			Destroy(gameObject);
+		}
+		if (enemyCollided)
+		{
+			Instantiate(hit,transform.position,hit.transform.rotation);
 		}
     }
 }

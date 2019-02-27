@@ -63,7 +63,7 @@ using System.Collections.Generic;
         public void GetVIV(CharacterInfo ci, MainMenuAnimator mma, EnvironmentController ec, Text debugtext, GameObject loginwindow, TextsScript loginText)
         {
             //Debug
-            Debug.Log("Updating variables Playfab");
+            //Debug.Log("Updating variables Playfab");
 
 
             CI = ci;
@@ -92,8 +92,9 @@ using System.Collections.Generic;
             ec.SetEnvironment();
 
             ParallaxMainController.instance.SetParallaxNewElements();
+			//Debug.Log("PlayFabLogin");
 
-            MMA.UpdateTexts(true);
+			MMA.UpdateTexts(true);
 
             MMA.ToogleShopWindow();
             ShopController.instance.InstantiateNewCharacter();
@@ -481,7 +482,7 @@ using System.Collections.Generic;
         {
             if (PlayFabAuthenticationAPI.IsEntityLoggedIn())
             {
-                Debug.Log("PlayFab - UpdateData");
+                //Debug.Log("PlayFab - UpdateData");
 
                 Dictionary<string, string> data = new Dictionary<string, string>();
                 data = CharacterReferences.instance.playerInfo.GetData1();
@@ -498,7 +499,7 @@ using System.Collections.Generic;
         {
             if (PlayFabAuthenticationAPI.IsEntityLoggedIn())
             {
-                Debug.Log("PlayFab - UpdateData");
+                //Debug.Log("PlayFab - UpdateData");
 
                 Dictionary<string, string> data = new Dictionary<string, string>();
                 data = CharacterReferences.instance.playerInfo.GetData2();
@@ -514,16 +515,16 @@ using System.Collections.Generic;
 
         private void OnUpdateUserDataSuccess1(UpdateUserDataResult result)
         {
-            Debug.Log("PlayFab - UpdatedDataSuccess 1");
+            //Debug.Log("PlayFab - UpdatedDataSuccess 1");
             DebugText.text += "\nPlayFab - UpdatedDataSuccess 1";
             UploadUD2();
         }
 
         private void OnUpdateUserDataSuccess2(UpdateUserDataResult result)
         {
-            Debug.Log("PlayFab - UpdatedDataSuccess 2");
+            //Debug.Log("PlayFab - UpdatedDataSuccess 2");
             DebugText.text += "\nPlayFab - UpdatedDataSuccess 2";
-            GetPlayFabData();
+            //GetPlayFabData();
         }
         private void OnUpdateUserDataFailure(PlayFabError error)
         {
@@ -625,8 +626,9 @@ using System.Collections.Generic;
             ec.SetEnvironment();
 
             ParallaxMainController.instance.SetParallaxNewElements();
+			//Debug.Log("PlayFabLogin GET INVENTORY");
 
-            MMA.UpdateTexts(true);
+			MMA.UpdateTexts(true);
 
             MMA.ToogleShopWindow();
             ShopController.instance.InstantiateNewCharacter();
@@ -687,9 +689,9 @@ using System.Collections.Generic;
 
         private void OnAddVirtualCurrencySuccess(ModifyUserVirtualCurrencyResult result)
         {
-            Debug.Log("Playfab - AddVirtualCurrency Success_Balance: " + result.Balance);
+            //Debug.Log("Playfab - AddVirtualCurrency Success_Balance: " + result.Balance);
             DebugText.text += "\nPlayfab - AddVirtualCurrency Success_Balance: " + result.Balance;
-            GetPlayFabInventory();
+            //GetPlayFabInventory();
         }
         private void OnAddVirtualCurrencyFailure(PlayFabError error)
         {

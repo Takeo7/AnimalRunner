@@ -136,6 +136,12 @@ public class EnvironmentController : MonoBehaviour {
 						setsList.Add(sets[i]);
 					}
 					break;
+				case SetType.Candy:
+					if (CR.charactersInfo.characters[4].unlocked)
+					{
+						setsList.Add(sets[i]);
+					}
+					break;
 			}
 		}
 	}
@@ -181,6 +187,7 @@ public class EnvironmentController : MonoBehaviour {
 	}
 	void EndGame()
 	{
+		//Debug.Log("GAME ENDED");
 		inGame = false;
 		canDestroy = false;
 		StopCoroutine("StartSpawning");
@@ -228,7 +235,7 @@ public class EnvironmentController : MonoBehaviour {
 	{
 		if(prefabsInstantiated.Count > 5)
 		{
-			Debug.Log(prefabsInstantiated.Count);
+			//Debug.Log(prefabsInstantiated.Count);
 			EnvironmentPrefabController temp = prefabsInstantiated[0];
 			prefabsInstantiated.Remove(prefabsInstantiated[0]);
 			Destroy(temp.gameObject);

@@ -49,7 +49,7 @@ MonoBehaviour:
     prefab: {fileID: 1395222153171100, guid: fa370bf33291107488c4927e8a2db71b, type: 2}
     description: A unicorn
     unlocked: 0
-    hide: 0
+    hide: 1
     coinPrice: 150
     gemPrice: 20
   - name: Okami

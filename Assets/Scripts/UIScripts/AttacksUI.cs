@@ -76,7 +76,7 @@ public class AttacksUI : MonoBehaviour {
 
     public void UpdateAttacks()
     {
-        Debug.Log("UpdateAttacks");
+        //Debug.Log("UpdateAttacks");
         StartCoroutine("ColdownAttack");        
     }
 

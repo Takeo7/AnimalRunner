@@ -16,6 +16,7 @@ public class ParallaxMainController : MonoBehaviour {
 	private void Start()
 	{
 		SetParallaxNewElements();
+		Debug.Log("START");
 	}
 	public void SetParallaxNewElements()
 	{
@@ -33,6 +34,7 @@ public class ParallaxMainController : MonoBehaviour {
 	}
 	void SetElements(ParallaxController secondController,SpriteRenderer sprite)
 	{
+		//Debug.Log("SEt ELEMENTS");
 		switch (secondController.parallaxType)
 		{
 			case ParallaxType.Background:

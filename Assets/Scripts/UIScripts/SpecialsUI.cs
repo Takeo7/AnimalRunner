@@ -39,19 +39,19 @@ public class SpecialsUI : MonoBehaviour {
                 specialattackbutton.image.sprite = attackButtonsForest[0];
 				cooldownImage.sprite = attackButtonsForest[0];
 				sps.pressedSprite = attackButtonsForest[1];
-                Debug.Log("Special button Forest");
+                //Debug.Log("Special button Forest");
                 break;
             case SetType.Desert:
                 specialattackbutton.image.sprite = attackButtonsDesert[0];
 				cooldownImage.sprite = attackButtonsDesert[0];
 				sps.pressedSprite = attackButtonsDesert[1];
-                Debug.Log("Special button Desert");
+                //Debug.Log("Special button Desert");
                 break;
             case SetType.Ice:
                 specialattackbutton.image.sprite = attackButtonsIce[0];
 				cooldownImage.sprite = attackButtonsIce[0];
 				sps.pressedSprite = attackButtonsIce[1];
-                Debug.Log("Special button Ice");
+                //Debug.Log("Special button Ice");
                 break;
             default:
                 break;

@@ -22,7 +22,7 @@ public class DragonSpecial : MonoBehaviour {
 	IEnumerator SpecialCO()
 	{
 		CR.TM.AC.AttackAnim(true);
-		yield return new WaitForSeconds(CR.TM.AC.attackAnimDuration);
+		//yield return new WaitForSeconds(CR.TM.AC.attackAnimDuration);
 		Instantiate(specialBullet, CR.TM.bulletSpawnPoint.position, specialBullet.transform.rotation);
 		yield return new WaitForSeconds(5f);
 		SpecialsUI.instance.SetCooldown();

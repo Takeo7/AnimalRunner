@@ -30,7 +30,7 @@ public class FinisherController : MonoBehaviour {
 			CR.TM.dead = true;
             CR.PS.takeDammage(CR.PS.AmountHealth);
 			MainMenuAnimator.instance.isFall = true;
-			enviroment.TriggerEndGame();
+			//enviroment.TriggerEndGame();
         }
 
     }
