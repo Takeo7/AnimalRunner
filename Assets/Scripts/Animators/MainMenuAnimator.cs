@@ -96,6 +96,15 @@ public class MainMenuAnimator : MonoBehaviour {
 
     private void Start()
     {
+        GPL = GooglePlayLogin.instance;
+        if (PlayFab.PlayFabAuthenticationAPI.IsEntityLoggedIn() == false && Social.localUser.authenticated == false && PlayGamesPlatform.Instance.localUser.authenticated == false)
+        {
+            PlayFabLogin.instance.LogInPlayFabOS();
+        }
+        else
+        {
+            LoadingScreen.SetActive(false);
+        }        
 		LANG = LanguajesDic.instance;
         if (PlayerPrefs.GetInt("FirstTime") != 1)
         {
@@ -126,11 +135,7 @@ public class MainMenuAnimator : MonoBehaviour {
                     break;
             }
         }
-        GPL = GooglePlayLogin.instance;
-        if (GPL.isGoogleLogged == true || PlayFabLogin.instance.isPlayFabLogged == true)
-        {
-            LoadingScreen.SetActive(false);
-        }
+        
         GPL.GetMMA(instance);
         if (PlayGamesPlatform.Instance.IsAuthenticated())
         {

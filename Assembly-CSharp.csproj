@@ -70,6 +70,7 @@
     <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\LinkedSet.cs" />
     <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\Outline.cs" />
     <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\OutlineEffect.cs" />
+    <Compile Include="Assets\GameCenterLogin.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Achievement.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\CommonStatusCodes.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\CommonTypes.cs" />

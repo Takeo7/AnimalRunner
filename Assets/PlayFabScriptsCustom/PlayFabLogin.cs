@@ -60,6 +60,7 @@ using System.Collections.Generic;
             {
                 PlayFabSettings.TitleId = "C3D0"; // Please change this value to your own titleId from PlayFab Game Manager
             }
+
         }
 
         public void GetVIV(CharacterInfo ci, MainMenuAnimator mma, EnvironmentController ec, Text debugtext, GameObject loginwindow, TextsScript loginText)
@@ -239,46 +240,20 @@ using System.Collections.Generic;
         {
             if (Application.platform == RuntimePlatform.Android)
             {
-                var request = new LoginWithGoogleAccountRequest { CreateAccount = true, ServerAuthCode = PlayGamesPlatform.Instance.GetIdToken() };
-                PlayFabClientAPI.LoginWithGoogleAccount(request, OnLoginOSSuccess, OnLoginOSFailure);
+                GooglePlayLogin.instance.StartLogInGoogle();
             }
             else if (Application.platform == RuntimePlatform.IPhonePlayer)
             {
-                /*var request = new LoginWithGoogleAccountRequest { CreateAccount = true };
-                PlayFabClientAPI.LoginWithGoogleAccount(request, OnLoginSuccess, OnLoginFailure);*/
+                GameCenterLogin.instance.LogInIOS();
+            }
+            else
+            {
+                LogInWindow.SetActive(true);
             }
             Debug.Log("PlayFab - LogInOS");
         }
 
-        private void OnLoginOSSuccess(LoginResult result)
-        {
-            Debug.Log("PlayFab - LogIn with Google success");
-            DebugText.text = "PlayFab - LogIn with Google success";
-            CI.loggedWithGoogle = true;
-            if (CI.firstConection == true)
-            {
-                CI.firstConection = false;
-                LinkPlayFabDeviceID();
-            }
-            if (saveLocalInfo)
-            {
-                UploadUserData(true);
-            }
-            else
-            {
-                GetPlayFabData();
-            }
-            LogInWindow.SetActive(false);
-            //MMA.UpdateTexts();
-            CI.isLocal = false;
-        }
-        private void OnLoginOSFailure(PlayFabError error)
-        {
-            Debug.LogWarning("PlayFab - LogIn Google Failed");
-            Debug.LogError("Here's some debug information:");
-            Debug.LogError(error.GenerateErrorReport());
-            DebugText.text = "PlayFab - LogIn Google Failed || " + error;
-        }
+        
         #endregion
 
         #region LogIn DeviceID
