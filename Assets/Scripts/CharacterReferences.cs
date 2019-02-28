@@ -30,13 +30,15 @@ public class CharacterReferences : MonoBehaviour {
     public PointsController PC;
     [Space]
     public UIController uic;
+    [Space]
+    public AudioSourceSetter ASS;
 
 	private void Start()
 	{
 		int charSelected = playerInfo.selectedCharacter;
 		Destroy(gameObj);
 		GameObject newChar = Instantiate(charactersInfo.characters[charSelected].prefab);
-		NewReference(newChar.transform, newChar.GetComponent<TestMovement>(), newChar.GetComponent<PlayerStats>(), newChar.GetComponent<AnimatorController>(), newChar);
+        NewReference(newChar.transform, newChar.GetComponent<TestMovement>(), newChar.GetComponent<PlayerStats>(), newChar.GetComponent<AnimatorController>(), newChar, newChar.GetComponent<AudioSourceSetter>());
 	}
 	public void Jump()
 	{
@@ -74,13 +76,17 @@ public class CharacterReferences : MonoBehaviour {
 		}
 	}
 
-	public void NewReference(Transform newTransfrom,TestMovement newTM,PlayerStats newPS,AnimatorController newAC,GameObject newlast)
+	public void NewReference(Transform newTransfrom,TestMovement newTM,PlayerStats newPS,AnimatorController newAC,GameObject newlast, AudioSourceSetter newASS)
 	{
 		characterTransform = newTransfrom;
 		TM = newTM;
 		PS = newPS;
 		AC = newAC;
 		gameObj = newlast;
+        if (newASS != null)
+        {
+            ASS = newASS;
+        }
 	}
 
 }

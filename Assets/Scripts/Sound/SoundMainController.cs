@@ -34,11 +34,11 @@ public class SoundMainController : MonoBehaviour {
 		musicSpeaker.Play();
 		if (SS.mute)
 		{
-			//muteButton.sprite = muteButtonImages[1];
+			muteButton.sprite = muteButtonImages[1];
 		}
 		else
 		{
-			//muteButton.sprite = muteButtonImages[0];
+			muteButton.sprite = muteButtonImages[0];
 		}
 		if(speakers.Count > 0)
 		{
@@ -82,12 +82,12 @@ public class SoundMainController : MonoBehaviour {
 		if (isMute)
 		{
 			isMute = false;
-			//muteButton.sprite = muteButtonImages[0];
+			muteButton.sprite = muteButtonImages[0];
 		}
 		else
 		{
 			isMute = true;
-			//muteButton.sprite = muteButtonImages[1];
+			muteButton.sprite = muteButtonImages[1];
 		}
 		int length = speakers.Count;
 		for (int i = 0; i < length; i++)

@@ -119,7 +119,7 @@ public class ChallengesController : MonoBehaviour {
 		//Refill dead window with the challenges
 		for (int i = 0; i < 2; i++)
 		{
-			dieChallenges[i].text = currentChallenges[i].name;
+			dieChallenges[i].text = LanguajesDic.instance.GetChallengesText(currentChallenges[i].index);
 			if(currentChallenges[i].xp == 1)
 			{
 				dieChallengesStars[i].gameObject.SetActive(false);
@@ -138,12 +138,12 @@ public class ChallengesController : MonoBehaviour {
 		{
 			medals[i].SetActive(true);
 		}
-		levelText.text = CR.playerInfo.playerName + " Level: " + CR.playerInfo.playerLevel.ToString();
+		levelText.text = PlayerPrefs.GetString("Username") + " "+LanguajesDic.instance.GetText(11)+": " + CR.playerInfo.playerLevel.ToString();
 
 		//Refill pause window with the challenges
-		challenge01Pause.text = currentChallenges[0].name;
-		challenge02Pause.text = currentChallenges[1].name;
-		if(currentChallenges[0].xp == 1)
+		challenge01Pause.text = LanguajesDic.instance.GetChallengesText(currentChallenges[0].index);
+        challenge02Pause.text = LanguajesDic.instance.GetChallengesText(currentChallenges[1].index);
+        if (currentChallenges[0].xp == 1)
 		{
 			challenge01PauseStars.gameObject.SetActive(false);
 		}
@@ -164,6 +164,13 @@ public class ChallengesController : MonoBehaviour {
 
 
 	}
+    public void RefillCurrentChallengesText()
+    {
+        dieChallenges[0].text = LanguajesDic.instance.GetChallengesText(currentChallenges[0].index);
+        dieChallenges[1].text = LanguajesDic.instance.GetChallengesText(currentChallenges[1].index);
+        challenge01Pause.text = LanguajesDic.instance.GetChallengesText(currentChallenges[0].index);
+        challenge02Pause.text = LanguajesDic.instance.GetChallengesText(currentChallenges[1].index);
+    }
 	void CheckMeters()
 	{
 		if (currentChallengesDone[0] == false)
@@ -249,8 +256,8 @@ public class ChallengesController : MonoBehaviour {
 	}
 	void ShowChallengeCompletedUI(byte pos)
 	{
-		CCUIC.text.text = currentChallenges[pos].name;
-		CCUIC.SetIcon(pos);
+		CCUIC.text.text = LanguajesDic.instance.GetChallengesText(currentChallenges[pos].index);
+        CCUIC.SetIcon(pos);
 		CCUIC.gameObject.SetActive(true);
 		currentChallenges[pos] = null;
 	}

@@ -6,12 +6,18 @@ public class AudioSourceSetter : MonoBehaviour
 {
 	
 	public AudioSource AS;
-	// Use this for initialization
-	void Start()
+    SoundMainController SMC;
+    // Use this for initialization
+    void Start()
 	{
-		SoundMainController SMC = SoundMainController.instance;
+		SMC = SoundMainController.instance;
+        Debug.Log(gameObject.name);
 		SMC.speakers.Add(AS);
 		AS.volume = SMC.SS.volume;
 		AS.mute = SMC.SS.mute;
 	}
+    public void DeleteThisFromSpeakers()
+    {
+        SMC.speakers.Remove(AS);
+    }
 }

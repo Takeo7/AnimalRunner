@@ -74,9 +74,10 @@ public class ShopController : MonoBehaviour {
 	{
 		SetNewSelected();
 		int charSelected = CR.playerInfo.selectedCharacter;
+        CR.ASS.DeleteThisFromSpeakers();
 		Destroy(CR.gameObj);
 		GameObject newChar = Instantiate(charactersInfo.characters[charSelected].prefab);
-		CR.NewReference(newChar.transform,newChar.GetComponent<TestMovement>(),newChar.GetComponent<PlayerStats>(),newChar.GetComponent<AnimatorController>(),newChar);
+		CR.NewReference(newChar.transform,newChar.GetComponent<TestMovement>(),newChar.GetComponent<PlayerStats>(),newChar.GetComponent<AnimatorController>(),newChar, newChar.GetComponent<AudioSourceSetter>());
 	}
 	public void GetCoins()
 	{
@@ -130,5 +131,6 @@ public class ShopController : MonoBehaviour {
 				Debug.Log("CantBuy");
 			}
 		}
+        MainMenuAnimator.instance.UpdateCoinsText();
 	}
 }

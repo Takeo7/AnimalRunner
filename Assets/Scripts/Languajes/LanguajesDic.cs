@@ -24,17 +24,25 @@ public class LanguajesDic : MonoBehaviour {
 
     public string[] English;
     public string[] English_Errors;
+    public string[] English_Challenges;
+
     public string[] Spanish;
     public string[] Spanish_Errors;
+    public string[] Spanish_Challenges;
+
     public string[] French;
     public string[] French_Errors;
+    public string[] French_Challenges;
+
     public string[] Chinese;
     public string[] Chinese_Errors;
-    public string[] German;
-    public string[] German_Errors;
+    public string[] Chinese_Challenges;
+
 
     string[] currentLangTexts;
     string[] currentLangErrorTexts;
+    [SerializeField]
+    string[] currentLangChallenges;
 
     private void Start()
     {
@@ -52,22 +60,27 @@ public class LanguajesDic : MonoBehaviour {
             case 0:
                 currentLangTexts = English;
                 currentLangErrorTexts = English_Errors;
+                currentLangChallenges = English_Challenges;
                 break;
             case 1:
                 currentLangTexts = Spanish;
                 currentLangErrorTexts = Spanish_Errors;
+                currentLangChallenges = Spanish_Challenges;
                 break;
             case 2:
                 currentLangTexts = French;
                 currentLangErrorTexts = French_Errors;
+                currentLangChallenges = French_Challenges;
                 break;
             case 3:
                 currentLangTexts = Chinese;
                 currentLangErrorTexts = Chinese_Errors;
+                currentLangChallenges = Chinese_Challenges;
                 break;
             default:
                 currentLangTexts = English;
                 currentLangErrorTexts = English_Errors;
+                currentLangChallenges = English_Challenges;
                 break;
         }
         SetCharactersData();
@@ -96,6 +109,11 @@ public class LanguajesDic : MonoBehaviour {
     public string GetErrorText(int errorID)
     {
         return currentLangErrorTexts[errorID];
+    }
+
+    public string GetChallengesText(int challengesID)
+    {
+        return currentLangChallenges[challengesID];
     }
 }
 

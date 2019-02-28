@@ -9,14 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 352fb850bbd5f5d43b46d752d4644cab, type: 3}
-  m_Name: Kill5Total
+  m_Name: 0_300meterRow
   m_EditorClassIdentifier: 
-  xp: 1
-  index: 3
-  name: Kill 5 enemies
-  type: 1
-  mustBeOnce: 0
+  xp: 2
+  index: 0
+  name: Run 300 meters in a row
+  type: 0
+  mustBeOnce: 1
   mustBeGrounded: 0
-  metersToRun: 0
+  metersToRun: 300
   mustBeRanged: 0
-  unitsToKill: 5
+  unitsToKill: 0

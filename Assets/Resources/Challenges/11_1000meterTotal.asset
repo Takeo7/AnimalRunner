@@ -9,14 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 352fb850bbd5f5d43b46d752d4644cab, type: 3}
-  m_Name: 500meterGroundTotal
+  m_Name: 11_1000meterTotal
   m_EditorClassIdentifier: 
   xp: 1
-  index: 4
-  name: Run 500 meters while in the ground
+  index: 11
+  name: Run 1000 meters in total
   type: 0
   mustBeOnce: 0
-  mustBeGrounded: 1
-  metersToRun: 500
+  mustBeGrounded: 0
+  metersToRun: 1000
   mustBeRanged: 0
   unitsToKill: 0
