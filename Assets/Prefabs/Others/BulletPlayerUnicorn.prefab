@@ -202,8 +202,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0b965d996f4378479b7637e0698e63e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hit: {fileID: 1344291512331398, guid: 23b6683ce1635694188e73a2b0656741, type: 2}
   speed: 30
   damage: 1
+  isSpecial: 0
 --- !u!198 &198274954738703528
 ParticleSystem:
   m_ObjectHideFlags: 1

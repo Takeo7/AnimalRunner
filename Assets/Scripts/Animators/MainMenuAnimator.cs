@@ -99,6 +99,7 @@ public class MainMenuAnimator : MonoBehaviour {
     public Text rewardedCountdown;
     [SerializeField]
     bool seenRewardedVideo;
+	public Text metersRunDeadWindow;
 
     private void Start()
     {
@@ -203,6 +204,8 @@ public class MainMenuAnimator : MonoBehaviour {
             Debug.Log("DEAD");
             Time.timeScale = 1;
             CR.PS.AC.DeathAnim();
+			rewardedVideoButton.SetActive(false);
+			CC.UIC.meters.gameObject.SetActive(false);
             EnvironmentController.instance.gameOverDelegate();
         }
     }
@@ -235,6 +238,7 @@ public class MainMenuAnimator : MonoBehaviour {
 		ShopConfirmer.instance.InstantiateCharacter((byte)CR.playerInfo.selectedCharacter);
 		CC.DieChallengesCheck();
 		coinsTakenTXT.text =  LanguajesDic.instance.GetText(34)+": "+CoinsController.instance.coinsOnRun;
+		metersRunDeadWindow.text = CC.UIC.metersRun+" " + LANG.GetText(5);
 		deadWindow.SetActive(true);
 	}
 
@@ -300,16 +304,17 @@ public class MainMenuAnimator : MonoBehaviour {
 	void UpdateStatsText()
 	{
 		//UPDATE STATS TEXT
-		levelStats.text = LANG.GetText(11)+": "+CR.playerInfo.playerLevel;
-		metersRecordStats.text = LANG.GetText(36) + ": " + CR.playerInfo.metersRecord;
-		totalAttacksStats.text = LANG.GetText(35) + ": " + CR.playerInfo.totalAttacks;
-		totalChallengesCompletedStats.text = LANG.GetText(37) + ": " + CR.playerInfo.totalChallengesCompleted;
-		totalCoinsEarnedStats.text = LANG.GetText(38) + ": " + CR.playerInfo.totalCoinsEarned;
-		totalDeathsStats.text = LANG.GetText(39) + ": " + CR.playerInfo.totalDeaths;
-		totalEnemiesKilledStats.text = LANG.GetText(40) + ": " + CR.playerInfo.totalEnemiesKilled;
-		totalJumpsStats.text = LANG.GetText(41) + ": " + CR.playerInfo.totalJumps;
-		TotalMetersRunnedStats.text = LANG.GetText(42) + ": " + CR.playerInfo.totalMetersRunned;
-		TotalSpecialUsedStats.text = LANG.GetText(43) + ": " + CR.playerInfo.totalSpecialUsed;
+		
+		levelStats.text = LANG.GetText(11)+":\n "+CR.playerInfo.playerLevel;
+		metersRecordStats.text = "<color=white>"+LANG.GetText(36) + ": "+"</color>" +CR.playerInfo.metersRecord;
+		totalAttacksStats.text = "<color=silver>" + LANG.GetText(35) + ": " + "</color>" + CR.playerInfo.totalAttacks;
+		totalChallengesCompletedStats.text = "<color=white>" + LANG.GetText(37) + ": " + "</color>" + CR.playerInfo.totalChallengesCompleted;
+		totalCoinsEarnedStats.text = "<color=silver>" + LANG.GetText(38) + ": " + "</color>" + CR.playerInfo.totalCoinsEarned;
+		totalDeathsStats.text = "<color=white>" + LANG.GetText(39) + ": " + "</color>" + CR.playerInfo.totalDeaths;
+		totalEnemiesKilledStats.text = "<color=silver>" + LANG.GetText(40) + ": " + "</color>" + CR.playerInfo.totalEnemiesKilled;
+		totalJumpsStats.text = "<color=white>" + LANG.GetText(41) + ": " + "</color>" + CR.playerInfo.totalJumps;
+		TotalMetersRunnedStats.text = "<color=silver>" + LANG.GetText(42) + ": " + "</color>" + CR.playerInfo.totalMetersRunned;
+		TotalSpecialUsedStats.text = "<color=white>" + LANG.GetText(43) + ": " + "</color>" + CR.playerInfo.totalSpecialUsed;
 	}
     public void UpdatePointText(int points)
     {

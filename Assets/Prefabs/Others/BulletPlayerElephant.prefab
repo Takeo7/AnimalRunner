@@ -329,8 +329,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0b965d996f4378479b7637e0698e63e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hit: {fileID: 1923155693961006, guid: 07b58c5947e3e2849b0150b6b92b1f3d, type: 2}
   speed: 30
   damage: 1
+  isSpecial: 0
 --- !u!114 &114860038549034418
 MonoBehaviour:
   m_ObjectHideFlags: 1
