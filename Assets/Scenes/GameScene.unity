@@ -531,8 +531,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1228011156}
-  - {fileID: 118500050}
   - {fileID: 1122268710}
+  - {fileID: 118500050}
   - {fileID: 2023056594}
   - {fileID: 1120514210}
   - {fileID: 1987028525}
@@ -1724,6 +1724,7 @@ GameObject:
   - component: {fileID: 118500050}
   - component: {fileID: 118500052}
   - component: {fileID: 118500051}
+  - component: {fileID: 118500053}
   m_Layer: 5
   m_Name: Attack
   m_TagString: Untagged
@@ -1742,7 +1743,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 47353960}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1789,6 +1790,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 118500049}
   m_CullTransparentMesh: 0
+--- !u!114 &118500053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 118500049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593b3e3aa9385ef4bb3a21390ed42315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t: {fileID: 118500051}
+  ID: 4
+  isHidden: 1
 --- !u!1 &123045561
 GameObject:
   m_ObjectHideFlags: 0
@@ -14801,6 +14816,7 @@ GameObject:
   - component: {fileID: 845525248}
   - component: {fileID: 845525250}
   - component: {fileID: 845525249}
+  - component: {fileID: 845525251}
   m_Layer: 5
   m_Name: Lifes
   m_TagString: Untagged
@@ -14866,6 +14882,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 845525247}
   m_CullTransparentMesh: 0
+--- !u!114 &845525251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 845525247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593b3e3aa9385ef4bb3a21390ed42315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t: {fileID: 845525249}
+  ID: 2
+  isHidden: 1
 --- !u!1 &853113951
 GameObject:
   m_ObjectHideFlags: 0
@@ -20212,6 +20242,7 @@ GameObject:
   - component: {fileID: 1122268710}
   - component: {fileID: 1122268712}
   - component: {fileID: 1122268711}
+  - component: {fileID: 1122268713}
   m_Layer: 5
   m_Name: Spacial
   m_TagString: Untagged
@@ -20230,12 +20261,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 47353960}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -89.3, y: 267.6}
-  m_SizeDelta: {x: -947.8, y: -820}
+  m_AnchoredPosition: {x: -89.30005, y: 267.59998}
+  m_SizeDelta: {x: -947.8001, y: -820}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1122268711
 MonoBehaviour:
@@ -20277,6 +20308,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1122268709}
   m_CullTransparentMesh: 0
+--- !u!114 &1122268713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1122268709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593b3e3aa9385ef4bb3a21390ed42315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t: {fileID: 1122268711}
+  ID: 3
+  isHidden: 1
 --- !u!1 &1126304809
 GameObject:
   m_ObjectHideFlags: 0
@@ -20794,6 +20839,7 @@ GameObject:
   - component: {fileID: 1161588555}
   - component: {fileID: 1161588557}
   - component: {fileID: 1161588556}
+  - component: {fileID: 1161588558}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -20859,6 +20905,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1161588554}
   m_CullTransparentMesh: 0
+--- !u!114 &1161588558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1161588554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593b3e3aa9385ef4bb3a21390ed42315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t: {fileID: 1161588556}
+  ID: 0
+  isHidden: 1
 --- !u!1 &1163902687
 GameObject:
   m_ObjectHideFlags: 0
@@ -26349,6 +26409,12 @@ MonoBehaviour:
   - Complete 1000 meters in Total
   - Complete 1000 meters in a Row
   - Kill 15 Enemies in Total
+  English_Tutorial:
+  - Tap to Jump
+  - Meters
+  - Lifes
+  - Special Attack
+  - Attack
   Spanish:
   - Jugar
   - Ajustes
@@ -26423,6 +26489,12 @@ MonoBehaviour:
   - Completa 1000 metros en total
   - Completa 1000 metros sin morir
   - Mata 15 Enemigos sin morir
+  Spanish_Tutorial:
+  - Tap para Saltar
+  - Metros
+  - Vidas
+  - Ataque Especial
+  - Ataque
   French:
   - Jouer
   - "Param\xE8tres"
@@ -26497,6 +26569,12 @@ MonoBehaviour:
   - "Compl\xE9ter 1000 m\xE8tres au total"
   - "Compl\xE9ter 1000 m\xE8tres sans mourir"
   - Tuer 15 ennemis sans mourir
+  French_Tutorial:
+  - Appuyez sur pour sauter
+  - "M\xE8tres"
+  - Des vies
+  - "Attaque sp\xE9ciale"
+  - Attaque
   Chinese:
   - "\u73A9"
   - "\u8BBE\u7F6E"
@@ -26571,7 +26649,12 @@ MonoBehaviour:
   - "\u603B\u51711000\u7C73"
   - "\u5B8C\u62101000\u7C73\u800C\u4E0D\u4F1A\u6B7B\u4EA1"
   - "\u6740\u6B7B15\u4E2A\u654C\u4EBA\u800C\u4E0D\u4F1A\u6B7B\u4EA1"
-  currentLangChallenges: []
+  Chinese_Tutorial:
+  - "\u70B9\u51FB\u8DF3\u8F6C"
+  - "\u7C73"
+  - "\u9759\u7269"
+  - "\u7279\u6B8A\u653B\u51FB"
+  - "\u653B\u51FB"
 --- !u!4 &1421015780
 Transform:
   m_ObjectHideFlags: 0
@@ -28204,6 +28287,7 @@ GameObject:
   - component: {fileID: 1520984580}
   - component: {fileID: 1520984582}
   - component: {fileID: 1520984581}
+  - component: {fileID: 1520984583}
   m_Layer: 5
   m_Name: Meters Run
   m_TagString: Untagged
@@ -28269,6 +28353,20 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1520984579}
   m_CullTransparentMesh: 0
+--- !u!114 &1520984583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520984579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593b3e3aa9385ef4bb3a21390ed42315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t: {fileID: 1520984581}
+  ID: 1
+  isHidden: 1
 --- !u!1 &1523936099
 GameObject:
   m_ObjectHideFlags: 0

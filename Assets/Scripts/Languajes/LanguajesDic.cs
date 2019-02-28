@@ -25,24 +25,28 @@ public class LanguajesDic : MonoBehaviour {
     public string[] English;
     public string[] English_Errors;
     public string[] English_Challenges;
-
+    public string[] English_Tutorial;
+    [Space]
     public string[] Spanish;
     public string[] Spanish_Errors;
     public string[] Spanish_Challenges;
-
+    public string[] Spanish_Tutorial;
+    [Space]
     public string[] French;
     public string[] French_Errors;
     public string[] French_Challenges;
-
+    public string[] French_Tutorial;
+    [Space]
     public string[] Chinese;
     public string[] Chinese_Errors;
     public string[] Chinese_Challenges;
+    public string[] Chinese_Tutorial;
 
 
     string[] currentLangTexts;
     string[] currentLangErrorTexts;
-    [SerializeField]
     string[] currentLangChallenges;
+    string[] currentLangTutorial;
 
     private void Start()
     {
@@ -61,26 +65,31 @@ public class LanguajesDic : MonoBehaviour {
                 currentLangTexts = English;
                 currentLangErrorTexts = English_Errors;
                 currentLangChallenges = English_Challenges;
+                currentLangTutorial = English_Tutorial;
                 break;
             case 1:
                 currentLangTexts = Spanish;
                 currentLangErrorTexts = Spanish_Errors;
                 currentLangChallenges = Spanish_Challenges;
+                currentLangTutorial = Spanish_Tutorial;
                 break;
             case 2:
                 currentLangTexts = French;
                 currentLangErrorTexts = French_Errors;
                 currentLangChallenges = French_Challenges;
+                currentLangTutorial = French_Tutorial;
                 break;
             case 3:
                 currentLangTexts = Chinese;
                 currentLangErrorTexts = Chinese_Errors;
                 currentLangChallenges = Chinese_Challenges;
+                currentLangTutorial = Chinese_Tutorial;
                 break;
             default:
                 currentLangTexts = English;
                 currentLangErrorTexts = English_Errors;
                 currentLangChallenges = English_Challenges;
+                currentLangTutorial = English_Tutorial;
                 break;
         }
         SetCharactersData();
@@ -114,6 +123,11 @@ public class LanguajesDic : MonoBehaviour {
     public string GetChallengesText(int challengesID)
     {
         return currentLangChallenges[challengesID];
+    }
+
+    public string GetTutorialText(int tutorialID)
+    {
+        return currentLangTutorial[tutorialID];
     }
 }
 
