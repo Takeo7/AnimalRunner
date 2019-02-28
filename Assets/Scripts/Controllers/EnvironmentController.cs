@@ -71,6 +71,10 @@ public class EnvironmentController : MonoBehaviour {
 	{
 		Time.timeScale = 1;
 	}
+    public void GameOverDelegateFunc()
+    {
+        gameOverDelegate();
+    }
 	//FinishTimeControl
 	public void UpdateEnvironments()
 	{

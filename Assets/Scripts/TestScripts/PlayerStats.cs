@@ -21,6 +21,7 @@ public class PlayerStats : MonoBehaviour {
 
     public Characters PlayerType;
     public AttackType attackType;
+    public bool reallyDead;
 
     private void Start()
     {
@@ -59,13 +60,31 @@ public class PlayerStats : MonoBehaviour {
 			CharacterReferences.instance.playerInfo.totalMetersRunned += EnvironmentController.instance.UIC.currentMeters;
             CharacterReferences.instance.uic.metersRun = CharacterReferences.instance.uic.currentMeters;
 
-            EnvironmentController.instance.gameOverDelegate();
-            
-			//gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
-			//gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
-			AC.DeathAnim();
-		}
+            //EnvironmentController.instance.gameOverDelegate();
+
+            //gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
+            //gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
+            MainMenuAnimator.instance.ToggleRewardedVideoButton();
+            if (reallyDead == true)
+            {
+                AC.DeathAnim();
+            }
+        }
 	}
+    public void Resucitate()
+    {
+        CharacterReferences CR = CharacterReferences.instance;
+        CR.TM.dead = false;
+        CR.FF.FollowFunc();
+        isDead = false;
+        gameObject.tag = "Player";
+        reallyDead = false;
+        AmountHealth = 3;
+        healthScript.UpdateHearts(AmountHealth);
+        CR.TM.jumps = 2;
+        transform.position = new Vector3(transform.position.x, 13f, transform.position.z);
+        CR.TM.rb.velocity = Vector3.zero;
+    }
 
     
 

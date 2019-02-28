@@ -14,6 +14,10 @@ public class FinisherController : MonoBehaviour {
 		StartCoroutine("Follow");
 	}
 
+    public void FollowFunc()
+    {
+        StartCoroutine("Follow");
+    }
 	IEnumerator Follow()
 	{
 		while (CR.TM.dead == false)

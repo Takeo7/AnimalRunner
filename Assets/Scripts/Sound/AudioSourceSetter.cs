@@ -18,6 +18,9 @@ public class AudioSourceSetter : MonoBehaviour
 	}
     public void DeleteThisFromSpeakers()
     {
-        SMC.speakers.Remove(AS);
+        if(AS != null)
+        {
+            SMC.speakers.Remove(AS);
+        }
     }
 }

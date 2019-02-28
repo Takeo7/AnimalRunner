@@ -32,6 +32,8 @@ public class CharacterReferences : MonoBehaviour {
     public UIController uic;
     [Space]
     public AudioSourceSetter ASS;
+    [Space]
+    public FinisherController FF;
 
 	private void Start()
 	{

@@ -74,7 +74,10 @@ public class ShopController : MonoBehaviour {
 	{
 		SetNewSelected();
 		int charSelected = CR.playerInfo.selectedCharacter;
-        CR.ASS.DeleteThisFromSpeakers();
+        if(CR.ASS != null)
+        {
+            CR.ASS.DeleteThisFromSpeakers();
+        }
 		Destroy(CR.gameObj);
 		GameObject newChar = Instantiate(charactersInfo.characters[charSelected].prefab);
 		CR.NewReference(newChar.transform,newChar.GetComponent<TestMovement>(),newChar.GetComponent<PlayerStats>(),newChar.GetComponent<AnimatorController>(),newChar, newChar.GetComponent<AudioSourceSetter>());

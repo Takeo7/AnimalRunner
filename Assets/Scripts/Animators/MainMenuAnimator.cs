@@ -6,6 +6,7 @@ using GooglePlayGames.BasicApi;
 using GooglePlayGames;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Advertisements;
 
 public class MainMenuAnimator : MonoBehaviour {
     #region Singleton
@@ -93,6 +94,11 @@ public class MainMenuAnimator : MonoBehaviour {
     [Space]
     public Text pointsText;
     public Animator pointTextAnim;
+    [Space]
+    public GameObject rewardedVideoButton;
+    public Text rewardedCountdown;
+    [SerializeField]
+    bool seenRewardedVideo;
 
     private void Start()
     {
@@ -166,6 +172,49 @@ public class MainMenuAnimator : MonoBehaviour {
         {
             SignInButtonText.text = LanguajesDic.instance.GetText(8);
         }*/
+    }
+    public void ToggleRewardedVideoButton()
+    {
+        if (!seenRewardedVideo)
+        {
+            seenRewardedVideo = true;
+            rewardedVideoButton.SetActive(true);
+            Time.timeScale = 0;
+            StartCoroutine("RewardedVideoCountdown");
+        }
+        else
+        {
+            CR.PS.reallyDead = true;
+            EnvironmentController.instance.gameOverDelegate();
+            CR.TM.enabled = false;
+        }
+    }
+    IEnumerator RewardedVideoCountdown()
+    {
+        int countdown = 5;
+        while (countdown > 0)
+        {
+            rewardedCountdown.text = countdown + " " + LANG.GetText(48);
+            yield return new WaitForSecondsRealtime(1);
+            countdown--;
+        }
+        if(countdown <= 0)
+        {
+            Debug.Log("DEAD");
+            Time.timeScale = 1;
+            CR.PS.AC.DeathAnim();
+            EnvironmentController.instance.gameOverDelegate();
+        }
+    }
+    public void SeeRewardedVideo()
+    {
+
+        StopCoroutine("RewardedVideoCountdown");
+        if (Advertisement.IsReady("rewardedVideo"))
+        {
+            Advertisement.Show("rewardedVideo");
+            CR.PS.Resucitate();
+        }
     }
     #region ToggleWindows
     public void ToogleDeadWindow()
