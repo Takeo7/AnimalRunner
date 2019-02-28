@@ -78,9 +78,15 @@ public class EnvironmentPrefabController : MonoBehaviour {
     }
     void CreateNewDeco(int length)
     {
+        int temp = 0;
+        bool created = false;
         for (int i = 0; i < length; i++)
         {
             int rand3 = Random.Range(0, decorationSpawnPoints.Length);
+            if (created && rand3 == temp)
+            {
+                rand3 = Random.Range(0, decorationSpawnPoints.Length);
+            }
             if (rand3 == decorationSpawnPoints.Length)
             {
                 rand3 = 0;
@@ -90,9 +96,9 @@ public class EnvironmentPrefabController : MonoBehaviour {
             {
                 randDeco = 0;
             }
-            GameObject deco = Instantiate(decorations[randDeco], 
-                new Vector3(decorationSpawnPoints[rand3].position.x, decorationSpawnPoints[rand3].position.y, 1), Quaternion.identity);
-            deco.transform.SetParent(decorationSpawnPoints[rand3]);
+            GameObject deco = Instantiate(decorations[randDeco], decorationSpawnPoints[rand3]);
+            created = !created;
+            temp = rand3;
         }
         
     }

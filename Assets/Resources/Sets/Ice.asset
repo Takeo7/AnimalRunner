@@ -18,9 +18,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 21300000, guid: 040466b11819dc94a86875f524fde672, type: 3}
   floorPrefabs:
-  - {fileID: 1857769920330514, guid: 5d55768d6b3d56f4e9b8a9a9f1fc2be1, type: 2}
-  - {fileID: 1759568747965304, guid: b5e49f3483e5ca74ab1da4e0df680d4d, type: 2}
+  - {fileID: 1315968963878838, guid: 568ce9a57b8297f489c50a7055ec4502, type: 2}
+  - {fileID: 1724890510158416, guid: 9ecd74b4946d2014bad6d7125157f229, type: 2}
+  - {fileID: 1550506654062170, guid: 22a88535afecb2245b8047c8282cac21, type: 2}
+  - {fileID: 1640160396664908, guid: 3a5bcb17f4e130c4a926e781f5f8f24c, type: 2}
+  - {fileID: 1858956176453876, guid: 0b0a841453212c54a82e278c2a4e1a48, type: 2}
   floatingPrefabs:
-  - {fileID: 1878426978204136, guid: b41ee72a0f5c0bf4a901ba1bef87c910, type: 2}
+  - {fileID: 1171184032021218, guid: 0f6d0f8975d7ae04ba043cb508fe0a7e, type: 2}
+  - {fileID: 1963088394086240, guid: fafff48a801809049ab8782a86765412, type: 2}
+  - {fileID: 1392074917704222, guid: ed02ad5c12eb30f4ebe997735ac3bd88, type: 2}
+  - {fileID: 1588174424623974, guid: c0db5daaaae21e0459cbc026ce054012, type: 2}
   specialPrefabs:
-  - {fileID: 1265338769549626, guid: f9cb4472582f75f4b9a7c0504d162573, type: 2}
+  - {fileID: 1442099469733934, guid: 4ce544a9a02b18a458f4ab71a12026de, type: 2}

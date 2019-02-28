@@ -504,6 +504,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VFXPrefab: {fileID: 151244, guid: 2e8669fad00562946bae9b3c7d5ef2e5, type: 2}
   instantiateOrigin: {fileID: 4628995929712448}
+  VFXInScene: {fileID: 0}
+  effects: []
 --- !u!198 &198124757051929410
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -690,7 +692,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.54509807, b: 1, a: 1}
+      maxColor: {r: 1, g: 0, b: 0.23735619, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

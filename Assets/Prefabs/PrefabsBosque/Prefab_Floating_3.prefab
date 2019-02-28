@@ -268,7 +268,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784594332977452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.82, z: -0.5}
+  m_LocalPosition: {x: 0, y: 1.72, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4362667620351266}
@@ -310,7 +310,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1370409330551008}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.67, y: 1.45, z: -0.5}
+  m_LocalPosition: {x: -1.67, y: 1.489, z: -0.5}
   m_LocalScale: {x: 8.44806, y: 8.573638, z: 1}
   m_Children: []
   m_Father: {fileID: 4182303972932384}
@@ -323,8 +323,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1589277613538416}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.54, y: 1.45, z: 0.5}
-  m_LocalScale: {x: 8.44806, y: 8.573638, z: 1}
+  m_LocalPosition: {x: 1.54, y: 1.489, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4182303972932384}
   m_RootOrder: 4
@@ -336,7 +336,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1579433258166734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.81, y: 1.77, z: 0.5}
+  m_LocalPosition: {x: -0.81, y: 1.72, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4362667620351266}
@@ -349,7 +349,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1196639487453436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2704163, y: 1.45, z: -0.5}
+  m_LocalPosition: {x: -2.2704163, y: 1.489, z: -0.5}
   m_LocalScale: {x: 8.44806, y: 8.573638, z: 1}
   m_Children: []
   m_Father: {fileID: 4182303972932384}
@@ -379,8 +379,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1683022099665018}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.75, y: 1.45, z: 0.5}
-  m_LocalScale: {x: 8.44806, y: 8.573638, z: 1}
+  m_LocalPosition: {x: -0.75, y: 1.489, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4182303972932384}
   m_RootOrder: 5
@@ -392,8 +392,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1854942193519528}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.85, y: 1.77, z: 0.5}
-  m_LocalScale: {x: 1.000004, y: 0.9999959, z: 1.0000001}
+  m_LocalPosition: {x: 0.85, y: 1.72, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4362667620351266}
   m_RootOrder: 1
@@ -405,7 +405,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1206086732336220}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.0296447, y: 1.45, z: -0.5}
+  m_LocalPosition: {x: 2.0296447, y: 1.489, z: -0.5}
   m_LocalScale: {x: 8.44806, y: 8.573638, z: 1}
   m_Children: []
   m_Father: {fileID: 4182303972932384}
@@ -418,7 +418,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1583189962418972}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.39494687, y: 1.45, z: -0.5}
+  m_LocalPosition: {x: -0.39494687, y: 1.489, z: -0.5}
   m_LocalScale: {x: 8.44806, y: 8.573638, z: 1}
   m_Children: []
   m_Father: {fileID: 4182303972932384}
@@ -553,12 +553,12 @@ MonoBehaviour:
   - {fileID: 1375003835107346, guid: 45711b8b0c65c78479494be2565dd11e, type: 2}
   - {fileID: 1375003835107346, guid: d536587667094934babbc9ba0f9b8bb2, type: 2}
   traps:
-  - {fileID: 1787306735302194, guid: 5947f0b913abb914393443c63ba3707e, type: 2}
+  - {fileID: 1904981198315766, guid: 19fe505d0dd201647b1cb34e92f2793b, type: 2}
   - {fileID: 1904981198315766, guid: 19fe505d0dd201647b1cb34e92f2793b, type: 2}
   - {fileID: 1395996759783588, guid: 2b8de89f2bf6c4644a6632ca41835427, type: 2}
   - {fileID: 1395996759783588, guid: 2b8de89f2bf6c4644a6632ca41835427, type: 2}
   decorations:
-  - {fileID: 1861729040506578, guid: 137c35bbabdfd2b429fb809ca134e3eb, type: 2}
+  - {fileID: 1099337880937628, guid: 2956266c5e6437d46b960efe31891da9, type: 2}
   - {fileID: 1099337880937628, guid: 2956266c5e6437d46b960efe31891da9, type: 2}
   - {fileID: 1059399603282608, guid: 037ea6d9e09375b40ab2255458f6f082, type: 2}
   - {fileID: 1201409272682248, guid: 520600b42efbb7d42b5a4494bdeb6dac, type: 2}

@@ -357,7 +357,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1464554296204800}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.13, y: 1.72, z: -0.5}
+  m_LocalPosition: {x: 0.13, y: 1.74, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4366365022361828}
@@ -396,7 +396,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1748378280903374}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.32, y: 1.72, z: 0.5}
+  m_LocalPosition: {x: 1.32, y: 1.74, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4366365022361828}
@@ -409,7 +409,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1990643968303962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.05, y: 1.72, z: 0.5}
+  m_LocalPosition: {x: -6.05, y: 1.74, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4366365022361828}
@@ -477,7 +477,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1117685293183354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.46, y: 1.72, z: -0.5}
+  m_LocalPosition: {x: -9.46, y: 1.74, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4366365022361828}
@@ -503,7 +503,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1918024149561448}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.41, y: 1.72, z: 0.5}
+  m_LocalPosition: {x: -1.41, y: 1.74, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4366365022361828}
@@ -516,7 +516,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1227812280124272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.98, y: 1.72, z: -0.5}
+  m_LocalPosition: {x: 1.98, y: 1.74, z: -0.5}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_Children: []
   m_Father: {fileID: 4366365022361828}
@@ -529,7 +529,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1863577858477098}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.63, y: 1.72, z: 0.5}
+  m_LocalPosition: {x: -8.63, y: 1.74, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4366365022361828}
@@ -542,7 +542,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1436559742664034}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.83, y: 1.72, z: -0.5}
+  m_LocalPosition: {x: -3.83, y: 1.74, z: -0.5}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_Children: []
   m_Father: {fileID: 4366365022361828}
@@ -568,7 +568,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1807619790954104}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.12, y: 1.72, z: 0.5}
+  m_LocalPosition: {x: 3.12, y: 1.74, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4366365022361828}
@@ -581,7 +581,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1249544013913820}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.5, y: 1.72, z: -0.5}
+  m_LocalPosition: {x: -7.5, y: 1.74, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4366365022361828}
@@ -607,7 +607,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1682313954258336}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.35, y: 1.72, z: 0.5}
+  m_LocalPosition: {x: -4.35, y: 1.74, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4366365022361828}
@@ -736,7 +736,7 @@ MonoBehaviour:
   - {fileID: 1375003835107346, guid: 45711b8b0c65c78479494be2565dd11e, type: 2}
   - {fileID: 1375003835107346, guid: d536587667094934babbc9ba0f9b8bb2, type: 2}
   traps:
-  - {fileID: 1787306735302194, guid: 5947f0b913abb914393443c63ba3707e, type: 2}
+  - {fileID: 1904981198315766, guid: 19fe505d0dd201647b1cb34e92f2793b, type: 2}
   - {fileID: 1904981198315766, guid: 19fe505d0dd201647b1cb34e92f2793b, type: 2}
   - {fileID: 1395996759783588, guid: 2b8de89f2bf6c4644a6632ca41835427, type: 2}
   - {fileID: 1395996759783588, guid: 2b8de89f2bf6c4644a6632ca41835427, type: 2}

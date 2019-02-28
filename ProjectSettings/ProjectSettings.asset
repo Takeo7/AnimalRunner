@@ -40,7 +40,7 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
-  - logo: {fileID: 21300012, guid: dc8fec20b08acda4da143dcbb59929ca, type: 3}
+  - logo: {fileID: 21300000, guid: 243d0499594f441449d02eaf60aec1bd, type: 3}
     duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
@@ -120,7 +120,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.1.5
+  bundleVersion: 0.1.6
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -156,7 +156,7 @@ PlayerSettings:
     Android: com.WagenerGames.RunForLife
     Standalone: com.Company.ProductName
   buildNumber: {}
-  AndroidBundleVersionCode: 65
+  AndroidBundleVersionCode: 66
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -263,75 +263,87 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 5b6d82cea02b7714b88f3fca8fd25530, type: 3}
+      m_Icon: {fileID: 2800000, guid: f4613c9ca5b5b5d4186cddf1f338109f, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: Android
     m_Icons:
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 0}
       m_Width: 192
       m_Height: 192
       m_Kind: 1
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 0}
       m_Width: 144
       m_Height: 144
       m_Kind: 1
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 0}
       m_Width: 96
       m_Height: 96
       m_Kind: 1
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 0}
       m_Width: 72
       m_Height: 72
       m_Kind: 1
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 0}
       m_Width: 48
       m_Height: 48
       m_Kind: 1
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 0}
       m_Width: 36
       m_Height: 36
       m_Kind: 1
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 0}
       m_Width: 192
       m_Height: 192
       m_Kind: 0
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 0}
       m_Width: 144
       m_Height: 144
       m_Kind: 0
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 0}
       m_Width: 96
       m_Height: 96
       m_Kind: 0
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 0}
       m_Width: 72
       m_Height: 72
       m_Kind: 0
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 0}
       m_Width: 48
       m_Height: 48
       m_Kind: 0
       m_SubKind: 
-    - m_Textures: []
+    - m_Textures:
+      - {fileID: 0}
       m_Width: 36
       m_Height: 36
       m_Kind: 0
       m_SubKind: 
     - m_Textures:
-      - {fileID: 2800000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
+      - {fileID: 2800000, guid: f4613c9ca5b5b5d4186cddf1f338109f, type: 3}
       - {fileID: 0}
       m_Width: 432
       m_Height: 432
