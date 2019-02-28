@@ -100,6 +100,8 @@ public class MainMenuAnimator : MonoBehaviour {
     [SerializeField]
     bool seenRewardedVideo;
 	public Text metersRunDeadWindow;
+    [Space]
+    public GameObject tutorial;
 
     private void Start()
     {
@@ -173,6 +175,21 @@ public class MainMenuAnimator : MonoBehaviour {
         {
             SignInButtonText.text = LanguajesDic.instance.GetText(8);
         }*/
+    }
+    public void OpenTutorial()
+    {
+        StartCoroutine("OpenTutorialCO");
+    }
+    IEnumerator OpenTutorialCO()
+    {
+        yield return new WaitForSeconds(1f);
+        if (!CR.playerInfo.tutorialDone)
+        {
+            CR.playerInfo.tutorialDone = true;
+            tutorial.SetActive(true);
+            Time.timeScale = 0;
+        }
+        StopCoroutine("OpenTutorialCO");
     }
     public void ToggleRewardedVideoButton()
     {

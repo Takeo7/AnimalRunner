@@ -24,7 +24,8 @@ public class ElephantSpecial : MonoBehaviour {
 	byte bulletFiredCount;
 	public float radius;
 	public bool canFire;
-
+    [Space]
+    public SoundController sc;
 	public void Special()
 	{
 		StartCoroutine("Countdown");
@@ -40,6 +41,7 @@ public class ElephantSpecial : MonoBehaviour {
 			PBS[i] = Instantiate(customBullet, ballParents[i]).GetComponent<PlayerBulletScript>();
 		}
 		specialHolder.gameObject.SetActive(true);
+        sc.PlaySound(2);
 		Debug.Log("Instantiated Bullets");
 	}
 	public void Fire(Vector3 targetPosition)
@@ -50,6 +52,7 @@ public class ElephantSpecial : MonoBehaviour {
 		Quaternion toRotation = Quaternion.FromToRotation(transform.right, direction);
 		PBS[bulletFiredCount].transform.rotation = toRotation;
 		PBS[bulletFiredCount].enabled = true;
+        sc.PlaySound(1);
 		bulletFiredCount++;
 		Debug.Log("Firing"+bulletFiredCount);
 		if (bulletFiredCount >=8)
@@ -64,6 +67,7 @@ public class ElephantSpecial : MonoBehaviour {
 		Quaternion toRotation = Quaternion.FromToRotation(transform.right, direction);
 		PBS[i].transform.rotation = toRotation;
 		PBS[i].enabled = true;
+        sc.PlaySound(1);
 		Debug.Log("Firing" + bulletFiredCount);
 	}
 	public void EndSpecial()

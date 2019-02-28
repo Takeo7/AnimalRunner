@@ -935,6 +935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AS: {fileID: 82580571391942580}
+  ismusic: 0
 --- !u!114 &114683472655000022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1009,6 +1010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 1060001322995768}
+  sc: {fileID: 114954525293048730}
 --- !u!114 &114954525293048730
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1024,6 +1026,7 @@ MonoBehaviour:
   sounds:
   - {fileID: 8300000, guid: 7c24d342b79db16489f7dafce7657e6d, type: 3}
   - {fileID: 8300000, guid: 484f9df5ded578647b32d3ea79593605, type: 3}
+  - {fileID: 8300000, guid: 5665b5b111848c44787d60e38c629355, type: 3}
   onStart: 0
 --- !u!198 &198021577516861250
 ParticleSystem:

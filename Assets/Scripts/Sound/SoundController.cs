@@ -35,4 +35,17 @@ public class SoundController : MonoBehaviour {
         AS.clip = sounds[sound];
         AS.Play();
     }
+
+    public void PlaySound(byte sound, float volume)
+    {
+        Debug.Log("Sound made");
+        AS.volume = AS.volume - volume;
+        AS.clip = sounds[sound];
+        AS.Play();
+    }
+
+    public void PauseSound()
+    {
+        AS.Stop();
+    }
 }

@@ -12,27 +12,28 @@ MonoBehaviour:
   m_Name: PlayerInfo
   m_EditorClassIdentifier: 
   playerEmail: 
-  playerName: TestPlayer
-  playerLevel: 1
+  playerName: 
+  playerLevel: 2
   currentMedals: 1
-  medalsToNextRank: 3
-  medalHolder: 0
-  metersRecord: 0
+  medalsToNextRank: 4
+  medalHolder: 1
+  metersRecord: 437
   pointsRecord: 0
-  coins: 4304
+  coins: 4600
   gems: 3000
-  selectedCharacter: 0
-  language: -1
-  challengesIndex: 020000000300000000000000
+  selectedCharacter: 2
+  language: 0
+  challengesIndex: 090000000300000000000000
   challengesProgress: 000000000000000000000000
   loggedWithGoogle: 0
   firstConection: 0
+  tutorialDone: 0
   isLocal: 0
-  totalAttacks: 0
-  totalChallengesCompleted: 0
-  totalCoinsEarned: 0
-  totalDeaths: 0
-  totalEnemiesKilled: 0
-  totalJumps: 0
-  totalMetersRunned: 0
-  totalSpecialUsed: 0
+  totalAttacks: 3
+  totalChallengesCompleted: 11
+  totalCoinsEarned: 193
+  totalDeaths: 58
+  totalEnemiesKilled: 196
+  totalJumps: 533
+  totalMetersRunned: 12492
+  totalSpecialUsed: 17

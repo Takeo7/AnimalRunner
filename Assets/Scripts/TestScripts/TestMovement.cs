@@ -55,8 +55,10 @@ public class TestMovement : MonoBehaviour {
     public bool secondJumpAnimEnabled;
 	public bool hasSecondJumpAnim;
 
+    public bool isSpecial;
 
-	public CharacterVFXController VFX;
+
+    public CharacterVFXController VFX;
 
     bool attackBool = true;
 	CharacterReferences CR;
@@ -164,7 +166,7 @@ public class TestMovement : MonoBehaviour {
 
     public void AttackRanged()
     {
-        if (EC.inGame && attackBool)
+        if (EC.inGame && attackBool && isSpecial == false)
         {
             attackBool = false;
             switch (ps.PlayerType)

@@ -32,7 +32,7 @@ public class FinisherController : MonoBehaviour {
         if (collision.CompareTag("Player"))
         {
 			CR.TM.dead = true;
-            CR.PS.takeDammage(CR.PS.AmountHealth);
+            CR.PS.takeDammage(CR.PS.AmountHealth, true);
 			MainMenuAnimator.instance.isFall = true;
 			//enviroment.TriggerEndGame();
         }

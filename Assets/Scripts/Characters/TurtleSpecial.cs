@@ -16,15 +16,24 @@ public class TurtleSpecial : MonoBehaviour {
 	bool isRotating;
 	Transform rotationTarget;
 	public float rotationSpeed;
-	public void Special()
+    public SoundController sc;
+
+    private void Start()
+    {
+        CR = CharacterReferences.instance;
+    }
+
+    public void Special()
 	{
+        CR.TM.isSpecial = true;
 		StartCoroutine("AnimTo0");
 		if(CR == null)
 		{
 			CR = CharacterReferences.instance;
-			rotationTarget = CR.AC.anim.transform;
+			//rotationTarget = CR.AC.anim.transform;
 		}
 		CR.AC.SpecialAttack();//Set Anim
+        sc.PlaySound(2);
 		isRotating = true;
 		CR.PS.canDie = false;
 		CR.AC.isAnimatingSpine = false;
@@ -36,9 +45,10 @@ public class TurtleSpecial : MonoBehaviour {
 		CR.AC.anim.timeScale = 0;
 		CR.AC.RunAnim();
 		isRotating = false;
-		rotationTarget.localEulerAngles = Vector3.zero;
+		//rotationTarget.localEulerAngles = Vector3.zero;
 		CR.PS.canDie = true;
 		SpecialsUI.instance.SetCooldown();
+        CR.TM.isSpecial = false;
 	}
 	private void Update()
 	{
@@ -48,7 +58,7 @@ public class TurtleSpecial : MonoBehaviour {
 		}
 		if (!isRotating)
 			return;
-		rotationTarget.Rotate(new Vector3(0, -(1 * rotationSpeed * Time.deltaTime),0), Space.Self);
+		//rotationTarget.Rotate(new Vector3(0, -(1 * rotationSpeed * Time.deltaTime),0), Space.Self);
 	}
 	IEnumerator AnimTo0()
 	{

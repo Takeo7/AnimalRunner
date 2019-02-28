@@ -13,16 +13,21 @@ public class OkamiSpecial : MonoBehaviour {
 	#endregion
 	CharacterReferences CR;
 	public GameObject particles;
+    public SoundController sc;
+    
+
 	private void Start()
 	{
 		CR = CharacterReferences.instance;
 	}
 	public void Special()
 	{
+        CR.TM.isSpecial = true;
 		CR.PS.canDie = false;
 		StartCoroutine("SpecialCO");
 		CR.TM.AC.AttackAnim(true);
 		particles.SetActive(true);
+        sc.PlaySound(2,0.3f);
 	}
 	IEnumerator SpecialCO()
 	{
@@ -30,5 +35,7 @@ public class OkamiSpecial : MonoBehaviour {
 		CR.PS.canDie = true;
 		SpecialsUI.instance.SetCooldown();
 		particles.SetActive(false);
+        sc.PauseSound();
+        CR.TM.isSpecial = false;
 	}
 }

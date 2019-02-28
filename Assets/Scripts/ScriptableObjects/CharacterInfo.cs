@@ -41,6 +41,7 @@ public class CharacterInfo : ScriptableObject {
 	[Header("Others")]
     public bool loggedWithGoogle = false;
     public bool firstConection = true;
+    public bool tutorialDone = false;
     public bool isLocal = true;
 	[Space]
 	[Header("Stats")]

@@ -327,16 +327,21 @@ using System.Collections.Generic;
             DebugText.text += "\nPlayFab - Login Custom Successful";
 
             //If is first connection to this device
-            if (CI.firstConection == true || result.NewlyCreated)
+            if (result.NewlyCreated)
             {
                 //Upload User Data to new user to set variables to Default
                 CI.ResetLocalData();
                 UploadUserData(true);
             }
-            else
+            else if(CI.firstConection == true)
             {
-                UploadUserData(true);
-            }
+                CI.ResetLocalData();
+                GetPlayFabData();
+        }
+        else
+        {
+            UploadUserData(true);
+        }
             //Get Data from server
             isPlayFabLogged = true;
         }

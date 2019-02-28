@@ -50,6 +50,14 @@ public class PlayerStats : MonoBehaviour {
 		}
     }
 
+    public void takeDammage(int i, bool b)
+    {
+        damageImage.SetTrigger("damage");
+        AmountHealth -= i;
+        healthScript.UpdateHearts(AmountHealth);
+        CheckHealth();
+    }
+
 	void CheckHealth()
 	{
 		if (AmountHealth <= 0 && !isDead)

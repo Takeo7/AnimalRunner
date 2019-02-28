@@ -422,6 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   specialBullet: {fileID: 1440869274449232, guid: 4cf5ab6035e97134e8179a3db0665d0f,
     type: 2}
+  sc: {fileID: 114924922359068336}
 --- !u!114 &114682111593010766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -453,6 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AS: {fileID: 82504006326761798}
+  ismusic: 0
 --- !u!114 &114924922359068336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -468,4 +470,5 @@ MonoBehaviour:
   sounds:
   - {fileID: 8300000, guid: 7690156cf3105d044b51f17ec093ab3b, type: 3}
   - {fileID: 8300000, guid: 484f9df5ded578647b32d3ea79593605, type: 3}
+  - {fileID: 8300000, guid: a186e206c5d8a3b4c80c0fb2edd814d5, type: 3}
   onStart: 0

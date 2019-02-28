@@ -25,6 +25,9 @@ GameObject:
   - component: {fileID: 114520346391622114}
   - component: {fileID: 114162088366918134}
   - component: {fileID: 114474449178872042}
+  - component: {fileID: 82102602098895274}
+  - component: {fileID: 114936341519617574}
+  - component: {fileID: 114477786179183084}
   m_Layer: 0
   m_Name: CazadorRifle
   m_TagString: Enemy
@@ -279,6 +282,101 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 2.22}
   m_Size: {x: 3.52, y: 4.72}
   m_Direction: 0
+--- !u!82 &82102602098895274
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1254460680897222}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &114162088366918134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -334,7 +432,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VFXPrefab: {fileID: 150944, guid: 64798a1ed4bb2584aa219fafa6cdfa35, type: 2}
   instantiateOrigin: {fileID: 4966738108160980}
+  VFXInScene: {fileID: 0}
   effects: []
+--- !u!114 &114477786179183084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1254460680897222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8631da5bdcb3d3344b600bc4a913558e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 82102602098895274}
+  sounds:
+  - {fileID: 8300000, guid: 87e50091d3a930244be9a34990925c0a, type: 3}
+  onStart: 0
 --- !u!114 &114520346391622114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -369,7 +483,21 @@ MonoBehaviour:
   VFXAA: {fileID: 114474449178872042}
   meleeAttackDelay: 0
   coin: {fileID: 1395996759783588, guid: 2b8de89f2bf6c4644a6632ca41835427, type: 2}
-  SC: {fileID: 0}
+  SC: {fileID: 114477786179183084}
+  flamethrower: 0
+--- !u!114 &114936341519617574
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1254460680897222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4938b6ac896e2448be4a8d5141d6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 82102602098895274}
+  ismusic: 0
 --- !u!114 &114937318004417872
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -195,15 +195,17 @@ public class EnemyMovement : MonoBehaviour {
 						firstflame = true;
 						AC.AttackAnim(false);
 						VFXAA.VFXPersistent(true);
-					}
+                        SC.PlaySound();
+                    }
 					yield return new WaitForSeconds(AC.attackAnimDuration);
 				}
 				else
 				{
 					yield return new WaitForSeconds(AC.rangedAttackDelay);
-					GameObject bullet = Instantiate(bulletPrefab);
+                    GameObject bullet = Instantiate(bulletPrefab);
 					VFXAA.VFXInstantiate();
-					bullet.transform.position = bulletSpawn.position;
+                    SC.PlaySound();
+                    bullet.transform.position = bulletSpawn.position;
 					bullet.GetComponent<BulletController>().damage = damage;
 					yield return new WaitForSeconds(AC.attackAnimDuration - AC.rangedAttackDelay);
 				}

@@ -628,7 +628,9 @@ MonoBehaviour:
   AS: {fileID: 82003146095968684}
   sounds:
   - {fileID: 8300000, guid: 7690156cf3105d044b51f17ec093ab3b, type: 3}
+  - {fileID: 8300000, guid: 2116a77a397c76f40afc129e05f07d60, type: 3}
   - {fileID: 8300000, guid: 9787df93b7794a1478ff7aa0f498f135, type: 3}
+  onStart: 0
 --- !u!114 &114197364752747128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -740,6 +742,7 @@ MonoBehaviour:
   AttackImage: {fileID: 0}
   PlayerType: 1
   attackType: 1
+  reallyDead: 0
 --- !u!114 &114692581662125380
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -752,6 +755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AS: {fileID: 82003146095968684}
+  ismusic: 0
 --- !u!114 &114895165784344060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -787,6 +791,7 @@ MonoBehaviour:
   bulletFiredCount: 0
   radius: 14
   canFire: 0
+  sc: {fileID: 114176057281876120}
 --- !u!114 &114978386454116228
 MonoBehaviour:
   m_ObjectHideFlags: 1
