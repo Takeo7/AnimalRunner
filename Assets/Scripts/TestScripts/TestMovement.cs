@@ -183,26 +183,26 @@ public class TestMovement : MonoBehaviour {
                     break;
 				case PlayerStats.Characters.Dragon:
 					AC.AttackAnim(true);
-
+                    sc.PlaySound(1);
                     AttacksUI.instance.UpdateAttacks();
 					StartCoroutine("AttackCoroutine");
 					break;
 				case PlayerStats.Characters.Rabbit:
 					AC.AttackAnim(true);
-
-					AttacksUI.instance.UpdateAttacks();
+                    sc.PlaySound(1);
+                    AttacksUI.instance.UpdateAttacks();
 					StartCoroutine("AttackCoroutine");
 					break;
 				case PlayerStats.Characters.Unicorn:
 					AC.AttackAnim(true);
-
-					AttacksUI.instance.UpdateAttacks();
+                    sc.PlaySound(1);
+                    AttacksUI.instance.UpdateAttacks();
 					StartCoroutine("AttackCoroutine");
 					break;
 				case PlayerStats.Characters.Okami:
 					AC.AttackAnim(true);
-
-					AttacksUI.instance.UpdateAttacks();
+                    sc.PlaySound(1);
+                    AttacksUI.instance.UpdateAttacks();
 					StartCoroutine("AttackCoroutine");
 					break;
 			}           

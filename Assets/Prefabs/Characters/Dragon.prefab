@@ -26,6 +26,9 @@ GameObject:
   - component: {fileID: 114587541945644948}
   - component: {fileID: 114682111593010766}
   - component: {fileID: 114598958910446194}
+  - component: {fileID: 82504006326761798}
+  - component: {fileID: 114827988227241318}
+  - component: {fileID: 114924922359068336}
   m_Layer: 0
   m_Name: Dragon
   m_TagString: Player
@@ -184,6 +187,101 @@ CapsuleCollider2D:
   m_Offset: {x: -0.52, y: 2.87}
   m_Size: {x: 2.67, y: 5.51}
   m_Direction: 0
+--- !u!82 &82504006326761798
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1385950287651850}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &114046309054527892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -195,6 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 492d779f62e86db4489cf7e73fc2836b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sc: {fileID: 114924922359068336}
   EC: {fileID: 0}
   rb: {fileID: 50322567219615414}
   jumpForce: 16.5
@@ -279,6 +378,7 @@ MonoBehaviour:
   AttackImage: {fileID: 0}
   PlayerType: 2
   attackType: 1
+  reallyDead: 0
 --- !u!114 &114587541945644948
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -341,3 +441,31 @@ MonoBehaviour:
   Death: {fileID: 0}
   StandardMaterial: {fileID: 0}
   DeathMaterial: {fileID: 0}
+--- !u!114 &114827988227241318
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1385950287651850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4938b6ac896e2448be4a8d5141d6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 82504006326761798}
+--- !u!114 &114924922359068336
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1385950287651850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8631da5bdcb3d3344b600bc4a913558e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 82504006326761798}
+  sounds:
+  - {fileID: 8300000, guid: 7690156cf3105d044b51f17ec093ab3b, type: 3}
+  - {fileID: 8300000, guid: 484f9df5ded578647b32d3ea79593605, type: 3}
+  onStart: 0

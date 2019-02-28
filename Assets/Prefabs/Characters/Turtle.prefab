@@ -304,6 +304,7 @@ MonoBehaviour:
   AttackImage: {fileID: 0}
   PlayerType: 0
   attackType: 1
+  reallyDead: 0
 --- !u!114 &114149256437373398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -318,7 +319,8 @@ MonoBehaviour:
   AS: {fileID: 82027132093076064}
   sounds:
   - {fileID: 8300000, guid: 7c24d342b79db16489f7dafce7657e6d, type: 3}
-  - {fileID: 8300000, guid: a5d78da5d19b4ab47b7bc9224f4ebdbc, type: 3}
+  - {fileID: 8300000, guid: 1bd134079a8a24f308ed392d924ea3e8, type: 3}
+  onStart: 0
 --- !u!114 &114228877684927510
 MonoBehaviour:
   m_ObjectHideFlags: 1

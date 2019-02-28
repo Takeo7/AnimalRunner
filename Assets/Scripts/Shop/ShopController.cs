@@ -56,18 +56,26 @@ public class ShopController : MonoBehaviour {
 	}
 	public void SetNewSelected()
 	{
+        string selectedName = CR.charactersInfo.characters[CR.playerInfo.selectedCharacter].name;
+        Debug.Log(selectedName + " DEBUG BUENO");
 		int charSelected = CR.playerInfo.selectedCharacter;
 		int length = instantiatedShopItems.Count;
 		for (int i = 0; i < length; i++)
 		{
-			if(charSelected == i)
-			{
-				instantiatedShopItems[i].selected.SetActive(true);
-			}
-			else
-			{
-				instantiatedShopItems[i].selected.SetActive(false);
-			}
+            int length2 = instantiatedShopItems.Count;
+            for (int j = 0; j < length2; j++)
+            {
+                Debug.Log(instantiatedShopItems[j].itemName);
+                if (selectedName == instantiatedShopItems[j].itemName)
+                {
+
+                    instantiatedShopItems[j].selected.SetActive(true);
+                }
+                else
+                {
+                    instantiatedShopItems[j].selected.SetActive(false);
+                }
+            }              
 		}
 	}
 	public void InstantiateNewCharacter()

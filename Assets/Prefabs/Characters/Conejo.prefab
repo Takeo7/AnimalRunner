@@ -92,6 +92,9 @@ GameObject:
   - component: {fileID: 114924528724573298}
   - component: {fileID: 114612995862584888}
   - component: {fileID: 114741268880529214}
+  - component: {fileID: 82318802619394076}
+  - component: {fileID: 114814205043845156}
+  - component: {fileID: 114937409685840414}
   m_Layer: 0
   m_Name: Conejo
   m_TagString: Player
@@ -312,6 +315,101 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 2.87}
   m_Size: {x: 1.91, y: 5.51}
   m_Direction: 0
+--- !u!82 &82318802619394076
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1778632533777940}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &114139507351677150
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -334,6 +432,7 @@ MonoBehaviour:
   AttackImage: {fileID: 0}
   PlayerType: 3
   attackType: 1
+  reallyDead: 0
 --- !u!114 &114508709784000018
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -428,6 +527,18 @@ MonoBehaviour:
   Death: {fileID: 0}
   StandardMaterial: {fileID: 2100000, guid: 5d1458cc4cda3bb4da9fda751eb66a34, type: 2}
   DeathMaterial: {fileID: 0}
+--- !u!114 &114814205043845156
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1778632533777940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4938b6ac896e2448be4a8d5141d6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 82318802619394076}
 --- !u!114 &114924528724573298
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -439,6 +550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 492d779f62e86db4489cf7e73fc2836b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sc: {fileID: 114937409685840414}
   EC: {fileID: 0}
   rb: {fileID: 50467251942247206}
   jumpForce: 16.5
@@ -470,6 +582,22 @@ MonoBehaviour:
   secondJumpAnimEnabled: 1
   hasSecondJumpAnim: 0
   VFX: {fileID: 114741268880529214}
+--- !u!114 &114937409685840414
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1778632533777940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8631da5bdcb3d3344b600bc4a913558e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 82318802619394076}
+  sounds:
+  - {fileID: 8300000, guid: 7c24d342b79db16489f7dafce7657e6d, type: 3}
+  - {fileID: 8300000, guid: a5d78da5d19b4ab47b7bc9224f4ebdbc, type: 3}
+  onStart: 0
 --- !u!198 &198221330224511110
 ParticleSystem:
   m_ObjectHideFlags: 1

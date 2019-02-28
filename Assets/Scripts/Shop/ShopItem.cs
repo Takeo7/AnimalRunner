@@ -14,10 +14,12 @@ public class ShopItem : MonoBehaviour {
     public Text priceCoinsTXT;
     public Text priceGemsTXT;
     public ShopController SC;
+    public string itemName;
 
 	public void SetVisuals(Sprite sprite,string name)
 	{
 		bool selectedBool;
+        itemName = name;
 		if(CharacterReferences.instance.playerInfo.selectedCharacter == index)
 		{
 			selectedBool = true;

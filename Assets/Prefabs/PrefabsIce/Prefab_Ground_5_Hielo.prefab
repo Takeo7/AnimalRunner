@@ -1409,7 +1409,6 @@ MonoBehaviour:
   - {fileID: 1295791299069120, guid: a0b5cc3700e4d3b40865f89cfb39ebbc, type: 2}
   - {fileID: 1572693540984766, guid: d6532247819d0da4ba0b3f5decaa89e2, type: 2}
   - {fileID: 1263576654481510, guid: b3171fb7454f97f4db80b3d1bbc6fc1a, type: 2}
-  - {fileID: 1140306050455818, guid: 1d3ff89419500094682970bfa6fb5bfa, type: 2}
   isEnemySpawneable: 1
   isTrapSpawneable: 1
   isCave: 0
