@@ -6,7 +6,7 @@ using GooglePlayGames;
 using System.Collections;
 using System.Collections.Generic;
 
-    public class PlayFabLogin : MonoBehaviour
+public class PlayFabLogin : MonoBehaviour
     {
         #region Singleton
         public static PlayFabLogin instance;
@@ -332,18 +332,21 @@ using System.Collections.Generic;
                 //Upload User Data to new user to set variables to Default
                 CI.ResetLocalData();
                 UploadUserData(true);
+                CI.firstConection = false;
             }
             else if(CI.firstConection == true)
             {
                 CI.ResetLocalData();
                 GetPlayFabData();
-        }
-        else
-        {
-            UploadUserData(true);
-        }
-            //Get Data from server
-            isPlayFabLogged = true;
+                CI.firstConection = false;
+            }
+            else
+            {
+                UploadUserData(true);
+                GetCatalogitemsPlayFab();
+            }
+                //Get Data from server
+                isPlayFabLogged = true;
         }
 
         private void OnLoginCustomFailure(PlayFabError error)
@@ -694,7 +697,8 @@ using System.Collections.Generic;
             while (EC.inGame == false)
             {
                 yield return new WaitForSeconds(30f);
-                GetPlayFabData();
+                UploadUserData(false);
+            Debug.Log("Periodical update PlayFab");
             }
             StopCoroutine("CheckDataCoroutine");
         }

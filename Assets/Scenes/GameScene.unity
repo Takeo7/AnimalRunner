@@ -447,7 +447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   t: {fileID: 45204819}
   ID: 50
-  isHidden: 0
+  isHidden: 1
 --- !u!114 &45204818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5725,6 +5725,7 @@ MonoBehaviour:
   TotalSpecialUsedStats: {fileID: 1473787106}
   pointsText: {fileID: 538352364}
   pointTextAnim: {fileID: 301982662}
+  goBackButton: {fileID: 1808169056}
   rewardedVideoButton: {fileID: 1075592810}
   rewardedCountdown: {fileID: 1287127139}
   seenRewardedVideo: 0
@@ -5838,6 +5839,72 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AS: {fileID: 312277935}
   ismusic: 0
+--- !u!1 &313220695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313220696}
+  - component: {fileID: 313220698}
+  - component: {fileID: 313220697}
+  m_Layer: 0
+  m_Name: EnemyDestroyer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &313220696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313220695}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1631582259}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &313220697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313220695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb177eedb0e519c4eab0dcc93d350f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &313220698
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313220695}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -15.23, y: 0.054096222}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6644688, y: 20.386402}
+  m_EdgeRadius: 0
 --- !u!1 &316761502
 GameObject:
   m_ObjectHideFlags: 0
@@ -9756,7 +9823,7 @@ MonoBehaviour:
   t: {fileID: 511302992}
   ID1: 45
   ID2: 46
-  gems: 500
+  gems: 250
   isHidden: 1
 --- !u!1 &513116956
 GameObject:
@@ -15157,7 +15224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7, y: -40}
+  m_AnchoredPosition: {x: -7, y: -40.00006}
   m_SizeDelta: {x: 1494.4, y: 738.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &883391000
@@ -19139,7 +19206,7 @@ GameObject:
   - component: {fileID: 1066800600}
   - component: {fileID: 1066800599}
   m_Layer: 5
-  m_Name: 500Gems
+  m_Name: 250Gems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19208,13 +19275,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 472959692}
         m_MethodName: BuyGems
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 500
+          m_IntArgument: 250
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -20412,7 +20479,7 @@ MonoBehaviour:
   t: {fileID: 1126304811}
   ID1: 45
   ID2: 46
-  gems: 100
+  gems: 50
   isHidden: 1
 --- !u!1 &1132237654
 GameObject:
@@ -26464,7 +26531,7 @@ MonoBehaviour:
   - Compra
   - Gemas
   - Cargando
-  - Segudos
+  - Segundos
   - Continuar
   - Ver Anuncio
   Spanish_Errors:
@@ -26783,7 +26850,7 @@ GameObject:
   - component: {fileID: 1431573898}
   - component: {fileID: 1431573897}
   m_Layer: 5
-  m_Name: 200Gems
+  m_Name: 100Gems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26849,13 +26916,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 472959692}
         m_MethodName: BuyGems
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 200
+          m_IntArgument: 100
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -27708,7 +27775,7 @@ GameObject:
   - component: {fileID: 1475257877}
   - component: {fileID: 1475257876}
   m_Layer: 5
-  m_Name: 100Gems
+  m_Name: 50Gems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27773,13 +27840,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 472959692}
         m_MethodName: BuyGems
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 100
+          m_IntArgument: 50
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -28526,7 +28593,7 @@ MonoBehaviour:
   t: {fileID: 1524865973}
   ID1: 45
   ID2: 46
-  gems: 200
+  gems: 100
   isHidden: 1
 --- !u!1 &1525278056
 GameObject:
@@ -30269,6 +30336,7 @@ Transform:
   - {fileID: 1029232127}
   - {fileID: 1617914613}
   - {fileID: 369805188}
+  - {fileID: 313220696}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -34055,7 +34123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1808169057
 RectTransform:
   m_ObjectHideFlags: 0

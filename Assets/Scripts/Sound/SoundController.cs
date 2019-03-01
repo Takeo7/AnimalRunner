@@ -23,6 +23,12 @@ public class SoundController : MonoBehaviour {
             PlaySound();
         }
 	}
+
+    public void FadeSound()
+    {
+        StartCoroutine("FadeSoundCoroutine");
+    }
+
 	public void PlaySound()
 	{
 		AS.clip = sounds[Random.Range(0, sounds.Length)];
@@ -46,6 +52,16 @@ public class SoundController : MonoBehaviour {
 
     public void PauseSound()
     {
+        AS.Stop();
+    }
+
+    IEnumerator FadeSoundCoroutine()
+    {
+        while (AS.volume > 0)
+        {
+            AS.volume -= 0.1f;
+            yield return new WaitForSeconds(0.5f);
+        }
         AS.Stop();
     }
 }

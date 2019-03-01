@@ -94,6 +94,7 @@ public class MainMenuAnimator : MonoBehaviour {
     [Space]
     public Text pointsText;
     public Animator pointTextAnim;
+    public GameObject goBackButton;
     [Space]
     public GameObject rewardedVideoButton;
     public Text rewardedCountdown;
@@ -390,9 +391,14 @@ public class MainMenuAnimator : MonoBehaviour {
         int temp = 0;
         int temp2 = 0;
         int pointsTotal = points;
+        float time = 0.2f;
+        if (pointsTotal >= 30)
+        {
+            time = 0.1f;
+        }
         while (temp <= points)
         {
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(time);
             temp++;
             temp2++;
             if (temp2 == 10)
@@ -405,6 +411,7 @@ public class MainMenuAnimator : MonoBehaviour {
             pointsText.text = textPoints + ": " + temp;
         }
         cc.SetCoins(cc.coinsOnRun);
+        goBackButton.SetActive(true);
     }
 
 }
