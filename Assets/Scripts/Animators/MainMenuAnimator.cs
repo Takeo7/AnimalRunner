@@ -103,6 +103,8 @@ public class MainMenuAnimator : MonoBehaviour {
 	public Text metersRunDeadWindow;
     [Space]
     public GameObject tutorial;
+    [Space]
+    public GameObject internetConection;
 
     private void Start()
     {
@@ -158,7 +160,14 @@ public class MainMenuAnimator : MonoBehaviour {
         UpdateMeters();
         UpdateStatsText();
 
-        
+        if (PlayFabLogin.instance.noInternet)
+        {
+            internetConection.SetActive(true);
+        }
+        else if (PlayFabLogin.instance.noInternet == false)
+        {
+            internetConection.SetActive(false);
+        }
     }
     private void Update()
     {

@@ -823,6 +823,96 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 56654242}
   m_CullTransparentMesh: 0
+--- !u!1 &58464133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 58464134}
+  - component: {fileID: 58464137}
+  - component: {fileID: 58464136}
+  - component: {fileID: 58464135}
+  m_Layer: 5
+  m_Name: InternetConectionText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &58464134
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 58464133}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1812961817}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 505}
+  m_SizeDelta: {x: 1920, y: 70.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &58464135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 58464133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca338f09b3a85949998e4aff1458adf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t: {fileID: 58464136}
+  ID: 51
+  isHidden: 1
+--- !u!114 &58464136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 58464133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8962264, g: 0.1986917, b: 0.1986917, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 6e12e985bdd5b3a49a369e2270bd71d2, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: NO INTERNET CONNECTION - DATA NOT SAVED
+--- !u!222 &58464137
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 58464133}
+  m_CullTransparentMesh: 0
 --- !u!1 &63673853
 GameObject:
   m_ObjectHideFlags: 0
@@ -5732,6 +5822,7 @@ MonoBehaviour:
   seenRewardedVideo: 0
   metersRunDeadWindow: {fileID: 1186152480}
   tutorial: {fileID: 1400606242}
+  internetConection: {fileID: 58464133}
 --- !u!82 &312277935
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14907,7 +14998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -348, y: -115.99988}
+  m_AnchoredPosition: {x: -348, y: -116}
   m_SizeDelta: {x: -1388.2, y: -822.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &845525249
@@ -15225,7 +15316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7, y: -40.00006}
+  m_AnchoredPosition: {x: -7, y: -40}
   m_SizeDelta: {x: 1494.4, y: 738.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &883391000
@@ -26251,6 +26342,7 @@ MonoBehaviour:
   DebugText: {fileID: 470476433}
   LogInWindow: {fileID: 1643834839}
   isPlayFabLogged: 0
+  noInternet: 0
 --- !u!4 &1419665649
 Transform:
   m_ObjectHideFlags: 0
@@ -26455,6 +26547,7 @@ MonoBehaviour:
   - Seconds
   - Continue
   - Watch Ad
+  - NO INTERNET - DATA WILL NOT BE SAVED
   English_Errors:
   - Username not available
   - Invalid Password
@@ -26535,6 +26628,7 @@ MonoBehaviour:
   - Segundos
   - Continuar
   - Ver Anuncio
+  - "NO HAY INTERNET - NO SE GUARDAR\xC1N LOS DATOS"
   Spanish_Errors:
   - Usuario no disponible
   - "Contrase\xF1a no valida"
@@ -26615,6 +26709,7 @@ MonoBehaviour:
   - Secondes
   - Continuer
   - "Regarder la publicit\xE9"
+  - PAS D'INTERNET - LES DONNEES NE SERONT PAS ENREGISTRES
   French_Errors:
   - Nom d'utilisateur indisponible
   - Mot de passe incorrect
@@ -26695,6 +26790,7 @@ MonoBehaviour:
   - "\u79D2"
   - "\u7EE7\u7EED"
   - "\u89C2\u770B\u5E7F\u544A"
+  - "\u6CA1\u6709\u4E92\u8054\u7F51 - \u6570\u636E\u5C06\u4E0D\u4F1A\u88AB\u4FDD\u5B58"
   Chinese_Errors:
   - "\u7528\u6237\u540D\u4E0D\u53EF\u7528"
   - "\u65E0\u6548\u7684\u5BC6\u7801"
@@ -33514,7 +33610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 231.1, y: 93.99988}
+  m_AnchoredPosition: {x: 231.1, y: 94}
   m_SizeDelta: {x: 616.7, y: 161.09998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1769569455
@@ -34457,6 +34553,7 @@ RectTransform:
   - {fileID: 1400606243}
   - {fileID: 1132237655}
   - {fileID: 47353960}
+  - {fileID: 58464134}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
