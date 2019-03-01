@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using GooglePlayGames;
 
 public class PlayerStats : MonoBehaviour {
 
@@ -62,17 +63,25 @@ public class PlayerStats : MonoBehaviour {
 	{
 		if (AmountHealth <= 0 && !isDead)
 		{
+			CharacterReferences CR = CharacterReferences.instance;
 			isDead = true;
 			gameObject.tag = "Untagged";
-			CharacterReferences.instance.playerInfo.totalDeaths++;
-			CharacterReferences.instance.playerInfo.totalMetersRunned += EnvironmentController.instance.UIC.currentMeters;
-            CharacterReferences.instance.uic.metersRun = CharacterReferences.instance.uic.currentMeters;
+			CR.playerInfo.totalDeaths++;
+			CR.playerInfo.totalMetersRunned += EnvironmentController.instance.UIC.currentMeters;
+			CR.uic.metersRun = CR.uic.currentMeters;
+			if (CR.playerInfo.metersRecord < CR.uic.metersRun)
+			{
+				CR.playerInfo.metersRecord = CR.uic.metersRun;
+				if (PlayGamesPlatform.Instance.IsAuthenticated())
+				{
+					MainMenuAnimator.instance.GPL.LeaderboardUpdate(CR.uic.metersRun);
+				}
+			}
+			//EnvironmentController.instance.gameOverDelegate();
 
-            //EnvironmentController.instance.gameOverDelegate();
-
-            //gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
-            //gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
-            MainMenuAnimator.instance.ToggleRewardedVideoButton();
+			//gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
+			//gameObject.SetActive(false);//Better to deactivate because of errors and its easy to only move and activate and not Instantiating another
+			MainMenuAnimator.instance.ToggleRewardedVideoButton();
             if (reallyDead == true)
             {
                 AC.DeathAnim();

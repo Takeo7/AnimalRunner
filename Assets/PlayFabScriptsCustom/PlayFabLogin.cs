@@ -343,7 +343,7 @@ public class PlayFabLogin : MonoBehaviour
             else
             {
                 UploadUserData(true);
-                GetCatalogitemsPlayFab();
+                //GetCatalogitemsPlayFab();
             }
                 //Get Data from server
                 isPlayFabLogged = true;

@@ -5723,6 +5723,7 @@ MonoBehaviour:
   totalJumpsStats: {fileID: 299260991}
   TotalMetersRunnedStats: {fileID: 1946442598}
   TotalSpecialUsedStats: {fileID: 1473787106}
+  GPL: {fileID: 0}
   pointsText: {fileID: 538352364}
   pointTextAnim: {fileID: 301982662}
   goBackButton: {fileID: 1808169056}
@@ -14906,7 +14907,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -348, y: -116}
+  m_AnchoredPosition: {x: -348, y: -115.99988}
   m_SizeDelta: {x: -1388.2, y: -822.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &845525249
@@ -33513,7 +33514,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 231.1, y: 94}
+  m_AnchoredPosition: {x: 231.1, y: 93.99988}
   m_SizeDelta: {x: 616.7, y: 161.09998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1769569455

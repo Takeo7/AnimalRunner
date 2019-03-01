@@ -99,13 +99,13 @@ public class Purchaser : MonoBehaviour, IStoreListener
         {
             switch (gems)
             {
-                case 100:
+                case 50:
                     BuyProductID(BuyProductGems100);
                     break;
-                case 200:
+                case 100:
                     BuyProductID(BuyProductGems200);
                     break;
-                case 500:
+                case 250:
                     BuyProductID(BuyProductGems500);
                     break;
                 default:

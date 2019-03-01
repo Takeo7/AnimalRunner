@@ -89,7 +89,7 @@ public class MainMenuAnimator : MonoBehaviour {
 	public Text TotalSpecialUsedStats;
 
 	LanguajesDic LANG;
-    GooglePlayLogin GPL;
+    public GooglePlayLogin GPL;
 
     [Space]
     public Text pointsText;
@@ -184,9 +184,9 @@ public class MainMenuAnimator : MonoBehaviour {
     IEnumerator OpenTutorialCO()
     {
         yield return new WaitForSeconds(1f);
-        if (!CR.playerInfo.tutorialDone)
+        if (PlayerPrefs.GetInt("Tutorial") == 0)
         {
-            CR.playerInfo.tutorialDone = true;
+			PlayerPrefs.SetInt("Tutorial",1);
             tutorial.SetActive(true);
             Time.timeScale = 0;
         }
@@ -369,7 +369,7 @@ public class MainMenuAnimator : MonoBehaviour {
         if (CR.playerInfo.metersRecord < CharacterReferences.instance.uic.metersRun)
         {
 			CR.playerInfo.metersRecord = CharacterReferences.instance.uic.metersRun;
-            if (PlayGamesPlatform.Instance.IsAuthenticated())
+			if (PlayGamesPlatform.Instance.IsAuthenticated())
             {
                 GPL.LeaderboardUpdate(CharacterReferences.instance.uic.metersRun);
             }           
