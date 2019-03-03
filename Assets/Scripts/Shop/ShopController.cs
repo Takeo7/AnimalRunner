@@ -57,7 +57,7 @@ public class ShopController : MonoBehaviour {
 	public void SetNewSelected()
 	{
         string selectedName = CR.charactersInfo.characters[CR.playerInfo.selectedCharacter].name;
-        Debug.Log(selectedName + " DEBUG BUENO");
+        //Debug.Log(selectedName + " DEBUG BUENO");
 		int charSelected = CR.playerInfo.selectedCharacter;
 		int length = instantiatedShopItems.Count;
 		for (int i = 0; i < length; i++)

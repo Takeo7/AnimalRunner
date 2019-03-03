@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class CharacterReferences : MonoBehaviour {
 
@@ -41,6 +42,12 @@ public class CharacterReferences : MonoBehaviour {
 		Destroy(gameObj);
 		GameObject newChar = Instantiate(charactersInfo.characters[charSelected].prefab);
         NewReference(newChar.transform, newChar.GetComponent<TestMovement>(), newChar.GetComponent<PlayerStats>(), newChar.GetComponent<AnimatorController>(), newChar, newChar.GetComponent<AudioSourceSetter>());
+	}
+	private void OnApplicationQuit()
+	{
+		EditorUtility.SetDirty(playerInfo);
+		EditorUtility.SetDirty(charactersInfo);
+		//Debug.Log("OnApplicationQuit");
 	}
 	public void Jump()
 	{

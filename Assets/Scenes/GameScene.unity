@@ -1607,6 +1607,7 @@ GameObject:
   - component: {fileID: 114765989}
   - component: {fileID: 114765991}
   - component: {fileID: 114765990}
+  - component: {fileID: 114765992}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -1666,6 +1667,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 114765988}
   m_CullTransparentMesh: 0
+--- !u!95 &114765992
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114765988}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &117053465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,6 +2026,7 @@ GameObject:
   - component: {fileID: 124169503}
   - component: {fileID: 124169505}
   - component: {fileID: 124169504}
+  - component: {fileID: 124169506}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -2066,6 +2086,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 124169502}
   m_CullTransparentMesh: 0
+--- !u!95 &124169506
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 124169502}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &124959880
 GameObject:
   m_ObjectHideFlags: 0
@@ -2151,6 +2189,7 @@ GameObject:
   - component: {fileID: 125302376}
   - component: {fileID: 125302378}
   - component: {fileID: 125302377}
+  - component: {fileID: 125302379}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -2210,6 +2249,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 125302375}
   m_CullTransparentMesh: 0
+--- !u!95 &125302379
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 125302375}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &126556333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2291,6 +2348,7 @@ GameObject:
   - component: {fileID: 127518992}
   - component: {fileID: 127518994}
   - component: {fileID: 127518993}
+  - component: {fileID: 127518995}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -2350,6 +2408,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 127518991}
   m_CullTransparentMesh: 0
+--- !u!95 &127518995
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 127518991}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &135610519
 GameObject:
   m_ObjectHideFlags: 0
@@ -2999,6 +3075,7 @@ GameObject:
   - component: {fileID: 165285500}
   - component: {fileID: 165285502}
   - component: {fileID: 165285501}
+  - component: {fileID: 165285503}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -3058,6 +3135,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 165285499}
   m_CullTransparentMesh: 0
+--- !u!95 &165285503
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 165285499}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &168969626
 GameObject:
   m_ObjectHideFlags: 0
@@ -4824,6 +4919,7 @@ GameObject:
   - component: {fileID: 260596572}
   - component: {fileID: 260596574}
   - component: {fileID: 260596573}
+  - component: {fileID: 260596575}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -4883,6 +4979,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 260596571}
   m_CullTransparentMesh: 0
+--- !u!95 &260596575
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 260596571}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &283776528
 GameObject:
   m_ObjectHideFlags: 0
@@ -5000,7 +5114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.05660379, g: 0.05660379, b: 0.05660379, a: 0.7764706}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5031,6 +5145,7 @@ GameObject:
   - component: {fileID: 292007334}
   - component: {fileID: 292007336}
   - component: {fileID: 292007335}
+  - component: {fileID: 292007337}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -5090,6 +5205,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 292007333}
   m_CullTransparentMesh: 0
+--- !u!95 &292007337
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 292007333}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &295517180
 GameObject:
   m_ObjectHideFlags: 0
@@ -5819,10 +5952,13 @@ MonoBehaviour:
   goBackButton: {fileID: 1808169056}
   rewardedVideoButton: {fileID: 1075592810}
   rewardedCountdown: {fileID: 1287127139}
+  continueAfterAd: {fileID: 1714733210}
   seenRewardedVideo: 0
   metersRunDeadWindow: {fileID: 1186152480}
   tutorial: {fileID: 1400606242}
   internetConection: {fileID: 58464133}
+  isPoints: 0
+  isLevel: 0
 --- !u!82 &312277935
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6707,6 +6843,7 @@ GameObject:
   - component: {fileID: 350040193}
   - component: {fileID: 350040195}
   - component: {fileID: 350040194}
+  - component: {fileID: 350040196}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -6766,6 +6903,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 350040192}
   m_CullTransparentMesh: 0
+--- !u!95 &350040196
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 350040192}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &354017377
 GameObject:
   m_ObjectHideFlags: 0
@@ -6776,6 +6931,7 @@ GameObject:
   - component: {fileID: 354017378}
   - component: {fileID: 354017380}
   - component: {fileID: 354017379}
+  - component: {fileID: 354017381}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -6835,6 +6991,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 354017377}
   m_CullTransparentMesh: 0
+--- !u!95 &354017381
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 354017377}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &359219862
 GameObject:
   m_ObjectHideFlags: 0
@@ -7569,7 +7743,6 @@ GameObject:
   m_Component:
   - component: {fileID: 390229422}
   - component: {fileID: 390229425}
-  - component: {fileID: 390229424}
   - component: {fileID: 390229423}
   m_Layer: 5
   m_Name: Jump
@@ -7604,77 +7777,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 390229421}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 209526bb28b46fd4d9b51a303569213c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 390229424}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 472959689}
-        m_MethodName: Jump
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &390229424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 390229421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
+  CR: {fileID: 472959689}
+  EC: {fileID: 472959684}
 --- !u!222 &390229425
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7721,8 +7828,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.8984375, y: 0}
-  m_SizeDelta: {x: -1507.8, y: -790.1}
+  m_AnchoredPosition: {x: 40, y: 0}
+  m_SizeDelta: {x: -1014.1, y: -790.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413435615
 MonoBehaviour:
@@ -8835,6 +8942,7 @@ GameObject:
   - component: {fileID: 476433192}
   - component: {fileID: 476433194}
   - component: {fileID: 476433193}
+  - component: {fileID: 476433195}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -8894,6 +9002,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 476433191}
   m_CullTransparentMesh: 0
+--- !u!95 &476433195
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 476433191}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &480843155
 GameObject:
   m_ObjectHideFlags: 0
@@ -9124,6 +9250,7 @@ GameObject:
   - component: {fileID: 492258947}
   - component: {fileID: 492258949}
   - component: {fileID: 492258948}
+  - component: {fileID: 492258950}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -9183,6 +9310,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 492258946}
   m_CullTransparentMesh: 0
+--- !u!95 &492258950
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 492258946}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &492973965
 GameObject:
   m_ObjectHideFlags: 0
@@ -9262,6 +9407,7 @@ GameObject:
   - component: {fileID: 493729563}
   - component: {fileID: 493729565}
   - component: {fileID: 493729564}
+  - component: {fileID: 493729566}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -9321,6 +9467,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 493729562}
   m_CullTransparentMesh: 0
+--- !u!95 &493729566
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 493729562}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &495287167
 GameObject:
   m_ObjectHideFlags: 0
@@ -10107,6 +10271,7 @@ GameObject:
   - component: {fileID: 526217002}
   - component: {fileID: 526217004}
   - component: {fileID: 526217003}
+  - component: {fileID: 526217005}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -10166,6 +10331,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 526217001}
   m_CullTransparentMesh: 0
+--- !u!95 &526217005
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 526217001}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &537816425
 GameObject:
   m_ObjectHideFlags: 0
@@ -10436,6 +10619,7 @@ GameObject:
   - component: {fileID: 563586857}
   - component: {fileID: 563586856}
   - component: {fileID: 563586855}
+  - component: {fileID: 563586858}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -10495,6 +10679,24 @@ RectTransform:
   m_AnchoredPosition: {x: 24, y: -21.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &563586858
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 563586854}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &565898944
 GameObject:
   m_ObjectHideFlags: 0
@@ -12463,6 +12665,7 @@ GameObject:
   - component: {fileID: 695948622}
   - component: {fileID: 695948624}
   - component: {fileID: 695948623}
+  - component: {fileID: 695948625}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -12522,6 +12725,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 695948621}
   m_CullTransparentMesh: 0
+--- !u!95 &695948625
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 695948621}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &696331776
 GameObject:
   m_ObjectHideFlags: 0
@@ -12601,6 +12822,7 @@ GameObject:
   - component: {fileID: 699679751}
   - component: {fileID: 699679753}
   - component: {fileID: 699679752}
+  - component: {fileID: 699679754}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -12660,6 +12882,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 699679750}
   m_CullTransparentMesh: 0
+--- !u!95 &699679754
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 699679750}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &703005000
 GameObject:
   m_ObjectHideFlags: 0
@@ -14057,6 +14297,7 @@ GameObject:
   - component: {fileID: 785489430}
   - component: {fileID: 785489432}
   - component: {fileID: 785489431}
+  - component: {fileID: 785489433}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -14116,6 +14357,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 785489429}
   m_CullTransparentMesh: 0
+--- !u!95 &785489433
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 785489429}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &804699831
 GameObject:
   m_ObjectHideFlags: 0
@@ -14998,7 +15257,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -348, y: -116}
+  m_AnchoredPosition: {x: -348, y: -115.99988}
   m_SizeDelta: {x: -1388.2, y: -822.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &845525249
@@ -15316,7 +15575,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7, y: -40}
+  m_AnchoredPosition: {x: -7, y: -39.999878}
   m_SizeDelta: {x: 1494.4, y: 738.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &883391000
@@ -16087,6 +16346,7 @@ GameObject:
   - component: {fileID: 925434374}
   - component: {fileID: 925434376}
   - component: {fileID: 925434375}
+  - component: {fileID: 925434377}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -16146,6 +16406,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 925434373}
   m_CullTransparentMesh: 0
+--- !u!95 &925434377
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 925434373}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &927821292
 GameObject:
   m_ObjectHideFlags: 0
@@ -16156,6 +16434,7 @@ GameObject:
   - component: {fileID: 927821293}
   - component: {fileID: 927821295}
   - component: {fileID: 927821294}
+  - component: {fileID: 927821296}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -16215,6 +16494,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 927821292}
   m_CullTransparentMesh: 0
+--- !u!95 &927821296
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 927821292}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &928886216
 GameObject:
   m_ObjectHideFlags: 0
@@ -17196,6 +17493,7 @@ GameObject:
   - component: {fileID: 957605727}
   - component: {fileID: 957605729}
   - component: {fileID: 957605728}
+  - component: {fileID: 957605730}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -17255,6 +17553,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 957605726}
   m_CullTransparentMesh: 0
+--- !u!95 &957605730
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 957605726}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &957774555
 GameObject:
   m_ObjectHideFlags: 0
@@ -17424,6 +17740,7 @@ GameObject:
   - component: {fileID: 960661549}
   - component: {fileID: 960661551}
   - component: {fileID: 960661550}
+  - component: {fileID: 960661552}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -17483,6 +17800,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 960661548}
   m_CullTransparentMesh: 0
+--- !u!95 &960661552
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 960661548}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &961837550
 GameObject:
   m_ObjectHideFlags: 0
@@ -18287,6 +18622,7 @@ GameObject:
   - component: {fileID: 1005452476}
   - component: {fileID: 1005452478}
   - component: {fileID: 1005452477}
+  - component: {fileID: 1005452479}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -18346,6 +18682,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1005452475}
   m_CullTransparentMesh: 0
+--- !u!95 &1005452479
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1005452475}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1017318447
 GameObject:
   m_ObjectHideFlags: 0
@@ -19094,6 +19448,7 @@ GameObject:
   - component: {fileID: 1054798040}
   - component: {fileID: 1054798042}
   - component: {fileID: 1054798041}
+  - component: {fileID: 1054798043}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -19153,6 +19508,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1054798039}
   m_CullTransparentMesh: 0
+--- !u!95 &1054798043
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1054798039}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1060093104
 GameObject:
   m_ObjectHideFlags: 0
@@ -19845,6 +20218,7 @@ GameObject:
   - component: {fileID: 1080337918}
   - component: {fileID: 1080337920}
   - component: {fileID: 1080337919}
+  - component: {fileID: 1080337921}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -19904,6 +20278,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1080337917}
   m_CullTransparentMesh: 0
+--- !u!95 &1080337921
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080337917}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1093267575
 GameObject:
   m_ObjectHideFlags: 0
@@ -21088,6 +21480,7 @@ GameObject:
   - component: {fileID: 1163902688}
   - component: {fileID: 1163902690}
   - component: {fileID: 1163902689}
+  - component: {fileID: 1163902691}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -21147,6 +21540,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1163902687}
   m_CullTransparentMesh: 0
+--- !u!95 &1163902691
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1163902687}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1167857486
 GameObject:
   m_ObjectHideFlags: 0
@@ -21942,6 +22353,7 @@ GameObject:
   - component: {fileID: 1205117552}
   - component: {fileID: 1205117554}
   - component: {fileID: 1205117553}
+  - component: {fileID: 1205117555}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -22001,6 +22413,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1205117551}
   m_CullTransparentMesh: 0
+--- !u!95 &1205117555
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205117551}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1208108741 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4646221265273116, guid: 02724398f97d2664c959dc4dae396508,
@@ -22161,6 +22591,7 @@ GameObject:
   - component: {fileID: 1229772615}
   - component: {fileID: 1229772617}
   - component: {fileID: 1229772616}
+  - component: {fileID: 1229772618}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -22220,6 +22651,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1229772614}
   m_CullTransparentMesh: 0
+--- !u!95 &1229772618
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1229772614}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1230990515
 GameObject:
   m_ObjectHideFlags: 0
@@ -22631,6 +23080,7 @@ GameObject:
   - component: {fileID: 1267607406}
   - component: {fileID: 1267607408}
   - component: {fileID: 1267607407}
+  - component: {fileID: 1267607409}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -22690,6 +23140,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1267607405}
   m_CullTransparentMesh: 0
+--- !u!95 &1267607409
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1267607405}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1267998399
 GameObject:
   m_ObjectHideFlags: 0
@@ -24407,6 +24875,7 @@ GameObject:
   - component: {fileID: 1339016826}
   - component: {fileID: 1339016828}
   - component: {fileID: 1339016827}
+  - component: {fileID: 1339016829}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -24466,6 +24935,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1339016825}
   m_CullTransparentMesh: 0
+--- !u!95 &1339016829
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1339016825}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1340168489
 GameObject:
   m_ObjectHideFlags: 0
@@ -26250,6 +26737,7 @@ GameObject:
   - component: {fileID: 1418151930}
   - component: {fileID: 1418151932}
   - component: {fileID: 1418151931}
+  - component: {fileID: 1418151933}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -26309,6 +26797,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1418151929}
   m_CullTransparentMesh: 0
+--- !u!95 &1418151933
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1418151929}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1419665647
 GameObject:
   m_ObjectHideFlags: 0
@@ -26842,6 +27348,7 @@ GameObject:
   - component: {fileID: 1425687981}
   - component: {fileID: 1425687983}
   - component: {fileID: 1425687982}
+  - component: {fileID: 1425687984}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -26901,6 +27408,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1425687980}
   m_CullTransparentMesh: 0
+--- !u!95 &1425687984
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1425687980}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1425705714
 GameObject:
   m_ObjectHideFlags: 0
@@ -27567,6 +28092,7 @@ GameObject:
   - component: {fileID: 1466376735}
   - component: {fileID: 1466376737}
   - component: {fileID: 1466376736}
+  - component: {fileID: 1466376738}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -27626,6 +28152,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1466376734}
   m_CullTransparentMesh: 0
+--- !u!95 &1466376738
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1466376734}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1469425624
 GameObject:
   m_ObjectHideFlags: 0
@@ -27636,6 +28180,7 @@ GameObject:
   - component: {fileID: 1469425625}
   - component: {fileID: 1469425627}
   - component: {fileID: 1469425626}
+  - component: {fileID: 1469425628}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -27695,6 +28240,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1469425624}
   m_CullTransparentMesh: 0
+--- !u!95 &1469425628
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1469425624}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1473787104
 GameObject:
   m_ObjectHideFlags: 0
@@ -28063,6 +28626,7 @@ GameObject:
   - component: {fileID: 1494893028}
   - component: {fileID: 1494893030}
   - component: {fileID: 1494893029}
+  - component: {fileID: 1494893031}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -28122,6 +28686,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1494893027}
   m_CullTransparentMesh: 0
+--- !u!95 &1494893031
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1494893027}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1499394591
 GameObject:
   m_ObjectHideFlags: 0
@@ -29505,8 +30087,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 960, y: 540}
-  m_SizeDelta: {x: 425.6, y: 341.5}
+  m_AnchoredPosition: {x: 1011, y: 540}
+  m_SizeDelta: {x: 1042.1, y: 341.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1586680843
 MonoBehaviour:
@@ -29550,28 +30132,6 @@ MonoBehaviour:
       - m_Target: {fileID: 312277934}
         m_MethodName: SeeRewardedVideo
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1714733210}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1075592810}
-        m_MethodName: SetActive
-        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -30060,6 +30620,7 @@ GameObject:
   - component: {fileID: 1612978760}
   - component: {fileID: 1612978762}
   - component: {fileID: 1612978761}
+  - component: {fileID: 1612978763}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -30119,6 +30680,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1612978759}
   m_CullTransparentMesh: 0
+--- !u!95 &1612978763
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1612978759}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1617914612
 GameObject:
   m_ObjectHideFlags: 0
@@ -30295,6 +30874,7 @@ GameObject:
   - component: {fileID: 1626504319}
   - component: {fileID: 1626504321}
   - component: {fileID: 1626504320}
+  - component: {fileID: 1626504322}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -30354,6 +30934,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1626504318}
   m_CullTransparentMesh: 0
+--- !u!95 &1626504322
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1626504318}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1631582256
 GameObject:
   m_ObjectHideFlags: 0
@@ -30843,6 +31441,7 @@ GameObject:
   - component: {fileID: 1651064883}
   - component: {fileID: 1651064885}
   - component: {fileID: 1651064884}
+  - component: {fileID: 1651064886}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -30902,6 +31501,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1651064882}
   m_CullTransparentMesh: 0
+--- !u!95 &1651064886
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651064882}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1653991887
 GameObject:
   m_ObjectHideFlags: 0
@@ -30912,6 +31529,7 @@ GameObject:
   - component: {fileID: 1653991888}
   - component: {fileID: 1653991890}
   - component: {fileID: 1653991889}
+  - component: {fileID: 1653991891}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -30971,6 +31589,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1653991887}
   m_CullTransparentMesh: 0
+--- !u!95 &1653991891
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1653991887}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1654051136
 GameObject:
   m_ObjectHideFlags: 0
@@ -31686,6 +32322,7 @@ GameObject:
   - component: {fileID: 1682863974}
   - component: {fileID: 1682863976}
   - component: {fileID: 1682863975}
+  - component: {fileID: 1682863977}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -31745,6 +32382,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1682863973}
   m_CullTransparentMesh: 0
+--- !u!95 &1682863977
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682863973}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1686524207
 GameObject:
   m_ObjectHideFlags: 0
@@ -31779,7 +32434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 9.299805}
+  m_AnchoredPosition: {x: 28, y: 9.299805}
   m_SizeDelta: {x: 0, y: -60.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1686524209
@@ -31999,6 +32654,7 @@ GameObject:
   - component: {fileID: 1696624812}
   - component: {fileID: 1696624814}
   - component: {fileID: 1696624813}
+  - component: {fileID: 1696624815}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -32058,6 +32714,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1696624811}
   m_CullTransparentMesh: 0
+--- !u!95 &1696624815
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1696624811}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1703074210
 GameObject:
   m_ObjectHideFlags: 0
@@ -32068,6 +32742,7 @@ GameObject:
   - component: {fileID: 1703074211}
   - component: {fileID: 1703074213}
   - component: {fileID: 1703074212}
+  - component: {fileID: 1703074214}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -32127,6 +32802,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1703074210}
   m_CullTransparentMesh: 0
+--- !u!95 &1703074214
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1703074210}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1705956151
 GameObject:
   m_ObjectHideFlags: 0
@@ -33515,6 +34208,7 @@ GameObject:
   - component: {fileID: 1760113982}
   - component: {fileID: 1760113984}
   - component: {fileID: 1760113983}
+  - component: {fileID: 1760113985}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -33574,6 +34268,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1760113981}
   m_CullTransparentMesh: 0
+--- !u!95 &1760113985
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1760113981}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1769569453
 GameObject:
   m_ObjectHideFlags: 0
@@ -33610,7 +34322,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 231.1, y: 94}
+  m_AnchoredPosition: {x: 231.1, y: 93.99988}
   m_SizeDelta: {x: 616.7, y: 161.09998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1769569455
@@ -33692,6 +34404,7 @@ GameObject:
   - component: {fileID: 1778565385}
   - component: {fileID: 1778565387}
   - component: {fileID: 1778565386}
+  - component: {fileID: 1778565388}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -33751,6 +34464,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1778565384}
   m_CullTransparentMesh: 0
+--- !u!95 &1778565388
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1778565384}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1779014504
 Prefab:
   m_ObjectHideFlags: 0
@@ -35081,6 +35812,7 @@ GameObject:
   - component: {fileID: 1849365398}
   - component: {fileID: 1849365400}
   - component: {fileID: 1849365399}
+  - component: {fileID: 1849365401}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -35140,6 +35872,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1849365397}
   m_CullTransparentMesh: 0
+--- !u!95 &1849365401
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1849365397}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1854896679
 GameObject:
   m_ObjectHideFlags: 0
@@ -35150,6 +35900,7 @@ GameObject:
   - component: {fileID: 1854896680}
   - component: {fileID: 1854896682}
   - component: {fileID: 1854896681}
+  - component: {fileID: 1854896683}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -35209,6 +35960,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1854896679}
   m_CullTransparentMesh: 0
+--- !u!95 &1854896683
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1854896679}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1857203153
 GameObject:
   m_ObjectHideFlags: 0
@@ -35219,6 +35988,7 @@ GameObject:
   - component: {fileID: 1857203154}
   - component: {fileID: 1857203156}
   - component: {fileID: 1857203155}
+  - component: {fileID: 1857203157}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -35278,6 +36048,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1857203153}
   m_CullTransparentMesh: 0
+--- !u!95 &1857203157
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1857203153}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1864188041
 GameObject:
   m_ObjectHideFlags: 0
@@ -35602,6 +36390,7 @@ GameObject:
   - component: {fileID: 1879382784}
   - component: {fileID: 1879382786}
   - component: {fileID: 1879382785}
+  - component: {fileID: 1879382787}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -35661,6 +36450,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1879382783}
   m_CullTransparentMesh: 0
+--- !u!95 &1879382787
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1879382783}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1880673929
 GameObject:
   m_ObjectHideFlags: 0
@@ -35671,6 +36478,7 @@ GameObject:
   - component: {fileID: 1880673930}
   - component: {fileID: 1880673932}
   - component: {fileID: 1880673931}
+  - component: {fileID: 1880673933}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -35730,6 +36538,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1880673929}
   m_CullTransparentMesh: 0
+--- !u!95 &1880673933
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1880673929}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1885527333
 GameObject:
   m_ObjectHideFlags: 0
@@ -37437,6 +38263,7 @@ GameObject:
   - component: {fileID: 2008269351}
   - component: {fileID: 2008269353}
   - component: {fileID: 2008269352}
+  - component: {fileID: 2008269354}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -37496,6 +38323,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2008269350}
   m_CullTransparentMesh: 0
+--- !u!95 &2008269354
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2008269350}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2009510112
 GameObject:
   m_ObjectHideFlags: 0
@@ -39573,6 +40418,7 @@ GameObject:
   - component: {fileID: 2098271707}
   - component: {fileID: 2098271709}
   - component: {fileID: 2098271708}
+  - component: {fileID: 2098271710}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -39632,6 +40478,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2098271706}
   m_CullTransparentMesh: 0
+--- !u!95 &2098271710
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098271706}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2105364720
 GameObject:
   m_ObjectHideFlags: 0
@@ -39676,6 +40540,7 @@ GameObject:
   - component: {fileID: 2111506047}
   - component: {fileID: 2111506049}
   - component: {fileID: 2111506048}
+  - component: {fileID: 2111506050}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -39735,6 +40600,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2111506046}
   m_CullTransparentMesh: 0
+--- !u!95 &2111506050
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2111506046}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &2115842034 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4631371551990884, guid: 02724398f97d2664c959dc4dae396508,
@@ -40209,6 +41092,7 @@ GameObject:
   - component: {fileID: 2136053077}
   - component: {fileID: 2136053079}
   - component: {fileID: 2136053078}
+  - component: {fileID: 2136053080}
   m_Layer: 5
   m_Name: newMedal0Shiny
   m_TagString: Untagged
@@ -40268,6 +41152,24 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2136053076}
   m_CullTransparentMesh: 0
+--- !u!95 &2136053080
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136053076}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86310f1f1b18cea4995b061f5b01f3f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2137270012
 GameObject:
   m_ObjectHideFlags: 0

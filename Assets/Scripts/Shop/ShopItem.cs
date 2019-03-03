@@ -13,6 +13,7 @@ public class ShopItem : MonoBehaviour {
     public GameObject priceGemsGO;
     public Text priceCoinsTXT;
     public Text priceGemsTXT;
+	public GameObject prices;
     public ShopController SC;
     public string itemName;
 
@@ -42,6 +43,7 @@ public class ShopItem : MonoBehaviour {
 		{
 			priceCoinsGO.SetActive(false);
             priceGemsGO.SetActive(false);
+			prices.SetActive(false);
         }
 	}
 	public void RefreshPrice()
@@ -57,6 +59,7 @@ public class ShopItem : MonoBehaviour {
 		{
 			priceCoinsGO.SetActive(false);
             priceGemsGO.SetActive(false);
+			prices.SetActive(false);
         }
 	}
 	public void SelectCharacter(bool coins)

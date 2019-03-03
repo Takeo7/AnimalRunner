@@ -340,6 +340,13 @@ public class ChallengesController : MonoBehaviour {
 				ShopConfirmer.instance.DoAttack();
 			}
 		}
+		MainMenuAnimator MMA = MainMenuAnimator.instance;
+		MMA.isLevel = true;
+		Debug.Log("isLevel");
+		if(MMA.isPoints && MMA.isLevel)
+		{
+			MMA.GoBackButton();
+		}
 	}
 
 }

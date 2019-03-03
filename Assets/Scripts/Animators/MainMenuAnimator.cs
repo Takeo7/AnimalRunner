@@ -98,6 +98,7 @@ public class MainMenuAnimator : MonoBehaviour {
     [Space]
     public GameObject rewardedVideoButton;
     public Text rewardedCountdown;
+	public GameObject continueAfterAd;
     [SerializeField]
     bool seenRewardedVideo;
 	public Text metersRunDeadWindow;
@@ -105,6 +106,9 @@ public class MainMenuAnimator : MonoBehaviour {
     public GameObject tutorial;
     [Space]
     public GameObject internetConection;
+
+	public bool isPoints;
+	public bool isLevel;
 
     private void Start()
     {
@@ -228,7 +232,7 @@ public class MainMenuAnimator : MonoBehaviour {
         }
         if(countdown <= 0)
         {
-            Debug.Log("DEAD");
+            //Debug.Log("DEAD");
             Time.timeScale = 1;
             CR.PS.AC.DeathAnim();
 			rewardedVideoButton.SetActive(false);
@@ -238,14 +242,42 @@ public class MainMenuAnimator : MonoBehaviour {
     }
     public void SeeRewardedVideo()
     {
-
         StopCoroutine("RewardedVideoCountdown");
         if (Advertisement.IsReady("rewardedVideo"))
         {
+			var options = new ShowOptions { resultCallback = HandleShowResult };
             Advertisement.Show("rewardedVideo");
-            CR.PS.Resucitate();
         }
     }
+	void HandleShowResult(ShowResult result)
+	{
+		switch (result)
+		{
+			case ShowResult.Finished:
+				Debug.Log("The ad was successfully shown.");
+				CR.PS.Resucitate();
+				continueAfterAd.SetActive(true);
+				break;
+			case ShowResult.Skipped:
+				Debug.Log("The ad was skipped before reaching the end.");
+				//Debug.Log("DEAD");
+				Time.timeScale = 1;
+				CR.PS.AC.DeathAnim();
+				rewardedVideoButton.SetActive(false);
+				CC.UIC.meters.gameObject.SetActive(false);
+				EnvironmentController.instance.gameOverDelegate();
+				break;
+			case ShowResult.Failed:
+				Debug.LogError("The ad failed to be shown.");
+				//Debug.Log("DEAD");
+				Time.timeScale = 1;
+				CR.PS.AC.DeathAnim();
+				rewardedVideoButton.SetActive(false);
+				CC.UIC.meters.gameObject.SetActive(false);
+				EnvironmentController.instance.gameOverDelegate();
+				break;
+		}
+	}
     #region ToggleWindows
     public void ToogleDeadWindow()
     {
@@ -420,7 +452,18 @@ public class MainMenuAnimator : MonoBehaviour {
             pointsText.text = textPoints + ": " + temp;
         }
         cc.SetCoins(cc.coinsOnRun);
-        goBackButton.SetActive(true);
+		isPoints = true;
+		Debug.Log("isPoints");
+        if(isPoints && isLevel)
+		{
+			goBackButton.SetActive(true);
+		}
     }
+
+	public void GoBackButton()
+	{
+		EnvironmentController.instance.UploadUserDataEC();
+		goBackButton.SetActive(true);
+	}
 
 }
