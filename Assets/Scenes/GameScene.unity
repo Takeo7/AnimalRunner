@@ -27052,7 +27052,7 @@ MonoBehaviour:
   - Loading
   - Seconds
   - Continue
-  - Watch Ad
+  - Watch ad to resucitate
   - NO INTERNET - DATA WILL NOT BE SAVED
   English_Errors:
   - Username not available
@@ -27133,7 +27133,7 @@ MonoBehaviour:
   - Cargando
   - Segundos
   - Continuar
-  - Ver Anuncio
+  - Ver anuncio para resucitar
   - "NO HAY INTERNET - NO SE GUARDAR\xC1N LOS DATOS"
   Spanish_Errors:
   - Usuario no disponible
@@ -27295,7 +27295,7 @@ MonoBehaviour:
   - "\u8F7D\u5165\u4E2D"
   - "\u79D2"
   - "\u7EE7\u7EED"
-  - "\u89C2\u770B\u5E7F\u544A"
+  - "\u770B\u5230\u590D\u6D3B\u7684\u516C\u544A"
   - "\u6CA1\u6709\u4E92\u8054\u7F51 - \u6570\u636E\u5C06\u4E0D\u4F1A\u88AB\u4FDD\u5B58"
   Chinese_Errors:
   - "\u7528\u6237\u540D\u4E0D\u53EF\u7528"
