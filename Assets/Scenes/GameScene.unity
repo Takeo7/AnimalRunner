@@ -431,8 +431,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 9.299988}
-  m_SizeDelta: {x: 1494.4, y: 677.9}
+  m_AnchoredPosition: {x: -0.000061035156, y: 28.5}
+  m_SizeDelta: {x: 0, y: -57.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &45204817
 MonoBehaviour:
@@ -1334,6 +1334,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1643834841}
         m_MethodName: LogInUsername
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 87402661}
+        m_MethodName: set_interactable
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5959,6 +5970,7 @@ MonoBehaviour:
   internetConection: {fileID: 58464133}
   isPoints: 0
   isLevel: 0
+  isDebugAd: 0
 --- !u!82 &312277935
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30140,6 +30152,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1075592810}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1586680844
@@ -32434,8 +32457,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 28, y: 9.299805}
-  m_SizeDelta: {x: 0, y: -60.6}
+  m_AnchoredPosition: {x: 40.002014, y: 31.599976}
+  m_SizeDelta: {x: -1014.1, y: -853.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1686524209
 MonoBehaviour:

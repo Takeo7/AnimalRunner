@@ -704,6 +704,7 @@ MonoBehaviour:
   jumpVFXEnabled: 1
   secondJumpAnimEnabled: 1
   hasSecondJumpAnim: 0
+  isSpecial: 0
   VFX: {fileID: 114978610230510808}
 --- !u!114 &114418714510339968
 MonoBehaviour:
@@ -743,6 +744,10 @@ MonoBehaviour:
   PlayerType: 1
   attackType: 1
   reallyDead: 0
+  resucitateRadius: 19.33
+  resucitateMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &114692581662125380
 MonoBehaviour:
   m_ObjectHideFlags: 1

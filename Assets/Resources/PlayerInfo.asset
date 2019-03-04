@@ -13,26 +13,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerEmail: 
   playerName: 
-  playerLevel: 2
-  currentMedals: 1
-  medalsToNextRank: 4
-  medalHolder: 1
-  metersRecord: 597
+  playerLevel: 3
+  currentMedals: 0
+  medalsToNextRank: 5
+  medalHolder: 2
+  metersRecord: 848
   pointsRecord: 0
-  coins: 4614
+  coins: 4625
   gems: 3200
   selectedCharacter: 2
   language: 1
-  challengesIndex: 090000000300000000000000
+  challengesIndex: 0b0000000d00000000000000
   challengesProgress: 000000000000000000000000
   loggedWithGoogle: 0
   firstConection: 0
   isLocal: 0
-  totalAttacks: 8
-  totalChallengesCompleted: 12
-  totalCoinsEarned: 206
-  totalDeaths: 64
-  totalEnemiesKilled: 211
-  totalJumps: 592
-  totalMetersRunned: 13530
-  totalSpecialUsed: 21
+  totalAttacks: 9
+  totalChallengesCompleted: 14
+  totalCoinsEarned: 216
+  totalDeaths: 67
+  totalEnemiesKilled: 220
+  totalJumps: 642
+  totalMetersRunned: 15267
+  totalSpecialUsed: 23

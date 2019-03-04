@@ -15,7 +15,7 @@ public class JumpControl : MonoBehaviour {
 			if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
 			{
 				CR.Jump();
-				Debug.Log("Jump");
+				//Debug.Log("Jump");
 			}
 		}
 	}

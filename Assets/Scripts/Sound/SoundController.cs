@@ -37,14 +37,14 @@ public class SoundController : MonoBehaviour {
 
     public void PlaySound(byte sound)
     {
-        Debug.Log("Sound made");
+        //Debug.Log("Sound made");
         AS.clip = sounds[sound];
         AS.Play();
     }
 
     public void PlaySound(byte sound, float volume)
     {
-        Debug.Log("Sound made");
+        //Debug.Log("Sound made");
         AS.volume = AS.volume - volume;
         AS.clip = sounds[sound];
         AS.Play();

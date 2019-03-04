@@ -305,6 +305,10 @@ MonoBehaviour:
   PlayerType: 0
   attackType: 1
   reallyDead: 0
+  resucitateRadius: 19.33
+  resucitateMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &114149256437373398
 MonoBehaviour:
   m_ObjectHideFlags: 1

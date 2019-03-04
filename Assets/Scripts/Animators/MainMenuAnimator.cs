@@ -109,7 +109,7 @@ public class MainMenuAnimator : MonoBehaviour {
 
 	public bool isPoints;
 	public bool isLevel;
-
+	public bool isDebugAd;
     private void Start()
     {
         GPL = GooglePlayLogin.instance;
@@ -242,12 +242,21 @@ public class MainMenuAnimator : MonoBehaviour {
     }
     public void SeeRewardedVideo()
     {
-        StopCoroutine("RewardedVideoCountdown");
-        if (Advertisement.IsReady("rewardedVideo"))
-        {
-			var options = new ShowOptions { resultCallback = HandleShowResult };
-            Advertisement.Show("rewardedVideo");
-        }
+		if (!isDebugAd)
+		{
+			StopCoroutine("RewardedVideoCountdown");
+			if (Advertisement.IsReady("rewardedVideo"))
+			{
+				var options = new ShowOptions { resultCallback = HandleShowResult };
+				Advertisement.Show("rewardedVideo");
+			}
+		}
+		else
+		{
+			StopCoroutine("RewardedVideoCountdown");
+			CR.PS.Resucitate();
+			continueAfterAd.SetActive(true);
+		}
     }
 	void HandleShowResult(ShowResult result)
 	{

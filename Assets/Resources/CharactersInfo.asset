@@ -21,7 +21,7 @@ MonoBehaviour:
     coinPrice: 0
     gemPrice: 0
   - name: Godus
-    icon: {fileID: 21300000, guid: 610c3e9e484859f4b9a2d73831ef1d18, type: 3}
+    icon: {fileID: 21300000, guid: 15021e3201fa5634f8e92b37dd40af0f, type: 3}
     prefab: {fileID: 1183136600057304, guid: b8b5ef6c163d0b847873b9dd8931b5c4, type: 2}
     description: "Este es un elefante M\xEDstico."
     unlocked: 1
@@ -53,7 +53,7 @@ MonoBehaviour:
     coinPrice: 200
     gemPrice: 50
   - name: Kiuvi
-    icon: {fileID: 21300000, guid: 8287e3536064e264a8d3a8eb5c235bb7, type: 3}
+    icon: {fileID: 21300000, guid: dbbd7d1b5af010c4cac53b87e9e0d5ca, type: 3}
     prefab: {fileID: 1737348973768176, guid: 230dfb274080ca74898be845f500f0bc, type: 2}
     description: WHAT DOES THE FOX SAY?!
     unlocked: 1

@@ -23,8 +23,12 @@ public class PlayerStats : MonoBehaviour {
     public Characters PlayerType;
     public AttackType attackType;
     public bool reallyDead;
+	[Space]
+	public float resucitateRadius;
+	public LayerMask resucitateMask;
 
-    private void Start()
+
+	private void Start()
     {
         healthScript = Health.instance;
         damageImage = MainMenuAnimator.instance.damageImage;
@@ -90,6 +94,35 @@ public class PlayerStats : MonoBehaviour {
 	}
     public void Resucitate()
     {
+		//DETECT POSITION
+		RaycastHit2D hit2d = new RaycastHit2D();
+		bool hit = false;
+		ContactFilter2D filter = new ContactFilter2D();
+		filter.layerMask = resucitateMask;
+		filter.useLayerMask = true;
+		RaycastHit2D[] results = new RaycastHit2D[10];
+		int resultsint =  Physics2D.CircleCast(transform.position, resucitateRadius, Vector3.zero, new ContactFilter2D(),results);
+		int length = results.Length;
+		for (int i = 0; i < length; i++)
+		{
+			if (results[i].collider.gameObject.CompareTag("Floor"))
+			{
+				hit = true;
+				hit2d = results[i];
+				break;
+			}
+		}
+		if (hit)
+		{
+			BoxCollider2D box = hit2d.transform.GetComponent<BoxCollider2D>();
+			Vector3 tempTransform = new Vector3();
+			tempTransform.x = hit2d.transform.position.x + box.offset.x;
+			tempTransform.y = hit2d.transform.position.y + box.offset.y;
+			tempTransform.z = transform.position.z;
+			transform.position = tempTransform;
+			Debug.Log(tempTransform);
+		}
+
         CharacterReferences CR = CharacterReferences.instance;
         CR.TM.dead = false;
         CR.FF.FollowFunc();
@@ -99,13 +132,23 @@ public class PlayerStats : MonoBehaviour {
         AmountHealth = 3;
         healthScript.UpdateHearts(AmountHealth);
         CR.TM.jumps = 2;
-        transform.position = new Vector3(transform.position.x, 13f, transform.position.z);
+        //transform.position = new Vector3(transform.position.x, 13f, transform.position.z);
         CR.TM.rb.velocity = Vector3.zero;
+		canDie = false;
+		StartCoroutine("CanDieAfterResucitate");
     }
 
-    
+	IEnumerator CanDieAfterResucitate()
+	{
+		yield return new WaitForSeconds(3f);
+		canDie = true;
+	}
+	private void OnDrawGizmosSelected()
+	{
+		Gizmos.DrawWireSphere(transform.position, resucitateRadius);
+	}
 
-    public enum AttackType
+	public enum AttackType
     {
         Body,
         Ranged

@@ -433,6 +433,10 @@ MonoBehaviour:
   PlayerType: 3
   attackType: 1
   reallyDead: 0
+  resucitateRadius: 19.33
+  resucitateMask:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &114508709784000018
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -539,6 +543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AS: {fileID: 82318802619394076}
+  ismusic: 0
 --- !u!114 &114924528724573298
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -581,6 +586,7 @@ MonoBehaviour:
   jumpVFXEnabled: 1
   secondJumpAnimEnabled: 1
   hasSecondJumpAnim: 0
+  isSpecial: 0
   VFX: {fileID: 114741268880529214}
 --- !u!114 &114937409685840414
 MonoBehaviour:
