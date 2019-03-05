@@ -240,7 +240,35 @@ public class MainMenuAnimator : MonoBehaviour {
             EnvironmentController.instance.gameOverDelegate();
         }
     }
-    public void SeeRewardedVideo()
+	public void SeeRewardedVideoShop()
+	{
+		if (Advertisement.IsReady("rewardedVideo"))
+		{
+			var options = new ShowOptions { resultCallback = HandleShowResult2 };
+			Advertisement.Show("rewardedVideo");
+		}
+	}
+	void HandleShowResult2(ShowResult result)
+	{
+		switch (result)
+		{
+			case ShowResult.Finished:
+				Debug.Log("The ad was successfully shown.");
+				CoinsController.instance.SetCoins(10);
+				break;
+			case ShowResult.Skipped:
+				Debug.Log("The ad was skipped before reaching the end.");
+				//Debug.Log("DEAD");
+				
+				break;
+			case ShowResult.Failed:
+				Debug.LogError("The ad failed to be shown.");
+				//Debug.Log("DEAD");
+				
+				break;
+		}
+	}
+	public void SeeRewardedVideo()
     {
 		if (!isDebugAd)
 		{

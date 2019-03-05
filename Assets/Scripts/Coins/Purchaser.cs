@@ -218,20 +218,20 @@ public class Purchaser : MonoBehaviour, IStoreListener
                 Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
             // The consumable item has been successfully purchased, add 100 coins to the player's in-game score.
             //Add 100 Gems
-                CoinsController.instance.SetGems(100);
+                CoinsController.instance.SetGems(50);
                 
             }
             // Or ... a non-consumable product has been purchased by this user.
             else if (String.Equals(args.purchasedProduct.definition.id, BuyProductGems200, StringComparison.Ordinal))
             {
                 Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
-                CoinsController.instance.SetGems(200);
+                CoinsController.instance.SetGems(100);
             }
             // Or ... a subscription product has been purchased by this user.
             else if (String.Equals(args.purchasedProduct.definition.id, BuyProductGems500, StringComparison.Ordinal))
             {
                 Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
-                CoinsController.instance.SetGems(500);
+                CoinsController.instance.SetGems(250);
             }
             // Or ... an unknown product has been purchased by this user. Fill in additional products here....
             else
