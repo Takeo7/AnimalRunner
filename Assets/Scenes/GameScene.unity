@@ -5970,7 +5970,7 @@ MonoBehaviour:
   internetConection: {fileID: 58464133}
   isPoints: 0
   isLevel: 0
-  isDebugAd: 1
+  isDebugAd: 0
 --- !u!82 &312277935
 AudioSource:
   m_ObjectHideFlags: 0
