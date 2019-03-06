@@ -148,6 +148,7 @@ public class EnemyMovement : MonoBehaviour {
 			if (flamethrower)
 			{
 				VFXAA.VFXPersistent(false);
+                SC.PauseSound();
 			}
 			else
 			{
@@ -173,7 +174,8 @@ public class EnemyMovement : MonoBehaviour {
 	}
 	IEnumerator Attacks()
 	{
-		while (isOnSight)
+        EnvironmentController ec = EnvironmentController.instance;
+		while (isOnSight && ec.inGame)
 		{
 			isAttacking = true;
 			if (!flamethrower)
@@ -195,7 +197,7 @@ public class EnemyMovement : MonoBehaviour {
 						firstflame = true;
 						AC.AttackAnim(false);
 						VFXAA.VFXPersistent(true);
-                        SC.PlaySound();
+                        SC.PlaySound(0, 0.3f);
                     }
 					yield return new WaitForSeconds(AC.attackAnimDuration);
 				}

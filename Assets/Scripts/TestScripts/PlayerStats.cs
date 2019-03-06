@@ -127,6 +127,7 @@ public class PlayerStats : MonoBehaviour {
         CR.TM.dead = false;
         CR.FF.FollowFunc();
         isDead = false;
+        Debug.Log(gameObject.tag);
         gameObject.tag = "Player";
         reallyDead = false;
         AmountHealth = 3;

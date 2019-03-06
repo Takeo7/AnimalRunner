@@ -49,7 +49,8 @@ public class SoundMainController : MonoBehaviour {
 			ChangeVolume(SS.volume);
 			MuteUnmute(SS.mute);
 		}
-	}
+        EnvironmentController.instance.gameOverDelegate += StopSoundsDead;
+    }
 	public void ChangeVolume()
 	{
 		float volume = soundSlider.value;
@@ -149,4 +150,15 @@ public class SoundMainController : MonoBehaviour {
 			speakers[i].mute = isMute;
 		}
 	}
+    public void StopSoundsDead()
+    {
+        int length = speakers.Count;
+        for (int i = 0; i < length; i++)
+        {
+            if (speakers[i] != null)
+            {
+                speakers[i].Stop();
+            }            
+        }
+    }
 }

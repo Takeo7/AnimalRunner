@@ -100,7 +100,7 @@ public class ChallengesController : MonoBehaviour {
 	{
 		if(CR.playerInfo.challengesIndex[0] == 0 && CR.playerInfo.challengesIndex[1] == 0 && CR.playerInfo.challengesIndex[2] == 0)
 		{
-			CR.playerInfo.challengesIndex[0] = metersScriptables[Random.Range(0,metersScriptables.Count+1)].index;
+			CR.playerInfo.challengesIndex[0] = metersScriptables[Random.Range(0,metersScriptables.Count)].index;
 			CR.playerInfo.challengesIndex[1] = killsScriptables[Random.Range(0, killsScriptables.Count)].index;
 		}
 		currentChallengesIndex[0] = CR.playerInfo.challengesIndex[0];
@@ -337,6 +337,7 @@ public class ChallengesController : MonoBehaviour {
 				MHC[CR.playerInfo.medalHolder].isExistent = false;
 				MHC[CR.playerInfo.medalHolder].SetTextRef(this);
 				levelText.text = CR.playerInfo.playerName + " Level: " + CR.playerInfo.playerLevel.ToString();
+                MHC[CR.playerInfo.medalHolder].SetMedalsRef(this);
 				ShopConfirmer.instance.DoAttack();
 			}
 		}

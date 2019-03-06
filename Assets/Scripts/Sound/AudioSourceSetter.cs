@@ -11,8 +11,7 @@ public class AudioSourceSetter : MonoBehaviour
     // Use this for initialization
     void Start()
 	{
-		SMC = SoundMainController.instance;
-		SMC.speakers.Add(AS);
+		SMC = SoundMainController.instance;		
         if (ismusic)
         {
             AS.volume = SMC.SS.volumeMusic;
@@ -22,6 +21,7 @@ public class AudioSourceSetter : MonoBehaviour
         {
             AS.volume = SMC.SS.volume;
             AS.mute = SMC.SS.mute;
+            SMC.speakers.Add(AS);
         }
 	}
     public void DeleteThisFromSpeakers()

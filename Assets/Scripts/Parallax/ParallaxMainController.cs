@@ -16,7 +16,7 @@ public class ParallaxMainController : MonoBehaviour {
 	private void Start()
 	{
 		SetParallaxNewElements();
-		Debug.Log("START");
+		//Debug.Log("START");
 	}
 	public void SetParallaxNewElements()
 	{

@@ -5970,7 +5970,7 @@ MonoBehaviour:
   internetConection: {fileID: 58464133}
   isPoints: 0
   isLevel: 0
-  isDebugAd: 0
+  isDebugAd: 1
 --- !u!82 &312277935
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16673,7 +16673,6 @@ GameObject:
   - component: {fileID: 939509511}
   - component: {fileID: 939509515}
   - component: {fileID: 939509514}
-  - component: {fileID: 939509513}
   - component: {fileID: 939509512}
   m_Layer: 5
   m_Name: Text (1)
@@ -16714,22 +16713,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &939509513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 939509510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65ecec7d1795a874d8812c41be34275e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  t: {fileID: 939509514}
-  ID1: 45
-  ID2: 46
-  gems: 50
-  isHidden: 1
 --- !u!114 &939509514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27760,7 +27743,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: 507}
+  m_AnchoredPosition: {x: -492, y: 507}
   m_SizeDelta: {x: 650, y: 124.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1430973707
@@ -32532,7 +32515,6 @@ GameObject:
   - component: {fileID: 1673804916}
   - component: {fileID: 1673804920}
   - component: {fileID: 1673804919}
-  - component: {fileID: 1673804918}
   - component: {fileID: 1673804917}
   m_Layer: 5
   m_Name: Text (1)
@@ -32573,22 +32555,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &1673804918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1673804915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65ecec7d1795a874d8812c41be34275e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  t: {fileID: 1673804919}
-  ID1: 45
-  ID2: 46
-  gems: 50
-  isHidden: 1
 --- !u!114 &1673804919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32930,7 +32896,6 @@ GameObject:
   - component: {fileID: 1685113762}
   - component: {fileID: 1685113766}
   - component: {fileID: 1685113765}
-  - component: {fileID: 1685113764}
   - component: {fileID: 1685113763}
   m_Layer: 5
   m_Name: Text (1)
@@ -32971,22 +32936,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &1685113764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1685113761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65ecec7d1795a874d8812c41be34275e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  t: {fileID: 1685113765}
-  ID1: 45
-  ID2: 46
-  gems: 50
-  isHidden: 1
 --- !u!114 &1685113765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39481,7 +39430,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2021186537
 RectTransform:
   m_ObjectHideFlags: 0
