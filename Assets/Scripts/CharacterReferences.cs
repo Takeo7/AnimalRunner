@@ -45,8 +45,8 @@ public class CharacterReferences : MonoBehaviour {
 	}
 	private void OnApplicationQuit()
 	{
-		EditorUtility.SetDirty(playerInfo);
-		EditorUtility.SetDirty(charactersInfo);
+		//EditorUtility.SetDirty(playerInfo);
+		//EditorUtility.SetDirty(charactersInfo);
 		//Debug.Log("OnApplicationQuit");
 	}
 	public void Jump()
