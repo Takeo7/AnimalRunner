@@ -17,15 +17,11 @@ public class CoinsController : MonoBehaviour {
         }
     }
 
-    int coins;
-    int gems;
 	public CharacterReferences CR;
 	public int coinsOnRun;
     private void Start()
     {
 		CR = CharacterReferences.instance;
-        coins = CR.playerInfo.coins;
-        gems = CR.playerInfo.gems;
     }
 
     public void AddnewCoins()
@@ -33,25 +29,15 @@ public class CoinsController : MonoBehaviour {
         SetCoins(coinsOnRun);
     }
 
-    public int GetCoins()
-    {
-        return coins;
-    }
     public void SetCoins(int i)
     {
-        coins += i;
         PlayFabLogin.instance.AddPlayFabVirtualCurrecy(i, "CO");
-        CR.playerInfo.coins = coins;
+        CR.playerInfo.coins += i;
     }
 
-    public int GetGems()
-    {
-        return gems;
-    }
     public void SetGems(int i)
     {
-        gems += i;
         PlayFabLogin.instance.AddPlayFabVirtualCurrecy(i, "GE");
-        CR.playerInfo.gems = gems;
+        CR.playerInfo.gems += i;
     }
 }

@@ -55,6 +55,9 @@ GameObject:
   - component: {fileID: 4169151636141096}
   - component: {fileID: 198992803213069478}
   - component: {fileID: 199439415239864472}
+  - component: {fileID: 82264876414618890}
+  - component: {fileID: 114542749908471394}
+  - component: {fileID: 114732253794623330}
   m_Layer: 0
   m_Name: CartoonyFire (3)
   m_TagString: Untagged
@@ -255,6 +258,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1797951218098114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4492253461121740}
+  - component: {fileID: 61252052968923734}
+  - component: {fileID: 50066448705462966}
+  - component: {fileID: 114363341641058414}
+  m_Layer: 0
+  m_Name: EspecialCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &1802184854878278
 GameObject:
   m_ObjectHideFlags: 1
@@ -401,6 +422,7 @@ Transform:
   - {fileID: 4169151636141096}
   - {fileID: 4303954433678308}
   - {fileID: 4690565607498008}
+  - {fileID: 4492253461121740}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -558,6 +580,19 @@ Transform:
   m_Father: {fileID: 4303954433678308}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -120, y: 89.99999, z: -90}
+--- !u!4 &4492253461121740
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1797951218098114}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4107845352489100}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4518512572389168
 Transform:
   m_ObjectHideFlags: 1
@@ -710,6 +745,26 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1808460073763466}
   m_Mesh: {fileID: 0}
+--- !u!50 &50066448705462966
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1797951218098114}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!50 &50715128669298004
 Rigidbody2D:
   serializedVersion: 4
@@ -730,6 +785,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &61252052968923734
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1797951218098114}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.77, y: 1.54}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2, y: 3.35}
+  m_EdgeRadius: 0
 --- !u!70 &70277332880085740
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
@@ -745,6 +825,101 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 2.05}
   m_Size: {x: 1.87, y: 3.95}
   m_Direction: 0
+--- !u!82 &82264876414618890
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1060001322995768}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!82 &82580571391942580
 AudioSource:
   m_ObjectHideFlags: 1
@@ -900,6 +1075,17 @@ MonoBehaviour:
   _animationName: 
   loop: 0
   timeScale: 1
+--- !u!114 &114363341641058414
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1797951218098114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c6c65f57d1ba149b55192ac1fe5b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114516857454476366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -927,6 +1113,19 @@ MonoBehaviour:
   resucitateMask:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &114542749908471394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1060001322995768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4938b6ac896e2448be4a8d5141d6a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 82264876414618890}
+  ismusic: 0
 --- !u!114 &114589478812099062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -984,6 +1183,24 @@ MonoBehaviour:
   hasSecondJumpAnim: 0
   isSpecial: 0
   VFX: {fileID: 114774718041568724}
+--- !u!114 &114732253794623330
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1060001322995768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8631da5bdcb3d3344b600bc4a913558e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AS: {fileID: 82264876414618890}
+  sounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 5665b5b111848c44787d60e38c629355, type: 3}
+  onStart: 0
+  isFlame: 0
 --- !u!114 &114774718041568724
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1016,6 +1233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particles: {fileID: 1060001322995768}
   sc: {fileID: 114954525293048730}
+  scSpecial: {fileID: 114732253794623330}
+  especialCollider: {fileID: 1797951218098114}
 --- !u!114 &114954525293048730
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1033,6 +1252,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 484f9df5ded578647b32d3ea79593605, type: 3}
   - {fileID: 8300000, guid: 5665b5b111848c44787d60e38c629355, type: 3}
   onStart: 0
+  isFlame: 0
 --- !u!198 &198021577516861250
 ParticleSystem:
   m_ObjectHideFlags: 1

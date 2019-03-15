@@ -13,6 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volume: 0.5
   mute: 0
+  muteMusic: 0
+  volumeMusic: 0.5
   musicClips:
   - {fileID: 8300000, guid: 1538ae1cad72662439344bd18fd7a2fc, type: 3}
   - {fileID: 8300000, guid: d791c923afc40e5459861559308130f9, type: 3}

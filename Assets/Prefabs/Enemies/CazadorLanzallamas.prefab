@@ -577,6 +577,7 @@ MonoBehaviour:
   sounds:
   - {fileID: 8300000, guid: 5665b5b111848c44787d60e38c629355, type: 3}
   onStart: 0
+  isFlame: 1
 --- !u!114 &114495613605315048
 MonoBehaviour:
   m_ObjectHideFlags: 1

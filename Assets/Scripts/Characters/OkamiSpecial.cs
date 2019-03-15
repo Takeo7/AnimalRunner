@@ -14,6 +14,8 @@ public class OkamiSpecial : MonoBehaviour {
 	CharacterReferences CR;
 	public GameObject particles;
     public SoundController sc;
+    public SoundController scSpecial;
+    public GameObject especialCollider;
     
 
 	private void Start()
@@ -27,7 +29,8 @@ public class OkamiSpecial : MonoBehaviour {
 		StartCoroutine("SpecialCO");
 		CR.TM.AC.AttackAnim(true);
 		particles.SetActive(true);
-        sc.PlaySound(2,0.3f);
+        especialCollider.SetActive(true);
+        scSpecial.PlaySound(2,0.3f);
 	}
 	IEnumerator SpecialCO()
 	{
@@ -35,7 +38,8 @@ public class OkamiSpecial : MonoBehaviour {
 		CR.PS.canDie = true;
 		SpecialsUI.instance.SetCooldown();
 		particles.SetActive(false);
-        sc.PauseSound();
+        especialCollider.SetActive(false);
+        StartCoroutine(scSpecial.FadeSoundCoroutine());
         CR.TM.isSpecial = false;
 	}
 }

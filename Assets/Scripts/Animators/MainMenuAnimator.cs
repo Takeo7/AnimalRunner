@@ -106,6 +106,12 @@ public class MainMenuAnimator : MonoBehaviour {
     public GameObject tutorial;
     [Space]
     public GameObject internetConection;
+    [Space]
+    [Header("ShopPlusTexts")]
+    [SerializeField]
+    Text coinsPlusTXT;
+    [SerializeField]
+    Text gemsPlusTXT;
 
 	public bool isPoints;
 	public bool isLevel;
@@ -256,6 +262,8 @@ public class MainMenuAnimator : MonoBehaviour {
                 debugText.text += "The ad was successfully shown.";
                 Debug.Log("The ad was successfully shown.");
 				CoinsController.instance.SetCoins(10);
+                PlusTextShop(10, true);
+                UpdateCoinsText();
 				break;
 			case ShowResult.Skipped:
                 debugText.text += "The ad was skipped before reaching the end.";
@@ -508,5 +516,31 @@ public class MainMenuAnimator : MonoBehaviour {
 		EnvironmentController.instance.UploadUserDataEC();
 		goBackButton.SetActive(true);
 	}
+    public void PlusTextShop(int i,bool isCoins)
+    {
+        if (isCoins)
+        {
+            coinsPlusTXT.gameObject.SetActive(false);
+            coinsPlusTXT.text = "+ " + i;
+            coinsPlusTXT.gameObject.SetActive(true);
+            Invoke("DeactivateCoin", 0.5f);
+        }
+        else
+        {
+            gemsPlusTXT.gameObject.SetActive(false);
+            gemsPlusTXT.text = "+ " + i;
+            gemsPlusTXT.gameObject.SetActive(true);
+            Invoke("DeactivateGem", 0.5f);
+        }
+    }
+    public void DeactivateCoin()
+    {
+        coinsPlusTXT.gameObject.SetActive(false);
+    }
+    public void DeactivateGem()
+    {
+        gemsPlusTXT.gameObject.SetActive(false);
+
+    }
 
 }

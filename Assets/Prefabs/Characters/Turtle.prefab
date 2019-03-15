@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed36610f2857ae1428347b4f6becd81d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AmountHealth: 3
+  AmountHealth: 4
   damageImage: {fileID: 0}
   attackDamage: 1
   numAttacks: 4
@@ -326,6 +326,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1bd134079a8a24f308ed392d924ea3e8, type: 3}
   - {fileID: 8300000, guid: a5d78da5d19b4ab47b7bc9224f4ebdbc, type: 3}
   onStart: 0
+  isFlame: 0
 --- !u!114 &114228877684927510
 MonoBehaviour:
   m_ObjectHideFlags: 1

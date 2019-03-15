@@ -12,6 +12,8 @@ public class SoundController : MonoBehaviour {
     [Space]
     [SerializeField]
     bool onStart = false;
+    public bool isFlame = false;
+
 
 	private void Start()
 	{
@@ -26,7 +28,15 @@ public class SoundController : MonoBehaviour {
 
     public void FadeSound()
     {
-        StartCoroutine("FadeSoundCoroutine");
+        if (isFlame)
+        {
+            StartCoroutine("FadeSoundCoroutine");
+        }
+        else
+        {
+            AS.mute = true;
+        }
+        
     }
 
 	public void PlaySound()
@@ -55,12 +65,12 @@ public class SoundController : MonoBehaviour {
         AS.Stop();
     }
 
-    IEnumerator FadeSoundCoroutine()
+    public IEnumerator FadeSoundCoroutine()
     {
         while (AS.volume > 0)
         {
             AS.volume -= 0.1f;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.25f);
         }
         AS.Stop();
     }
