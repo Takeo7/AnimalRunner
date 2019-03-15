@@ -245,7 +245,7 @@ public class MainMenuAnimator : MonoBehaviour {
 		if (Advertisement.IsReady("rewardedVideo"))
 		{
 			var options = new ShowOptions { resultCallback = HandleShowResult2 };
-			Advertisement.Show("rewardedVideo");
+			Advertisement.Show("rewardedVideo", options);
 		}
 	}
 	void HandleShowResult2(ShowResult result)
@@ -253,16 +253,19 @@ public class MainMenuAnimator : MonoBehaviour {
 		switch (result)
 		{
 			case ShowResult.Finished:
-				Debug.Log("The ad was successfully shown.");
+                debugText.text += "The ad was successfully shown.";
+                Debug.Log("The ad was successfully shown.");
 				CoinsController.instance.SetCoins(10);
 				break;
 			case ShowResult.Skipped:
-				Debug.Log("The ad was skipped before reaching the end.");
+                debugText.text += "The ad was skipped before reaching the end.";
+                Debug.Log("The ad was skipped before reaching the end.");
 				//Debug.Log("DEAD");
 				
 				break;
 			case ShowResult.Failed:
-				Debug.LogError("The ad failed to be shown.");
+                debugText.text += "The ad failed to be shown.";
+                Debug.LogError("The ad failed to be shown.");
 				//Debug.Log("DEAD");
 				
 				break;
@@ -276,7 +279,7 @@ public class MainMenuAnimator : MonoBehaviour {
 			if (Advertisement.IsReady("rewardedVideo"))
 			{
 				var options = new ShowOptions { resultCallback = HandleShowResult };
-				Advertisement.Show("rewardedVideo");
+				Advertisement.Show("rewardedVideo", options);
 			}
 		}
 		else
@@ -291,12 +294,14 @@ public class MainMenuAnimator : MonoBehaviour {
 		switch (result)
 		{
 			case ShowResult.Finished:
-				Debug.Log("The ad was successfully shown.");
+                debugText.text += "The ad was successfully shown.";
+                Debug.Log("The ad was successfully shown.");
 				CR.PS.Resucitate();
 				continueAfterAd.SetActive(true);
 				break;
 			case ShowResult.Skipped:
-				Debug.Log("The ad was skipped before reaching the end.");
+                debugText.text += "The ad was skipped before reaching the end.";
+                Debug.Log("The ad was skipped before reaching the end.");
 				//Debug.Log("DEAD");
 				Time.timeScale = 1;
 				CR.PS.AC.DeathAnim();
@@ -305,7 +310,8 @@ public class MainMenuAnimator : MonoBehaviour {
 				EnvironmentController.instance.gameOverDelegate();
 				break;
 			case ShowResult.Failed:
-				Debug.LogError("The ad failed to be shown.");
+                debugText.text += "The ad failed to be shown.";
+                Debug.LogError("The ad failed to be shown.");
 				//Debug.Log("DEAD");
 				Time.timeScale = 1;
 				CR.PS.AC.DeathAnim();
