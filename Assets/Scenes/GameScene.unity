@@ -5972,6 +5972,7 @@ MonoBehaviour:
   internetConection: {fileID: 58464133}
   coinsPlusTXT: {fileID: 438958143}
   gemsPlusTXT: {fileID: 1566858407}
+  shopDarkButton: {fileID: 1358904212}
   isPoints: 0
   isLevel: 0
   isDebugAd: 0
@@ -27944,6 +27945,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1358904212}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1430973708
@@ -35248,9 +35260,9 @@ MonoBehaviour:
   text: {fileID: 835219260}
   icon: {fileID: 928886218}
   icons:
-  - {fileID: 21300000, guid: 264163fc0538a4649841fba673718d8b, type: 3}
-  - {fileID: 21300000, guid: b2a862b802d9df74bb1aa0ab55869e8e, type: 3}
-  - {fileID: 21300000, guid: 5b6d82cea02b7714b88f3fca8fd25530, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1778565384
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ using GooglePlayGames;
 
 public class PlayerStats : MonoBehaviour {
 
-
+    int maxHealth;
 	public int AmountHealth = 3;
     [SerializeField]
     Animator damageImage;
@@ -30,6 +30,7 @@ public class PlayerStats : MonoBehaviour {
 
 	private void Start()
     {
+        maxHealth = AmountHealth;
         healthScript = Health.instance;
         damageImage = MainMenuAnimator.instance.damageImage;
         //Debug.Log(healthScript);
@@ -130,7 +131,7 @@ public class PlayerStats : MonoBehaviour {
         Debug.Log(gameObject.tag);
         gameObject.tag = "Player";
         reallyDead = false;
-        AmountHealth = 3;
+        AmountHealth = maxHealth;
         healthScript.UpdateHearts(AmountHealth);
         CR.TM.jumps = 2;
         //transform.position = new Vector3(transform.position.x, 13f, transform.position.z);

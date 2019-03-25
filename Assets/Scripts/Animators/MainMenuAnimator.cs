@@ -112,6 +112,8 @@ public class MainMenuAnimator : MonoBehaviour {
     Text coinsPlusTXT;
     [SerializeField]
     Text gemsPlusTXT;
+    [Space]
+    public Button shopDarkButton;
 
 	public bool isPoints;
 	public bool isLevel;
@@ -264,6 +266,7 @@ public class MainMenuAnimator : MonoBehaviour {
 				CoinsController.instance.SetCoins(10);
                 PlusTextShop(10, true);
                 UpdateCoinsText();
+                shopDarkButton.enabled = true;
 				break;
 			case ShowResult.Skipped:
                 debugText.text += "The ad was skipped before reaching the end.";
