@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 492}
   m_MaxSize: {x: 22012, y: 14042}
   vertical: 0
-  controlID: 30
+  controlID: 106
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 342}
   m_MaxSize: {x: 8006, y: 8042}
   vertical: 1
-  controlID: 31
+  controlID: 73
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 32
+  controlID: 54
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -228,8 +228,8 @@ MonoBehaviour:
     y: 904
     width: 1521
     height: 413
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -411,7 +411,7 @@ MonoBehaviour:
       width: 1280
       height: 890.3454
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 0.97265625
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 1867.5, y: 1324.5}
@@ -1260,21 +1260,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: f021f8ffa026f8ffac27f8fffc2af8ff082bf8ffcca7fcff9696fdff18fbffff00000000e248000060530000dc54000074550000
+    m_ExpandedIDs: 18fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: CoinsText
-      m_OriginalName: CoinsText
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -321252
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 4
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 12}
     m_SearchString: 
@@ -1332,7 +1332,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 6}
     m_SelectedIDs: 162c0000
     m_LastClickedID: 11286
-    m_ExpandedIDs: 00000000283300004c34000074340000283500007e360000aa3600001437000066370000c2370000ca370000a8380000083900007e390000f4390000fe3900002c3a0000cc3a0000d23b00004a3c0000de3c0000683d0000fa3e0000fe3e0000be3f0000ea3f0000f43f000020400000a4410000524200008e4300001e44000038440000aa44000002450000e8650000ea650000ec650000ee650000f0650000f2650000f4650000f6650000f8650000fa650000fc650000fe6500000066000002660000
+    m_ExpandedIDs: 000000002e330000523400007a3400002e350000f835000084360000b0360000fe3600001a3700006c370000c8370000f0370000ae38000084390000fa390000043a0000323a0000d23a0000543c0000743d0000063f00000a3f0000ca3f0000f63f0000004000002c400000a8400000b04100005e4200009a4300002a4400003c44000044440000b6440000ee44000010450000286600002a6600002c6600002e66000030660000326600003466000036660000386600003a6600003c6600003e6600004066000042660000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1360,7 +1360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 953}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000283300004c3400007434000028350000f23500007e360000aa360000f83600001437000066370000c2370000ea370000a83800007e390000f4390000fe3900002c3a0000cc3a00004a3c0000683d0000fa3e0000fe3e0000be3f0000ea3f0000f43f0000204000009c400000a4410000524200008e4300001e4400003044000038440000aa44000002450000e8650000ea650000ec650000ee650000f0650000f2650000f4650000f6650000f8650000fa650000fc650000fe6500000066000002660000ba880100
+    m_ExpandedIDs: ffffffff000000002e330000523400007a3400002e350000f835000084360000b0360000fe3600001a3700006c370000c8370000f0370000ae38000084390000fa390000043a0000323a0000d23a0000543c0000743d0000063f00000a3f0000ca3f0000f63f0000004000002c400000a8400000b04100005e4200009a4300002a4400003c44000044440000b6440000ee44000010450000286600002a6600002c6600002e66000030660000326600003466000036660000386600003a6600003c6600003e6600004066000042660000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
