@@ -73,7 +73,8 @@ public class MainMenuAnimator : MonoBehaviour {
 	public bool isFall;
     [Space]
     public GameObject LoadingScreen;
-	[Space]
+    public GameObject LoadingScreen2;
+    [Space]
 	public Text coinsTakenTXT;
 	[Space]
 	[Header("Stats")]
@@ -128,6 +129,7 @@ public class MainMenuAnimator : MonoBehaviour {
         else
         {
             LoadingScreen.SetActive(false);
+            LoadingScreen2.SetActive(false);
         }        
 		LANG = LanguajesDic.instance;
         if (PlayerPrefs.GetInt("FirstTime") != 1)
@@ -397,6 +399,7 @@ public class MainMenuAnimator : MonoBehaviour {
         if (login)
         {
             LoadingScreen.SetActive(false);
+            LoadingScreen2.SetActive(false);
         }       
         UpdateStatsText();
     }
