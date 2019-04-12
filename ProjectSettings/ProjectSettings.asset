@@ -120,7 +120,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.4
+  bundleVersion: 1.5
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -156,7 +156,7 @@ PlayerSettings:
     Android: com.WagenerGames.RunForLife
     Standalone: com.Company.ProductName
   buildNumber: {}
-  AndroidBundleVersionCode: 104
+  AndroidBundleVersionCode: 105
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -245,7 +245,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/arthu/Documents/GitHub/AnimalRunner/RunForLifeKS.keystore
+  AndroidKeystoreName: C:/Users/arthu/Documents/EstudioChinoVideojuegos/AnimalRunner/RunForLifeKS.keystore
   AndroidKeyaliasName: takeo
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
