@@ -333,6 +333,11 @@ MonoBehaviour:
   speed: 30
   damage: 1
   isSpecial: 0
+  cantMove: 0
+  FX:
+  - {fileID: 198816256965337756}
+  col: {fileID: 61804672951660392}
+  sprite: {fileID: 0}
 --- !u!114 &114860038549034418
 MonoBehaviour:
   m_ObjectHideFlags: 1

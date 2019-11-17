@@ -15,7 +15,7 @@ MonoBehaviour:
   - name: Sally
     icon: {fileID: 21300000, guid: def74ed751f9af143b27c708c07bb318, type: 3}
     prefab: {fileID: 1355157842876838, guid: c1e580a81d45fc44dadd9cb1ea2981a6, type: 2}
-    description: Esta es una Tortuga enfadada.
+    description: This is a very angry Turtle.
     unlocked: 1
     hide: 0
     coinPrice: 0
@@ -23,40 +23,40 @@ MonoBehaviour:
   - name: Godus
     icon: {fileID: 21300000, guid: 15021e3201fa5634f8e92b37dd40af0f, type: 3}
     prefab: {fileID: 1183136600057304, guid: b8b5ef6c163d0b847873b9dd8931b5c4, type: 2}
-    description: "Este es un elefante M\xEDstico."
-    unlocked: 1
+    description: This is a Mystic Elephant.
+    unlocked: 0
     hide: 0
-    coinPrice: 200
+    coinPrice: 600
     gemPrice: 50
   - name: Drake
     icon: {fileID: 21300000, guid: 4dc359456c251324fa0e620d4d7a246d, type: 3}
     prefab: {fileID: 1385950287651850, guid: 789b3609ab054574d9e2f823327edef0, type: 2}
-    description: "Es un Drag\xF3n feliz."
-    unlocked: 1
+    description: This is a Happy Dragon.
+    unlocked: 0
     hide: 0
-    coinPrice: 200
+    coinPrice: 500
     gemPrice: 50
   - name: Bunny
     icon: {fileID: 21300000, guid: 1eba5ba2f2ce8d64faf693b4d871b7f1, type: 3}
     prefab: {fileID: 1778632533777940, guid: 0561f6770b7e19a41a4b9e5a6a76e346, type: 2}
-    description: Un conejo hambriento.
-    unlocked: 1
+    description: This is a Hungry Bunny
+    unlocked: 0
     hide: 0
-    coinPrice: 175
-    gemPrice: 30
+    coinPrice: 250
+    gemPrice: 20
   - name: Lunaris
     icon: {fileID: 21300000, guid: d6899f020bdf1c94fb1bd8befbb0e855, type: 3}
     prefab: {fileID: 1395222153171100, guid: fa370bf33291107488c4927e8a2db71b, type: 2}
-    description: "Una clase bonita y extra\xF1a de Caballo."
-    unlocked: 1
-    hide: 1
-    coinPrice: 200
-    gemPrice: 50
+    description: This is a Beautiful and strange Horse
+    unlocked: 0
+    hide: 0
+    coinPrice: 1000
+    gemPrice: 100
   - name: Kiuvi
     icon: {fileID: 21300000, guid: dbbd7d1b5af010c4cac53b87e9e0d5ca, type: 3}
     prefab: {fileID: 1737348973768176, guid: 230dfb274080ca74898be845f500f0bc, type: 2}
     description: WHAT DOES THE FOX SAY?!
     unlocked: 1
     hide: 0
-    coinPrice: 150
+    coinPrice: 200
     gemPrice: 20

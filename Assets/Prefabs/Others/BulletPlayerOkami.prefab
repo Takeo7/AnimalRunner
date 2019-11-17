@@ -237,6 +237,15 @@ MonoBehaviour:
   speed: 30
   damage: 1
   isSpecial: 0
+  cantMove: 0
+  FX:
+  - {fileID: 198996940836433856}
+  - {fileID: 198841304191835576}
+  - {fileID: 198628068220208770}
+  - {fileID: 198885559837217454}
+  - {fileID: 198874864296440008}
+  col: {fileID: 61468218672360608}
+  sprite: {fileID: 0}
 --- !u!198 &198628068220208770
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -4813,8 +4822,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.5
-      minScalar: 0.2
+      scalar: 0.3
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve:

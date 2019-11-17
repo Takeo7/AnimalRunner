@@ -206,6 +206,14 @@ MonoBehaviour:
   speed: 30
   damage: 1
   isSpecial: 0
+  cantMove: 0
+  FX:
+  - {fileID: 198560705591086886}
+  - {fileID: 198528755264119222}
+  - {fileID: 198732680445013802}
+  - {fileID: 198274954738703528}
+  col: {fileID: 61324608003440820}
+  sprite: {fileID: 0}
 --- !u!198 &198274954738703528
 ParticleSystem:
   m_ObjectHideFlags: 1

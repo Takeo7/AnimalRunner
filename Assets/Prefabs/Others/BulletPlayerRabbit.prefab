@@ -133,8 +133,8 @@ Transform:
   m_LocalPosition: {x: 2.763, y: 0, z: 0}
   m_LocalScale: {x: 1.51, y: 2.85, z: 1}
   m_Children:
-  - {fileID: 4259496652284310}
   - {fileID: 4512265738786522}
+  - {fileID: 4259496652284310}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -151,7 +151,7 @@ Transform:
   - {fileID: 4014604815603250}
   - {fileID: 4059973220931322}
   m_Father: {fileID: 4241775092961802}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!4 &4512265738786522
 Transform:
@@ -164,7 +164,7 @@ Transform:
   m_LocalScale: {x: 0.3396477, y: 0.23701222, z: 0.50035906}
   m_Children: []
   m_Father: {fileID: 4241775092961802}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &61076870385537646
 BoxCollider2D:
@@ -301,6 +301,12 @@ MonoBehaviour:
   speed: 30
   damage: 1
   isSpecial: 0
+  cantMove: 0
+  FX:
+  - {fileID: 198536856707559094}
+  - {fileID: 198174022414780046}
+  col: {fileID: 61076870385537646}
+  sprite: {fileID: 1179724165470934}
 --- !u!198 &198174022414780046
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -13711,7 +13717,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -13768,7 +13774,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -13825,7 +13831,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_RenderMode: 1
   m_SortMode: 0
   m_MinParticleSize: 0

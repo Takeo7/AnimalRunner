@@ -10,6 +10,10 @@ public class PlayerBulletScript : MonoBehaviour {
     public float speed;
     public int damage;
 	public bool isSpecial;
+	public bool cantMove = false;
+	public ParticleSystem[] FX;
+	public BoxCollider2D col;
+	public GameObject sprite;
 
     
 
@@ -21,26 +25,48 @@ public class PlayerBulletScript : MonoBehaviour {
 		}
 		else
 		{
-			StartCoroutine("DestroyAfterX", 1);
+			StartCoroutine("DestroyAfterX", 2);
 		}
 
     }
 
     private void Update()
     {
-        transform.Translate(Vector3.right * speed * Time.deltaTime);
+		if (!cantMove)
+		{
+			transform.Translate(Vector3.right * speed * Time.deltaTime);
+		}
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
         {
-            collision.GetComponent<EnemyMovement>().TakeDamage(damage);
+			collision.GetComponent<EnemyMovement>().TakeDamage(damage);
             DestroyBullet(true);
         }
     }
+	void StopFX()
+	{
+		if(sprite != null)
+		{
+			sprite.SetActive(false);
+		}
+		byte length = (byte)FX.Length;
+		for (int i = 0; i < length; i++)
+		{
+			FX[i].Stop();
+		}
+	}
     IEnumerator DestroyAfterX(float seconds)
     {
         yield return new WaitForSeconds(seconds);
+		if (cantMove == false)
+		{
+			col.enabled = false;
+			cantMove = true;
+			StopFX();
+			yield return new WaitForSeconds(2f);
+		}
 		Destroy(gameObject);
     }
     void DestroyBullet(bool enemyCollided)
@@ -48,7 +74,10 @@ public class PlayerBulletScript : MonoBehaviour {
 		//Effect
 		if (!isSpecial)
 		{
-			Destroy(gameObject);
+			col.enabled = false;
+			cantMove = true;
+			StopFX();
+			StartCoroutine("DestroyAfterX", 2);
 		}
 		if (enemyCollided)
 		{

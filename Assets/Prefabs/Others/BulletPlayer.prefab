@@ -375,6 +375,13 @@ MonoBehaviour:
   speed: 30
   damage: 1
   isSpecial: 0
+  cantMove: 0
+  FX:
+  - {fileID: 198812990039048674}
+  - {fileID: 198468008976558502}
+  - {fileID: 198308102045338652}
+  col: {fileID: 61056973713531290}
+  sprite: {fileID: 1274334342484340}
 --- !u!198 &198308102045338652
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -13899,7 +13906,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
