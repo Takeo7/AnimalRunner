@@ -486,7 +486,9 @@ MonoBehaviour:
   sounds:
   - {fileID: 8300000, guid: 5b1fdc577e9708249a485cbad99af9d0, type: 3}
   - {fileID: 8300000, guid: 5b1fdc577e9708249a485cbad99af9d0, type: 3}
+  - {fileID: 8300000, guid: a5d78da5d19b4ab47b7bc9224f4ebdbc, type: 3}
   onStart: 0
+  isFlame: 0
 --- !u!114 &114539378128163110
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -541,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 492d779f62e86db4489cf7e73fc2836b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sc: {fileID: 0}
+  sc: {fileID: 114368199639005388}
   EC: {fileID: 0}
   rb: {fileID: 50315276055389328}
   jumpForce: 16.5

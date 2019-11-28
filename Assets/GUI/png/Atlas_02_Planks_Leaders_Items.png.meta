@@ -1,0 +1,2782 @@
+fileFormatVersion: 2
+guid: e084895406b2ee34b92be585566de2af
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Atlas_02_Planks_Leaders_Items_0
+    21300002: Atlas_02_Planks_Leaders_Items_1
+    21300004: Atlas_02_Planks_Leaders_Items_2
+    21300006: Atlas_02_Planks_Leaders_Items_3
+    21300008: Atlas_02_Planks_Leaders_Items_4
+    21300010: Atlas_02_Planks_Leaders_Items_5
+    21300012: Atlas_02_Planks_Leaders_Items_6
+    21300014: Atlas_02_Planks_Leaders_Items_7
+    21300016: Atlas_02_Planks_Leaders_Items_8
+    21300018: Atlas_02_Planks_Leaders_Items_9
+    21300020: Atlas_02_Planks_Leaders_Items_10
+    21300022: Atlas_02_Planks_Leaders_Items_11
+    21300024: Atlas_02_Planks_Leaders_Items_12
+    21300026: Atlas_02_Planks_Leaders_Items_13
+    21300028: Atlas_02_Planks_Leaders_Items_14
+    21300030: Atlas_02_Planks_Leaders_Items_15
+    21300032: Atlas_02_Planks_Leaders_Items_16
+    21300034: Atlas_02_Planks_Leaders_Items_17
+    21300036: Atlas_02_Planks_Leaders_Items_18
+    21300038: Atlas_02_Planks_Leaders_Items_19
+    21300040: Atlas_02_Planks_Leaders_Items_20
+    21300042: Atlas_02_Planks_Leaders_Items_21
+    21300044: Atlas_02_Planks_Leaders_Items_22
+    21300046: Atlas_02_Planks_Leaders_Items_23
+    21300048: Atlas_02_Planks_Leaders_Items_24
+    21300050: Atlas_02_Planks_Leaders_Items_25
+    21300052: Atlas_02_Planks_Leaders_Items_26
+    21300054: Atlas_02_Planks_Leaders_Items_27
+    21300056: Atlas_02_Planks_Leaders_Items_28
+    21300058: Atlas_02_Planks_Leaders_Items_29
+    21300060: Atlas_02_Planks_Leaders_Items_30
+    21300062: Atlas_02_Planks_Leaders_Items_31
+    21300064: Atlas_02_Planks_Leaders_Items_32
+    21300066: Atlas_02_Planks_Leaders_Items_33
+    21300068: Atlas_02_Planks_Leaders_Items_34
+    21300070: Atlas_02_Planks_Leaders_Items_35
+    21300072: Atlas_02_Planks_Leaders_Items_36
+    21300074: Atlas_02_Planks_Leaders_Items_37
+    21300076: Atlas_02_Planks_Leaders_Items_38
+    21300078: Atlas_02_Planks_Leaders_Items_39
+    21300080: Atlas_02_Planks_Leaders_Items_40
+    21300082: Atlas_02_Planks_Leaders_Items_41
+    21300084: Atlas_02_Planks_Leaders_Items_42
+    21300086: Atlas_02_Planks_Leaders_Items_43
+    21300088: Atlas_02_Planks_Leaders_Items_44
+    21300090: Atlas_02_Planks_Leaders_Items_45
+    21300092: Atlas_02_Planks_Leaders_Items_46
+    21300094: Atlas_02_Planks_Leaders_Items_47
+    21300096: Atlas_02_Planks_Leaders_Items_48
+    21300098: Atlas_02_Planks_Leaders_Items_49
+    21300100: Atlas_02_Planks_Leaders_Items_50
+    21300102: Atlas_02_Planks_Leaders_Items_51
+    21300104: Atlas_02_Planks_Leaders_Items_52
+    21300106: Atlas_02_Planks_Leaders_Items_53
+    21300108: Atlas_02_Planks_Leaders_Items_54
+    21300110: Atlas_02_Planks_Leaders_Items_55
+    21300112: Atlas_02_Planks_Leaders_Items_56
+    21300114: Atlas_02_Planks_Leaders_Items_57
+    21300116: Atlas_02_Planks_Leaders_Items_58
+    21300118: Atlas_02_Planks_Leaders_Items_59
+    21300120: Atlas_02_Planks_Leaders_Items_60
+    21300122: Atlas_02_Planks_Leaders_Items_61
+    21300124: Atlas_02_Planks_Leaders_Items_62
+    21300126: Atlas_02_Planks_Leaders_Items_63
+    21300128: Atlas_02_Planks_Leaders_Items_64
+    21300130: Atlas_02_Planks_Leaders_Items_65
+    21300132: Atlas_02_Planks_Leaders_Items_66
+    21300134: Atlas_02_Planks_Leaders_Items_67
+    21300136: Atlas_02_Planks_Leaders_Items_68
+    21300138: Atlas_02_Planks_Leaders_Items_69
+    21300140: Atlas_02_Planks_Leaders_Items_70
+    21300142: Atlas_02_Planks_Leaders_Items_71
+    21300144: Atlas_02_Planks_Leaders_Items_72
+    21300146: Atlas_02_Planks_Leaders_Items_73
+    21300148: Atlas_02_Planks_Leaders_Items_74
+    21300150: Atlas_02_Planks_Leaders_Items_75
+    21300152: Atlas_02_Planks_Leaders_Items_76
+    21300154: Atlas_02_Planks_Leaders_Items_77
+    21300156: Atlas_02_Planks_Leaders_Items_78
+    21300158: Atlas_02_Planks_Leaders_Items_79
+    21300160: Atlas_02_Planks_Leaders_Items_80
+    21300162: Atlas_02_Planks_Leaders_Items_81
+    21300164: Atlas_02_Planks_Leaders_Items_82
+    21300166: Atlas_02_Planks_Leaders_Items_83
+    21300168: Atlas_02_Planks_Leaders_Items_84
+    21300170: Atlas_02_Planks_Leaders_Items_85
+    21300172: Atlas_02_Planks_Leaders_Items_86
+    21300174: Atlas_02_Planks_Leaders_Items_87
+    21300176: Atlas_02_Planks_Leaders_Items_88
+    21300178: Atlas_02_Planks_Leaders_Items_89
+    21300180: Atlas_02_Planks_Leaders_Items_90
+    21300182: Atlas_02_Planks_Leaders_Items_91
+    21300184: Atlas_02_Planks_Leaders_Items_92
+    21300186: Atlas_02_Planks_Leaders_Items_93
+    21300188: Atlas_02_Planks_Leaders_Items_94
+    21300190: Atlas_02_Planks_Leaders_Items_95
+    21300192: Atlas_02_Planks_Leaders_Items_96
+    21300194: Atlas_02_Planks_Leaders_Items_97
+    21300196: Atlas_02_Planks_Leaders_Items_98
+    21300198: Atlas_02_Planks_Leaders_Items_99
+    21300200: Atlas_02_Planks_Leaders_Items_100
+    21300202: Atlas_02_Planks_Leaders_Items_101
+    21300204: Atlas_02_Planks_Leaders_Items_102
+    21300206: Atlas_02_Planks_Leaders_Items_103
+    21300208: Atlas_02_Planks_Leaders_Items_104
+    21300210: Atlas_02_Planks_Leaders_Items_105
+    21300212: Atlas_02_Planks_Leaders_Items_106
+    21300214: Atlas_02_Planks_Leaders_Items_107
+    21300216: Atlas_02_Planks_Leaders_Items_108
+    21300218: Atlas_02_Planks_Leaders_Items_109
+    21300220: Atlas_02_Planks_Leaders_Items_110
+    21300222: Atlas_02_Planks_Leaders_Items_111
+    21300224: Atlas_02_Planks_Leaders_Items_112
+    21300226: Atlas_02_Planks_Leaders_Items_113
+    21300228: Atlas_02_Planks_Leaders_Items_114
+    21300230: Atlas_02_Planks_Leaders_Items_115
+    21300232: Atlas_02_Planks_Leaders_Items_116
+    21300234: Atlas_02_Planks_Leaders_Items_117
+    21300236: Atlas_02_Planks_Leaders_Items_118
+    21300238: Atlas_02_Planks_Leaders_Items_119
+    21300240: Atlas_02_Planks_Leaders_Items_120
+    21300242: Atlas_02_Planks_Leaders_Items_121
+    21300244: Atlas_02_Planks_Leaders_Items_122
+    21300246: Atlas_02_Planks_Leaders_Items_123
+    21300248: Atlas_02_Planks_Leaders_Items_124
+    21300250: Atlas_02_Planks_Leaders_Items_125
+    21300252: Atlas_02_Planks_Leaders_Items_126
+    21300254: Atlas_02_Planks_Leaders_Items_127
+    21300256: Atlas_02_Planks_Leaders_Items_128
+    21300258: Atlas_02_Planks_Leaders_Items_129
+    21300260: Atlas_02_Planks_Leaders_Items_130
+    21300262: Atlas_02_Planks_Leaders_Items_131
+    21300264: Atlas_02_Planks_Leaders_Items_132
+    21300266: Atlas_02_Planks_Leaders_Items_133
+    21300268: Atlas_02_Planks_Leaders_Items_134
+    21300270: Atlas_02_Planks_Leaders_Items_135
+    21300272: Atlas_02_Planks_Leaders_Items_136
+    21300274: Atlas_02_Planks_Leaders_Items_137
+    21300276: Atlas_02_Planks_Leaders_Items_138
+    21300278: Atlas_02_Planks_Leaders_Items_139
+    21300280: Atlas_02_Planks_Leaders_Items_140
+    21300282: Atlas_02_Planks_Leaders_Items_141
+    21300284: Atlas_02_Planks_Leaders_Items_142
+    21300286: Atlas_02_Planks_Leaders_Items_143
+    21300288: Atlas_02_Planks_Leaders_Items_144
+    21300290: Atlas_02_Planks_Leaders_Items_145
+    21300292: Atlas_02_Planks_Leaders_Items_146
+    21300294: Atlas_02_Planks_Leaders_Items_147
+    21300296: Atlas_02_Planks_Leaders_Items_148
+    21300298: Atlas_02_Planks_Leaders_Items_149
+    21300300: Atlas_02_Planks_Leaders_Items_150
+    21300302: Atlas_02_Planks_Leaders_Items_151
+    21300304: Atlas_02_Planks_Leaders_Items_152
+    21300306: Atlas_02_Planks_Leaders_Items_153
+  externalObjects: {}
+  serializedVersion: 6
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1922
+        width: 336
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864856b1a4f464e4da3172c73ae64d6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_1
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1922
+        width: 337
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ab5b29f07b91844b3c67ae6cc045af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_2
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 1915
+        width: 128
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8918bc3f556e7ad4286de55db1d1a664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_3
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1915
+        width: 128
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98cba934817a0ee4d818b5b6d78b6525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_4
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 1915
+        width: 128
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c017a7afab0355d47ae07efcc3ac00a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_5
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 1940
+        width: 289
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadd03ab847bdf44daba8b168ed5ed32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_6
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 1926
+        width: 73
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8cc5f8560cfe7547bf0a53025001554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_7
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 1982
+        width: 112
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2798f3122b6f83c48b17624db524154e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_8
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 1915
+        width: 110
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c378136ddd252bb488e2864b529d1e52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_9
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1900
+        width: 1579
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93310730c0899d4299685f234873996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80aed5a36a381b944813a891c6c1844c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_15
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e4961921279b04ca0ff151dbce1ebe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_16
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44edee6f9a1fece4c9d49d46fca65b32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_17
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ae1784c9ff66e4ab4fed62ab0f4dfd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_18
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccf2268b7218234aae3bb5591cb4466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_19
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1436ba031e25cd94a989f29b3dff89b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_20
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6062c3fce6c138b4fad0b8bce4b212d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_21
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e2b5f794433d0429ac2469163730a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_22
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8435f4232f80984489db4558edc2c56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_23
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d708982fbfac84793547b0d5b2a095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_24
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02d5e45a3ce8ae418e32cf4211ded93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_25
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44850f91ac208224386e8556fece6cdc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_26
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1888
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd5abaf2af5ee04a8a32c964e285bfb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_27
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca93ba21c80712c4eadef15952e6c9b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_28
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5b5b27c61362240adde49530da38ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_29
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38220aeee5a4fb944aa7a71c4a6e2a41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_30
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79342a744deded7408ee8213cc582ebe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_31
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ce3e444c257604bbd9bd0a7d7c2eb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_32
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1890
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9f13b82058cc9488a14178ed4681a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_33
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1890
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd560bdd4ed873944b3109867af75800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_34
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1890
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377f3fa7c40422e488141347aedddb21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_35
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35117b4ae5489d14e9c82cc42fceb8ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_36
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1889
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358dd04910a987448838c7556dbd5c97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_37
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc626eb0c2b8374e9d4ebbe4f31dec0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_38
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2b2ea3c1ebe544d8741a3876ffd3e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_39
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec62af1d6c32024c909965b6e4a3299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_40
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a130b811e111a85409a17f1d7195154b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_41
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c10a1e7bef6744d87f9752c9f9fc34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_42
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c415b02a16a99a64099861bee8ef94f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_43
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9742597f8df32e1459b87cb94c4cb949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_44
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1889
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a5ac1c9569ed54296035996897755f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_45
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798ed1349d834a3469ecfc022e1a9e5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_46
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0800966af399e0a4db2a54bb42878ace
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_47
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d828abe33f80bb4db421ebaeb4da7ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_48
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc17565a84aebc468ac10562ed61642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_49
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63827e6641d7ba4cadbc39749aa6a6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_50
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8018f065769541248a6c08734407e796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_51
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8e67edea9298240804ef83ed2ca8e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_52
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d554a08ff2c162c4c83c285b124c6b16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_53
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e473ca2bdfb963e4481da6f5a2791a56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_54
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193f4ccdcc6a13e40999515871eadb56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_55
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1889
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24426774debc6940b52fd8f06e7a7c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_56
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1889
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a6713ec2eeb124c9b936776821fadf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_57
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 1889
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9978fe8126d3b1f4990abd169a4c51f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_58
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1889
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffd799a971f3c841b0196907acc8030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_59
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23cf2a54c480de54ca49e1dab2d5576b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_60
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1888
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51291f3e797b2344982b1aab7e4dd86f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_61
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 1888
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1544565c8cf05be4fad2e99fc491e223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_62
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c425ae65e1199149ae6bad86021bc0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_63
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e31a3aa2f20bb4e991aa39e6b6d90e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_64
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6b374ad578e394eb3f937f87f5fd8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_65
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4afe3f957416f20428572e011a3158f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_66
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784d985ff897324458eb590ba48f99eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_67
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c45efa21bbf82443991dc41e750e5c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_68
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b922fd1d9a4155e4c9bb6f196594035c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_69
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18fb84698bb4df45bf85e2431d21d58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_70
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35266086935c724c9fa0d07c75c2bce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_71
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6af1e36f39150c4f8e121646a235825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_72
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0c5e6fd257b2c4c9f69f0c646deccd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_73
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e46e6d196da9c54c9812f92c76e8812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_74
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f756365e8e3ba7a4ebe1b3d18d8eb419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_75
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c097a0f40c38f43924945fde4254ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_76
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221295d5f11371c43b248242f36b5527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_77
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6491e167e7da9419a16b9a045bc7d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_78
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 1888
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7790043114ec83b44aa8d1996bc7cb2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_79
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1888
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f7afd569aefdd43bed157f2e400155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_80
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1888
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b960609e9543e3c42b365fc1d4f2cc8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_81
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1888
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d055a1d7dbf434f85288f27b824d8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_82
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f07ca5cfd1a8b5489f8921f857cdca3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_83
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c618bc7a4cfd542bf2b60163b3d6e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_84
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1887
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d85997dad7f8c479c3b2402e7c5c6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_85
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 1887
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b42ce756cddeb4e933b2ac1a4a4e9c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_86
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be726694129f8e64f9a818291a8c7ef2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_87
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c532773adebe47c40a687cea585253f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_88
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab65dbedc319749419e1e44fee1b6f8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_89
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7316fdd7cd88c5943ab28b3dba8ac9c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_90
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deee999f822a0a24f8d0dd9deac9136c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_91
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d69187a2a6393c942a5bf9e9a694f29c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_92
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b420989833805924083bd3be0fa59cbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_93
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b84efb25acd22b43b2a3aad96941854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_94
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c4e6d4797dc544a9c72881162feba0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_95
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8dfb24f08dcef46bfce50e5b603fa0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_96
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7474e005926f21b40ad3017581eb6776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_97
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a53a4eeec9e244f9c374768ebaab19
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_98
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569ec52feb0ec4b468ff8c1aac2b58b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_99
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1887
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf22ff7af1d8ce745a995becb4af4c48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_123
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1869
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc9200993b8b87439c0600e5bea5710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_124
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1869
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71f0ca6981020b48b78a1601889ad34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_125
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1869
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73bf7f5d2ed6cac42b483d2ed10ff1c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_126
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 1869
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5006732e485423c4da3e9f792fe4041b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_127
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57aa99bedab0124899abc9b11335f52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_128
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b2b0e7ffa1ccc4b81cc8ef5f91eaa5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_129
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc112af98a899054ea4aab7db9b370ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_130
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1868
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfbcc13b024c83489ed85a69e0c2993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_131
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e09689f6fe094d46a8fc4fc3962a9a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_132
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2628bb0f037b14d865666d3220942d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_133
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ea2a3ac455a5a48a56729d8262ef89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_134
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5279b315d51ad4293cb96ff65098f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_135
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf2e1a252475784bb1fa61e26eb88bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_136
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8184853a8411340a2ca4fa845161eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_137
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a928933b627bafe4aa326898886aacd3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_138
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3913572632d3aab44920b3b705d3f3b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_139
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 1868
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b31f1a42e257c74f8ba754c19884007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_140
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95250e4278190a646b5e03fedf74c07f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_141
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bdd7ae561aee344a2e2e3c2c96067c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_142
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbcfed5f3b308ff409925070d84ec012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_143
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68267054f02b34747b77f85601e6da57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_144
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50741850bd627bb47a5c2a6fd29723e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_145
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e272551c2e6a44d946640632f8ca8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_146
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 1868
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6429589a4dc056b43a5bbe305f79f918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_147
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1868
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233c7f80992a753408c03b64e6e73c2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_149
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1448
+        width: 1919
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a95d9cc1c12b9f4da5a4c3e37983353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_150
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1064
+        width: 1918
+        height: 372
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516703e9e168bb843880f66d297192e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_151
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 687
+        width: 1910
+        height: 371
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4aa2e1abe2b954a869058845cfed39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_152
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 352
+        width: 1816
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581a82351c1962f43a52347e50797126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_02_Planks_Leaders_Items_153
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 6
+        width: 1881
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817594c43151e184b8314924a20e58c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5115b72bf9ede234bb3e109b826d7111
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
