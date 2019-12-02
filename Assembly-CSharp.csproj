@@ -8,8 +8,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
-    <ProjectGuid>{66846A5D-5696-07FF-F1D5-85E02F986642}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectGuid>{07A77204-6B73-651B-2892-C86AD9409B29}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -22,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_0;UNITY_2018_2;UNITY_2018;UNITY_PURCHASING;UNITY_ADS;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;ENABLE_PLAYFABADMIN_API;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_0;UNITY_2018_2;UNITY_2018;UNITY_PURCHASING;UNITY_ADS;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;ENABLE_PLAYFABADMIN_API;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_MONO</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -44,926 +45,936 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>2018.2.0f2</UnityVersion>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
-      <HintPath>C:\Program Files\Unity\2018.2.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:\Program Files\Unity\2018.2.0f2\Editor\Data\Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2018.2.0f2\Editor\Data\Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\EasyFpsCounter\Scripts\EasyFps.cs" />
-     <Compile Include="Assets\EasyFpsCounter\Scripts\EasyFpsCounter.cs" />
-     <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\Demo\MaterialSwitcher.cs" />
-     <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\Demo\OutlineAnimation.cs" />
-     <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\Demo\Rotate.cs" />
-     <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\Demo\Toggle.cs" />
-     <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\LinkedSet.cs" />
-     <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\Outline.cs" />
-     <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\OutlineEffect.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Achievement.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\CommonStatusCodes.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\CommonTypes.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\DummyClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Events\IEvent.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Events\IEventsClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\LeaderboardScoreData.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\Invitation.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\IRealTimeMultiplayerClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\ITurnBasedMultiplayerClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\MatchOutcome.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\Participant.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\Player.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\RealTimeMultiplayerListener.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\TurnBasedMatch.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\AdvertisingResult.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\ConnectionRequest.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\ConnectionResponse.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\DummyNearbyConnectionClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\EndpointDetails.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\INearbyConnectionClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\NearbyConnectionConfiguration.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\PlayerStats.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\PlayGamesClientConfiguration.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\SavedGame\ISavedGameClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\SavedGame\ISavedGameMetadata.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\SavedGame\SavedGameMetadataUpdate.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\ScorePageToken.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Video\CaptureOverlayStateListener.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Video\IVideoClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Video\VideoCapabilities.cs" />
-     <Compile Include="Assets\GooglePlayGames\BasicApi\Video\VideoCaptureState.cs" />
-     <Compile Include="Assets\GooglePlayGames\GameInfo.cs" />
-     <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesAchievement.cs" />
-     <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesLeaderboard.cs" />
-     <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesLocalUser.cs" />
-     <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesPlatform.cs" />
-     <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesScore.cs" />
-     <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesUserProfile.cs" />
-     <Compile Include="Assets\GooglePlayGames\OurUtils\Logger.cs" />
-     <Compile Include="Assets\GooglePlayGames\OurUtils\Misc.cs" />
-     <Compile Include="Assets\GooglePlayGames\OurUtils\PlatformUtils.cs" />
-     <Compile Include="Assets\GooglePlayGames\OurUtils\PlayGamesHelperObject.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidTokenClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Developers\JavaInterfaceProxy.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Developers\JavaObjWrapper.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Common\Api\GoogleApiClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Common\Api\PendingResult.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Common\Api\Result.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Common\Api\ResultCallback.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Common\Api\ResultCallbackProxy.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Common\Api\Status.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Common\ConnectionResult.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Games\Games.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Games\Stats\LoadPlayerStatsResultObject.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Games\Stats\PlayerStats.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Games\Stats\PlayerStatsObject.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Games\Stats\Stats.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Games\Stats\StatsObject.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\CallbackUtils.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\ConversionUtils.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Achievement.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\AchievementManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\AndroidPlatformConfiguration.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Builder.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\CaptureOverlayStateListenerHelper.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\CommonErrorStatus.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\EndpointDiscoveryListenerHelper.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Event.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\EventManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\GameServices.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\InternalHooks.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Leaderboard.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\LeaderboardManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\MessageListenerHelper.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\MultiplayerInvitation.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\MultiplayerParticipant.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\NearbyConnections.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\NearbyConnectionsBuilder.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\NearbyConnectionsStatus.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\NearbyConnectionTypes.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\ParticipantResults.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Player.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\PlayerManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\PlayerStats.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\RealTimeEventListenerHelper.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\RealTimeMultiplayerManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\RealTimeRoom.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\RealTimeRoomConfig.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\RealTimeRoomConfigBuilder.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Score.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\ScorePage.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\ScoreSummary.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Sentinels.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\SnapshotManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\SnapshotMetadata.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\SnapshotMetadataChange.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\SnapshotMetadataChangeBuilder.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\StatsManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Status.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\SymbolLocation.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\TurnBasedMatch.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\TurnBasedMatchConfig.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\TurnBasedMatchConfigBuilder.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\TurnBasedMultiplayerManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Types.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\VideoCapabilities.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\VideoCaptureState.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\VideoManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\JavaUtils.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeEventClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeNearbyConnectionClientFactory.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeNearbyConnectionsClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeRealtimeMultiplayerClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeSavedGameClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeTurnBasedMultiplayerClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeVideoClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\AchievementManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\AndroidPlatformConfiguration.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\BaseReferenceHolder.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\Callbacks.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\CaptureOverlayStateListenerHelper.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\EventManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\GameServices.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\GameServicesBuilder.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\LeaderboardManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\MultiplayerInvitation.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\MultiplayerParticipant.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeAchievement.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeAppIdentifier.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeConnectionRequest.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeConnectionResponse.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeEndpointDetails.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeEndpointDiscoveryListenerHelper.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeEvent.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeLeaderboard.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeMessageListenerHelper.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativePlayer.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativePlayerStats.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeRealTimeRoom.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeScore.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeScoreEntry.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeScorePage.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeScorePageToken.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeScoreSummary.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeSnapshotMetadata.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeSnapshotMetadataChange.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeStartAdvertisingResult.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeTurnBasedMatch.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeVideoCapabilities.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeVideoCaptureState.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NearbyConnectionsManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NearbyConnectionsManagerBuilder.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\ParticipantResults.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\PInvokeUtilities.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\PlatformConfiguration.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\PlayerManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\PlayerSelectUIResponse.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\RealTimeEventListenerHelper.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\RealtimeManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\RealtimeRoomConfig.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\RealtimeRoomConfigBuilder.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\SnapshotManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\StatsManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\TurnBasedManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\TurnBasedMatchConfig.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\TurnBasedMatchConfigBuilder.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\VideoManager.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Platforms\Android\AndroidClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\Platforms\IClientImpl.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\Native\UnsupportedSavedGamesClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\NearbyConnectionClientFactory.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\PlayGamesClientFactory.cs" />
-     <Compile Include="Assets\GooglePlayGames\Platforms\TokenClient.cs" />
-     <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
-     <Compile Include="Assets\GPGSIds.cs" />
-     <Compile Include="Assets\PlayFabScriptsCustom\PlayFabLogin.cs" />
-     <Compile Include="Assets\PlayFabSdk\Admin\PlayFabAdminAPI.cs" />
-     <Compile Include="Assets\PlayFabSdk\Admin\PlayFabAdminModels.cs" />
-     <Compile Include="Assets\PlayFabSdk\Admin\PlayFabEvents.cs" />
-     <Compile Include="Assets\PlayFabSdk\Admin\PlayFabSettings.cs" />
-     <Compile Include="Assets\PlayFabSdk\Authentication\PlayFabAuthenticationAPI.cs" />
-     <Compile Include="Assets\PlayFabSdk\Authentication\PlayFabAuthenticationModels.cs" />
-     <Compile Include="Assets\PlayFabSdk\Authentication\PlayFabEvents.cs" />
-     <Compile Include="Assets\PlayFabSdk\Client\PlayFabClientAPI.cs" />
-     <Compile Include="Assets\PlayFabSdk\Client\PlayFabClientModels.cs" />
-     <Compile Include="Assets\PlayFabSdk\Client\PlayFabDeviceUtil.cs" />
-     <Compile Include="Assets\PlayFabSdk\Client\PlayFabEvents.cs" />
-     <Compile Include="Assets\PlayFabSdk\Client\PlayFabIdfa.cs" />
-     <Compile Include="Assets\PlayFabSdk\Client\PlayFabSettings.cs" />
-     <Compile Include="Assets\PlayFabSdk\CloudScript\PlayFabCloudScriptAPI.cs" />
-     <Compile Include="Assets\PlayFabSdk\CloudScript\PlayFabCloudScriptModels.cs" />
-     <Compile Include="Assets\PlayFabSdk\CloudScript\PlayFabEvents.cs" />
-     <Compile Include="Assets\PlayFabSdk\Data\PlayFabDataAPI.cs" />
-     <Compile Include="Assets\PlayFabSdk\Data\PlayFabDataModels.cs" />
-     <Compile Include="Assets\PlayFabSdk\Data\PlayFabEvents.cs" />
-     <Compile Include="Assets\PlayFabSdk\Entity\ScreenTimeTracker.cs" />
-     <Compile Include="Assets\PlayFabSdk\Events\PlayFabEvents.cs" />
-     <Compile Include="Assets\PlayFabSdk\Events\PlayFabEventsAPI.cs" />
-     <Compile Include="Assets\PlayFabSdk\Events\PlayFabEventsModels.cs" />
-     <Compile Include="Assets\PlayFabSdk\Groups\PlayFabEvents.cs" />
-     <Compile Include="Assets\PlayFabSdk\Groups\PlayFabGroupsAPI.cs" />
-     <Compile Include="Assets\PlayFabSdk\Groups\PlayFabGroupsModels.cs" />
-     <Compile Include="Assets\PlayFabSdk\Localization\PlayFabEvents.cs" />
-     <Compile Include="Assets\PlayFabSdk\Localization\PlayFabLocalizationAPI.cs" />
-     <Compile Include="Assets\PlayFabSdk\Localization\PlayFabLocalizationModels.cs" />
-     <Compile Include="Assets\PlayFabSdk\Matchmaker\PlayFabEvents.cs" />
-     <Compile Include="Assets\PlayFabSdk\Matchmaker\PlayFabMatchmakerAPI.cs" />
-     <Compile Include="Assets\PlayFabSdk\Matchmaker\PlayFabMatchmakerModels.cs" />
-     <Compile Include="Assets\PlayFabSdk\Multiplayer\PlayFabEvents.cs" />
-     <Compile Include="Assets\PlayFabSdk\Multiplayer\PlayFabMultiplayerAPI.cs" />
-     <Compile Include="Assets\PlayFabSdk\Multiplayer\PlayFabMultiplayerModels.cs" />
-     <Compile Include="Assets\PlayFabSdk\Profiles\PlayFabEvents.cs" />
-     <Compile Include="Assets\PlayFabSdk\Profiles\PlayFabProfilesAPI.cs" />
-     <Compile Include="Assets\PlayFabSdk\Profiles\PlayFabProfilesModels.cs" />
-     <Compile Include="Assets\PlayFabSdk\Server\PlayFabEvents.cs" />
-     <Compile Include="Assets\PlayFabSdk\Server\PlayFabServerAPI.cs" />
-     <Compile Include="Assets\PlayFabSdk\Server\PlayFabServerModels.cs" />
-     <Compile Include="Assets\PlayFabSdk\Server\PlayFabSettings.cs" />
-     <Compile Include="Assets\PlayFabSdk\Server\PlayStream\PlayFabPlayStreamAPI.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Internal\ISerializer.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Internal\Log.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabErrors.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\IPlayFabHttp.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\PlayFabHTTP.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\PlayFabUnityHttp.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\PlayFabWebRequest.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\PlayFabWWW.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabSignalR\IPlayFabSignalR.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabSignalR\PlayFabSignalR.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Internal\SimpleJson.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Internal\SingletonMonoBehaviour.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Internal\Util.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Internal\wsaReflectionExtensions.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\CRC32.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\Deflate.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\DeflateStream.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\GZipStream.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\Inflate.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\InfTree.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ParallelDeflateOutputStream.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\Zlib.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZlibBaseStream.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZlibCodec.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZlibConstants.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZlibStream.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZTree.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Models\PlayFabSharedSettings.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Models\SharedModels.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Public\IPlayFabPlugin.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Public\IPlayFabTransportPlugin.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Public\ISerializerPlugin.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Public\ITransportPlugin.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayFabDataGatherer.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayFabEvents.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayFabLogger.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayFabSettings.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayStream\PlayStreamEventDataModels.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginContract.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginManager.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Connection.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\ConnectionExtensions.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\DisposableAction.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\CallbackDetail.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\DefaultHttpClient.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\HttpHelper.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\HttpWebRequestWrapper.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\HttpWebResponseWrapper.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\IHttpClient.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\IHttpClientExtensions.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\IRequest.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\IResponse.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\RequestState.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubConnection.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubInvocation.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubMethodAttribute.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubProxy.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubRegistrationData.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubResult.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\Hubservable.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\IHubProxy.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\IObservable.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\IObserver.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\ProxyExtensions.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\Subscription.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\IConnection.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\ChunkBuffer.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\DisposableAction.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\StreamExtensions.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\StreamState.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\UriQueryUtility.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\NegotiationResponse.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\AsyncStreamReader.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\AutoTransport.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\CancellationTokenSource.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\CustomEventArgs.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\EventSignal.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\HttpBasedTransport.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\IClientTransport.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\LongPollingTransport.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\OptionalEventSignal.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\ServerSentEventsTransport.cs" />
-     <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\SseEvent.cs" />
-     <Compile Include="Assets\Scripts\Animators\AnimatorController.cs" />
-     <Compile Include="Assets\Scripts\Animators\MainMenuAnimator.cs" />
-     <Compile Include="Assets\Scripts\Camera and Character\CameraController.cs" />
-     <Compile Include="Assets\Scripts\Camera and Character\CameraScriptFollow.cs" />
-     <Compile Include="Assets\Scripts\Camera and Character\ParallaxController.cs" />
-     <Compile Include="Assets\Scripts\Camera and Character\PlayerBulletScript.cs" />
-     <Compile Include="Assets\Scripts\Camera and Character\TreeSpawner.cs" />
-     <Compile Include="Assets\Scripts\CameraResolutionRunners.cs" />
-     <Compile Include="Assets\Scripts\Challenges\ChallengeCompletedUIController.cs" />
-     <Compile Include="Assets\Scripts\Challenges\ChallengesController.cs" />
-     <Compile Include="Assets\Scripts\Challenges\ChallengesScriptable.cs" />
-     <Compile Include="Assets\Scripts\CharacterLocalRefs.cs" />
-     <Compile Include="Assets\Scripts\CharacterReferences.cs" />
-     <Compile Include="Assets\Scripts\Characters\DragonSpecial.cs" />
-     <Compile Include="Assets\Scripts\Characters\ElephantSpecial.cs" />
-     <Compile Include="Assets\Scripts\Characters\ElephantSpecialHolder.cs" />
-     <Compile Include="Assets\Scripts\Characters\FillAmountVariation.cs" />
-     <Compile Include="Assets\Scripts\Characters\OkamiSpecial.cs" />
-     <Compile Include="Assets\Scripts\Characters\RabbitMeteor.cs" />
-     <Compile Include="Assets\Scripts\Characters\RabbitSpecial.cs" />
-     <Compile Include="Assets\Scripts\Characters\TurtleSpecial.cs" />
-     <Compile Include="Assets\Scripts\Characters\UnicornSpecial.cs" />
-     <Compile Include="Assets\Scripts\Coins\CoinsController.cs" />
-     <Compile Include="Assets\Scripts\Coins\CoinScript.cs" />
-     <Compile Include="Assets\Scripts\Coins\Purchaser.cs" />
-     <Compile Include="Assets\Scripts\Controllers\EnvironmentController.cs" />
-     <Compile Include="Assets\Scripts\Controllers\EnvironmentPrefabController.cs" />
-     <Compile Include="Assets\Scripts\Controllers\FinisherController.cs" />
-     <Compile Include="Assets\Scripts\Controllers\UIController.cs" />
-     <Compile Include="Assets\Scripts\DeactivateAfterX.cs" />
-     <Compile Include="Assets\Scripts\Enemies\BulletController.cs" />
-     <Compile Include="Assets\Scripts\Enemies\EnemyMovement.cs" />
-     <Compile Include="Assets\Scripts\Enemies\HunterSightController.cs" />
-     <Compile Include="Assets\Scripts\Enemies\TrapAnimation.cs" />
-     <Compile Include="Assets\Scripts\Enemies\TrapScript.cs" />
-     <Compile Include="Assets\Scripts\EnemyDestroyerScript.cs" />
-     <Compile Include="Assets\Scripts\FloatingFloor.cs" />
-     <Compile Include="Assets\Scripts\GameCenterLogin.cs" />
-     <Compile Include="Assets\Scripts\GooglePlayLogin.cs" />
-     <Compile Include="Assets\Scripts\GooglePlayScript.cs" />
-     <Compile Include="Assets\Scripts\GPGSIds.cs" />
-     <Compile Include="Assets\Scripts\JumpControl.cs" />
-     <Compile Include="Assets\Scripts\Languajes\LanguajesDic.cs" />
-     <Compile Include="Assets\Scripts\Languajes\TextScriptErrors.cs" />
-     <Compile Include="Assets\Scripts\Languajes\TextsScript.cs" />
-     <Compile Include="Assets\Scripts\Languajes\TextsScriptMultiple.cs" />
-     <Compile Include="Assets\Scripts\LoadingParallaxScript.cs" />
-     <Compile Include="Assets\Scripts\LoadingStartRuners.cs" />
-     <Compile Include="Assets\Scripts\LogInWindowController.cs" />
-     <Compile Include="Assets\Scripts\MaxMetersTextScript.cs" />
-     <Compile Include="Assets\Scripts\MedalsHolderController.cs" />
-     <Compile Include="Assets\Scripts\MuteUnmuteScript.cs" />
-     <Compile Include="Assets\Scripts\okamiEspecialColliderScript.cs" />
-     <Compile Include="Assets\Scripts\Parallax\CaveInOut.cs" />
-     <Compile Include="Assets\Scripts\Parallax\ParallaxChecker.cs" />
-     <Compile Include="Assets\Scripts\Parallax\ParallaxMainController.cs" />
-     <Compile Include="Assets\Scripts\PointsController.cs" />
-     <Compile Include="Assets\Scripts\Rotation.cs" />
-     <Compile Include="Assets\Scripts\SceneManagement\LevelLoader.cs" />
-     <Compile Include="Assets\Scripts\ScriptableObjects\CharacterInfo.cs" />
-     <Compile Include="Assets\Scripts\ScriptableObjects\CharactersInfo.cs" />
-     <Compile Include="Assets\Scripts\ScriptableObjects\EnvironmentSet.cs" />
-     <Compile Include="Assets\Scripts\Shop\ShopConfirmer.cs" />
-     <Compile Include="Assets\Scripts\Shop\ShopController.cs" />
-     <Compile Include="Assets\Scripts\Shop\ShopItem.cs" />
-     <Compile Include="Assets\Scripts\Shop\SpineShopAnimator.cs" />
-     <Compile Include="Assets\Scripts\Sound\AudioSourceSetter.cs" />
-     <Compile Include="Assets\Scripts\Sound\AudioSourceSlider.cs" />
-     <Compile Include="Assets\Scripts\Sound\SoundController.cs" />
-     <Compile Include="Assets\Scripts\Sound\SoundMainController.cs" />
-     <Compile Include="Assets\Scripts\Sound\SoundSettings.cs" />
-     <Compile Include="Assets\Scripts\TestScripts\PlayerStats.cs" />
-     <Compile Include="Assets\Scripts\TestScripts\TestAttack.cs" />
-     <Compile Include="Assets\Scripts\TestScripts\TestMovement.cs" />
-     <Compile Include="Assets\Scripts\TextScriptGemasShop.cs" />
-     <Compile Include="Assets\Scripts\TutorialTextScript.cs" />
-     <Compile Include="Assets\Scripts\UIScripts\AttacksUI.cs" />
-     <Compile Include="Assets\Scripts\UIScripts\Health.cs" />
-     <Compile Include="Assets\Scripts\UIScripts\SpecialsUI.cs" />
-     <Compile Include="Assets\Scripts\VFX\CharacterVFXController.cs" />
-     <Compile Include="Assets\Scripts\VFX\DestroyAfterX.cs" />
-     <Compile Include="Assets\Scripts\VFX\ElephantBulletFresnelControlOverTime.cs" />
-     <Compile Include="Assets\Scripts\VFX\VFXAfterAction.cs" />
-     <Compile Include="Assets\spine\spine-csharp\Properties\AssemblyInfo.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Animation.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\AnimationState.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\AnimationStateData.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Atlas.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Attachments\AtlasAttachmentLoader.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Attachments\Attachment.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Attachments\AttachmentLoader.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Attachments\AttachmentType.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Attachments\BoundingBoxAttachment.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Attachments\ClippingAttachment.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Attachments\MeshAttachment.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Attachments\PathAttachment.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Attachments\PointAttachment.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Attachments\RegionAttachment.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Attachments\VertexAttachment.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\BlendMode.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Bone.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\BoneData.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Event.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\EventData.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\ExposedList.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\IConstraint.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\IkConstraint.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\IkConstraintData.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\IUpdatable.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Json.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\MathUtils.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\PathConstraint.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\PathConstraintData.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Skeleton.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\SkeletonBinary.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\SkeletonBounds.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\SkeletonClipping.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\SkeletonData.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\SkeletonJson.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Skin.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Slot.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\SlotData.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\TransformConstraint.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\TransformConstraintData.cs" />
-     <Compile Include="Assets\spine\spine-csharp\src\Triangulator.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\AttackSpineboy.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\DataAssetsFromExportsExample.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\DraggableTransform.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\FootSoldierExample.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\BasicPlatformerController.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\ConstrainedCamera.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\Raptor.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\SpineBeginnerTwo.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\SpineBlinkPlayer.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\SpineboyBeginnerInput.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\SpineboyBeginnerModel.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\SpineboyBeginnerView.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\SpineboyTargetController.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Goblins.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\HandleEventWithAudioExample.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\HurtFlashEffect.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\MaterialPropertyBlockExample.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Mix and Match Character Customize\EquipAssetExample.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Mix and Match Character Customize\EquipButtonExample.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Mix and Match Character Customize\EquipsVisualsComponentExample.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Mix and Match Character Customize\EquipSystemExample.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\MixAndMatch.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\MixAndMatchGraphic.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\RaggedySpineboy.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\ReloadSceneOnKeyDown.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Rotator.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\BoneLocalOverride.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\CombinedSkin.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\Legacy\AtlasRegionAttacher.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\Legacy\CustomSkin.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\Legacy\SpriteAttacher.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\Sample VertexEffects\JitterEffectExample.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\Sample VertexEffects\TwoByTwoTransformEffectExample.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\SkeletonAnimationMulti\SkeletonAnimationMulti.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\SkeletonColorInitialize.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\SlotTintBlackFollower.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\SpineEventUnityHandler.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\SpawnFromSkeletonDataExample.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Spineboy.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\SpineboyBodyTilt.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\SpineboyFacialExpression.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\SpineboyFootplanter.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\SpineboyFreeze.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\SpineboyPole.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\SpineGauge.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Asset Types\AnimationReferenceAsset.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Asset Types\AtlasAsset.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Asset Types\EventDataReferenceAsset.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Asset Types\RegionlessAttachmentLoader.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Asset Types\SkeletonDataAsset.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Components\BoneFollower.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Components\PointFollower.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Components\SkeletonAnimation.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Components\SkeletonAnimator.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Components\SkeletonRenderer.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\ISkeletonAnimation.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\DoubleBuffered.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\SpineMesh.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\Unused\ArraysMeshGenerator.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\Unused\ArraysSimpleMeshGenerator.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\Unused\ArraysSubmeshedMeshGenerator.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\Unused\ArraysSubmeshSetMeshGenerator.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\Unused\DoubleBufferedMesh.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\Unused\ISimpleMeshGenerator.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\Unused\ISubmeshedMeshGenerator.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\AttachmentTools\AttachmentTools.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\BoundingBoxFollower\BoundingBoxFollower.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Ghost\SkeletonGhost.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Ghost\SkeletonGhostRenderer.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Ragdoll\SkeletonRagdoll.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Ragdoll\SkeletonRagdoll2D.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\BoneFollowerGraphic.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\SkeletonGraphic.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\SkeletonGraphicMirror.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonRenderSeparator\SkeletonPartsRenderer.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityEyeConstraint.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityGroundConstraint.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityKinematicShadow.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SlotBlendModes\SlotBlendModes.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\PlayableHandle Component\SkeletonAnimationPlayableHandle.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\PlayableHandle Component\SpinePlayableHandleBase.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateBehaviour.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateClip.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateMixerBehaviour.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateTrack.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipBehaviour.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipClip.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipMixerBehaviour.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipTrack.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\TK2D\SpriteCollectionAttachmentLoader.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\YieldInstructions\WaitForSpineAnimationComplete.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\YieldInstructions\WaitForSpineEvent.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\YieldInstructions\WaitForSpineTrackEntryEnd.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonExtensions.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtility.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
-     <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SpineAttributes.cs" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Eyes\eyes.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Utility\HiddenPass.shader" />
-     <None Include="Assets\PlayFabSdk\link.xml" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Spine-Skeleton-Fill.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpritePixelLighting.cginc" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpriteVertexLighting.cginc" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpriteShadows.cginc" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteShadows.cginc" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpritePixelLighting.cginc" />
-     <None Include="Assets\spine\Desierto\Tirador spine - unity\Tirador.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpriteLighting.cginc" />
-     <None Include="Assets\Effects\CircleFresnelSprite\CircleFresnelSprite.shader" />
-     <None Include="Assets\spine\Cazador_arpon spine - unity 02\cazador arpon.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Gauge\Gauge.atlas.txt" />
-     <None Include="Assets\spine\Cazador CQC lava spine - unity\Cazador cqc lava.atlas.txt" />
-     <None Include="Assets\Effects\Shader\SpriteDissolve.shader" />
-     <None Include="Assets\Effects\SpineOutline\OutlineEffect\Resources\OutlineShader.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic-TintBlack.shader" />
-     <None Include="Assets\spine\Loading Screen\Conejo silueta\Conejo silueta spine - unity\Cazador silueta.atlas.txt" />
-     <None Include="Assets\spine\Elefante spine-unity\Elefante.json.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\FootSoldier\FS_White.atlas.txt" />
-     <None Include="Assets\spine\Tirador nieve\Tirador nieve spine - unity 02\Tirador nieve.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\ShaderShared.cginc" />
-     <None Include="Assets\spine\Jellyfish\cazadora2.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.txt" />
-     <None Include="Assets\GooglePlayGames\Plugins\Android\GooglePlayGamesManifest.plugin\AndroidManifest.xml" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Hero\hero-mesh.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Dragon\license.txt" />
-     <None Include="Assets\Effects\SpineOutline\OutlineEffect\Resources\OutlineBufferShader.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Straight Alpha\Spine-Straight-Skeleton-Tint.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Hero\license.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Goblins\goblins.atlas.txt" />
-     <None Include="Assets\spine\Hunter\cazador escopeta 2.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Strechyman\stretchyman-diffuse-pma.atlas.txt" />
-     <None Include="Assets\spine\Hunter\cazador escopeta 2.json.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Raptor\raptor.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteLighting.cginc" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Screen.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\spineboy-unity\spineboy.atlas.txt" />
-     <None Include="Assets\spine\Elefante spine-unity\farolillo.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpriteUnlit.cginc" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteUnlit.cginc" />
-     <None Include="Assets\spine\Lanza nieve spine - unity\Lanza nieve.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\FootSoldier\license.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\version.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpritesPixelLit.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Raggedy Spineboy\Raggedy Spineboy.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Spine-Skeleton-Tint.shader" />
-     <None Include="Assets\spine\Okami spine - unity\Okami.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpritesUnlit.shader" />
-     <None Include="Assets\spine\Loading Screen\Cazador silueta\Cazador silueta spine - unity\Cazador silueta.atlas.txt" />
-     <None Include="Assets\spine\Cazadora spine - unity\cazadora2.json.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Utility\Hidden-Spine-Bones.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpritesVertexLit.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Ghost\Shaders\Spine-Special-Skeleton-Ghost.shader" />
-     <None Include="Assets\spine\Conejo spine - unity\Conejo.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteVertexLighting.cginc" />
-     <None Include="Assets\spine\Cazadora spine - unity\cazadora2.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Dragon\dragon.atlas.txt" />
-     <None Include="Assets\spine\Tortuga spine-unity\tortuga final 2.json.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CameraDepthNormalsTexture.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Spine-Skeleton-TintBlack.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderShared.cginc" />
-     <None Include="Assets\spine\Estrella spine - unity\Estrella.atlas.txt" />
-     <None Include="Assets\spine\Tortuga spine-unity\tortuga final 2.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Spine-Skeleton.shader" />
-     <None Include="Assets\spine\Dragon spine - unity\Dragon.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CameraNormalsTexture.shader" />
-     <None Include="Assets\spine\Elefante spine-unity\farolillo.json.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\spineboy-pro\spineboy-pro.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Spineunitygirl\Doi.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CameraDepthTexture.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Multiply.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Hero\hero-pro.atlas.txt" />
-     <None Include="Assets\spine\Jellyfish\cazadora2.json.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderMaths.cginc" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.txt" />
-     <None Include="Assets\spine\Unicornio spine - unity\Unicornio.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpriteDepthNormalsTexture.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Spine-SkeletonLit.shader" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteSpecular.cginc" />
-     <None Include="Assets\spine\Desierto\Cazador CQC spine - unity\Cazador CQC.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Straight Alpha\Spine-Straight-Skeleton-Fill.shader" />
-     <None Include="Assets\spine\Loading Screen\Conejo silueta\Conejo silueta spine - unity\Conejo silueta.atlas.txt" />
-     <None Include="Assets\spine\Cazador lanzallamas spine - unity\Cazador lanzallamas.atlas.txt" />
-     <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\FootSoldier\Equipment\Equipment.atlas.txt" />
- <Reference Include="UnityEditor.StandardEvents">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AIModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ARModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AccessibilityModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AnimationModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AssetBundleModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.AudioModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.BaselibModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ClothModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.CloudWebServicesModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.CoreModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.CrashReportingModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.DirectorModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.FacebookModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.FileSystemHttpModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.GameCenterModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.GridModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.HotReloadModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.IMGUIModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ImageConversionModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.InputModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.JSONSerializeModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.LocalizationModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ParticleSystemModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.PerformanceReportingModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.PhysicsModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Physics2DModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ProfilerModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.ScreenCaptureModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SharedInternalsModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpatialTrackingModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpriteMaskModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpriteShapeModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.StreamingModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.StyleSheetsModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SubstanceModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TLSModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TerrainModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TerrainPhysicsModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TextRenderingModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TilemapModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TimelineModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UIModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UIElementsModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UNETModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UmbraModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityAnalyticsModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityConnectModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestAudioModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestTextureModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UnityWebRequestWWWModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VRModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VehiclesModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.VideoModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.WindModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.XRModule">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Locator">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/Managed/Unity.Locator.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity.Settings">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Timeline">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.GoogleAudioSpatializer">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.HoloLens">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
- </Reference>
- <Reference Include="UDP">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Assets/Plugins/UDP/UDP.dll</HintPath>
- </Reference>
- <Reference Include="ChannelPurchase">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
- </Reference>
- <Reference Include="UnityStore">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
- </Reference>
- <Reference Include="Editor">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
- </Reference>
- <Reference Include="Purchasing.Common">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
- </Reference>
- <Reference Include="Stores">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
- </Reference>
- <Reference Include="Apple">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
- </Reference>
- <Reference Include="FacebookStore">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
- </Reference>
- <Reference Include="Security">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
- </Reference>
- <Reference Include="Tizen">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
- </Reference>
- <Reference Include="winrt">
- <HintPath>E:/UnityProjects/AnimalRunnerG/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Users/Edu-Pc/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Users/Edu-Pc/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>C:/Users/Edu-Pc/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.StandardEvents">
- <HintPath>C:/Users/Edu-Pc/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
- </Reference>
- <Reference Include="mscorlib">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
- </Reference>
- <Reference Include="System">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
- </Reference>
- <Reference Include="System.Core">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
- </Reference>
- <Reference Include="System.Runtime.Serialization">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
- </Reference>
- <Reference Include="System.Xml.Linq">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
- </Reference>
- <Reference Include="UnityScript">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
- </Reference>
- <Reference Include="UnityScript.Lang">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
- </Reference>
- <Reference Include="Boo.Lang">
- <HintPath>C:/Program Files/Unity/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\EasyFpsCounter\Scripts\EasyFps.cs" />
+    <Compile Include="Assets\EasyFpsCounter\Scripts\EasyFpsCounter.cs" />
+    <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\Demo\MaterialSwitcher.cs" />
+    <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\Demo\OutlineAnimation.cs" />
+    <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\Demo\Rotate.cs" />
+    <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\Demo\Toggle.cs" />
+    <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\LinkedSet.cs" />
+    <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\Outline.cs" />
+    <Compile Include="Assets\Effects\SpineOutline\OutlineEffect\OutlineEffect.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Achievement.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\CommonStatusCodes.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\CommonTypes.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\DummyClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Events\IEvent.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Events\IEventsClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\LeaderboardScoreData.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\Invitation.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\IRealTimeMultiplayerClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\ITurnBasedMultiplayerClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\MatchOutcome.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\Participant.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\Player.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\RealTimeMultiplayerListener.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\TurnBasedMatch.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\AdvertisingResult.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\ConnectionRequest.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\ConnectionResponse.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\DummyNearbyConnectionClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\EndpointDetails.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\INearbyConnectionClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\NearbyConnectionConfiguration.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\PlayerStats.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\PlayGamesClientConfiguration.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\SavedGame\ISavedGameClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\SavedGame\ISavedGameMetadata.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\SavedGame\SavedGameMetadataUpdate.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\ScorePageToken.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Video\CaptureOverlayStateListener.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Video\IVideoClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Video\VideoCapabilities.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Video\VideoCaptureState.cs" />
+    <Compile Include="Assets\GooglePlayGames\GameInfo.cs" />
+    <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesAchievement.cs" />
+    <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesLeaderboard.cs" />
+    <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesLocalUser.cs" />
+    <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesPlatform.cs" />
+    <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesScore.cs" />
+    <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesUserProfile.cs" />
+    <Compile Include="Assets\GooglePlayGames\OurUtils\Logger.cs" />
+    <Compile Include="Assets\GooglePlayGames\OurUtils\Misc.cs" />
+    <Compile Include="Assets\GooglePlayGames\OurUtils\PlatformUtils.cs" />
+    <Compile Include="Assets\GooglePlayGames\OurUtils\PlayGamesHelperObject.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\AndroidTokenClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Developers\JavaInterfaceProxy.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Developers\JavaObjWrapper.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Common\Api\GoogleApiClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Common\Api\PendingResult.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Common\Api\Result.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Common\Api\ResultCallback.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Common\Api\ResultCallbackProxy.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Common\Api\Status.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Common\ConnectionResult.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Games\Games.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Games\Stats\LoadPlayerStatsResultObject.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Games\Stats\PlayerStats.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Games\Stats\PlayerStatsObject.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Games\Stats\Stats.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Android\Gms\Games\Stats\StatsObject.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\CallbackUtils.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\ConversionUtils.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Achievement.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\AchievementManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\AndroidPlatformConfiguration.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Builder.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\CaptureOverlayStateListenerHelper.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\CommonErrorStatus.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\EndpointDiscoveryListenerHelper.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Event.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\EventManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\GameServices.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\InternalHooks.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Leaderboard.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\LeaderboardManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\MessageListenerHelper.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\MultiplayerInvitation.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\MultiplayerParticipant.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\NearbyConnections.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\NearbyConnectionsBuilder.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\NearbyConnectionsStatus.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\NearbyConnectionTypes.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\ParticipantResults.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Player.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\PlayerManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\PlayerStats.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\RealTimeEventListenerHelper.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\RealTimeMultiplayerManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\RealTimeRoom.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\RealTimeRoomConfig.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\RealTimeRoomConfigBuilder.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Score.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\ScorePage.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\ScoreSummary.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Sentinels.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\SnapshotManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\SnapshotMetadata.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\SnapshotMetadataChange.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\SnapshotMetadataChangeBuilder.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\StatsManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Status.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\SymbolLocation.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\TurnBasedMatch.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\TurnBasedMatchConfig.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\TurnBasedMatchConfigBuilder.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\TurnBasedMultiplayerManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\Types.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\VideoCapabilities.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\VideoCaptureState.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Cwrapper\VideoManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\JavaUtils.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeEventClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeNearbyConnectionClientFactory.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeNearbyConnectionsClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeRealtimeMultiplayerClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeSavedGameClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeTurnBasedMultiplayerClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\NativeVideoClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\AchievementManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\AndroidPlatformConfiguration.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\BaseReferenceHolder.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\Callbacks.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\CaptureOverlayStateListenerHelper.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\EventManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\GameServices.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\GameServicesBuilder.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\LeaderboardManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\MultiplayerInvitation.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\MultiplayerParticipant.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeAchievement.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeAppIdentifier.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeConnectionRequest.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeConnectionResponse.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeEndpointDetails.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeEndpointDiscoveryListenerHelper.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeEvent.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeLeaderboard.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeMessageListenerHelper.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativePlayer.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativePlayerStats.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeRealTimeRoom.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeScore.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeScoreEntry.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeScorePage.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeScorePageToken.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeScoreSummary.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeSnapshotMetadata.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeSnapshotMetadataChange.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeStartAdvertisingResult.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeTurnBasedMatch.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeVideoCapabilities.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NativeVideoCaptureState.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NearbyConnectionsManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\NearbyConnectionsManagerBuilder.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\ParticipantResults.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\PInvokeUtilities.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\PlatformConfiguration.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\PlayerManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\PlayerSelectUIResponse.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\RealTimeEventListenerHelper.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\RealtimeManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\RealtimeRoomConfig.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\RealtimeRoomConfigBuilder.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\SnapshotManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\StatsManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\TurnBasedManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\TurnBasedMatchConfig.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\TurnBasedMatchConfigBuilder.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\PInvoke\VideoManager.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Platforms\Android\AndroidClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\Platforms\IClientImpl.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\Native\UnsupportedSavedGamesClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\NearbyConnectionClientFactory.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\PlayGamesClientFactory.cs" />
+    <Compile Include="Assets\GooglePlayGames\Platforms\TokenClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
+    <Compile Include="Assets\GPGSIds.cs" />
+    <Compile Include="Assets\PlayFabScriptsCustom\PlayFabLogin.cs" />
+    <Compile Include="Assets\PlayFabSdk\Admin\PlayFabAdminAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Admin\PlayFabAdminModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Admin\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Admin\PlayFabSettings.cs" />
+    <Compile Include="Assets\PlayFabSdk\Authentication\PlayFabAuthenticationAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Authentication\PlayFabAuthenticationModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Authentication\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Client\PlayFabClientAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Client\PlayFabClientModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Client\PlayFabDeviceUtil.cs" />
+    <Compile Include="Assets\PlayFabSdk\Client\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Client\PlayFabIdfa.cs" />
+    <Compile Include="Assets\PlayFabSdk\Client\PlayFabSettings.cs" />
+    <Compile Include="Assets\PlayFabSdk\CloudScript\PlayFabCloudScriptAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\CloudScript\PlayFabCloudScriptModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\CloudScript\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Data\PlayFabDataAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Data\PlayFabDataModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Data\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Entity\ScreenTimeTracker.cs" />
+    <Compile Include="Assets\PlayFabSdk\Events\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Events\PlayFabEventsAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Events\PlayFabEventsModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Groups\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Groups\PlayFabGroupsAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Groups\PlayFabGroupsModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Localization\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Localization\PlayFabLocalizationAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Localization\PlayFabLocalizationModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Matchmaker\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Matchmaker\PlayFabMatchmakerAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Matchmaker\PlayFabMatchmakerModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Multiplayer\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Multiplayer\PlayFabMultiplayerAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Multiplayer\PlayFabMultiplayerModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Profiles\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Profiles\PlayFabProfilesAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Profiles\PlayFabProfilesModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Server\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Server\PlayFabServerAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Server\PlayFabServerModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Server\PlayFabSettings.cs" />
+    <Compile Include="Assets\PlayFabSdk\Server\PlayStream\PlayFabPlayStreamAPI.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\ISerializer.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\Log.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabErrors.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\IPlayFabHttp.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\PlayFabHTTP.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\PlayFabUnityHttp.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\PlayFabWebRequest.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabHttp\PlayFabWWW.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabSignalR\IPlayFabSignalR.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\PlayFabSignalR\PlayFabSignalR.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\SimpleJson.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\SingletonMonoBehaviour.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\Util.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Internal\wsaReflectionExtensions.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\CRC32.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\Deflate.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\DeflateStream.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\GZipStream.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\Inflate.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\InfTree.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ParallelDeflateOutputStream.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\Zlib.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZlibBaseStream.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZlibCodec.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZlibConstants.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZlibStream.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Ionic.Zlib\ZTree.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Models\PlayFabSharedSettings.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Models\SharedModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\IPlayFabPlugin.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\IPlayFabTransportPlugin.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\ISerializerPlugin.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\ITransportPlugin.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayFabDataGatherer.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayFabEvents.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayFabLogger.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayFabSettings.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\PlayStream\PlayStreamEventDataModels.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginContract.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\Public\PluginManager.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Connection.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\ConnectionExtensions.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\DisposableAction.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\CallbackDetail.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\DefaultHttpClient.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\HttpHelper.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\HttpWebRequestWrapper.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\HttpWebResponseWrapper.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\IHttpClient.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\IHttpClientExtensions.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\IRequest.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\IResponse.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Http\RequestState.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubConnection.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubInvocation.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubMethodAttribute.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubProxy.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubRegistrationData.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\HubResult.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\Hubservable.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\IHubProxy.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\IObservable.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\IObserver.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\ProxyExtensions.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Hubs\Subscription.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\IConnection.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\ChunkBuffer.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\DisposableAction.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\StreamExtensions.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\StreamState.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Infrastructure\UriQueryUtility.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\NegotiationResponse.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\AsyncStreamReader.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\AutoTransport.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\CancellationTokenSource.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\CustomEventArgs.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\EventSignal.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\HttpBasedTransport.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\IClientTransport.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\LongPollingTransport.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\OptionalEventSignal.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\ServerSentEventsTransport.cs" />
+    <Compile Include="Assets\PlayFabSdk\Shared\SignalR.NET20\Transports\SseEvent.cs" />
+    <Compile Include="Assets\Scripts\Animators\AnimatorController.cs" />
+    <Compile Include="Assets\Scripts\Animators\MainMenuAnimator.cs" />
+    <Compile Include="Assets\Scripts\Camera and Character\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Camera and Character\CameraScriptFollow.cs" />
+    <Compile Include="Assets\Scripts\Camera and Character\ParallaxController.cs" />
+    <Compile Include="Assets\Scripts\Camera and Character\PlayerBulletScript.cs" />
+    <Compile Include="Assets\Scripts\Camera and Character\TreeSpawner.cs" />
+    <Compile Include="Assets\Scripts\CameraResolutionRunners.cs" />
+    <Compile Include="Assets\Scripts\Challenges\ChallengeCompletedUIController.cs" />
+    <Compile Include="Assets\Scripts\Challenges\ChallengesController.cs" />
+    <Compile Include="Assets\Scripts\Challenges\ChallengesScriptable.cs" />
+    <Compile Include="Assets\Scripts\CharacterLocalRefs.cs" />
+    <Compile Include="Assets\Scripts\CharacterReferences.cs" />
+    <Compile Include="Assets\Scripts\Characters\DragonSpecial.cs" />
+    <Compile Include="Assets\Scripts\Characters\ElephantSpecial.cs" />
+    <Compile Include="Assets\Scripts\Characters\ElephantSpecialHolder.cs" />
+    <Compile Include="Assets\Scripts\Characters\FillAmountVariation.cs" />
+    <Compile Include="Assets\Scripts\Characters\OkamiSpecial.cs" />
+    <Compile Include="Assets\Scripts\Characters\RabbitMeteor.cs" />
+    <Compile Include="Assets\Scripts\Characters\RabbitSpecial.cs" />
+    <Compile Include="Assets\Scripts\Characters\TurtleSpecial.cs" />
+    <Compile Include="Assets\Scripts\Characters\UnicornSpecial.cs" />
+    <Compile Include="Assets\Scripts\Coins\CoinsController.cs" />
+    <Compile Include="Assets\Scripts\Coins\CoinScript.cs" />
+    <Compile Include="Assets\Scripts\Coins\Purchaser.cs" />
+    <Compile Include="Assets\Scripts\Controllers\EnvironmentController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\EnvironmentPrefabController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\FinisherController.cs" />
+    <Compile Include="Assets\Scripts\Controllers\UIController.cs" />
+    <Compile Include="Assets\Scripts\DeactivateAfterX.cs" />
+    <Compile Include="Assets\Scripts\Enemies\BulletController.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\Enemies\HunterSightController.cs" />
+    <Compile Include="Assets\Scripts\Enemies\TrapAnimation.cs" />
+    <Compile Include="Assets\Scripts\Enemies\TrapScript.cs" />
+    <Compile Include="Assets\Scripts\EnemyDestroyerScript.cs" />
+    <Compile Include="Assets\Scripts\FloatingFloor.cs" />
+    <Compile Include="Assets\Scripts\GameCenterLogin.cs" />
+    <Compile Include="Assets\Scripts\GooglePlayLogin.cs" />
+    <Compile Include="Assets\Scripts\GooglePlayScript.cs" />
+    <Compile Include="Assets\Scripts\GPGSIds.cs" />
+    <Compile Include="Assets\Scripts\JumpControl.cs" />
+    <Compile Include="Assets\Scripts\Languajes\LanguajesDic.cs" />
+    <Compile Include="Assets\Scripts\Languajes\TextScriptErrors.cs" />
+    <Compile Include="Assets\Scripts\Languajes\TextsScript.cs" />
+    <Compile Include="Assets\Scripts\Languajes\TextsScriptMultiple.cs" />
+    <Compile Include="Assets\Scripts\LoadingParallaxScript.cs" />
+    <Compile Include="Assets\Scripts\LoadingStartRuners.cs" />
+    <Compile Include="Assets\Scripts\LogInWindowController.cs" />
+    <Compile Include="Assets\Scripts\MaxMetersTextScript.cs" />
+    <Compile Include="Assets\Scripts\MedalsHolderController.cs" />
+    <Compile Include="Assets\Scripts\MuteUnmuteScript.cs" />
+    <Compile Include="Assets\Scripts\okamiEspecialColliderScript.cs" />
+    <Compile Include="Assets\Scripts\Parallax\CaveInOut.cs" />
+    <Compile Include="Assets\Scripts\Parallax\ParallaxChecker.cs" />
+    <Compile Include="Assets\Scripts\Parallax\ParallaxMainController.cs" />
+    <Compile Include="Assets\Scripts\PointsController.cs" />
+    <Compile Include="Assets\Scripts\Rotation.cs" />
+    <Compile Include="Assets\Scripts\SceneManagement\LevelLoader.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\CharacterInfo.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\CharactersInfo.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\EnvironmentSet.cs" />
+    <Compile Include="Assets\Scripts\Shop\ShopConfirmer.cs" />
+    <Compile Include="Assets\Scripts\Shop\ShopController.cs" />
+    <Compile Include="Assets\Scripts\Shop\ShopItem.cs" />
+    <Compile Include="Assets\Scripts\Shop\SpineShopAnimator.cs" />
+    <Compile Include="Assets\Scripts\Sound\AudioSourceSetter.cs" />
+    <Compile Include="Assets\Scripts\Sound\AudioSourceSlider.cs" />
+    <Compile Include="Assets\Scripts\Sound\SoundController.cs" />
+    <Compile Include="Assets\Scripts\Sound\SoundMainController.cs" />
+    <Compile Include="Assets\Scripts\Sound\SoundSettings.cs" />
+    <Compile Include="Assets\Scripts\TestScripts\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\TestScripts\TestAttack.cs" />
+    <Compile Include="Assets\Scripts\TestScripts\TestMovement.cs" />
+    <Compile Include="Assets\Scripts\TextScriptGemasShop.cs" />
+    <Compile Include="Assets\Scripts\TutorialTextScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\AttacksUI.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\Health.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\SpecialsUI.cs" />
+    <Compile Include="Assets\Scripts\VFX\CharacterVFXController.cs" />
+    <Compile Include="Assets\Scripts\VFX\DestroyAfterX.cs" />
+    <Compile Include="Assets\Scripts\VFX\ElephantBulletFresnelControlOverTime.cs" />
+    <Compile Include="Assets\Scripts\VFX\VFXAfterAction.cs" />
+    <Compile Include="Assets\spine\spine-csharp\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Animation.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\AnimationState.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\AnimationStateData.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Atlas.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Attachments\AtlasAttachmentLoader.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Attachments\Attachment.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Attachments\AttachmentLoader.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Attachments\AttachmentType.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Attachments\BoundingBoxAttachment.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Attachments\ClippingAttachment.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Attachments\MeshAttachment.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Attachments\PathAttachment.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Attachments\PointAttachment.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Attachments\RegionAttachment.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Attachments\VertexAttachment.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\BlendMode.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Bone.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\BoneData.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Event.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\EventData.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\ExposedList.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\IConstraint.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\IkConstraint.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\IkConstraintData.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\IUpdatable.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Json.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\MathUtils.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\PathConstraint.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\PathConstraintData.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Skeleton.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\SkeletonBinary.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\SkeletonBounds.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\SkeletonClipping.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\SkeletonData.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\SkeletonJson.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Skin.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Slot.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\SlotData.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\TransformConstraint.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\TransformConstraintData.cs" />
+    <Compile Include="Assets\spine\spine-csharp\src\Triangulator.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\AttackSpineboy.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\DataAssetsFromExportsExample.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\DraggableTransform.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\FootSoldierExample.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\BasicPlatformerController.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\ConstrainedCamera.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\Raptor.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\SpineBeginnerTwo.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\SpineBlinkPlayer.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\SpineboyBeginnerInput.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\SpineboyBeginnerModel.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\SpineboyBeginnerView.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Getting Started Scripts\SpineboyTargetController.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Goblins.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\HandleEventWithAudioExample.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\HurtFlashEffect.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\MaterialPropertyBlockExample.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Mix and Match Character Customize\EquipAssetExample.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Mix and Match Character Customize\EquipButtonExample.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Mix and Match Character Customize\EquipsVisualsComponentExample.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Mix and Match Character Customize\EquipSystemExample.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\MixAndMatch.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\MixAndMatchGraphic.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\RaggedySpineboy.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\ReloadSceneOnKeyDown.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Rotator.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\BoneLocalOverride.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\CombinedSkin.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\Legacy\AtlasRegionAttacher.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\Legacy\CustomSkin.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\Legacy\SpriteAttacher.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\Sample VertexEffects\JitterEffectExample.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\Sample VertexEffects\TwoByTwoTransformEffectExample.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\SkeletonAnimationMulti\SkeletonAnimationMulti.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\SkeletonColorInitialize.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\SlotTintBlackFollower.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Sample Components\SpineEventUnityHandler.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\SpawnFromSkeletonDataExample.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\Spineboy.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\SpineboyBodyTilt.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\SpineboyFacialExpression.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\SpineboyFootplanter.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\SpineboyFreeze.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\SpineboyPole.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\Spine Examples\Scripts\SpineGauge.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Asset Types\AnimationReferenceAsset.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Asset Types\AtlasAsset.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Asset Types\EventDataReferenceAsset.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Asset Types\RegionlessAttachmentLoader.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Asset Types\SkeletonDataAsset.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Components\BoneFollower.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Components\PointFollower.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Components\SkeletonAnimation.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Components\SkeletonAnimator.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Components\SkeletonRenderer.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\ISkeletonAnimation.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\DoubleBuffered.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\SpineMesh.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\Unused\ArraysMeshGenerator.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\Unused\ArraysSimpleMeshGenerator.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\Unused\ArraysSubmeshedMeshGenerator.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\Unused\ArraysSubmeshSetMeshGenerator.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\Unused\DoubleBufferedMesh.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\Unused\ISimpleMeshGenerator.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Mesh Generation\Unused\ISubmeshedMeshGenerator.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\AttachmentTools\AttachmentTools.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\BoundingBoxFollower\BoundingBoxFollower.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Ghost\SkeletonGhost.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Ghost\SkeletonGhostRenderer.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Ragdoll\SkeletonRagdoll.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Ragdoll\SkeletonRagdoll2D.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\BoneFollowerGraphic.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\SkeletonGraphic.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\SkeletonGraphicMirror.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonRenderSeparator\SkeletonPartsRenderer.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityEyeConstraint.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityGroundConstraint.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonUtility Modules\SkeletonUtilityKinematicShadow.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SlotBlendModes\SlotBlendModes.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\PlayableHandle Component\SkeletonAnimationPlayableHandle.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\PlayableHandle Component\SpinePlayableHandleBase.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateBehaviour.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateClip.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateMixerBehaviour.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineAnimationState\SpineAnimationStateTrack.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipBehaviour.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipClip.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipMixerBehaviour.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Timeline\SpineSkeletonFlip\SpineSkeletonFlipTrack.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\TK2D\SpriteCollectionAttachmentLoader.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\YieldInstructions\WaitForSpineAnimationComplete.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\YieldInstructions\WaitForSpineEvent.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\YieldInstructions\WaitForSpineTrackEntryEnd.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonExtensions.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtility.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtilityBone.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SkeletonUtility\SkeletonUtilityConstraint.cs" />
+    <Compile Include="Assets\spine\spine-unity\Assets\spine-unity\SpineAttributes.cs" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Eyes\eyes.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Utility\HiddenPass.shader" />
+    <None Include="Assets\PlayFabSdk\link.xml" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Spine-Skeleton-Fill.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpritePixelLighting.cginc" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpriteVertexLighting.cginc" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpriteShadows.cginc" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteShadows.cginc" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpritePixelLighting.cginc" />
+    <None Include="Assets\spine\Desierto\Tirador spine - unity\Tirador.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpriteLighting.cginc" />
+    <None Include="Assets\Effects\CircleFresnelSprite\CircleFresnelSprite.shader" />
+    <None Include="Assets\spine\Cazador_arpon spine - unity 02\cazador arpon.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Gauge\Gauge.atlas.txt" />
+    <None Include="Assets\spine\Cazador CQC lava spine - unity\Cazador cqc lava.atlas.txt" />
+    <None Include="Assets\Effects\Shader\SpriteDissolve.shader" />
+    <None Include="Assets\Effects\SpineOutline\OutlineEffect\Resources\OutlineShader.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic-TintBlack.shader" />
+    <None Include="Assets\spine\Loading Screen\Conejo silueta\Conejo silueta spine - unity\Cazador silueta.atlas.txt" />
+    <None Include="Assets\spine\Elefante spine-unity\Elefante.json.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\FootSoldier\FS_White.atlas.txt" />
+    <None Include="Assets\spine\Tirador nieve\Tirador nieve spine - unity 02\Tirador nieve.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\ShaderShared.cginc" />
+    <None Include="Assets\spine\Jellyfish\cazadora2.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\CustomMaterials\SkeletonRendererCustomMaterials.txt" />
+    <None Include="Assets\GooglePlayGames\Plugins\Android\GooglePlayGamesManifest.plugin\AndroidManifest.xml" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Hero\hero-mesh.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Dragon\license.txt" />
+    <None Include="Assets\Effects\SpineOutline\OutlineEffect\Resources\OutlineBufferShader.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Straight Alpha\Spine-Straight-Skeleton-Tint.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Hero\license.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Goblins\goblins.atlas.txt" />
+    <None Include="Assets\spine\Hunter\cazador escopeta 2.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Strechyman\stretchyman-diffuse-pma.atlas.txt" />
+    <None Include="Assets\spine\Hunter\cazador escopeta 2.json.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Raptor\raptor.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteLighting.cginc" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Screen.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\spineboy-unity\spineboy.atlas.txt" />
+    <None Include="Assets\spine\Elefante spine-unity\farolillo.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpriteUnlit.cginc" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteUnlit.cginc" />
+    <None Include="Assets\spine\Lanza nieve spine - unity\Lanza nieve.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\FootSoldier\license.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\version.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpritesPixelLit.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Raggedy Spineboy\Raggedy Spineboy.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Spine-Skeleton-Tint.shader" />
+    <None Include="Assets\spine\Okami spine - unity\Okami.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpritesUnlit.shader" />
+    <None Include="Assets\spine\Loading Screen\Cazador silueta\Cazador silueta spine - unity\Cazador silueta.atlas.txt" />
+    <None Include="Assets\spine\Cazadora spine - unity\cazadora2.json.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Utility\Hidden-Spine-Bones.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpritesVertexLit.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Ghost\Shaders\Spine-Special-Skeleton-Ghost.shader" />
+    <None Include="Assets\spine\Conejo spine - unity\Conejo.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteVertexLighting.cginc" />
+    <None Include="Assets\spine\Cazadora spine - unity\cazadora2.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Dragon\dragon.atlas.txt" />
+    <None Include="Assets\spine\Tortuga spine-unity\tortuga final 2.json.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CameraDepthNormalsTexture.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Spine-Skeleton-TintBlack.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderShared.cginc" />
+    <None Include="Assets\spine\Estrella spine - unity\Estrella.atlas.txt" />
+    <None Include="Assets\spine\Tortuga spine-unity\tortuga final 2.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonGraphic\Shaders\Spine-SkeletonGraphic.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Spine-Skeleton.shader" />
+    <None Include="Assets\spine\Dragon spine - unity\Dragon.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CameraNormalsTexture.shader" />
+    <None Include="Assets\spine\Elefante spine-unity\farolillo.json.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\spineboy-pro\spineboy-pro.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Spineunitygirl\Doi.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CameraDepthTexture.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SlotBlendModes\Spine-Skeleton-PMA-Multiply.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\Hero\hero-pro.atlas.txt" />
+    <None Include="Assets\spine\Jellyfish\cazadora2.json.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\ShaderMaths.cginc" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\SkeletonRenderSeparator\SkeletonRenderSeparator.txt" />
+    <None Include="Assets\spine\Unicornio spine - unity\Unicornio.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\SpriteDepthNormalsTexture.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Shaders\Spine-SkeletonLit.shader" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Sprite\CGIncludes\SpriteSpecular.cginc" />
+    <None Include="Assets\spine\Desierto\Cazador CQC spine - unity\Cazador CQC.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\spine-unity\Modules\Shaders\Straight Alpha\Spine-Straight-Skeleton-Fill.shader" />
+    <None Include="Assets\spine\Loading Screen\Conejo silueta\Conejo silueta spine - unity\Conejo silueta.atlas.txt" />
+    <None Include="Assets\spine\Cazador lanzallamas spine - unity\Cazador lanzallamas.atlas.txt" />
+    <None Include="Assets\spine\spine-unity\Assets\Spine Examples\Spine\FootSoldier\Equipment\Equipment.atlas.txt" />
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CloudWebServicesModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FacebookModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTrackingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity.Settings">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UDP">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Assets/Plugins/UDP/UDP.dll</HintPath>
+    </Reference>
+    <Reference Include="ChannelPurchase">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityStore">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Editor">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Purchasing.Common">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Stores">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="Apple">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
+    </Reference>
+    <Reference Include="FacebookStore">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Security">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Tizen">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
+    </Reference>
+    <Reference Include="winrt">
+      <HintPath>C:/Users/arthu/Documents/AnimalRunner/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>C:/Users/arthu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/arthu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>C:/Users/arthu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/arthu/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{1F4618F6-5534-841B-997A-EF5D74C973E8}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{9BFCE4F7-EF2B-E014-B3C8-71CBDE36C283}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -971,5 +982,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>
