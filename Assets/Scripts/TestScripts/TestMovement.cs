@@ -56,7 +56,7 @@ public class TestMovement : MonoBehaviour {
 	public bool hasSecondJumpAnim;
 
     public bool isSpecial;
-
+	public bool isDebug;
 
     public CharacterVFXController VFX;
 
@@ -105,7 +105,7 @@ public class TestMovement : MonoBehaviour {
                 col.isTrigger = true;
             }
         }
-        if (EC.inGame)
+		if (EC.inGame && !isDebug)
         {
             transform.position += Vector3.right * EC.characterSpeed * Time.deltaTime;
         }

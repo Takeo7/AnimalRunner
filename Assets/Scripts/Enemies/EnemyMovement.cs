@@ -116,7 +116,10 @@ public class EnemyMovement : MonoBehaviour {
         }
         if (collision.CompareTag("PlayerBullet"))
         {
-            TakeDamage(tm.DealDamage());
+			if(tm != null)
+			{
+				TakeDamage(tm.DealDamage());
+			}
         }
     }
     public void TakeDamage(int i)
@@ -127,8 +130,11 @@ public class EnemyMovement : MonoBehaviour {
             isAttacking = false;
             isDead = true;
             AC.TakeDamage(true);
-            CharacterReferences.instance.PC.enemysKilled++;
-			ChallengesController.instance.AddKills(1);
+			if(CharacterReferences.instance != null)
+			{
+				CharacterReferences.instance.PC.enemysKilled++;
+				ChallengesController.instance.AddKills(1);
+			}
             StopCoroutine("Attacks");
 			StartCoroutine("Die");
         }
@@ -142,7 +148,10 @@ public class EnemyMovement : MonoBehaviour {
 	{
         if (dontDie == false)
         {
-			CharacterReferences.instance.playerInfo.totalEnemiesKilled++;
+			if(CharacterReferences.instance != null)
+			{
+				CharacterReferences.instance.playerInfo.totalEnemiesKilled++;
+			}
 			StopCoroutine("Attacks");
 			isAttacking = false;
 			if (flamethrower)

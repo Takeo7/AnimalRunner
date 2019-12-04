@@ -18,12 +18,15 @@ public class SoundController : MonoBehaviour {
 	private void Start()
 	{
 		SoundMainController SMC = SoundMainController.instance;
-		AS.volume = SMC.SS.volume;
-		AS.mute = SMC.SS.mute;
-        if (onStart)
-        {
-            PlaySound();
-        }
+		if(SMC != null)
+		{
+			AS.volume = SMC.SS.volume;
+			AS.mute = SMC.SS.mute;
+			if (onStart)
+			{
+				PlaySound();
+			}
+		}
 	}
 
     public void FadeSound()
